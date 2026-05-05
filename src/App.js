@@ -2,12 +2,19 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 function openNaverSearch(name, area, mapQuery) {
-  // mapQuery 필드가 있으면 우선 사용, 없으면 이름+지역 자동 생성
   let query;
   if (mapQuery) {
     query = mapQuery;
   } else {
-    const clean = name.replace(/\s*\(.*?\)/g, "").trim();
+    let clean;
+    if (/^[A-Za-z]/.test(name)) {
+      // 영문 시작: 괄호 안 한글 추출 → "Born and Bred (본앤브레드)" → "본앤브레드"
+      const korean = name.match(/\(([^)]*[가-힣][^)]*)\)/);
+      clean = korean ? korean[1].trim() : name.trim();
+    } else {
+      // 한글 시작: 괄호 안 영문 제거 → "가온 (Gaon)" → "가온"
+      clean = name.replace(/\s*\(.*?\)/g, "").trim();
+    }
     query = area ? clean + " " + area + " 맛집" : clean + " 맛집";
   }
   window.open("https://search.naver.com/search.naver?query=" + encodeURIComponent(query), "_blank");
