@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
-function openKakaoMap(name, area) {
-  // 괄호 안 영문 제거 후 지역명 결합: "가온 (Gaon)" + "강남" → "가온 강남"
+function openNaverMap(name, area) {
   const clean = name.replace(/\s*\(.*?\)/g, "").trim();
   const query = area ? clean + " " + area : clean;
-  window.open("https://map.kakao.com/?q=" + encodeURIComponent(query), "_blank");
+  window.open("https://map.naver.com/v5/search/" + encodeURIComponent(query), "_blank");
 }
 
 function getFavorites() {
@@ -196,8 +195,8 @@ function DetailModal({ r, type, onClose }) {
         {type==="lunch" && <div className="modal-room"><span className={r.solo==="✅ 혼밥"?"tag tag-room":"tag tag-maybe"}>{r.solo}</span></div>}
         <div className="modal-note">{type==="biz"?r.note:r.tip}</div>
         <div className="modal-actions">
-          <button className="btn-kakao" onClick={()=>openKakaoMap(r.name, r.area)}>
-            카카오맵으로 보기
+          <button className="btn-kakao" onClick={()=>openNaverMap(r.name, r.area)}>
+            네이버맵으로 보기
           </button>
           <button className={`btn-save ${isFav?"btn-save-on":""}`} onClick={handleFav}>
             {isFav ? "❤️ 찜 완료" : "🤍 찜하기"}
