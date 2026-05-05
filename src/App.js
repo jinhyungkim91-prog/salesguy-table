@@ -1,10 +1,16 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
-function openNaverMap(name, area) {
-  const clean = name.replace(/\s*\(.*?\)/g, "").trim();
-  const query = area ? clean + " " + area : clean;
-  window.open("https://map.naver.com/v5/search/" + encodeURIComponent(query), "_blank");
+function openNaverSearch(name, area, mapQuery) {
+  // mapQuery 필드가 있으면 우선 사용, 없으면 이름+지역 자동 생성
+  let query;
+  if (mapQuery) {
+    query = mapQuery;
+  } else {
+    const clean = name.replace(/\s*\(.*?\)/g, "").trim();
+    query = area ? clean + " " + area + " 맛집" : clean + " 맛집";
+  }
+  window.open("https://search.naver.com/search.naver?query=" + encodeURIComponent(query), "_blank");
 }
 
 function getFavorites() {
@@ -195,8 +201,8 @@ function DetailModal({ r, type, onClose }) {
         {type==="lunch" && <div className="modal-room"><span className={r.solo==="✅ 혼밥"?"tag tag-room":"tag tag-maybe"}>{r.solo}</span></div>}
         <div className="modal-note">{type==="biz"?r.note:r.tip}</div>
         <div className="modal-actions">
-          <button className="btn-kakao" onClick={()=>openNaverMap(r.name, r.area)}>
-            네이버맵으로 보기
+          <button className="btn-kakao" onClick={()=>openNaverSearch(r.name, r.area, r.mapQuery)}>
+            네이버에서 찾기
           </button>
           <button className={`btn-save ${isFav?"btn-save-on":""}`} onClick={handleFav}>
             {isFav ? "❤️ 찜 완료" : "🤍 찜하기"}
