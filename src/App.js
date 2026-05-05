@@ -1,6 +1,22 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
+function openKakaoMap(name) {
+  window.open("https://map.kakao.com/link/search/" + encodeURIComponent(name), "_blank");
+}
+
+function getFavorites() {
+  try { return JSON.parse(localStorage.getItem("sgFavorites") || "[]"); }
+  catch { return []; }
+}
+
+function toggleFavorite(id) {
+  const favs = getFavorites();
+  const next = favs.includes(id) ? favs.filter(f => f !== id) : [...favs, id];
+  localStorage.setItem("sgFavorites", JSON.stringify(next));
+  return next;
+}
+
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 비즈니스 점수 자동계산 함수
@@ -139,7 +155,19 @@ function GolfRestCard({ r }) {
 }
 
 function DetailModal({ r, type, onClose }) {
+  const [isFav, setIsFav] = useState(false);
+
+  useEffect(() => {
+    if (r) setIsFav(getFavorites().includes(r.id));
+  }, [r]);
+
   if (!r) return null;
+
+  const handleFav = () => {
+    const next = toggleFavorite(r.id);
+    setIsFav(next.includes(r.id));
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-box" onClick={e=>e.stopPropagation()}>
@@ -165,8 +193,12 @@ function DetailModal({ r, type, onClose }) {
         {type==="lunch" && <div className="modal-room"><span className={r.solo==="✅ 혼밥"?"tag tag-room":"tag tag-maybe"}>{r.solo}</span></div>}
         <div className="modal-note">{type==="biz"?r.note:r.tip}</div>
         <div className="modal-actions">
-          <button className="btn-kakao">카카오맵으로 보기</button>
-          <button className="btn-save">❤️ 찜하기</button>
+          <button className="btn-kakao" onClick={()=>openKakaoMap(r.name)}>
+            카카오맵으로 보기
+          </button>
+          <button className={`btn-save ${isFav?"btn-save-on":""}`} onClick={handleFav}>
+            {isFav ? "❤️ 찜 완료" : "🤍 찜하기"}
+          </button>
         </div>
       </div>
     </div>

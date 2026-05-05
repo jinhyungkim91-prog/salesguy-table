@@ -385,6 +385,13 @@ body {
   font-weight: 700;
   cursor: pointer;
   font-family: 'Noto Sans KR', sans-serif;
+  color: #C0B0A0;
+  transition: all 0.15s;
+}
+.btn-save-on {
+  background: #C8A96E22;
+  border-color: #C8A96E;
+  color: #C8A96E;
 }
 
 /* ── 점심 가격 뱃지 ── */
