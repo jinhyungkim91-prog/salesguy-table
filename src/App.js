@@ -299,7 +299,8 @@ export default function App() {
         .select('name, address, genre, phone, district')
         .ilike('name', `%${lunchSearch}%`)
         .limit(50);
-      if (!error) setPublicResults(data || []);
+      if (error) console.error('[Supabase 오류]', error);
+      setPublicResults(data || []);
       setPublicLoading(false);
     }, 400);
     return () => clearTimeout(debounceRef.current);
