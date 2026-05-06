@@ -252,26 +252,22 @@ export default function App() {
   // 비즈니스 필터
   const [bizRegion, setBizRegion] = useState("전체");
   const [bizGenre, setBizGenre]   = useState("전체");
-  const [roomOnly, setRoomOnly]   = useState(false);
   const [bizSearch, setBizSearch] = useState("");
 
   // 점심 필터
   const [lunchRegion, setLunchRegion] = useState("전체");
   const [lunchPrice, setLunchPrice]   = useState("전체");
-  const [soloOnly, setSoloOnly]       = useState(false);
   const [lunchSearch, setLunchSearch] = useState("");
   const [cheapOnly, setCheapOnly]     = useState(false);
 
   // 골프 필터
   const [selectedGolf, setSelectedGolf] = useState("베어크리크 CC");
-  const [golfDir, setGolfDir]           = useState("전체");
 
   const openModal = (r, type) => { setSelected(r); setSelType(type); };
 
   const bizFiltered = restaurants.filter(r => {
     if (bizRegion!=="전체" && r.region!==bizRegion) return false;
     if (bizGenre!=="전체" && !r.genre.includes(bizGenre)) return false;
-    if (roomOnly && r.room!=="✅ 확인") return false;
     if (bizSearch && !r.name.includes(bizSearch) && !r.area.includes(bizSearch)) return false;
     return true;
   });
@@ -279,7 +275,6 @@ export default function App() {
   const lunchFiltered = lunchDB.filter(r => {
     if (lunchRegion!=="전체" && r.region!==lunchRegion) return false;
     if (lunchPrice!=="전체" && r.price!==lunchPrice) return false;
-    if (soloOnly && r.solo!=="✅ 혼밥") return false;
     if (cheapOnly && r.price!=="1만원이하") return false;
     if (lunchSearch && !r.name.includes(lunchSearch) && !r.area.includes(lunchSearch)) return false;
     return true;
@@ -287,7 +282,6 @@ export default function App() {
 
   const golfRests = golfRestaurants.filter(r => {
     if (r.golf !== selectedGolf) return false;
-    if (golfDir!=="전체" && !r.direction.includes(golfDir)) return false;
     return true;
   });
 
@@ -327,14 +321,6 @@ export default function App() {
               <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>setBizGenre(g)}>{g}</button>
             ))}
           </div>
-          <div className="room-toggle-wrap">
-            <label className="room-toggle">
-              <input type="checkbox" checked={roomOnly} onChange={e=>setRoomOnly(e.target.checked)} />
-              <span className="toggle-slider"></span>
-              <span className="toggle-label">룸 확인 식당만</span>
-            </label>
-            <span className="result-count">{bizFiltered.length}곳</span>
-          </div>
           <div className="info-banner">
             🔍 {bizRegion} · {bizGenre!=="전체"?bizGenre+" · ":""}<b>{bizFiltered.length}곳</b> 발견 (전체 1,100개)
           </div>
@@ -364,14 +350,6 @@ export default function App() {
             {LUNCH_PRICES.map(p=>(
               <button key={p} className={`filter-chip ${lunchPrice===p?"on":""}`} onClick={()=>setLunchPrice(p)}>{p}</button>
             ))}
-          </div>
-          <div className="room-toggle-wrap">
-            <label className="room-toggle">
-              <input type="checkbox" checked={soloOnly} onChange={e=>setSoloOnly(e.target.checked)} />
-              <span className="toggle-slider"></span>
-              <span className="toggle-label">혼밥 가능만</span>
-            </label>
-            <span className="result-count">{lunchFiltered.length}곳</span>
           </div>
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
             🥢 {lunchRegion} · <b>{lunchFiltered.length}곳</b> · 421개 수동검증 DB
@@ -405,17 +383,9 @@ export default function App() {
             </div>
           )}
 
-          <div style={{padding:"8px 14px",background:"white",borderBottom:"1px solid #EDE8E0"}}>
-            <div style={{fontSize:"9px",fontWeight:700,color:"#8A7A6A",marginBottom:6}}>🧭 귀경 방향 선택</div>
-            <div className="filter-scroll" style={{padding:0}}>
-              {GOLF_DIRECTIONS.map(d=>(
-                <button key={d} className={`filter-chip ${golfDir===d?"on":""}`} onClick={()=>setGolfDir(d)}>{d}</button>
-              ))}
-            </div>
-          </div>
 
           <div className="info-banner" style={{background:"#FFF0E8",borderColor:"#E05A00",color:"#7A3000"}}>
-            🍽️ {selectedGolf} · {golfDir!=="전체"?golfDir+" 방향 · ":""}<b>{golfRests.length}곳</b> 귀경 맛집
+            🍽️ {selectedGolf} · <b>{golfRests.length}곳</b> 귀경 맛집
           </div>
 
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
