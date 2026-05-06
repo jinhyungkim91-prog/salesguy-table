@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.css";
+import { supabase } from "./supabaseClient";
 
 function openNaverSearch(name, area, mapQuery) {
   let query;
@@ -169,6 +170,29 @@ function GolfRestCard({ r }) {
   );
 }
 
+function PublicLunchCard({ r }) {
+  return (
+    <div className="rest-card" onClick={() => openNaverSearch(r.name, r.district)}>
+      <div className="rest-card-top">
+        <div className="rest-emoji">🍴</div>
+        <div className="rest-info">
+          <div className="rest-name">{r.name}</div>
+          <div className="rest-sub">{r.district} · {r.genre}</div>
+        </div>
+        <div style={{fontSize:"10px",color:"#7A6A5A",flexShrink:0,textAlign:"right"}}>
+          공공DB<br/>🔍 검색
+        </div>
+      </div>
+      <div className="rest-note" style={{fontSize:"11px",color:"#8A7A6A"}}>{r.address}</div>
+      <div className="rest-tags">
+        <span className="tag tag-region">{r.district}</span>
+        <span className="tag tag-rating">{r.genre}</span>
+        {r.phone && <span className="tag tag-region">{r.phone}</span>}
+      </div>
+    </div>
+  );
+}
+
 function DetailModal({ r, type, onClose }) {
   const [isFav, setIsFav] = useState(false);
 
@@ -259,6 +283,27 @@ export default function App() {
   const [lunchPrice, setLunchPrice]   = useState("전체");
   const [lunchSearch, setLunchSearch] = useState("");
   const [cheapOnly, setCheapOnly]     = useState(false);
+
+  // 공공 점심 DB (Supabase)
+  const [publicResults, setPublicResults] = useState([]);
+  const [publicLoading, setPublicLoading] = useState(false);
+  const debounceRef = useRef(null);
+
+  useEffect(() => {
+    if (lunchSearch.length < 2) { setPublicResults([]); return; }
+    clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(async () => {
+      setPublicLoading(true);
+      const { data, error } = await supabase
+        .from('lunch_public')
+        .select('name, address, genre, phone, district')
+        .ilike('name', `%${lunchSearch}%`)
+        .limit(50);
+      if (!error) setPublicResults(data || []);
+      setPublicLoading(false);
+    }, 400);
+    return () => clearTimeout(debounceRef.current);
+  }, [lunchSearch]);
 
   // 골프 필터
   const [selectedGolf, setSelectedGolf] = useState("베어크리크 CC");
@@ -353,11 +398,25 @@ export default function App() {
           </div>
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
             🥢 {lunchRegion} · <b>{lunchFiltered.length}곳</b> · 421개 수동검증 DB
+            {publicResults.length > 0 && <span style={{marginLeft:8,color:"#7A5C1E"}}>+ 공공DB <b>{publicResults.length}곳</b></span>}
           </div>
           <div className="rest-list">
-            {lunchFiltered.length===0
+            {lunchFiltered.length===0 && publicResults.length===0
               ? <div className="empty">검색 결과가 없어요 😢</div>
-              : lunchFiltered.map(r=><LunchCard key={r.id} r={r} onClick={r=>openModal(r,"lunch")}/>)
+              : <>
+                  {lunchFiltered.map(r=><LunchCard key={r.id} r={r} onClick={r=>openModal(r,"lunch")}/>)}
+                  {lunchSearch.length >= 2 && (
+                    <>
+                      {publicLoading && <div className="empty" style={{fontSize:12}}>공공DB 검색 중...</div>}
+                      {!publicLoading && publicResults.length > 0 && (
+                        <>
+                          <div style={{fontSize:11,color:"#8A7A6A",padding:"8px 4px 4px",fontWeight:700}}>📦 서울시 공공데이터 ({publicResults.length}곳)</div>
+                          {publicResults.map((r,i)=><PublicLunchCard key={`pub-${i}`} r={r}/>)}
+                        </>
+                      )}
+                    </>
+                  )}
+                </>
             }
           </div>
         </div>
