@@ -398,25 +398,21 @@ export default function App() {
             ))}
           </div>
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
-            🥢 {lunchRegion} · <b>{lunchFiltered.length}곳</b> · 421개 수동검증 DB
-            {publicResults.length > 0 && <span style={{marginLeft:8,color:"#7A5C1E"}}>+ 공공DB <b>{publicResults.length}곳</b></span>}
+            {publicLoading
+              ? <>🔍 공공DB 검색 중...</>
+              : <>🥢 {lunchRegion} · <b>{lunchFiltered.length + (lunchSearch.length>=2 ? publicResults.filter(p=>!lunchFiltered.some(c=>c.name===p.name)).length : 0)}곳</b> {lunchSearch.length>=2 ? "(수동검증 + 공공DB 통합)" : "· 421개 수동검증 DB"}</>
+            }
           </div>
           <div className="rest-list">
-            {lunchFiltered.length===0 && publicResults.length===0
+            {lunchFiltered.length===0 && publicResults.length===0 && !publicLoading
               ? <div className="empty">검색 결과가 없어요 😢</div>
               : <>
                   {lunchFiltered.map(r=><LunchCard key={r.id} r={r} onClick={r=>openModal(r,"lunch")}/>)}
-                  {lunchSearch.length >= 2 && (
-                    <>
-                      {publicLoading && <div className="empty" style={{fontSize:12}}>공공DB 검색 중...</div>}
-                      {!publicLoading && publicResults.length > 0 && (
-                        <>
-                          <div style={{fontSize:11,color:"#8A7A6A",padding:"8px 4px 4px",fontWeight:700}}>📦 서울시 공공데이터 ({publicResults.length}곳)</div>
-                          {publicResults.map((r,i)=><PublicLunchCard key={`pub-${i}`} r={r}/>)}
-                        </>
-                      )}
-                    </>
-                  )}
+                  {lunchSearch.length >= 2 && !publicLoading &&
+                    publicResults
+                      .filter(p => !lunchFiltered.some(c => c.name === p.name))
+                      .map((r,i) => <PublicLunchCard key={`pub-${i}`} r={r}/>)
+                  }
                 </>
             }
           </div>
