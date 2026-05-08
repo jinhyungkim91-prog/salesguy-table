@@ -94,6 +94,7 @@ const LUNCH_PRICES  = ["전체","1만원이하","1만원대","2만원대"];
 const LUNCH_GENRES  = ["전체","한식","라멘","국밥","분식","중식","일식","샐러드","마라탕"];
 
 const GOLF_DIRECTIONS = ["전체","강남","광화문","여의도","강북"];
+const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 공통 컴포넌트
@@ -340,7 +341,7 @@ export default function App() {
       <header className="header">
         <div className="header-logo">세일즈가이의 <span>식탁</span></div>
         <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 귀경</div>
-        <div className="db-badge">📦 총 74,724개 DB</div>
+        <div className="db-badge">📦 총 {(1100 + 421 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
       </header>
 
       <nav className="tab-nav">
@@ -400,7 +401,7 @@ export default function App() {
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
             {publicLoading
               ? <>🔍 공공DB 검색 중...</>
-              : <>🥢 {lunchRegion} · <b>{lunchFiltered.length + (lunchSearch.length>=2 ? publicResults.filter(p=>!lunchFiltered.some(c=>c.name===p.name)).length : 0)}곳</b></>
+              : <>🥢 {lunchRegion} · <b>{lunchSearch.length>=2 ? (lunchFiltered.length + publicResults.filter(p=>!lunchFiltered.some(c=>c.name===p.name)).length).toLocaleString() : (421 + PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
             }
           </div>
           <div className="rest-list">
