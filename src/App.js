@@ -301,9 +301,14 @@ export default function App() {
     debounceRef.current = setTimeout(async () => {
       setPublicLoading(true);
       setPublicOffset(0);
+      const applyFilters = (q) => {
+        q = q.ilike('name', `%${lunchSearch}%`);
+        if (lunchRegion !== '전체') q = q.ilike('district', `${lunchRegion}%`);
+        return q;
+      };
       const [{ data }, { count }] = await Promise.all([
-        supabase.from('lunch_public').select('name, address, genre, phone, district').ilike('name', `%${lunchSearch}%`).range(0, PAGE - 1),
-        supabase.from('lunch_public').select('*', { count: 'exact', head: true }).ilike('name', `%${lunchSearch}%`)
+        applyFilters(supabase.from('lunch_public').select('name, address, genre, phone, district')).range(0, PAGE - 1),
+        applyFilters(supabase.from('lunch_public').select('*', { count: 'exact', head: true }))
       ]);
       const results = data || [];
       setPublicResults(results);
@@ -312,16 +317,14 @@ export default function App() {
       setPublicLoading(false);
     }, 400);
     return () => clearTimeout(debounceRef.current);
-  }, [lunchSearch]);
+  }, [lunchSearch, lunchRegion]);
 
   const loadMore = async () => {
     setMoreLoading(true);
     const nextOffset = publicOffset + PAGE;
-    const { data, error } = await supabase
-      .from('lunch_public')
-      .select('name, address, genre, phone, district')
-      .ilike('name', `%${lunchSearch}%`)
-      .range(nextOffset, nextOffset + PAGE - 1);
+    let q = supabase.from('lunch_public').select('name, address, genre, phone, district').ilike('name', `%${lunchSearch}%`);
+    if (lunchRegion !== '전체') q = q.ilike('district', `${lunchRegion}%`);
+    const { data, error } = await q.range(nextOffset, nextOffset + PAGE - 1);
     if (error) console.error('[Supabase 오류]', error);
     const more = data || [];
     setPublicResults(prev => [...prev, ...more]);
