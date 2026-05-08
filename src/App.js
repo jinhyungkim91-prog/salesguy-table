@@ -288,24 +288,47 @@ export default function App() {
   // 공공 점심 DB (Supabase)
   const [publicResults, setPublicResults] = useState([]);
   const [publicLoading, setPublicLoading] = useState(false);
+  const [publicOffset, setPublicOffset] = useState(0);
+  const [publicHasMore, setPublicHasMore] = useState(false);
+  const [moreLoading, setMoreLoading] = useState(false);
   const debounceRef = useRef(null);
+  const PAGE = 50;
 
   useEffect(() => {
-    if (lunchSearch.length < 2) { setPublicResults([]); return; }
+    if (lunchSearch.length < 2) { setPublicResults([]); setPublicOffset(0); setPublicHasMore(false); return; }
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(async () => {
       setPublicLoading(true);
+      setPublicOffset(0);
       const { data, error } = await supabase
         .from('lunch_public')
         .select('name, address, genre, phone, district')
         .ilike('name', `%${lunchSearch}%`)
-        .limit(50);
+        .range(0, PAGE - 1);
       if (error) console.error('[Supabase 오류]', error);
-      setPublicResults(data || []);
+      const results = data || [];
+      setPublicResults(results);
+      setPublicHasMore(results.length === PAGE);
       setPublicLoading(false);
     }, 400);
     return () => clearTimeout(debounceRef.current);
   }, [lunchSearch]);
+
+  const loadMore = async () => {
+    setMoreLoading(true);
+    const nextOffset = publicOffset + PAGE;
+    const { data, error } = await supabase
+      .from('lunch_public')
+      .select('name, address, genre, phone, district')
+      .ilike('name', `%${lunchSearch}%`)
+      .range(nextOffset, nextOffset + PAGE - 1);
+    if (error) console.error('[Supabase 오류]', error);
+    const more = data || [];
+    setPublicResults(prev => [...prev, ...more]);
+    setPublicOffset(nextOffset);
+    setPublicHasMore(more.length === PAGE);
+    setMoreLoading(false);
+  };
 
   // 골프 필터
   const [selectedGolf, setSelectedGolf] = useState("베어크리크 CC");
@@ -414,6 +437,14 @@ export default function App() {
                       .filter(p => !lunchFiltered.some(c => c.name === p.name))
                       .map((r,i) => <PublicLunchCard key={`pub-${i}`} r={r}/>)
                   }
+                  {lunchSearch.length >= 2 && !publicLoading && publicHasMore && (
+                    <button
+                      onClick={loadMore}
+                      disabled={moreLoading}
+                      style={{width:"100%",padding:"12px",margin:"8px 0",background:"#F5EDD8",border:"1px solid #C8A96E",borderRadius:10,color:"#7A5C1E",fontWeight:700,fontSize:13,cursor:"pointer"}}>
+                      {moreLoading ? "불러오는 중..." : "더 보기 (50곳 추가)"}
+                    </button>
+                  )}
                 </>
             }
           </div>
