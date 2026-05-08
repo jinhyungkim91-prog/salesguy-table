@@ -287,6 +287,7 @@ export default function App() {
 
   // 공공 점심 DB (Supabase)
   const [publicResults, setPublicResults] = useState([]);
+  const [publicTotal, setPublicTotal] = useState(0);
   const [publicLoading, setPublicLoading] = useState(false);
   const [publicOffset, setPublicOffset] = useState(0);
   const [publicHasMore, setPublicHasMore] = useState(false);
@@ -295,19 +296,18 @@ export default function App() {
   const PAGE = 50;
 
   useEffect(() => {
-    if (lunchSearch.length < 2) { setPublicResults([]); setPublicOffset(0); setPublicHasMore(false); return; }
+    if (lunchSearch.length < 2) { setPublicResults([]); setPublicTotal(0); setPublicOffset(0); setPublicHasMore(false); return; }
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(async () => {
       setPublicLoading(true);
       setPublicOffset(0);
-      const { data, error } = await supabase
-        .from('lunch_public')
-        .select('name, address, genre, phone, district')
-        .ilike('name', `%${lunchSearch}%`)
-        .range(0, PAGE - 1);
-      if (error) console.error('[Supabase 오류]', error);
+      const [{ data }, { count }] = await Promise.all([
+        supabase.from('lunch_public').select('name, address, genre, phone, district').ilike('name', `%${lunchSearch}%`).range(0, PAGE - 1),
+        supabase.from('lunch_public').select('*', { count: 'exact', head: true }).ilike('name', `%${lunchSearch}%`)
+      ]);
       const results = data || [];
       setPublicResults(results);
+      setPublicTotal(count || 0);
       setPublicHasMore(results.length === PAGE);
       setPublicLoading(false);
     }, 400);
@@ -424,7 +424,7 @@ export default function App() {
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
             {publicLoading
               ? <>🔍 공공DB 검색 중...</>
-              : <>🥢 {lunchRegion} · <b>{lunchSearch.length>=2 ? (lunchFiltered.length + publicResults.filter(p=>!lunchFiltered.some(c=>c.name===p.name)).length).toLocaleString() : (421 + PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
+              : <>🥢 {lunchRegion} · <b>{lunchSearch.length>=2 ? (lunchFiltered.length + publicTotal).toLocaleString() : (421 + PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
             }
           </div>
           <div className="rest-list">
@@ -442,7 +442,7 @@ export default function App() {
                       onClick={loadMore}
                       disabled={moreLoading}
                       style={{width:"100%",padding:"12px",margin:"8px 0",background:"#F5EDD8",border:"1px solid #C8A96E",borderRadius:10,color:"#7A5C1E",fontWeight:700,fontSize:13,cursor:"pointer"}}>
-                      {moreLoading ? "불러오는 중..." : "더 보기 (50곳 추가)"}
+                      {moreLoading ? "불러오는 중..." : `더 보기 (${Math.min(PAGE, publicTotal - publicOffset - PAGE).toLocaleString()}곳 더)`}
                     </button>
                   )}
                 </>
