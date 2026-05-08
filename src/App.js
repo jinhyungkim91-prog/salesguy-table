@@ -400,7 +400,7 @@ export default function App() {
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
             {publicLoading
               ? <>🔍 공공DB 검색 중...</>
-              : <>🥢 {lunchRegion} · <b>{lunchFiltered.length + (lunchSearch.length>=2 ? publicResults.filter(p=>!lunchFiltered.some(c=>c.name===p.name)).length : 0)}곳</b></>}
+              : <>🥢 {lunchRegion} · <b>{lunchFiltered.length + (lunchSearch.length>=2 ? publicResults.filter(p=>!lunchFiltered.some(c=>c.name===p.name)).length : 0)}곳</b></>
             }
           </div>
           <div className="rest-list">
