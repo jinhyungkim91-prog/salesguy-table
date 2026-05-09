@@ -8590,19 +8590,6 @@
     "emoji": "🥩"
   },
   {
-    "id": 1060,
-    "name": "방콕상회",
-    "region": "용산",
-    "area": "삼각지",
-    "genre": "태국",
-    "room": "🔶 추정",
-    "score": 83,
-    "rating": 4.8,
-    "note": "삼각지근처",
-    "emoji": "🍽️",
-    "mapQuery": "방콕상회 삼각지"
-  },
-  {
     "id": 1061,
     "name": "천향마라탕 신용산",
     "region": "용산",
@@ -8611,18 +8598,6 @@
     "room": "🔶 추정",
     "score": 83,
     "rating": 4.8,
-    "note": "nan",
-    "emoji": "🍽️"
-  },
-  {
-    "id": 1062,
-    "name": "자루야키용산로",
-    "region": "용산",
-    "area": "신용산",
-    "genre": "야키토리",
-    "room": "🔶 추정",
-    "score": 83,
-    "rating": 4.9,
     "note": "nan",
     "emoji": "🍽️"
   },
@@ -8686,18 +8661,6 @@
     "score": 83,
     "rating": 4.7,
     "note": "강남 스시",
-    "emoji": "🍽️"
-  },
-  {
-    "id": 1069,
-    "name": "바스버거 신용산",
-    "region": "용산",
-    "area": "신용산",
-    "genre": "버거",
-    "room": "🔶 추정",
-    "score": 83,
-    "rating": 4.9,
-    "note": "nan",
     "emoji": "🍽️"
   },
   {
@@ -8909,18 +8872,6 @@
     "rating": 4.4,
     "note": "2층 운영",
     "emoji": "🏮"
-  },
-  {
-    "id": 1095,
-    "name": "오제제 신용산",
-    "region": "용산",
-    "area": "신용산",
-    "genre": "돈까스",
-    "room": "🔶 추정",
-    "score": 81,
-    "rating": 4.3,
-    "note": "아모레퍼시픽B1",
-    "emoji": "🍽️"
   },
   {
     "id": 1097,
