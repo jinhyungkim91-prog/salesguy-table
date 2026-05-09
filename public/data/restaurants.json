@@ -1458,7 +1458,7 @@
   },
   {
     "id": 130,
-    "name": "W가나 신사",
+    "name": "우가",
     "region": "서초",
     "area": "신사",
     "genre": "한우사시미오마카세",
@@ -1771,7 +1771,7 @@
   },
   {
     "id": 158,
-    "name": "Simibe",
+    "name": "시미베",
     "region": "서초",
     "area": "청담",
     "genre": "파인다이닝",
@@ -2481,7 +2481,7 @@
   },
   {
     "id": 225,
-    "name": "MODOWOO 여의도",
+    "name": "모도우",
     "region": "영등포",
     "area": "여의도",
     "genre": "샤부샤부코스",
@@ -2578,7 +2578,7 @@
   },
   {
     "id": 235,
-    "name": "The Round 코엑스",
+    "name": "더 라운드",
     "region": "강남",
     "area": "삼성동",
     "genre": "파인다이닝",
@@ -3144,7 +3144,7 @@
   },
   {
     "id": 294,
-    "name": "Mosu Seoul",
+    "name": "모수 서울",
     "region": "서초",
     "area": "청담",
     "genre": "파인다이닝",
@@ -3229,7 +3229,7 @@
   },
   {
     "id": 306,
-    "name": "Evett",
+    "name": "레스토랑 에빗",
     "region": "용산",
     "area": "이태원",
     "genre": "파인다이닝",
@@ -3435,7 +3435,7 @@
   },
   {
     "id": 324,
-    "name": "MUTAN Yeouido",
+    "name": "무탄",
     "region": "영등포",
     "area": "여의도",
     "genre": "파인중식",
@@ -3774,8 +3774,8 @@
   {
     "id": 354,
     "name": "오프레 (Offre)",
-    "region": "강남",
-    "area": "강남",
+    "region": "서초",
+    "area": "청담",
     "genre": "파인다이닝",
     "room": "🔶 추정",
     "score": 66,
@@ -4518,7 +4518,7 @@
   },
   {
     "id": 422,
-    "name": "BISTROT de YOUNTVILLE",
+    "name": "비스트로 드 욘트빌",
     "region": "서초",
     "area": "청담",
     "genre": "프렌치",
@@ -4531,7 +4531,7 @@
   },
   {
     "id": 423,
-    "name": "Passionne",
+    "name": "파씨오네",
     "region": "서초",
     "area": "청담",
     "genre": "프렌치",
@@ -4556,9 +4556,9 @@
   },
   {
     "id": 425,
-    "name": "Alaise",
-    "region": "서초",
-    "area": "청담",
+    "name": "알레즈",
+    "region": "용산",
+    "area": "한남",
     "genre": "프렌치",
     "room": "✅ 확인",
     "score": 65,
@@ -4569,7 +4569,7 @@
   },
   {
     "id": 426,
-    "name": "Paolo de Maria",
+    "name": "파올로데마리아",
     "region": "서초",
     "area": "청담",
     "genre": "이탈리안",
@@ -4667,8 +4667,8 @@
   {
     "id": 435,
     "name": "로바",
-    "region": "강남",
-    "area": "강남",
+    "region": "서초",
+    "area": "압구정",
     "genre": "이탈리안",
     "room": "✅ 확인",
     "score": 65,
@@ -4811,7 +4811,7 @@
   },
   {
     "id": 450,
-    "name": "Sushi Ren",
+    "name": "스시 렌",
     "region": "서초",
     "area": "청담",
     "genre": "오마카세",
@@ -5220,7 +5220,7 @@
   },
   {
     "id": 486,
-    "name": "Szimpatikus",
+    "name": "심퍼티쿠시",
     "region": "종로",
     "area": "삼각지",
     "genre": "이탈리안·퓨전",
@@ -5701,7 +5701,7 @@
   },
   {
     "id": 527,
-    "name": "Yang In Hwan Dae Jeongin",
+    "name": "양인환대",
     "region": "용산",
     "area": "신용산",
     "genre": "양갈비",
@@ -6038,9 +6038,9 @@
   },
   {
     "id": 556,
-    "name": "Camillo Lasagneria",
-    "region": "서초",
-    "area": "청담",
+    "name": "카밀로 라자네리아",
+    "region": "마포",
+    "area": "합정",
     "genre": "이탈리안",
     "room": "✅ 확인",
     "score": 62,
@@ -7191,7 +7191,7 @@
   },
   {
     "id": 653,
-    "name": "Woorahman",
+    "name": "우라만",
     "region": "강남",
     "area": "강남",
     "genre": "한우",
@@ -7960,7 +7960,7 @@
   },
   {
     "id": 718,
-    "name": "Myeongin Deungsim",
+    "name": "명인등심",
     "region": "강남",
     "area": "강남",
     "genre": "한우등심",
@@ -8009,7 +8009,7 @@
   },
   {
     "id": 723,
-    "name": "Myeongin Deungsim",
+    "name": "명인등심",
     "region": "강남",
     "area": "강남",
     "genre": "한우",
@@ -8382,7 +8382,7 @@
   },
   {
     "id": 758,
-    "name": "DANSE",
+    "name": "당스",
     "region": "용산",
     "area": "신용산",
     "genre": "프렌치브런치",
@@ -8395,7 +8395,7 @@
   },
   {
     "id": 759,
-    "name": "Avécque",
+    "name": "아베크",
     "region": "서초",
     "area": "청담",
     "genre": "이탈리안",
@@ -8433,8 +8433,8 @@
   {
     "id": 762,
     "name": "쥬에 (Jue)",
-    "region": "강남",
-    "area": "삼성동",
+    "region": "용산",
+    "area": "한남",
     "genre": "중식·딤섬",
     "room": "✅ 확인",
     "score": 58,
@@ -8445,7 +8445,7 @@
   },
   {
     "id": 763,
-    "name": "Gyeongcheon Aein 2237",
+    "name": "경천애인 2237",
     "region": "강남",
     "area": "삼성동",
     "genre": "한우",
@@ -9071,7 +9071,7 @@
   },
   {
     "id": 816,
-    "name": "Moktanjang",
+    "name": "목탄장",
     "region": "강남",
     "area": "강남",
     "genre": "한우",
@@ -9684,7 +9684,7 @@
   },
   {
     "id": 868,
-    "name": "Mano Di Chef",
+    "name": "마노디셰프",
     "region": "강남",
     "area": "강남역",
     "genre": "이탈리안",
@@ -9709,7 +9709,7 @@
   },
   {
     "id": 870,
-    "name": "L'Amitié 청담",
+    "name": "라미띠에",
     "region": "서초",
     "area": "청담",
     "genre": "미슐랭프렌치",
@@ -9734,7 +9734,7 @@
   },
   {
     "id": 872,
-    "name": "Dosan Hoikwan",
+    "name": "도산회관",
     "region": "서초",
     "area": "압구정",
     "genre": "한우숯불",
@@ -9867,7 +9867,7 @@
   },
   {
     "id": 883,
-    "name": "Heukujeong Japanese Wagyu",
+    "name": "흑우정",
     "region": "서초",
     "area": "청담",
     "genre": "와규",
@@ -9928,7 +9928,7 @@
   },
   {
     "id": 888,
-    "name": "Palais de Chine",
+    "name": "레스케이프 팔레드 신",
     "region": "강남",
     "area": "강남",
     "genre": "중식",
@@ -10446,7 +10446,7 @@
   },
   {
     "id": 937,
-    "name": "Pairing Room",
+    "name": "페어링룸",
     "region": "서초",
     "area": "청담",
     "genre": "이탈리안",
@@ -10459,7 +10459,7 @@
   },
   {
     "id": 938,
-    "name": "Pecorino",
+    "name": "페코리노",
     "region": "서초",
     "area": "청담",
     "genre": "이탈리안",
@@ -10520,7 +10520,7 @@
   },
   {
     "id": 943,
-    "name": "D'Asti the Hidden",
+    "name": "다스티 더 히든",
     "region": "용산",
     "area": "삼각지",
     "genre": "이탈리안",
@@ -10557,7 +10557,7 @@
   },
   {
     "id": 946,
-    "name": "Cucciolo Seoul",
+    "name": "쿠촐로 서울",
     "region": "강남",
     "area": "신용산",
     "genre": "이탈리안",
@@ -10606,7 +10606,7 @@
   },
   {
     "id": 950,
-    "name": "Yu Yuan",
+    "name": "포시즌스 호텔 서울 유유안",
     "region": "강남",
     "area": "삼성동",
     "genre": "중식",
@@ -10693,7 +10693,7 @@
     "id": 959,
     "name": "유원 (Yu Yuan) 코엑스",
     "region": "강남",
-    "area": "삼성동",
+    "area": "논현",
     "genre": "중식",
     "room": "✅ 확인",
     "score": 52,
@@ -10704,7 +10704,7 @@
   },
   {
     "id": 960,
-    "name": "Cheongdam Manok",
+    "name": "청담만옥",
     "region": "서초",
     "area": "청담",
     "genre": "한식",
@@ -10753,7 +10753,7 @@
   },
   {
     "id": 964,
-    "name": "Tasting Room",
+    "name": "테이스팅룸",
     "region": "영등포",
     "area": "여의도",
     "genre": "이탈리안",
@@ -10982,7 +10982,7 @@
   },
   {
     "id": 988,
-    "name": "Mi Piace",
+    "name": "미 피아체",
     "region": "서초",
     "area": "청담",
     "genre": "이탈리안",
@@ -11296,8 +11296,8 @@
   {
     "id": 1018,
     "name": "소와나 (Sowana)",
-    "region": "강남",
-    "area": "역삼",
+    "region": "용산",
+    "area": "한남",
     "genre": "일식",
     "room": "✅ 확인",
     "score": 47,
@@ -11380,7 +11380,7 @@
   },
   {
     "id": 1027,
-    "name": "Washu Dining Shuto",
+    "name": "와슈다이닝 슈토",
     "region": "강남",
     "area": "역삼",
     "genre": "일식",
@@ -11513,7 +11513,7 @@
   },
   {
     "id": 1039,
-    "name": "Hanaram",
+    "name": "한아람",
     "region": "종로",
     "area": "인사동",
     "genre": "한식",
@@ -11526,7 +11526,7 @@
   },
   {
     "id": 1040,
-    "name": "Gimsusa",
+    "name": "김수사",
     "region": "강남",
     "area": "강남",
     "genre": "한식",
@@ -11551,7 +11551,7 @@
   },
   {
     "id": 1044,
-    "name": "Gyehyanggak",
+    "name": "계향각",
     "region": "종로",
     "area": "광화문",
     "genre": "한식",
@@ -11573,19 +11573,6 @@
     "rating": 4.2,
     "note": "광화문 장어·룸",
     "emoji": "🍽️"
-  },
-  {
-    "id": 1046,
-    "name": "Sowana",
-    "region": "강남",
-    "area": "역삼",
-    "genre": "일식",
-    "room": "✅ 확인",
-    "score": 47,
-    "rating": 4.4,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🎌",
-    "mapQuery": "소와나 한남 맛집"
   },
   {
     "id": 1047,
@@ -11745,7 +11732,7 @@
   },
   {
     "id": 1060,
-    "name": "Bangkok Trading Co.",
+    "name": "방콕상회",
     "region": "용산",
     "area": "삼각지",
     "genre": "태국",
@@ -11794,7 +11781,7 @@
   },
   {
     "id": 1065,
-    "name": "sam sam sam",
+    "name": "썜썜썜",
     "region": "용산",
     "area": "신용산",
     "genre": "웨스턴",
@@ -11807,7 +11794,7 @@
   },
   {
     "id": 1066,
-    "name": "People the Terrace",
+    "name": "피플더테라스",
     "region": "서초",
     "area": "청담",
     "genre": "퓨전",
@@ -11868,7 +11855,7 @@
   },
   {
     "id": 1072,
-    "name": "Mokran",
+    "name": "목란",
     "region": "강남",
     "area": "강남",
     "genre": "한식",
@@ -11929,7 +11916,7 @@
   },
   {
     "id": 1078,
-    "name": "The Taco Booth",
+    "name": "더타코부스",
     "region": "용산",
     "area": "신용산",
     "genre": "멕시칸",
@@ -11954,7 +11941,7 @@
   },
   {
     "id": 1080,
-    "name": "Hanamdong Yeouido",
+    "name": "한암동",
     "region": "영등포",
     "area": "여의도",
     "genre": "한식",
@@ -11991,7 +11978,7 @@
   },
   {
     "id": 1083,
-    "name": "Dongmyo Market",
+    "name": "동묘마케트",
     "region": "종로",
     "area": "동묘",
     "genre": "한우특수",
@@ -12004,7 +11991,7 @@
   },
   {
     "id": 1084,
-    "name": "Exquisine",
+    "name": "익스퀴진",
     "region": "서초",
     "area": "청담",
     "genre": "웨스턴",
@@ -12017,7 +12004,7 @@
   },
   {
     "id": 1085,
-    "name": "Sushi Sumire",
+    "name": "스시스미레",
     "region": "서초",
     "area": "청담",
     "genre": "스시",
@@ -12055,8 +12042,8 @@
   {
     "id": 1088,
     "name": "산다이 (Sandai)",
-    "region": "강남",
-    "area": "강남",
+    "region": "서초",
+    "area": "청담",
     "genre": "가이세키",
     "room": "🔶 추정",
     "score": 41,
@@ -12091,7 +12078,7 @@
   },
   {
     "id": 1091,
-    "name": "Cha R 여의도",
+    "name": "차알 여의도",
     "region": "영등포",
     "area": "여의도",
     "genre": "중식",
@@ -12176,7 +12163,7 @@
   },
   {
     "id": 1098,
-    "name": "Tim Ho Wan 용산",
+    "name": "팀호완 용산점",
     "region": "용산",
     "area": "신용산",
     "genre": "딤섬",
