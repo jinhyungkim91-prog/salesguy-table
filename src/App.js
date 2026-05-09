@@ -87,7 +87,14 @@ function calcBizScore(room, genre, rating, source, note) {
 }
 
 const BIZ_REGIONS = ["전체","강남","서초","종로","영등포","용산","마포","중구","송파","성동","경기"];
-const BIZ_GENRES  = ["전체","한정식","한우","오마카세","일식","중식","파인다이닝"];
+const BIZ_GENRES  = ["전체","한정식","한우","일식","중식","파인다이닝"];
+// 장르 필터: 버튼명 → 매칭 키워드 (미정의 시 버튼명 그대로 includes 검색)
+const GENRE_KEYWORDS = {
+  '한우': ['한우'],
+  '일식': ['일식','스시','오마카세','가이세키','이자카야','덴푸라','쿠시아게','야키니쿠','야키토리'],
+  '중식': ['중식','딤섬'],
+  '파인다이닝': ['파인다이닝','파인'],
+};
 
 const LUNCH_REGIONS = ["전체","강남","종로","영등포","마포","서초","성동","중구","용산","송파","강동","강서","경기"];
 const LUNCH_PRICES  = ["전체","1만원이하","1만원대","2만원대"];
@@ -340,7 +347,10 @@ export default function App() {
 
   const bizFiltered = restaurants.filter(r => {
     if (bizRegion!=="전체" && r.region!==bizRegion) return false;
-    if (bizGenre!=="전체" && !r.genre.includes(bizGenre)) return false;
+    if (bizGenre!=="전체") {
+      const kws = GENRE_KEYWORDS[bizGenre] || [bizGenre];
+      if (!kws.some(k => r.genre.includes(k))) return false;
+    }
     if (bizSearch && !r.name.includes(bizSearch) && !r.area.includes(bizSearch)) return false;
     return true;
   });
