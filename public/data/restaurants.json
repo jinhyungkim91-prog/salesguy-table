@@ -8261,7 +8261,7 @@
   },
   {
     "id": 1018,
-    "name": "소와나 (Sowana)",
+    "name": "소와나 한남본점",
     "region": "용산",
     "area": "한남",
     "genre": "일식",
@@ -8270,7 +8270,7 @@
     "rating": 4.4,
     "note": "룸 있는 식당",
     "emoji": "🎌",
-    "mapQuery": "소와나 한남 맛집"
+    "mapQuery": "소와나 한남본점"
   },
   {
     "id": 1020,
@@ -8736,31 +8736,6 @@
     "rating": 4.7,
     "note": "청담 일식",
     "emoji": "🎌"
-  },
-  {
-    "id": 1077,
-    "name": "카페루트",
-    "region": "용산",
-    "area": "신용산",
-    "genre": "브런치카페",
-    "room": "🔶 추정",
-    "score": 83,
-    "rating": 4.9,
-    "note": "nan",
-    "emoji": "🍽️"
-  },
-  {
-    "id": 1078,
-    "name": "더타코부스",
-    "region": "용산",
-    "area": "신용산",
-    "genre": "멕시칸",
-    "room": "🔶 추정",
-    "score": 83,
-    "rating": 4.9,
-    "note": "nan",
-    "emoji": "🍽️",
-    "mapQuery": "더타코부스 신용산"
   },
   {
     "id": 1080,
