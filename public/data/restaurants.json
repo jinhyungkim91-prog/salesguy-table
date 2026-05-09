@@ -3332,30 +3332,6 @@
     "emoji": "🍣"
   },
   {
-    "id": 482,
-    "name": "이든 강남",
-    "region": "강남",
-    "area": "강남",
-    "genre": "파인다이닝",
-    "room": "🔶 추정",
-    "score": 85,
-    "rating": 4.7,
-    "note": "nan",
-    "emoji": "🥂"
-  },
-  {
-    "id": 484,
-    "name": "이든 청담",
-    "region": "강남",
-    "area": "청담",
-    "genre": "파인다이닝",
-    "room": "🔶 추정",
-    "score": 85,
-    "rating": 4.7,
-    "note": "청담파인",
-    "emoji": "🥂"
-  },
-  {
     "id": 485,
     "name": "서울로인",
     "region": "강남",
