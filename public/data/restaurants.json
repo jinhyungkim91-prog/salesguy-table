@@ -38,7 +38,7 @@
   },
   {
     "id": 7,
-    "name": "스와니예 (Swany)",
+    "name": "스와니예",
     "region": "강남",
     "area": "강남",
     "genre": "이탈리안파인",
@@ -6967,51 +6967,29 @@
   },
   {
     "id": 766,
-    "name": "하이디라오 강남CGV",
+    "name": "하이디라오 COEX점",
     "region": "강남",
-    "area": "강남",
+    "area": "삼성동",
     "genre": "훠궈",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
-    "note": "강남CGV·개별룸",
-    "emoji": "🥢"
-  },
-  {
-    "id": 767,
-    "name": "하이디라오 송파",
-    "region": "송파",
-    "area": "잠실",
-    "genre": "훠궈",
-    "room": "✅ 확인",
-    "score": 88,
-    "rating": 4.4,
-    "note": "잠실·개별룸",
-    "emoji": "🥢"
-  },
-  {
-    "id": 768,
-    "name": "하이디라오 마포",
-    "region": "마포",
-    "area": "마포",
-    "genre": "훠궈",
-    "room": "✅ 확인",
-    "score": 88,
-    "rating": 4.4,
-    "note": "마포·개별룸",
-    "emoji": "🥢"
+    "note": "삼성동·개별룸",
+    "emoji": "🥢",
+    "mapQuery": "하이디라오 COEX점"
   },
   {
     "id": 769,
-    "name": "하이디라오 종로",
+    "name": "하이디라오 대학로점",
     "region": "종로",
-    "area": "종로",
+    "area": "혜화동",
     "genre": "훠궈",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
-    "note": "종로·개별룸",
-    "emoji": "🥢"
+    "note": "대학로·개별룸",
+    "emoji": "🥢",
+    "mapQuery": "하이디라오 대학로점"
   },
   {
     "id": 771,
@@ -7100,15 +7078,16 @@
   },
   {
     "id": 779,
-    "name": "하이디라오",
-    "region": "강남",
-    "area": "강남역",
+    "name": "하이디라오 서초점",
+    "region": "서초",
+    "area": "서초",
     "genre": "훠궈",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
-    "note": "개별룸·무료주차",
-    "emoji": "🥢"
+    "note": "서초·개별룸",
+    "emoji": "🥢",
+    "mapQuery": "하이디라오 서초점"
   },
   {
     "id": 780,
@@ -7160,39 +7139,29 @@
   },
   {
     "id": 785,
-    "name": "하이디라오 홍대",
+    "name": "하이디라오 홍대점",
     "region": "마포",
     "area": "홍대",
     "genre": "훠궈",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
-    "note": "개별룸",
-    "emoji": "🥢"
+    "note": "홍대·개별룸",
+    "emoji": "🥢",
+    "mapQuery": "하이디라오 홍대점"
   },
   {
     "id": 786,
-    "name": "하이디라오 여의도",
+    "name": "하이디라오 영등포점",
     "region": "영등포",
-    "area": "여의도",
+    "area": "영등포",
     "genre": "훠궈",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
-    "note": "개별룸",
-    "emoji": "🥢"
-  },
-  {
-    "id": 787,
-    "name": "하이디라오 강남",
-    "region": "강남",
-    "area": "강남",
-    "genre": "훠궈",
-    "room": "✅ 확인",
-    "score": 88,
-    "rating": 4.4,
-    "note": "개별룸·무료주차",
-    "emoji": "🥢"
+    "note": "영등포·개별룸",
+    "emoji": "🥢",
+    "mapQuery": "하이디라오 영등포점"
   },
   {
     "id": 788,
@@ -10385,5 +10354,44 @@
     "note": "광교 스시오마카세·룸",
     "emoji": "🍣",
     "mapQuery": "스시소라 광교점"
+  },
+  {
+    "id": 1116,
+    "name": "하이디라오 건대점",
+    "region": "광진",
+    "area": "건대",
+    "genre": "훠궈",
+    "room": "✅ 확인",
+    "score": 88,
+    "rating": 4.4,
+    "note": "건대·개별룸",
+    "mapQuery": "하이디라오 건대점",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1117,
+    "name": "하이디라오 명동점",
+    "region": "중구",
+    "area": "명동",
+    "genre": "훠궈",
+    "room": "✅ 확인",
+    "score": 88,
+    "rating": 4.4,
+    "note": "명동·개별룸",
+    "mapQuery": "하이디라오 명동점",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1118,
+    "name": "하이디라오 가산점",
+    "region": "금천",
+    "area": "가산",
+    "genre": "훠궈",
+    "room": "✅ 확인",
+    "score": 88,
+    "rating": 4.4,
+    "note": "가산·개별룸",
+    "mapQuery": "하이디라오 가산점",
+    "emoji": "🥢"
   }
 ]
