@@ -11700,5 +11700,70 @@
     "rating": 4,
     "note": "선릉 한우",
     "emoji": "🍽️"
+  },
+  {
+    "id": 1101,
+    "name": "해담채 시청점",
+    "region": "중구",
+    "area": "시청",
+    "genre": "한정식",
+    "room": "✅ 확인",
+    "score": 89,
+    "rating": 4,
+    "note": "시청·중구·개별룸",
+    "emoji": "🏮",
+    "mapQuery": "해담채 시청점"
+  },
+  {
+    "id": 1102,
+    "name": "해담채 삼성점",
+    "region": "강남",
+    "area": "삼성동",
+    "genre": "한정식",
+    "room": "✅ 확인",
+    "score": 89,
+    "rating": 4,
+    "note": "삼성동·코엑스·개별룸",
+    "emoji": "🏮",
+    "mapQuery": "해담채 삼성점"
+  },
+  {
+    "id": 1103,
+    "name": "해담채 남부터미널점",
+    "region": "서초",
+    "area": "서초",
+    "genre": "한정식",
+    "room": "✅ 확인",
+    "score": 89,
+    "rating": 4,
+    "note": "서초·남부터미널·개별룸",
+    "emoji": "🏮",
+    "mapQuery": "해담채 남부터미널점"
+  },
+  {
+    "id": 1104,
+    "name": "진진수라 강남점",
+    "region": "강남",
+    "area": "선릉",
+    "genre": "한정식",
+    "room": "✅ 확인",
+    "score": 90,
+    "rating": 4.4,
+    "note": "강남·선릉·접대·룸",
+    "emoji": "🏮",
+    "mapQuery": "진진수라 강남점"
+  },
+  {
+    "id": 1105,
+    "name": "진진수라 목동점",
+    "region": "양천",
+    "area": "목동",
+    "genre": "한정식",
+    "room": "✅ 확인",
+    "score": 89,
+    "rating": 4.3,
+    "note": "목동·접대·룸",
+    "emoji": "🏮",
+    "mapQuery": "진진수라 목동점"
   }
 ]
