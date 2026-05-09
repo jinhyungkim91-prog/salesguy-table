@@ -87,7 +87,7 @@ function calcBizScore(room, genre, rating, source, note) {
 }
 
 const BIZ_REGIONS = ["전체","강남","서초","종로","영등포","용산","마포","중구","송파","성동","경기"];
-const BIZ_GENRES  = ["전체","한식파인다이닝","한우","오마카세","일식","중식","파인다이닝"];
+const BIZ_GENRES  = ["전체","한정식","한우","오마카세","일식","중식","파인다이닝"];
 
 const LUNCH_REGIONS = ["전체","강남","종로","영등포","마포","서초","성동","중구","용산","송파","강동","강서","경기"];
 const LUNCH_PRICES  = ["전체","1만원이하","1만원대","2만원대"];
