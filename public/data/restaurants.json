@@ -1,17 +1,5 @@
 [
   {
-    "id": 2,
-    "name": "정식당 (Jungsik)",
-    "region": "강남",
-    "area": "청담",
-    "genre": "뉴코리안파인",
-    "room": "✅ 확인",
-    "score": 99,
-    "rating": 4.9,
-    "note": "미슐랭2스타·청담·프라이빗룸",
-    "emoji": "🍽️"
-  },
-  {
     "id": 3,
     "name": "라연 (La Yeon)",
     "region": "중구",
