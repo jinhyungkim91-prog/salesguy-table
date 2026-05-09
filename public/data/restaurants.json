@@ -49,7 +49,7 @@
   },
   {
     "id": 6,
-    "name": "Born and Bred (본앤브레드)",
+    "name": "본앤브레드 (Born and Bred)",
     "region": "강남",
     "area": "강남",
     "genre": "한우오마카세",
@@ -57,7 +57,8 @@
     "score": 90,
     "rating": 4.9,
     "note": "전석룸·최상위한우",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "mapQuery": "본앤브레드 오리지널 마장동 맛집"
   },
   {
     "id": 7,
@@ -722,7 +723,7 @@
   },
   {
     "id": 65,
-    "name": "Mingles (밍글스)",
+    "name": "밍글스 (Mingles)",
     "region": "서초",
     "area": "청담",
     "genre": "파인다이닝",
@@ -790,7 +791,8 @@
     "score": 80,
     "rating": 5,
     "note": "2026 신규·박경재 셰프 스시",
-    "emoji": "🍣"
+    "emoji": "🍣",
+    "mapQuery": "소수헌 만리동 맛집"
   },
   {
     "id": 71,
@@ -959,7 +961,8 @@
     "score": 79,
     "rating": 4.9,
     "note": "미슐랭1스타",
-    "emoji": "🍣"
+    "emoji": "🍣",
+    "mapQuery": "웨스틴 조선 서울 스시조"
   },
   {
     "id": 86,
@@ -1382,18 +1385,6 @@
     "emoji": "🍣"
   },
   {
-    "id": 121,
-    "name": "도화헌",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한우오마카세",
-    "room": "✅ 확인",
-    "score": 76,
-    "rating": 4.7,
-    "note": "강남 한우오마카세·룸",
-    "emoji": "🥩"
-  },
-  {
     "id": 122,
     "name": "고청담 여의도",
     "region": "영등포",
@@ -1741,18 +1732,6 @@
     "rating": 4.4,
     "note": "그랜드하얏트 룸",
     "emoji": "🍽️"
-  },
-  {
-    "id": 153,
-    "name": "미가연",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 74,
-    "rating": 4.5,
-    "note": "법인 접대 특화",
-    "emoji": "🏮"
   },
   {
     "id": 154,
@@ -2441,30 +2420,6 @@
     "emoji": "🏮"
   },
   {
-    "id": 218,
-    "name": "우다맘 (Woo Damam)",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한우오마카세",
-    "room": "✅ 확인",
-    "score": 71,
-    "rating": 4.9,
-    "note": "성게알·한우초밥",
-    "emoji": "🥩"
-  },
-  {
-    "id": 219,
-    "name": "Woo Damam (우다맘)",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한우오마카세",
-    "room": "✅ 확인",
-    "score": 71,
-    "rating": 4.9,
-    "note": "성게알한우초밥·오마카세",
-    "emoji": "🥩"
-  },
-  {
     "id": 220,
     "name": "한국의집",
     "region": "종로",
@@ -2684,7 +2639,7 @@
   },
   {
     "id": 240,
-    "name": "Elpic (엘픽)",
+    "name": "엘픽 (Elpic)",
     "region": "서초",
     "area": "청담",
     "genre": "파인다이닝",
@@ -2728,18 +2683,6 @@
     "score": 70,
     "rating": 4.4,
     "note": "명동·중구·고급중식·룸",
-    "emoji": "🥂"
-  },
-  {
-    "id": 245,
-    "name": "Late (레이트)",
-    "region": "서초",
-    "area": "청담",
-    "genre": "파인다이닝",
-    "room": "✅ 확인",
-    "score": 70,
-    "rating": 4.6,
-    "note": "룸 있는 식당",
     "emoji": "🥂"
   },
   {
@@ -2923,18 +2866,6 @@
     "emoji": "🥂"
   },
   {
-    "id": 266,
-    "name": "Mingles (밍글스)",
-    "region": "서초",
-    "area": "청담",
-    "genre": "파인다이닝",
-    "room": "🔶 추정",
-    "score": 68,
-    "rating": 4.9,
-    "note": "미슐랭2스타",
-    "emoji": "🥂"
-  },
-  {
     "id": 267,
     "name": "온지음",
     "region": "용산",
@@ -3032,18 +2963,6 @@
     "emoji": "🏮"
   },
   {
-    "id": 275,
-    "name": "Seowon (서원)",
-    "region": "종로",
-    "area": "광화문",
-    "genre": "한식파인다이닝",
-    "room": "🔶 추정",
-    "score": 68,
-    "rating": 4.7,
-    "note": "nan",
-    "emoji": "🏮"
-  },
-  {
     "id": 276,
     "name": "셰 오네스트 강남",
     "region": "강남",
@@ -3113,18 +3032,6 @@
     "score": 68,
     "rating": 4.7,
     "note": "가로수길파인",
-    "emoji": "🏮"
-  },
-  {
-    "id": 283,
-    "name": "권우중 (Kwon Woo Joong)",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한식파인다이닝",
-    "room": "🔶 추정",
-    "score": 68,
-    "rating": 5,
-    "note": "블루리본3·한식오마카세",
     "emoji": "🏮"
   },
   {
@@ -3247,18 +3154,6 @@
     "note": "미슐랭2스타",
     "emoji": "🥂",
     "mapQuery": "모수 서울 용산 맛집"
-  },
-  {
-    "id": 298,
-    "name": "Seowon (서원)",
-    "region": "종로",
-    "area": "광화문",
-    "genre": "한식파인다이닝",
-    "room": "🔶 추정",
-    "score": 68,
-    "rating": 4.7,
-    "note": "nan",
-    "emoji": "🏮"
   },
   {
     "id": 299,
@@ -3600,18 +3495,6 @@
     "emoji": "🏮"
   },
   {
-    "id": 329,
-    "name": "L'Amitie (라미티에)",
-    "region": "서초",
-    "area": "청담",
-    "genre": "프렌치",
-    "room": "✅ 확인",
-    "score": 67,
-    "rating": 4.5,
-    "note": "미슐랭1스타·프라이빗",
-    "emoji": "🥂"
-  },
-  {
     "id": 330,
     "name": "여의도 한정식 대가 (600명)",
     "region": "영등포",
@@ -3837,7 +3720,8 @@
     "score": 66,
     "rating": 4.5,
     "note": "강남 한우·개별룸",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "mapQuery": "육미당 몽산 강남 맛집"
   },
   {
     "id": 349,
@@ -3897,7 +3781,8 @@
     "score": 66,
     "rating": 4.8,
     "note": "서울미식100선",
-    "emoji": "🥂"
+    "emoji": "🥂",
+    "mapQuery": "레브어 reveur 청담 맛집"
   },
   {
     "id": 355,
@@ -3984,18 +3869,6 @@
     "emoji": "🥩"
   },
   {
-    "id": 362,
-    "name": "스시 효",
-    "region": "강남",
-    "area": "강남",
-    "genre": "스시오마카세",
-    "room": "🔶 추정",
-    "score": 66,
-    "rating": 4.9,
-    "note": "프리미엄스시",
-    "emoji": "🍣"
-  },
-  {
     "id": 363,
     "name": "온지음 툇마루",
     "region": "종로",
@@ -4054,18 +3927,6 @@
     "rating": 4.7,
     "note": "서울미식100선",
     "emoji": "🥂"
-  },
-  {
-    "id": 369,
-    "name": "보름향",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 65,
-    "rating": 4.3,
-    "note": "강남 한정식·룸",
-    "emoji": "🏮"
   },
   {
     "id": 370,
@@ -4584,18 +4445,6 @@
     "emoji": "🍣"
   },
   {
-    "id": 415,
-    "name": "정식각",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 65,
-    "rating": 4.4,
-    "note": "룸있는한정식",
-    "emoji": "🏮"
-  },
-  {
     "id": 416,
     "name": "서촌 오도",
     "region": "종로",
@@ -4875,18 +4724,6 @@
     "rating": 4.6,
     "note": "여의도파인",
     "emoji": "🏮"
-  },
-  {
-    "id": 442,
-    "name": "Passionne (파시오네)",
-    "region": "서초",
-    "area": "청담",
-    "genre": "프렌치",
-    "room": "✅ 확인",
-    "score": 65,
-    "rating": 4.5,
-    "note": "룸 있는 식당",
-    "emoji": "🥂"
   },
   {
     "id": 443,
@@ -5849,18 +5686,6 @@
     "rating": 4.3,
     "note": "여의도개별룸",
     "emoji": "🥩"
-  },
-  {
-    "id": 525,
-    "name": "한가원",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 63,
-    "rating": 4.3,
-    "note": "강남한정식",
-    "emoji": "🏮"
   },
   {
     "id": 526,
@@ -6886,7 +6711,7 @@
   },
   {
     "id": 613,
-    "name": "Mongjungheon (몽중헌)",
+    "name": "몽중헌 (Mongjungheon)",
     "region": "종로",
     "area": "광화문",
     "genre": "한정식",
@@ -8268,18 +8093,6 @@
     "emoji": "🥩"
   },
   {
-    "id": 730,
-    "name": "산채가",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 60,
-    "rating": 4.2,
-    "note": "서울한정식 Top3",
-    "emoji": "🏮"
-  },
-  {
     "id": 731,
     "name": "문정 한우 원조",
     "region": "송파",
@@ -8568,30 +8381,6 @@
     "emoji": "🥢"
   },
   {
-    "id": 756,
-    "name": "천향각",
-    "region": "강남",
-    "area": "강남",
-    "genre": "중식",
-    "room": "✅ 확인",
-    "score": 59,
-    "rating": 4.4,
-    "note": "강남중식룸",
-    "emoji": "🥢"
-  },
-  {
-    "id": 757,
-    "name": "Dosa (도사)",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한식",
-    "room": "🔶 추정",
-    "score": 59,
-    "rating": 4.8,
-    "note": "미슐랭1스타",
-    "emoji": "🏮"
-  },
-  {
     "id": 758,
     "name": "DANSE",
     "region": "용산",
@@ -8643,7 +8432,7 @@
   },
   {
     "id": 762,
-    "name": "Jue (쥬에)",
+    "name": "쥬에 (Jue)",
     "region": "강남",
     "area": "삼성동",
     "genre": "중식·딤섬",
@@ -8651,7 +8440,8 @@
     "score": 58,
     "rating": 4.7,
     "note": "룸·북경오리·이베리코",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "mapQuery": "쥬에 한남 맛집"
   },
   {
     "id": 763,
@@ -8893,18 +8683,6 @@
     "score": 58,
     "rating": 4.4,
     "note": "강남 중식·개별룸",
-    "emoji": "🥢"
-  },
-  {
-    "id": 783,
-    "name": "Jue (쥬에) 삼성",
-    "region": "강남",
-    "area": "삼성동",
-    "genre": "중식딤섬",
-    "room": "✅ 확인",
-    "score": 58,
-    "rating": 4.7,
-    "note": "룸·북경오리",
     "emoji": "🥢"
   },
   {
@@ -10913,7 +10691,7 @@
   },
   {
     "id": 959,
-    "name": "Yu Yuan (유원) 코엑스",
+    "name": "유원 (Yu Yuan) 코엑스",
     "region": "강남",
     "area": "삼성동",
     "genre": "중식",
@@ -10921,7 +10699,8 @@
     "score": 52,
     "rating": 4.4,
     "note": "룸·베이징덕",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "mapQuery": "유원 논현 맛집"
   },
   {
     "id": 960,
@@ -11107,7 +10886,7 @@
   },
   {
     "id": 980,
-    "name": "Marusim (마루심)",
+    "name": "마루심 (Marusim)",
     "region": "서초",
     "area": "반포",
     "genre": "일식",
@@ -11479,18 +11258,6 @@
     "emoji": "🏮"
   },
   {
-    "id": 1012,
-    "name": "Dosa (도사)",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한식",
-    "room": "🔶 추정",
-    "score": 48,
-    "rating": 4.8,
-    "note": "미슐랭1스타",
-    "emoji": "🏮"
-  },
-  {
     "id": 1013,
     "name": "스시 가이",
     "region": "강남",
@@ -11515,20 +11282,8 @@
     "emoji": "🥩"
   },
   {
-    "id": 1015,
-    "name": "Gyehyanggak (계향각)",
-    "region": "종로",
-    "area": "광화문",
-    "genre": "한식",
-    "room": "✅ 확인",
-    "score": 47,
-    "rating": 4.4,
-    "note": "룸 있는 식당",
-    "emoji": "🏮"
-  },
-  {
     "id": 1016,
-    "name": "Solbam (솔밤)",
+    "name": "솔밤 (Solbam)",
     "region": "강남",
     "area": "강남",
     "genre": "한식",
@@ -11540,7 +11295,7 @@
   },
   {
     "id": 1018,
-    "name": "Sowana (소와나)",
+    "name": "소와나 (Sowana)",
     "region": "강남",
     "area": "역삼",
     "genre": "일식",
@@ -11548,19 +11303,8 @@
     "score": 47,
     "rating": 4.4,
     "note": "룸 있는 식당",
-    "emoji": "🎌"
-  },
-  {
-    "id": 1019,
-    "name": "Hanaram (하나람)",
-    "region": "종로",
-    "area": "인사동",
-    "genre": "한식",
-    "room": "✅ 확인",
-    "score": 47,
-    "rating": 4.3,
-    "note": "룸 있는 식당",
-    "emoji": "🏮"
+    "emoji": "🎌",
+    "mapQuery": "소와나 한남 맛집"
   },
   {
     "id": 1020,
@@ -11573,18 +11317,6 @@
     "rating": 4.1,
     "note": "홍대 단체룸",
     "emoji": "🍽️"
-  },
-  {
-    "id": 1021,
-    "name": "Tteurak (뜨락)",
-    "region": "종로",
-    "area": "광화문",
-    "genre": "한식",
-    "room": "✅ 확인",
-    "score": 47,
-    "rating": 4.3,
-    "note": "룸 있는 식당",
-    "emoji": "🏮"
   },
   {
     "id": 1022,
@@ -11804,18 +11536,6 @@
     "note": "룸 있는 식당 베스트",
     "emoji": "🏮",
     "mapQuery": "김수사 강남 맛집"
-  },
-  {
-    "id": 1041,
-    "name": "Solbam (솔밤)",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한식",
-    "room": "✅ 확인",
-    "score": 47,
-    "rating": 4.4,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🏮"
   },
   {
     "id": 1042,
@@ -12342,7 +12062,8 @@
     "score": 41,
     "rating": 4.6,
     "note": "하루1회 저녁 가이세키",
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "mapQuery": "산다이 청담 맛집"
   },
   {
     "id": 1089,
