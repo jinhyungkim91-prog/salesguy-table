@@ -5318,75 +5318,15 @@
     "emoji": "🥩"
   },
   {
-    "id": 823,
-    "name": "청주 한우 청원",
-    "region": "충청",
-    "area": "청주",
-    "genre": "한우",
-    "room": "✅ 확인",
-    "score": 87,
-    "rating": 4.1,
-    "note": "청주 한우·룸",
-    "emoji": "🥩"
-  },
-  {
-    "id": 824,
-    "name": "충무로 한우 달",
-    "region": "중구",
-    "area": "충무로",
-    "genre": "한우",
-    "room": "✅ 확인",
-    "score": 87,
-    "rating": 4.2,
-    "note": "충무로 한우·룸",
-    "emoji": "🥩"
-  },
-  {
     "id": 825,
-    "name": "선수촌가든 위례",
+    "name": "선수촌가든 올림픽공원본점",
     "region": "송파",
-    "area": "위례",
+    "area": "올림픽공원",
     "genre": "한우",
     "room": "✅ 확인",
     "score": 82,
     "rating": 4.4,
     "note": "룸·위례 대표",
-    "emoji": "🥩"
-  },
-  {
-    "id": 827,
-    "name": "오산 한우 달",
-    "region": "경기",
-    "area": "오산",
-    "genre": "한우",
-    "room": "✅ 확인",
-    "score": 87,
-    "rating": 4,
-    "note": "오산 한우·룸",
-    "emoji": "🥩"
-  },
-  {
-    "id": 831,
-    "name": "암사 한우마당",
-    "region": "강동",
-    "area": "암사",
-    "genre": "한우",
-    "room": "✅ 확인",
-    "score": 87,
-    "rating": 4,
-    "note": "강동 한우·룸",
-    "emoji": "🥩"
-  },
-  {
-    "id": 833,
-    "name": "수유 갈비타운",
-    "region": "강북",
-    "area": "수유",
-    "genre": "갈비",
-    "room": "✅ 확인",
-    "score": 87,
-    "rating": 4.1,
-    "note": "강북 갈비·룸",
     "emoji": "🥩"
   },
   {
