@@ -3336,15 +3336,15 @@
   },
   {
     "id": 613,
-    "name": "몽중헌 (Mongjungheon)",
+    "name": "몽중헌 광화문점",
     "region": "종로",
     "area": "광화문",
-    "genre": "한정식",
+    "genre": "중식",
     "room": "✅ 확인",
-    "score": 84,
+    "score": 85,
     "rating": 4.3,
-    "note": "룸 있는 식당",
-    "emoji": "🏮"
+    "note": "광화문 중식·룸",
+    "emoji": "🥢"
   },
   {
     "id": 620,
@@ -6317,5 +6317,101 @@
     "rating": 4.2,
     "note": "오크우드호텔·프라이빗룸",
     "emoji": "🏮"
+  },
+  {
+    "id": 1134,
+    "name": "몽중헌 방이점",
+    "region": "송파",
+    "area": "방이",
+    "genre": "중식",
+    "room": "✅ 확인",
+    "score": 85,
+    "rating": 4.3,
+    "note": "방이 중식·룸",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1135,
+    "name": "몽중헌 판교",
+    "region": "경기",
+    "area": "판교",
+    "genre": "중식",
+    "room": "✅ 확인",
+    "score": 85,
+    "rating": 4.3,
+    "note": "판교 중식·룸",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1136,
+    "name": "몽중헌 강남점",
+    "region": "강남",
+    "area": "강남",
+    "genre": "중식",
+    "room": "✅ 확인",
+    "score": 85,
+    "rating": 4.3,
+    "note": "강남 중식·룸",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1137,
+    "name": "몽중헌 공덕점",
+    "region": "마포",
+    "area": "공덕",
+    "genre": "중식",
+    "room": "✅ 확인",
+    "score": 85,
+    "rating": 4.3,
+    "note": "공덕 중식·룸",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1138,
+    "name": "몽중헌 문정점",
+    "region": "송파",
+    "area": "문정",
+    "genre": "중식",
+    "room": "✅ 확인",
+    "score": 85,
+    "rating": 4.3,
+    "note": "문정 중식·룸",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1139,
+    "name": "몽중헌 대치점",
+    "region": "강남",
+    "area": "대치동",
+    "genre": "중식",
+    "room": "✅ 확인",
+    "score": 85,
+    "rating": 4.3,
+    "note": "대치동 중식·룸",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1140,
+    "name": "몽중헌 청담점",
+    "region": "강남",
+    "area": "청담",
+    "genre": "중식",
+    "room": "✅ 확인",
+    "score": 85,
+    "rating": 4.3,
+    "note": "청담 중식·룸",
+    "emoji": "🥢"
+  },
+  {
+    "id": 1141,
+    "name": "몽중헌 반포",
+    "region": "서초",
+    "area": "반포",
+    "genre": "중식",
+    "room": "✅ 확인",
+    "score": 85,
+    "rating": 4.3,
+    "note": "반포 중식·룸",
+    "emoji": "🥢"
   }
 ]
