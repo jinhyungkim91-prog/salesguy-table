@@ -3441,18 +3441,6 @@
     "emoji": "🥩"
   },
   {
-    "id": 507,
-    "name": "강서 참치공방",
-    "region": "강서",
-    "area": "강서",
-    "genre": "참치회",
-    "room": "✅ 확인",
-    "score": 89,
-    "rating": 4.4,
-    "note": "강서 개별룸",
-    "emoji": "🦐"
-  },
-  {
     "id": 508,
     "name": "오트르 (Autre)",
     "region": "용산",
@@ -3475,18 +3463,6 @@
     "rating": 4.6,
     "note": "분당 한우·룸",
     "emoji": "🥩"
-  },
-  {
-    "id": 510,
-    "name": "참치공방 상암",
-    "region": "마포",
-    "area": "상암",
-    "genre": "참치회",
-    "room": "✅ 확인",
-    "score": 89,
-    "rating": 4.4,
-    "note": "상암 개별룸 Top2",
-    "emoji": "🦐"
   },
   {
     "id": 513,
@@ -4534,18 +4510,6 @@
     "rating": 4.1,
     "note": "광화문 개별룸 Top3",
     "emoji": "🥩"
-  },
-  {
-    "id": 658,
-    "name": "참치공방 인사동",
-    "region": "종로",
-    "area": "인사동",
-    "genre": "참치회",
-    "room": "✅ 확인",
-    "score": 88,
-    "rating": 4,
-    "note": "인사동 개별룸 Top3",
-    "emoji": "🦐"
   },
   {
     "id": 659,
