@@ -5197,16 +5197,15 @@
   },
   {
     "id": 959,
-    "name": "유원 (Yu Yuan) 코엑스",
+    "name": "유원",
     "region": "강남",
     "area": "논현",
-    "genre": "중식",
+    "genre": "한우오마카세",
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.4,
-    "note": "룸·베이징덕",
-    "emoji": "🥢",
-    "mapQuery": "유원 논현 맛집"
+    "note": "한우오마카세·룸",
+    "emoji": "🥩"
   },
   {
     "id": 960,
