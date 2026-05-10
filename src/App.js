@@ -342,6 +342,7 @@ export default function App() {
 
   // 골프 필터
   const [selectedGolf, setSelectedGolf] = useState("베어크리크 CC");
+  const [golfSearch, setGolfSearch] = useState("");
 
   const openModal = (r, type) => { setSelected(r); setSelType(type); };
 
@@ -363,10 +364,11 @@ export default function App() {
     return true;
   });
 
-  const golfRests = golfRestaurants.filter(r => {
-    if (r.golf !== selectedGolf) return false;
-    return true;
-  });
+  const golfRests = golfSearch
+    ? golfRestaurants.filter(r =>
+        r.name.includes(golfSearch) || r.golf.includes(golfSearch) || (r.genre && r.genre.includes(golfSearch))
+      )
+    : golfRestaurants.filter(r => r.golf === selectedGolf);
 
   const currentGolf = golfCourses.find(g => g.name === selectedGolf) || golfCourses[0];
   if (dataLoading) return <div className="loading">🍽️ 데이터 불러오는 중...</div>;
@@ -468,25 +470,46 @@ export default function App() {
       {activeTab==="golf" && (
         <div className="content">
           <div style={{padding:"10px 14px",background:"white",borderBottom:"1px solid #EDE8E0"}}>
-            <div style={{fontSize:"9px",fontWeight:700,color:"#8A7A6A",marginBottom:6,fontFamily:"monospace"}}>⛳ 오늘 라운딩한 골프장</div>
-            <select className="golf-select"
-              value={selectedGolf}
-              onChange={e=>setSelectedGolf(e.target.value)}>
-              {golfCourses.map(g=>(
-                <option key={g.id} value={g.name}>{g.name} ({g.region})</option>
-              ))}
-            </select>
+            <div style={{position:"relative",marginBottom:8}}>
+              <input
+                className="search-input"
+                type="text"
+                placeholder="⛳ 골프장명 또는 🍽️ 식당명으로 검색"
+                value={golfSearch}
+                onChange={e=>setGolfSearch(e.target.value)}
+              />
+              {golfSearch && (
+                <button
+                  onClick={()=>setGolfSearch("")}
+                  style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#8A7A6A",lineHeight:1}}
+                >×</button>
+              )}
+            </div>
+            {!golfSearch && (
+              <>
+                <div style={{fontSize:"9px",fontWeight:700,color:"#8A7A6A",marginBottom:6,fontFamily:"monospace"}}>⛳ 오늘 라운딩한 골프장</div>
+                <select className="golf-select"
+                  value={selectedGolf}
+                  onChange={e=>setSelectedGolf(e.target.value)}>
+                  {golfCourses.map(g=>(
+                    <option key={g.id} value={g.name}>{g.name} ({g.region})</option>
+                  ))}
+                </select>
+              </>
+            )}
           </div>
 
-          {currentGolf && (
+          {!golfSearch && currentGolf && (
             <div style={{padding:"8px 14px",background:"#FAF8F5",borderBottom:"1px solid #EDE8E0",fontSize:10,color:"#8A7A6A"}}>
               📍 {currentGolf.address} · 서울까지 {currentGolf.time} · {currentGolf.grade}
             </div>
           )}
 
-
           <div className="info-banner" style={{background:"#FFF0E8",borderColor:"#E05A00",color:"#7A3000"}}>
-            🍽️ {selectedGolf} · <b>{golfRests.length}곳</b> 귀경 맛집
+            {golfSearch
+              ? <>🔍 "{golfSearch}" 검색 결과 · <b>{golfRests.length}곳</b></>
+              : <>🍽️ {selectedGolf} · <b>{golfRests.length}곳</b> 귀경 맛집</>
+            }
           </div>
 
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
