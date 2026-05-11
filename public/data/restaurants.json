@@ -2480,18 +2480,6 @@
     "emoji": "🍣"
   },
   {
-    "id": 468,
-    "name": "국빈관",
-    "region": "강남",
-    "area": "강남",
-    "genre": "한우",
-    "room": "✅ 확인",
-    "score": 85,
-    "rating": 4.7,
-    "note": "서울한우Top3",
-    "emoji": "🥩"
-  },
-  {
     "id": 469,
     "name": "스시 이치조 청담",
     "region": "강남",
@@ -2694,18 +2682,6 @@
     "score": 84,
     "rating": 4.3,
     "note": "서초 개별룸",
-    "emoji": "🥩"
-  },
-  {
-    "id": 509,
-    "name": "국빈관 분당",
-    "region": "경기",
-    "area": "분당",
-    "genre": "한우",
-    "room": "✅ 확인",
-    "score": 84,
-    "rating": 4.6,
-    "note": "분당 한우·룸",
     "emoji": "🥩"
   },
   {
