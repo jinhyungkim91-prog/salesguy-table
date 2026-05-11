@@ -100,7 +100,6 @@ const LUNCH_REGIONS = ["전체","강남","종로","영등포","마포","서초",
 const LUNCH_PRICES  = ["전체","1만원이하","1만원대","2만원대"];
 const LUNCH_GENRES  = ["전체","한식","라멘","국밥","분식","중식","일식","샐러드","마라탕"];
 
-const GOLF_DIRECTIONS = ["전체","강남","광화문","여의도","강북"];
 const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -343,7 +342,6 @@ export default function App() {
   // 골프 필터
   const [selectedGolf, setSelectedGolf] = useState("베어크리크 CC");
   const [golfSearch, setGolfSearch] = useState("");
-  const [golfDirection, setGolfDirection] = useState("전체");
 
   const openModal = (r, type) => { setSelected(r); setSelType(type); };
 
@@ -365,17 +363,11 @@ export default function App() {
     return true;
   });
 
-  const dirFilteredCourses = golfDirection === "전체"
-    ? golfCourses
-    : golfCourses.filter(c => c.direction && c.direction.includes(golfDirection));
-
   const golfRests = golfSearch
     ? golfRestaurants.filter(r =>
         r.name.includes(golfSearch) || r.golf.includes(golfSearch) || (r.genre && r.genre.includes(golfSearch))
       )
-    : golfDirection !== "전체"
-      ? golfRestaurants.filter(r => dirFilteredCourses.some(c => c.name === r.golf))
-      : golfRestaurants.filter(r => r.golf === selectedGolf);
+    : golfRestaurants.filter(r => r.golf === selectedGolf);
 
   const currentGolf = golfCourses.find(g => g.name === selectedGolf) || golfCourses[0];
   if (dataLoading) return <div className="loading">🍽️ 데이터 불러오는 중...</div>;
@@ -485,15 +477,7 @@ export default function App() {
                 style={{background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#8A7A6A",padding:"0 4px",lineHeight:1}}>×</button>
             )}
           </div>
-          <div className="filter-scroll">
-            {GOLF_DIRECTIONS.map(d=>(
-              <button key={d} className={`filter-chip ${golfDirection===d&&!golfSearch?"on":""}`}
-                onClick={()=>{setGolfDirection(d); setGolfSearch("");}}>
-                {d==="전체"?"전체":d+" 방향"}
-              </button>
-            ))}
-          </div>
-          {!golfSearch && golfDirection==="전체" && (
+          {!golfSearch && (
             <div style={{padding:"6px 14px 10px",background:"white",borderBottom:"1px solid #EDE8E0"}}>
               <div style={{fontSize:"9px",fontWeight:700,color:"#8A7A6A",marginBottom:5,fontFamily:"monospace"}}>⛳ 오늘 라운딩한 골프장</div>
               <select className="golf-select"
@@ -510,17 +494,10 @@ export default function App() {
               )}
             </div>
           )}
-          {!golfSearch && golfDirection!=="전체" && (
-            <div style={{padding:"6px 14px 10px",background:"#FFF8F0",borderBottom:"1px solid #EDE8E0",fontSize:11,color:"#7A3000"}}>
-              ⛳ {golfDirection} 방향 귀경 · 골프장 {dirFilteredCourses.length}곳
-            </div>
-          )}
           <div className="info-banner" style={{background:"#FFF0E8",borderColor:"#E05A00",color:"#7A3000"}}>
             {golfSearch
               ? <>🔍 "{golfSearch}" 검색 결과 · <b>{golfRests.length}곳</b></>
-              : golfDirection!=="전체"
-                ? <>🍽️ {golfDirection} 방향 · <b>{golfRests.length}곳</b> 귀경 맛집</>
-                : <>🍽️ {selectedGolf} · <b>{golfRests.length}곳</b> 귀경 맛집</>
+              : <>🍽️ {selectedGolf} · <b>{golfRests.length}곳</b> 귀경 맛집</>
             }
           </div>
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
