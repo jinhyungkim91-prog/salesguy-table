@@ -7,7 +7,7 @@
       "address": "포천시 신북면",
       "direction": "강남·강북",
       "time": "60분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "address": "포천시 창수면",
       "direction": "강남·광화문",
       "time": "65분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "address": "포천시 소흘읍",
       "direction": "강남·강북",
       "time": "55분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "address": "포천시 일동면",
       "direction": "강남·강북",
       "time": "70분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "address": "가평군 상면",
       "direction": "강남·강북",
       "time": "75분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "address": "가평군 청평면",
       "direction": "강남·광화문",
       "time": "70분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "address": "가평군 설악면",
       "direction": "강남·강북",
       "time": "80분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "address": "양주시 광적면",
       "direction": "강남·광화문",
       "time": "50분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "address": "양주시 남면",
       "direction": "강남·광화문",
       "time": "45분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "address": "양주시 장흥면",
       "direction": "강남·광화문",
       "time": "40분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "address": "용인시 처인구",
       "direction": "강남·여의도",
       "time": "45분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 12,
@@ -106,7 +106,7 @@
       "address": "용인시 기흥구",
       "direction": "강남·강북",
       "time": "40분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 13,
@@ -115,7 +115,7 @@
       "address": "용인시 처인구",
       "direction": "강남·여의도",
       "time": "50분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 14,
@@ -124,7 +124,7 @@
       "address": "이천시 마장면",
       "direction": "강남·광화문",
       "time": "60분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 15,
@@ -133,7 +133,7 @@
       "address": "이천시 백사면",
       "direction": "강남·강북",
       "time": "65분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 16,
@@ -142,7 +142,7 @@
       "address": "광주시 도척면",
       "direction": "강남·광화문",
       "time": "50분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 17,
@@ -151,7 +151,7 @@
       "address": "화성시 팔탄면",
       "direction": "강남·여의도",
       "time": "55분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 18,
@@ -160,7 +160,7 @@
       "address": "수원시 장안구",
       "direction": "강남·여의도",
       "time": "40분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 19,
@@ -169,7 +169,7 @@
       "address": "고양시 덕양구",
       "direction": "광화문·강북",
       "time": "30분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 20,
@@ -178,7 +178,7 @@
       "address": "고양시 덕양구",
       "direction": "광화문·강북",
       "time": "35분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 21,
@@ -187,7 +187,7 @@
       "address": "김포시 고촌읍",
       "direction": "여의도·강남",
       "time": "35분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 22,
@@ -196,7 +196,7 @@
       "address": "파주시 탄현면",
       "direction": "광화문·강북",
       "time": "45분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 23,
@@ -205,7 +205,7 @@
       "address": "김포시 월곶면",
       "direction": "여의도·강남",
       "time": "40분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 24,
@@ -214,7 +214,7 @@
       "address": "안양시 만안구",
       "direction": "강남·여의도",
       "time": "35분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 25,
@@ -223,7 +223,7 @@
       "address": "안성시 서운면",
       "direction": "강남·여의도",
       "time": "65분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 26,
@@ -232,7 +232,7 @@
       "address": "평택시 진위면",
       "direction": "강남·여의도",
       "time": "60분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 27,
@@ -241,7 +241,7 @@
       "address": "여주시 산북면",
       "direction": "강남·광화문",
       "time": "70분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 28,
@@ -250,7 +250,7 @@
       "address": "안성시 금광면",
       "direction": "강남·여의도",
       "time": "70분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 29,
@@ -259,7 +259,7 @@
       "address": "안성시 고삼면",
       "direction": "강남·여의도",
       "time": "65분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 30,
@@ -268,7 +268,7 @@
       "address": "포천시 화현면",
       "direction": "강남·강북",
       "time": "65분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 31,
@@ -277,7 +277,7 @@
       "address": "남양주시 화도읍",
       "direction": "강남·강북",
       "time": "45분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 32,
@@ -286,7 +286,7 @@
       "address": "포천시 소흘읍",
       "direction": "강남·강북",
       "time": "50분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 33,
@@ -295,7 +295,7 @@
       "address": "남양주시 진접읍",
       "direction": "강남·강북",
       "time": "40분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 34,
@@ -304,7 +304,7 @@
       "address": "포천시 신북면",
       "direction": "강남·강북",
       "time": "60분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 35,
@@ -313,7 +313,7 @@
       "address": "양주시 은현면",
       "direction": "광화문·강북",
       "time": "48분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 36,
@@ -322,7 +322,7 @@
       "address": "가평군 북면",
       "direction": "강남·강북",
       "time": "82분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 37,
@@ -331,7 +331,7 @@
       "address": "포천시 관인면",
       "direction": "강남·강북",
       "time": "70분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 38,
@@ -340,7 +340,7 @@
       "address": "양주시 광적면",
       "direction": "광화문·강북",
       "time": "47분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 39,
@@ -349,7 +349,7 @@
       "address": "화성시 우정읍",
       "direction": "강남·여의도",
       "time": "65분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 40,
@@ -358,7 +358,7 @@
       "address": "여주시 점동면",
       "direction": "강남·광화문",
       "time": "70분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 41,
@@ -367,7 +367,7 @@
       "address": "이천시 마장면",
       "direction": "강남·광화문",
       "time": "60분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 42,
@@ -376,7 +376,7 @@
       "address": "이천시 백사면",
       "direction": "강남·광화문",
       "time": "65분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 43,
@@ -385,7 +385,7 @@
       "address": "용인시 처인구",
       "direction": "강남·여의도",
       "time": "50분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 44,
@@ -394,7 +394,7 @@
       "address": "여주시 흥천면",
       "direction": "강남·광화문",
       "time": "65분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 45,
@@ -403,7 +403,7 @@
       "address": "용인시 처인구",
       "direction": "강남·여의도",
       "time": "52분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 46,
@@ -412,7 +412,7 @@
       "address": "수원시 권선구",
       "direction": "강남·여의도",
       "time": "42분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 47,
@@ -421,7 +421,7 @@
       "address": "광주시 퇴촌면",
       "direction": "강남·광화문",
       "time": "48분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 48,
@@ -430,7 +430,7 @@
       "address": "안성시 원곡면",
       "direction": "강남·여의도",
       "time": "70분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 49,
@@ -439,7 +439,7 @@
       "address": "이천시 설성면",
       "direction": "강남·광화문",
       "time": "65분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 50,
@@ -448,7 +448,7 @@
       "address": "용인시 처인구",
       "direction": "강남·여의도",
       "time": "50분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 51,
@@ -457,7 +457,7 @@
       "address": "광주시 남종면",
       "direction": "강남·광화문",
       "time": "55분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 52,
@@ -466,7 +466,7 @@
       "address": "인천 중구 운서동",
       "direction": "여의도·강남",
       "time": "50분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 53,
@@ -475,7 +475,7 @@
       "address": "인천 중구 운서동",
       "direction": "여의도·강남",
       "time": "50분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 54,
@@ -484,7 +484,7 @@
       "address": "인천 중구 운서동",
       "direction": "여의도·강남",
       "time": "55분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 55,
@@ -493,7 +493,7 @@
       "address": "고양시 일산서구",
       "direction": "광화문·강북",
       "time": "35분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 56,
@@ -502,7 +502,7 @@
       "address": "고양시 덕양구",
       "direction": "광화문·강북",
       "time": "33분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 57,
@@ -511,7 +511,7 @@
       "address": "파주시 문산읍",
       "direction": "광화문·강북",
       "time": "50분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 58,
@@ -520,7 +520,7 @@
       "address": "김포시 통진읍",
       "direction": "여의도·강남",
       "time": "42분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 59,
@@ -529,7 +529,7 @@
       "address": "평택시 서탄면",
       "direction": "강남·여의도",
       "time": "65분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 60,
@@ -538,7 +538,7 @@
       "address": "오산시 외삼미동",
       "direction": "강남·여의도",
       "time": "55분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 61,
@@ -547,7 +547,7 @@
       "address": "안성시 양성면",
       "direction": "강남·여의도",
       "time": "68분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 62,
@@ -556,7 +556,7 @@
       "address": "안성시 미양면",
       "direction": "강남·여의도",
       "time": "70분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 63,
@@ -565,7 +565,7 @@
       "address": "여주시 대신면",
       "direction": "강남·광화문",
       "time": "72분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 64,
@@ -574,7 +574,7 @@
       "address": "여주시 금사면",
       "direction": "강남·광화문",
       "time": "75분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 65,
@@ -583,7 +583,7 @@
       "address": "충주시 엄정면",
       "direction": "강남·광화문",
       "time": "110분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 66,
@@ -592,7 +592,7 @@
       "address": "청주시 상당구",
       "direction": "강남·광화문",
       "time": "120분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 67,
@@ -601,7 +601,7 @@
       "address": "광주시 도척면",
       "direction": "강남·광화문",
       "time": "50분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 68,
@@ -610,7 +610,7 @@
       "address": "광주시 곤지암읍",
       "direction": "강남·광화문",
       "time": "52분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 69,
@@ -619,7 +619,7 @@
       "address": "광주시 삼지곡",
       "direction": "강남·광화문",
       "time": "50분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 70,
@@ -628,7 +628,7 @@
       "address": "광주시 곤지암읍",
       "direction": "강남·광화문",
       "time": "52분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 71,
@@ -637,7 +637,7 @@
       "address": "광주시 곤지암읍",
       "direction": "강남·광화문",
       "time": "54분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 72,
@@ -646,7 +646,7 @@
       "address": "광주시 곤지암읍",
       "direction": "강남·광화문",
       "time": "51분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 73,
@@ -655,7 +655,7 @@
       "address": "광주시 새말길",
       "direction": "강남·광화문",
       "time": "48분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 74,
@@ -664,7 +664,7 @@
       "address": "광주시 곤지암읍",
       "direction": "강남·광화문",
       "time": "53분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 75,
@@ -673,7 +673,7 @@
       "address": "파주시 적성면",
       "direction": "광화문·강북",
       "time": "55분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 76,
@@ -682,7 +682,7 @@
       "address": "파주시 광탄면",
       "direction": "광화문·강북",
       "time": "48분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 77,
@@ -691,7 +691,7 @@
       "address": "고양시 덕양구",
       "direction": "광화문·강북",
       "time": "35분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 78,
@@ -700,7 +700,7 @@
       "address": "성남시 분당구",
       "direction": "강남·광화문",
       "time": "35분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 79,
@@ -709,7 +709,7 @@
       "address": "성남시 수정구",
       "direction": "강남·광화문",
       "time": "38분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 80,
@@ -718,7 +718,7 @@
       "address": "하남시 미사동",
       "direction": "강남·광화문",
       "time": "28분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 81,
@@ -727,7 +727,7 @@
       "address": "시흥시 월곶동",
       "direction": "여의도·강남",
       "time": "45분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 82,
@@ -736,7 +736,7 @@
       "address": "안산시 단원구",
       "direction": "여의도·강남",
       "time": "48분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 83,
@@ -745,7 +745,7 @@
       "address": "남양주시 퇴계원",
       "direction": "강남·강북",
       "time": "38분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 84,
@@ -754,7 +754,7 @@
       "address": "남양주시 조안면",
       "direction": "강남·강북",
       "time": "45분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 85,
@@ -763,7 +763,7 @@
       "address": "남양주시 화도읍",
       "direction": "강남·강북",
       "time": "42분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 86,
@@ -772,7 +772,7 @@
       "address": "양평군 옥천면",
       "direction": "강남·광화문",
       "time": "65분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 87,
@@ -781,7 +781,7 @@
       "address": "양평군 강하면",
       "direction": "강남·광화문",
       "time": "60분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 88,
@@ -790,7 +790,7 @@
       "address": "양평군 단월면",
       "direction": "강남·광화문",
       "time": "75분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 89,
@@ -799,7 +799,7 @@
       "address": "양평군 서종면",
       "direction": "강남·강북",
       "time": "68분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 90,
@@ -808,7 +808,7 @@
       "address": "연천군 전곡읍",
       "direction": "강남·광화문",
       "time": "80분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 91,
@@ -817,7 +817,7 @@
       "address": "연천군 청산면",
       "direction": "강남·강북",
       "time": "85분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 92,
@@ -826,7 +826,7 @@
       "address": "용인시 처인구",
       "direction": "강남·여의도",
       "time": "52분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 93,
@@ -835,7 +835,7 @@
       "address": "용인시 처인구",
       "direction": "강남·여의도",
       "time": "50분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 94,
@@ -844,7 +844,7 @@
       "address": "용인시 기흥구",
       "direction": "강남·여의도",
       "time": "42분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 95,
@@ -853,7 +853,7 @@
       "address": "용인시 기흥구",
       "direction": "강남·여의도",
       "time": "40분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 96,
@@ -862,7 +862,7 @@
       "address": "화성시 동탄면",
       "direction": "강남·여의도",
       "time": "48분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 97,
@@ -871,7 +871,7 @@
       "address": "화성시 향남읍",
       "direction": "강남·여의도",
       "time": "58분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 98,
@@ -880,7 +880,7 @@
       "address": "인천 서구 도요지",
       "direction": "여의도·강남",
       "time": "40분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 99,
@@ -889,7 +889,7 @@
       "address": "인천 서구 원석로",
       "direction": "여의도·강남",
       "time": "42분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 100,
@@ -898,7 +898,7 @@
       "address": "인천 서구 거월로",
       "direction": "여의도·강남",
       "time": "40분",
-      "grade": "대중"
+      "grade": "대중제"
     },
     {
       "id": 101,
@@ -907,7 +907,7 @@
       "address": "인천 서구 청라대로",
       "direction": "여의도·강남",
       "time": "38분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 102,
@@ -916,7 +916,7 @@
       "address": "인천 연수구 아카데미로",
       "direction": "여의도·강남",
       "time": "45분",
-      "grade": "명문"
+      "grade": "회원제"
     },
     {
       "id": 103,
@@ -925,7 +925,7 @@
       "address": "인천 강화군 길상면",
       "direction": "여의도·강남",
       "time": "65분",
-      "grade": "고급"
+      "grade": "회원제"
     },
     {
       "id": 104,
@@ -934,7 +934,7 @@
       "address": "인천 강화군 삼산면",
       "direction": "여의도·강남",
       "time": "70분",
-      "grade": "대중"
+      "grade": "대중제"
     }
   ],
   "restaurants": [
