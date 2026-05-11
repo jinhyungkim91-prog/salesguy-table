@@ -378,7 +378,7 @@ export default function App() {
       <header className="header">
         <div className="header-logo">세일즈가이의 <span>식탁</span></div>
         <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 귀경</div>
-        <div className="db-badge">📦 총 {(457 + 421 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
+        <div className="db-badge">📦 총 {(456 + 421 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
       </header>
 
       <nav className="tab-nav">
@@ -406,7 +406,7 @@ export default function App() {
             ))}
           </div>
           <div className="info-banner">
-            🔍 {bizRegion} · {bizGenre!=="전체"?bizGenre+" · ":""}<b>{bizFiltered.length}곳</b> 발견 (전체 457개)
+            🔍 {bizRegion} · {bizGenre!=="전체"?bizGenre+" · ":""}<b>{bizFiltered.length}곳</b> 발견 (전체 456개)
           </div>
           <div className="rest-list">
             {bizFiltered.length===0
