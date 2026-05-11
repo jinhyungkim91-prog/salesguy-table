@@ -471,7 +471,7 @@ export default function App() {
           <div className="search-wrap">
             <span className="search-icon">🔍</span>
             <input className="search-input" placeholder="⛳ 골프장명 또는 🍽️ 식당명으로 검색"
-              value={golfSearch} onChange={e=>{setGolfSearch(e.target.value); if(e.target.value) setGolfDirection("전체");}} />
+              value={golfSearch} onChange={e=>setGolfSearch(e.target.value)} />
             {golfSearch && (
               <button onClick={()=>setGolfSearch("")}
                 style={{background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#8A7A6A",padding:"0 4px",lineHeight:1}}>×</button>
