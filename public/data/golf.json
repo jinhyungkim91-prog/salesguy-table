@@ -66,8 +66,8 @@
     {
       "id": 8,
       "name": "레이크사이드 CC",
-      "region": "경기북부(양주)",
-      "address": "양주시 광적면",
+      "region": "경기남부(용인)",
+      "address": "용인시 처인구",
       "direction": "강남·광화문",
       "time": "50분",
       "grade": "회원제"
@@ -75,8 +75,8 @@
     {
       "id": 9,
       "name": "파인크리크 CC",
-      "region": "경기북부(양주)",
-      "address": "양주시 남면",
+      "region": "경기남부(안성)",
+      "address": "안성시 양성면",
       "direction": "강남·광화문",
       "time": "45분",
       "grade": "회원제"
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "name": "한국 CC",
+      "name": "코리아 CC",
       "region": "경기남부(용인)",
       "address": "용인시 처인구",
       "direction": "강남·여의도",
@@ -102,8 +102,8 @@
     {
       "id": 12,
       "name": "레이크우드 CC",
-      "region": "경기남부(용인)",
-      "address": "용인시 기흥구",
+      "region": "경기북부(양주)",
+      "address": "양주시 안송동",
       "direction": "강남·강북",
       "time": "40분",
       "grade": "회원제"
@@ -164,7 +164,7 @@
     },
     {
       "id": 19,
-      "name": "서울 CC",
+      "name": "한양 CC",
       "region": "경기서부(고양)",
       "address": "고양시 덕양구",
       "direction": "광화문·강북",
@@ -173,7 +173,7 @@
     },
     {
       "id": 20,
-      "name": "서울한양 CC",
+      "name": "뉴코리아 CC",
       "region": "경기서부(고양)",
       "address": "고양시 덕양구",
       "direction": "광화문·강북",
@@ -191,16 +191,16 @@
     },
     {
       "id": 22,
-      "name": "서울레이크사이드",
+      "name": "서서울 CC",
       "region": "경기서부(파주)",
-      "address": "파주시 탄현면",
+      "address": "파주시 광탄면",
       "direction": "광화문·강북",
       "time": "45분",
       "grade": "회원제"
     },
     {
       "id": 23,
-      "name": "아시아나 CC",
+      "name": "김포씨사이드 CC",
       "region": "경기서부(김포)",
       "address": "김포시 월곶면",
       "direction": "여의도·강남",
@@ -218,20 +218,11 @@
     },
     {
       "id": 25,
-      "name": "안성 Q CC",
+      "name": "안성큐 CC",
       "region": "경기남서(안성)",
       "address": "안성시 서운면",
       "direction": "강남·여의도",
       "time": "65분",
-      "grade": "회원제"
-    },
-    {
-      "id": 26,
-      "name": "천룡 CC",
-      "region": "경기남서(평택)",
-      "address": "평택시 진위면",
-      "direction": "강남·여의도",
-      "time": "60분",
       "grade": "회원제"
     },
     {
@@ -246,19 +237,10 @@
     {
       "id": 28,
       "name": "서원밸리 CC",
-      "region": "경기남서(안성)",
-      "address": "안성시 금광면",
+      "region": "경기서부(파주)",
+      "address": "파주시 광탄면",
       "direction": "강남·여의도",
       "time": "70분",
-      "grade": "회원제"
-    },
-    {
-      "id": 29,
-      "name": "클럽가야 CC",
-      "region": "경기남서(안성)",
-      "address": "안성시 고삼면",
-      "direction": "강남·여의도",
-      "time": "65분",
       "grade": "회원제"
     },
     {
@@ -298,19 +280,10 @@
       "grade": "회원제"
     },
     {
-      "id": 34,
-      "name": "스프링필드 CC",
-      "region": "경기북부(포천)",
-      "address": "포천시 신북면",
-      "direction": "강남·강북",
-      "time": "60분",
-      "grade": "회원제"
-    },
-    {
       "id": 35,
       "name": "트리니티 CC",
-      "region": "경기북부(양주)",
-      "address": "양주시 은현면",
+      "region": "경기남부(여주)",
+      "address": "여주시 가남읍",
       "direction": "광화문·강북",
       "time": "48분",
       "grade": "회원제"
@@ -325,30 +298,12 @@
       "grade": "회원제"
     },
     {
-      "id": 37,
-      "name": "피닉스 스프링스 CC",
-      "region": "경기북부(포천)",
-      "address": "포천시 관인면",
-      "direction": "강남·강북",
-      "time": "70분",
-      "grade": "회원제"
-    },
-    {
       "id": 38,
-      "name": "국제 CC",
-      "region": "경기북부(양주)",
-      "address": "양주시 광적면",
+      "name": "인천국제 CC",
+      "region": "인천(서구)",
+      "address": "인천시 서구 경서동",
       "direction": "광화문·강북",
       "time": "47분",
-      "grade": "회원제"
-    },
-    {
-      "id": 39,
-      "name": "우정힐스 CC",
-      "region": "경기남부(화성)",
-      "address": "화성시 우정읍",
-      "direction": "강남·여의도",
-      "time": "65분",
       "grade": "회원제"
     },
     {
@@ -379,15 +334,6 @@
       "grade": "대중제"
     },
     {
-      "id": 43,
-      "name": "킹스데일 GC",
-      "region": "경기남부(용인)",
-      "address": "용인시 처인구",
-      "direction": "강남·여의도",
-      "time": "50분",
-      "grade": "대중제"
-    },
-    {
       "id": 44,
       "name": "해슬리 나인브릿지",
       "region": "경기남부(여주)",
@@ -406,40 +352,13 @@
       "grade": "회원제"
     },
     {
-      "id": 46,
-      "name": "동부산 CC (수원)",
-      "region": "경기남부(수원)",
-      "address": "수원시 권선구",
-      "direction": "강남·여의도",
-      "time": "42분",
-      "grade": "회원제"
-    },
-    {
-      "id": 47,
-      "name": "벨라CC 광주",
-      "region": "경기남부(광주)",
-      "address": "광주시 퇴촌면",
-      "direction": "강남·광화문",
-      "time": "48분",
-      "grade": "회원제"
-    },
-    {
       "id": 48,
       "name": "남서울 CC",
-      "region": "경기남서(안성)",
-      "address": "안성시 원곡면",
+      "region": "경기남부(성남)",
+      "address": "성남시 분당구",
       "direction": "강남·여의도",
       "time": "70분",
       "grade": "회원제"
-    },
-    {
-      "id": 49,
-      "name": "라비에벨 CC",
-      "region": "경기남부(이천)",
-      "address": "이천시 설성면",
-      "direction": "강남·광화문",
-      "time": "65분",
-      "grade": "대중제"
     },
     {
       "id": 50,
@@ -451,121 +370,13 @@
       "grade": "회원제"
     },
     {
-      "id": 51,
-      "name": "더클래식 CC",
-      "region": "경기남부(광주)",
-      "address": "광주시 남종면",
-      "direction": "강남·광화문",
-      "time": "55분",
-      "grade": "회원제"
-    },
-    {
       "id": 52,
-      "name": "영종도 스카이72",
+      "name": "클럽72",
       "region": "인천(영종도)",
       "address": "인천 중구 운서동",
       "direction": "여의도·강남",
       "time": "50분",
       "grade": "대중제"
-    },
-    {
-      "id": 53,
-      "name": "스카이72 오션·클래식",
-      "region": "인천(영종도)",
-      "address": "인천 중구 운서동",
-      "direction": "여의도·강남",
-      "time": "50분",
-      "grade": "회원제"
-    },
-    {
-      "id": 54,
-      "name": "베네스트 GC 인천",
-      "region": "인천(영종도)",
-      "address": "인천 중구 운서동",
-      "direction": "여의도·강남",
-      "time": "55분",
-      "grade": "회원제"
-    },
-    {
-      "id": 55,
-      "name": "일산 레이크사이드",
-      "region": "경기서부(고양)",
-      "address": "고양시 일산서구",
-      "direction": "광화문·강북",
-      "time": "35분",
-      "grade": "대중제"
-    },
-    {
-      "id": 56,
-      "name": "퍼블릭 CC 고양",
-      "region": "경기서부(고양)",
-      "address": "고양시 덕양구",
-      "direction": "광화문·강북",
-      "time": "33분",
-      "grade": "대중제"
-    },
-    {
-      "id": 57,
-      "name": "문산 CC",
-      "region": "경기서부(파주)",
-      "address": "파주시 문산읍",
-      "direction": "광화문·강북",
-      "time": "50분",
-      "grade": "회원제"
-    },
-    {
-      "id": 58,
-      "name": "JS 골프클럽",
-      "region": "경기서부(김포)",
-      "address": "김포시 통진읍",
-      "direction": "여의도·강남",
-      "time": "42분",
-      "grade": "회원제"
-    },
-    {
-      "id": 59,
-      "name": "평택 CC",
-      "region": "경기남서(평택)",
-      "address": "평택시 서탄면",
-      "direction": "강남·여의도",
-      "time": "65분",
-      "grade": "회원제"
-    },
-    {
-      "id": 60,
-      "name": "오산 CC",
-      "region": "경기남서(오산)",
-      "address": "오산시 외삼미동",
-      "direction": "강남·여의도",
-      "time": "55분",
-      "grade": "회원제"
-    },
-    {
-      "id": 61,
-      "name": "진주 CC (안성)",
-      "region": "경기남서(안성)",
-      "address": "안성시 양성면",
-      "direction": "강남·여의도",
-      "time": "68분",
-      "grade": "회원제"
-    },
-    {
-      "id": 62,
-      "name": "힐크레스트 CC",
-      "region": "경기남서(안성)",
-      "address": "안성시 미양면",
-      "direction": "강남·여의도",
-      "time": "70분",
-      "grade": "회원제"
-    },
-    {
-      "id": 63,
-      "name": "여주 CC",
-      "region": "경기남서(여주)",
-      "address": "여주시 대신면",
-      "direction": "강남·광화문",
-      "time": "72분",
-      "grade": "회원제"
     },
     {
       "id": 64,
@@ -574,33 +385,6 @@
       "address": "여주시 금사면",
       "direction": "강남·광화문",
       "time": "75분",
-      "grade": "회원제"
-    },
-    {
-      "id": 65,
-      "name": "충주 엘리시안",
-      "region": "충청(충주)",
-      "address": "충주시 엄정면",
-      "direction": "강남·광화문",
-      "time": "110분",
-      "grade": "회원제"
-    },
-    {
-      "id": 66,
-      "name": "청원 CC",
-      "region": "충청(청주)",
-      "address": "청주시 상당구",
-      "direction": "강남·광화문",
-      "time": "120분",
-      "grade": "회원제"
-    },
-    {
-      "id": 67,
-      "name": "곤지암 GC 2코스",
-      "region": "경기남부(광주)",
-      "address": "광주시 도척면",
-      "direction": "강남·광화문",
-      "time": "50분",
       "grade": "회원제"
     },
     {
@@ -658,192 +442,12 @@
       "grade": "대중제"
     },
     {
-      "id": 74,
-      "name": "로제비앙 CC",
-      "region": "경기남부(광주)",
-      "address": "광주시 곤지암읍",
-      "direction": "강남·광화문",
-      "time": "53분",
-      "grade": "회원제"
-    },
-    {
-      "id": 75,
-      "name": "임진강 CC",
-      "region": "경기서부(파주)",
-      "address": "파주시 적성면",
-      "direction": "광화문·강북",
-      "time": "55분",
-      "grade": "회원제"
-    },
-    {
-      "id": 76,
-      "name": "스타힐스 CC",
-      "region": "경기서부(파주)",
-      "address": "파주시 광탄면",
-      "direction": "광화문·강북",
-      "time": "48분",
-      "grade": "회원제"
-    },
-    {
-      "id": 77,
-      "name": "뉴코리아 CC",
-      "region": "경기서부(고양)",
-      "address": "고양시 덕양구",
-      "direction": "광화문·강북",
-      "time": "35분",
-      "grade": "회원제"
-    },
-    {
-      "id": 78,
-      "name": "분당 서울 CC",
-      "region": "경기남부(성남)",
-      "address": "성남시 분당구",
-      "direction": "강남·광화문",
-      "time": "35분",
-      "grade": "회원제"
-    },
-    {
-      "id": 79,
-      "name": "남서울 힐링스 CC",
-      "region": "경기남부(성남)",
-      "address": "성남시 수정구",
-      "direction": "강남·광화문",
-      "time": "38분",
-      "grade": "회원제"
-    },
-    {
-      "id": 80,
-      "name": "하남 미사 CC",
-      "region": "경기남부(하남)",
-      "address": "하남시 미사동",
-      "direction": "강남·광화문",
-      "time": "28분",
-      "grade": "회원제"
-    },
-    {
-      "id": 81,
-      "name": "시화 CC",
-      "region": "경기서부(시흥)",
-      "address": "시흥시 월곶동",
-      "direction": "여의도·강남",
-      "time": "45분",
-      "grade": "회원제"
-    },
-    {
-      "id": 82,
-      "name": "안산 CC",
-      "region": "경기서부(안산)",
-      "address": "안산시 단원구",
-      "direction": "여의도·강남",
-      "time": "48분",
-      "grade": "회원제"
-    },
-    {
-      "id": 83,
-      "name": "퇴계원 CC",
-      "region": "경기북부(남양주)",
-      "address": "남양주시 퇴계원",
-      "direction": "강남·강북",
-      "time": "38분",
-      "grade": "회원제"
-    },
-    {
-      "id": 84,
-      "name": "베이사이드 CC",
-      "region": "경기북부(남양주)",
-      "address": "남양주시 조안면",
-      "direction": "강남·강북",
-      "time": "45분",
-      "grade": "회원제"
-    },
-    {
-      "id": 85,
-      "name": "모란 CC",
-      "region": "경기북부(남양주)",
-      "address": "남양주시 화도읍",
-      "direction": "강남·강북",
-      "time": "42분",
-      "grade": "회원제"
-    },
-    {
-      "id": 86,
-      "name": "양평 파인리조트 GC",
-      "region": "경기동부(양평)",
-      "address": "양평군 옥천면",
-      "direction": "강남·광화문",
-      "time": "65분",
-      "grade": "회원제"
-    },
-    {
-      "id": 87,
-      "name": "힐드로사이 CC",
-      "region": "경기동부(양평)",
-      "address": "양평군 강하면",
-      "direction": "강남·광화문",
-      "time": "60분",
-      "grade": "회원제"
-    },
-    {
-      "id": 88,
-      "name": "알파인 GC 양평",
-      "region": "경기동부(양평)",
-      "address": "양평군 단월면",
-      "direction": "강남·광화문",
-      "time": "75분",
-      "grade": "대중제"
-    },
-    {
-      "id": 89,
-      "name": "연인산 CC",
-      "region": "경기동부(양평)",
-      "address": "양평군 서종면",
-      "direction": "강남·강북",
-      "time": "68분",
-      "grade": "회원제"
-    },
-    {
-      "id": 90,
-      "name": "연천 GC",
-      "region": "경기북부(연천)",
-      "address": "연천군 전곡읍",
-      "direction": "강남·광화문",
-      "time": "80분",
-      "grade": "대중제"
-    },
-    {
-      "id": 91,
-      "name": "동막골 CC",
-      "region": "경기북부(연천)",
-      "address": "연천군 청산면",
-      "direction": "강남·강북",
-      "time": "85분",
-      "grade": "회원제"
-    },
-    {
       "id": 92,
       "name": "양지파인 CC",
       "region": "경기남부(용인)",
       "address": "용인시 처인구",
       "direction": "강남·여의도",
       "time": "52분",
-      "grade": "회원제"
-    },
-    {
-      "id": 93,
-      "name": "에버랜드 GC",
-      "region": "경기남부(용인)",
-      "address": "용인시 처인구",
-      "direction": "강남·여의도",
-      "time": "50분",
-      "grade": "회원제"
-    },
-    {
-      "id": 94,
-      "name": "용인 썬 CC",
-      "region": "경기남부(용인)",
-      "address": "용인시 기흥구",
-      "direction": "강남·여의도",
-      "time": "42분",
       "grade": "회원제"
     },
     {
@@ -856,48 +460,12 @@
       "grade": "회원제"
     },
     {
-      "id": 96,
-      "name": "동탄 CC",
-      "region": "경기남부(화성)",
-      "address": "화성시 동탄면",
-      "direction": "강남·여의도",
-      "time": "48분",
-      "grade": "회원제"
-    },
-    {
-      "id": 97,
-      "name": "향남 CC",
-      "region": "경기남부(화성)",
-      "address": "화성시 향남읍",
-      "direction": "강남·여의도",
-      "time": "58분",
-      "grade": "회원제"
-    },
-    {
-      "id": 98,
-      "name": "인천국제 CC",
-      "region": "인천(서구)",
-      "address": "인천 서구 도요지",
-      "direction": "여의도·강남",
-      "time": "40분",
-      "grade": "회원제"
-    },
-    {
       "id": 99,
       "name": "인천그랜드 CC",
       "region": "인천(서구)",
       "address": "인천 서구 원석로",
       "direction": "여의도·강남",
       "time": "42분",
-      "grade": "대중제"
-    },
-    {
-      "id": 100,
-      "name": "드림파크 CC",
-      "region": "인천(서구)",
-      "address": "인천 서구 거월로",
-      "direction": "여의도·강남",
-      "time": "40분",
       "grade": "대중제"
     },
     {
@@ -916,15 +484,6 @@
       "address": "인천 연수구 아카데미로",
       "direction": "여의도·강남",
       "time": "45분",
-      "grade": "회원제"
-    },
-    {
-      "id": 103,
-      "name": "강화 CC",
-      "region": "인천(강화)",
-      "address": "인천 강화군 길상면",
-      "direction": "여의도·강남",
-      "time": "65분",
       "grade": "회원제"
     },
     {
@@ -1515,18 +1074,6 @@
       "emoji": "🥩"
     },
     {
-      "id": 49,
-      "golf": "천룡 CC",
-      "name": "평택 갈비 명가",
-      "genre": "갈비·한우",
-      "distance": "10분",
-      "room": "✅ 룸",
-      "rating": 4.3,
-      "tip": "평택 갈비·룸",
-      "direction": "60",
-      "emoji": "🥩"
-    },
-    {
       "id": 50,
       "golf": "서원밸리 CC",
       "name": "안성 한정식 서원",
@@ -1537,18 +1084,6 @@
       "tip": "서원밸리CC 대표 귀경 맛집·한정식",
       "direction": "70",
       "emoji": "🏮"
-    },
-    {
-      "id": 51,
-      "golf": "클럽가야 CC",
-      "name": "안성 팜랜드 레스토랑",
-      "genre": "한식뷔페",
-      "distance": "12분",
-      "room": "🔶 단체석",
-      "rating": 4.2,
-      "tip": "안성팜랜드 내 단체 식사",
-      "direction": "65",
-      "emoji": "🌿"
     },
     {
       "id": 52,
@@ -2295,18 +1830,6 @@
       "emoji": "🏮"
     },
     {
-      "id": 114,
-      "golf": "천룡 CC",
-      "name": "평택 소사벌 갈비",
-      "genre": "갈비·한우",
-      "distance": "8분",
-      "room": "룸 있음",
-      "rating": 4.3,
-      "tip": "평택 소사벌 신도시 인근·갈비 명가",
-      "direction": "강남·여의도",
-      "emoji": "🥩"
-    },
-    {
       "id": 115,
       "golf": "서원밸리 CC",
       "name": "안성 고삼 저수지 매운탕",
@@ -2775,18 +2298,6 @@
       "emoji": "🌿"
     },
     {
-      "id": 154,
-      "golf": "클럽가야 CC",
-      "name": "안성팜랜드 가든레스토랑",
-      "genre": "한식뷔페·가든",
-      "distance": "12분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "안성팜랜드내·목장에서만드는음식·단체모임",
-      "direction": "강남·여의도",
-      "emoji": "🌿"
-    },
-    {
       "id": 155,
       "golf": "김포한강 CC",
       "name": "김포 통진 두부마을",
@@ -3171,30 +2682,6 @@
       "emoji": "🥩"
     },
     {
-      "id": 187,
-      "golf": "킹스데일 GC",
-      "name": "용인 남사 한정식 명가",
-      "genre": "한정식",
-      "distance": "10분",
-      "room": "룸 있음",
-      "rating": 4.4,
-      "tip": "남사면·한정식코스·VIP룸",
-      "direction": "강남·여의도",
-      "emoji": "🏮"
-    },
-    {
-      "id": 188,
-      "golf": "킹스데일 GC",
-      "name": "용인 백암 순대국밥",
-      "genre": "순대국밥",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "백암 3대순대국밥·라운딩후해장",
-      "direction": "강남·여의도",
-      "emoji": "🍱"
-    },
-    {
       "id": 189,
       "golf": "영종도 스카이72",
       "name": "영종도 을왕리 조개구이",
@@ -3215,18 +2702,6 @@
       "room": "단체가능",
       "rating": 4.4,
       "tip": "왕산해수욕장인근·신선한해산물",
-      "direction": "여의도·강남",
-      "emoji": "🍱"
-    },
-    {
-      "id": 191,
-      "golf": "스카이72 오션·클래식",
-      "name": "인천 차이나타운 공화춘",
-      "genre": "중식파인",
-      "distance": "25분",
-      "room": "룸 있음",
-      "rating": 4.5,
-      "tip": "차이나타운원조공화춘·탕수육·중식코스",
       "direction": "여의도·강남",
       "emoji": "🍱"
     },
@@ -3303,90 +2778,6 @@
       "emoji": "🏮"
     },
     {
-      "id": 198,
-      "golf": "우정힐스 CC",
-      "name": "화성 우정 낙지한정식",
-      "genre": "낙지·한정식",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "우정읍서해안낙지·한정식·귀경전",
-      "direction": "강남·여의도",
-      "emoji": "🏮"
-    },
-    {
-      "id": 199,
-      "golf": "우정힐스 CC",
-      "name": "화성 궁평 조개구이",
-      "genre": "조개구이",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "궁평리포구·서해안조개·단체가능",
-      "direction": "강남·여의도",
-      "emoji": "🍱"
-    },
-    {
-      "id": 200,
-      "golf": "문산 CC",
-      "name": "파주 문산 장어구이",
-      "genre": "장어구이",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.4,
-      "tip": "파주장어명가·보양식·귀경전",
-      "direction": "광화문·강북",
-      "emoji": "🍱"
-    },
-    {
-      "id": 201,
-      "golf": "문산 CC",
-      "name": "파주 임진강변 참게장",
-      "genre": "참게장·한식",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.4,
-      "tip": "임진강참게장명소·귀경길들르기",
-      "direction": "광화문·강북",
-      "emoji": "🌿"
-    },
-    {
-      "id": 202,
-      "golf": "여주 CC",
-      "name": "여주 신세계 아울렛 인근 한정식",
-      "genre": "한정식",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "여주아울렛인근·한정식·귀경쇼핑후",
-      "direction": "강남·광화문",
-      "emoji": "🏮"
-    },
-    {
-      "id": 203,
-      "golf": "여주 CC",
-      "name": "여주 명품 쌀밥 한정식",
-      "genre": "쌀밥한정식",
-      "distance": "10분",
-      "room": "룸 있음",
-      "rating": 4.4,
-      "tip": "여주명품쌀·한정식코스·룸",
-      "direction": "강남·광화문",
-      "emoji": "🏮"
-    },
-    {
-      "id": 204,
-      "golf": "충주 엘리시안",
-      "name": "충주 탄금대 한정식",
-      "genre": "한정식",
-      "distance": "15분",
-      "room": "룸 있음",
-      "rating": 4.4,
-      "tip": "탄금대인근·충주한정식·귀경전",
-      "direction": "강남·광화문",
-      "emoji": "🏮"
-    },
-    {
       "id": 205,
       "golf": "이스트밸리 CC",
       "name": "곤지암 한우 직판장",
@@ -3435,150 +2826,6 @@
       "emoji": "🌿"
     },
     {
-      "id": 209,
-      "golf": "임진강 CC",
-      "name": "파주 적성 민물매운탕",
-      "genre": "매운탕",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.4,
-      "tip": "임진강지류·민물매운탕명소",
-      "direction": "광화문·강북",
-      "emoji": "🦐"
-    },
-    {
-      "id": 210,
-      "golf": "임진강 CC",
-      "name": "파주 DMZ 두부마을",
-      "genre": "두부·한식",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "DMZ인근·두부요리·특별한귀경",
-      "direction": "광화문·강북",
-      "emoji": "🌿"
-    },
-    {
-      "id": 211,
-      "golf": "스타힐스 CC",
-      "name": "파주 광탄 한우 명가",
-      "genre": "한우",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "광탄면·한우·귀경길",
-      "direction": "광화문·강북",
-      "emoji": "🥩"
-    },
-    {
-      "id": 212,
-      "golf": "뉴코리아 CC",
-      "name": "고양 화전 갈비",
-      "genre": "갈비",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "화전역인근·갈비·귀경방향",
-      "direction": "광화문·강북",
-      "emoji": "🥩"
-    },
-    {
-      "id": 213,
-      "golf": "분당 서울 CC",
-      "name": "분당 판교 한정식 수라재",
-      "genre": "한정식",
-      "distance": "10분",
-      "room": "룸 있음",
-      "rating": 4.4,
-      "tip": "판교·한정식코스·룸",
-      "direction": "강남·광화문",
-      "emoji": "🏮"
-    },
-    {
-      "id": 214,
-      "golf": "분당 서울 CC",
-      "name": "분당 정자 한우 마루",
-      "genre": "한우",
-      "distance": "12분",
-      "room": "룸 있음",
-      "rating": 4.4,
-      "tip": "정자역인근·한우개별룸",
-      "direction": "강남·광화문",
-      "emoji": "🥩"
-    },
-    {
-      "id": 215,
-      "golf": "하남 미사 CC",
-      "name": "하남 미사 강변 레스토랑",
-      "genre": "파인다이닝",
-      "distance": "8분",
-      "room": "룸 있음",
-      "rating": 4.4,
-      "tip": "미사강변·파인다이닝·룸",
-      "direction": "강남·광화문",
-      "emoji": "🍽️"
-    },
-    {
-      "id": 216,
-      "golf": "하남 미사 CC",
-      "name": "하남 스타필드 맛집거리",
-      "genre": "다양",
-      "distance": "5분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "스타필드하남·다양한 선택",
-      "direction": "강남·광화문",
-      "emoji": "🍱"
-    },
-    {
-      "id": 217,
-      "golf": "양평 파인리조트 GC",
-      "name": "양평 강변 황포돛배 어죽",
-      "genre": "어죽·민물",
-      "distance": "15분",
-      "room": "단체가능",
-      "rating": 4.4,
-      "tip": "남한강황포어죽·양평명물",
-      "direction": "강남·광화문",
-      "emoji": "🍱"
-    },
-    {
-      "id": 218,
-      "golf": "힐드로사이 CC",
-      "name": "양평 강하 한우 직판",
-      "genre": "한우",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "강하면한우직판·신선한우",
-      "direction": "강남·광화문",
-      "emoji": "🥩"
-    },
-    {
-      "id": 219,
-      "golf": "연인산 CC",
-      "name": "양평 용문사 인근 산채정식",
-      "genre": "산채·한식",
-      "distance": "12분",
-      "room": "단체가능",
-      "rating": 4.4,
-      "tip": "용문사인근·산채비빔밥·도토리묵",
-      "direction": "강남·강북",
-      "emoji": "🌿"
-    },
-    {
-      "id": 220,
-      "golf": "연인산 CC",
-      "name": "양평 서종 한우 가든",
-      "genre": "한우",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "서종면·한우·자연속식사",
-      "direction": "강남·강북",
-      "emoji": "🥩"
-    },
-    {
       "id": 221,
       "golf": "양지파인 CC",
       "name": "용인 양지 한정식 청",
@@ -3591,18 +2838,6 @@
       "emoji": "🏮"
     },
     {
-      "id": 222,
-      "golf": "에버랜드 GC",
-      "name": "용인 포곡 한우 마당",
-      "genre": "한우",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "포곡읍·한우·귀경방향",
-      "direction": "강남·여의도",
-      "emoji": "🥩"
-    },
-    {
       "id": 223,
       "golf": "기흥 CC",
       "name": "기흥 호수공원 뷰 레스토랑",
@@ -3613,54 +2848,6 @@
       "tip": "기흥호수뷰·분위기좋음",
       "direction": "강남·여의도",
       "emoji": "🍽️"
-    },
-    {
-      "id": 224,
-      "golf": "용인 썬 CC",
-      "name": "용인 구성 갈비 명가",
-      "genre": "갈비",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "구성IC인근·갈비·귀경",
-      "direction": "강남·여의도",
-      "emoji": "🥩"
-    },
-    {
-      "id": 225,
-      "golf": "동탄 CC",
-      "name": "동탄 한우 프리미엄",
-      "genre": "한우",
-      "distance": "8분",
-      "room": "룸 있음",
-      "rating": 4.4,
-      "tip": "동탄신도시·한우개별룸",
-      "direction": "강남·여의도",
-      "emoji": "🥩"
-    },
-    {
-      "id": 226,
-      "golf": "향남 CC",
-      "name": "화성 향남 갈비 원조",
-      "genre": "갈비",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "향남읍·갈비·귀경길",
-      "direction": "강남·여의도",
-      "emoji": "🥩"
-    },
-    {
-      "id": 227,
-      "golf": "인천국제 CC",
-      "name": "인천 청라 한우 마을",
-      "genre": "한우",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "청라신도시·한우·귀경길",
-      "direction": "여의도·강남",
-      "emoji": "🥩"
     },
     {
       "id": 228,
@@ -3699,30 +2886,6 @@
       "emoji": "🍱"
     },
     {
-      "id": 231,
-      "golf": "강화 CC",
-      "name": "강화도 한식 특미 밴댕이회",
-      "genre": "밴댕이·해산물",
-      "distance": "15분",
-      "room": "단체가능",
-      "rating": 4.4,
-      "tip": "강화명물밴댕이회·서해안스타일",
-      "direction": "여의도·강남",
-      "emoji": "🍱"
-    },
-    {
-      "id": 232,
-      "golf": "강화 CC",
-      "name": "강화 전등사 인근 산채정식",
-      "genre": "산채·한식",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "전등사인근·산채정식·귀경코스",
-      "direction": "여의도·강남",
-      "emoji": "🌿"
-    },
-    {
       "id": 233,
       "golf": "유니아일랜드 GC",
       "name": "강화 외포리 새우구이",
@@ -3732,78 +2895,6 @@
       "rating": 4.4,
       "tip": "외포리항·대하새우구이·서해안",
       "direction": "여의도·강남",
-      "emoji": "🍱"
-    },
-    {
-      "id": 234,
-      "golf": "연천 GC",
-      "name": "연천 전곡 한우 직판",
-      "genre": "한우",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.2,
-      "tip": "전곡읍·한우직판·귀경전",
-      "direction": "강남·광화문",
-      "emoji": "🥩"
-    },
-    {
-      "id": 235,
-      "golf": "동막골 CC",
-      "name": "연천 한탄강 매운탕",
-      "genre": "매운탕·민물",
-      "distance": "12분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "한탄강지류·민물매운탕·자연속",
-      "direction": "강남·강북",
-      "emoji": "🦐"
-    },
-    {
-      "id": 236,
-      "golf": "퇴계원 CC",
-      "name": "남양주 다산 한정식",
-      "genre": "한정식",
-      "distance": "10분",
-      "room": "룸 있음",
-      "rating": 4.4,
-      "tip": "다산신도시인근·한정식·룸",
-      "direction": "강남·강북",
-      "emoji": "🏮"
-    },
-    {
-      "id": 237,
-      "golf": "퇴계원 CC",
-      "name": "구리 교문 갈비",
-      "genre": "갈비",
-      "distance": "12분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "구리교문동·갈비·귀경방향",
-      "direction": "강남·강북",
-      "emoji": "🥩"
-    },
-    {
-      "id": 238,
-      "golf": "베이사이드 CC",
-      "name": "양평 두물머리 한정식",
-      "genre": "한정식",
-      "distance": "15분",
-      "room": "룸 있음",
-      "rating": 4.5,
-      "tip": "두물머리뷰·한정식·귀경필수코스",
-      "direction": "강남·광화문",
-      "emoji": "🏮"
-    },
-    {
-      "id": 239,
-      "golf": "모란 CC",
-      "name": "화도읍 잣나무숲 오리구이",
-      "genre": "오리구이",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.3,
-      "tip": "화도읍잣나무숲·오리구이·보양",
-      "direction": "강남·강북",
       "emoji": "🍱"
     }
   ]
