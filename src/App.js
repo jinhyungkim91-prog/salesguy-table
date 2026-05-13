@@ -155,9 +155,9 @@ function LunchCard({ r, onClick }) {
   );
 }
 
-function GolfRestCard({ r }) {
+function GolfRestCard({ r, onClick }) {
   return (
-    <div className="golf-card" onClick={() => openNaverSearch(r.name, null, r.mapQuery)} style={{cursor:"pointer"}}>
+    <div className="golf-card" onClick={() => onClick(r)} style={{cursor:"pointer"}}>
       <div className="golf-top">
         <span style={{fontSize:22}}>{r.emoji}</span>
         <div style={{flex:1}}>
@@ -172,7 +172,6 @@ function GolfRestCard({ r }) {
         <div className={`room-badge-sm ${r.room.includes("✅")?"rb-room":"rb-group"}`}>
           {r.room.includes("✅")?"룸 있음":"단체가능"}
         </div>
-        <div style={{marginLeft:"auto",fontSize:"11px",color:"#2DB400",fontWeight:600}}>🔍 네이버</div>
       </div>
     </div>
   );
@@ -219,9 +218,11 @@ function DetailModal({ r, type, onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-box" onClick={e=>e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>✕</button>
-        <div className="modal-emoji">{r.emoji}</div>
+        <div className="modal-emoji">{r.emoji || "🍽️"}</div>
         <div className="modal-name">{r.name}</div>
-        <div className="modal-area">{r.region} · {r.area}</div>
+        <div className="modal-area">
+          {type==="golf" ? `${r.golf} · 귀경 ${r.distance}` : `${r.region} · ${r.area}`}
+        </div>
         <div className="modal-row">
           <div className="modal-item">
             <div className="modal-label">장르</div>
@@ -232,15 +233,16 @@ function DetailModal({ r, type, onClose }) {
             <div className="modal-val">★ {r.rating}</div>
           </div>
           <div className="modal-item">
-            <div className="modal-label">{type==="biz"?"비즈점수":"가격대"}</div>
-            <div className="modal-val score-hi">{type==="biz"?r.score+"점":r.price}</div>
+            <div className="modal-label">{type==="biz"?"비즈점수":type==="golf"?"거리":"가격대"}</div>
+            <div className="modal-val score-hi">{type==="biz"?r.score+"점":type==="golf"?r.distance:r.price}</div>
           </div>
         </div>
         {type==="biz" && <div className="modal-room"><span className={r.room==="✅ 확인"?"tag tag-room":"tag tag-maybe"}>{r.room} 룸</span></div>}
         {type==="lunch" && <div className="modal-room"><span className={r.solo==="✅ 혼밥"?"tag tag-room":"tag tag-maybe"}>{r.solo}</span></div>}
-        <div className="modal-note">{type==="biz"?r.note:r.tip}</div>
+        {type==="golf" && <div className="modal-room"><span className={r.room&&r.room.includes("✅")?"tag tag-room":"tag tag-maybe"}>{r.room&&r.room.includes("✅")?"✅ 룸 있음":"단체가능"}</span></div>}
+        <div className="modal-note">{type==="biz"?r.note:type==="golf"?r.tip:r.tip}</div>
         <div className="modal-actions">
-          <button className="btn-kakao" onClick={()=>openNaverSearch(r.name, r.area, r.mapQuery)}>
+          <button className="btn-kakao" onClick={()=>openNaverSearch(r.name, r.area||null, r.mapQuery)}>
             네이버에서 찾기
           </button>
           <button className={`btn-save ${isFav?"btn-save-on":""}`} onClick={handleFav}>
@@ -504,7 +506,7 @@ export default function App() {
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
             {golfRests.length===0
               ? <div className="empty">해당 조건의 맛집이 없어요 😢</div>
-              : golfRests.map(r=><GolfRestCard key={r.id} r={r}/>)
+              : golfRests.map(r=><GolfRestCard key={r.id} r={r} onClick={r=>openModal(r,"golf")}/>)
             }
           </div>
         </div>
