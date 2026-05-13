@@ -157,7 +157,7 @@ function LunchCard({ r, onClick }) {
 
 function GolfRestCard({ r }) {
   return (
-    <div className="golf-card">
+    <div className="golf-card" onClick={() => openNaverSearch(r.name, null, r.mapQuery)} style={{cursor:"pointer"}}>
       <div className="golf-top">
         <span style={{fontSize:22}}>{r.emoji}</span>
         <div style={{flex:1}}>
@@ -172,6 +172,7 @@ function GolfRestCard({ r }) {
         <div className={`room-badge-sm ${r.room.includes("✅")?"rb-room":"rb-group"}`}>
           {r.room.includes("✅")?"룸 있음":"단체가능"}
         </div>
+        <div style={{marginLeft:"auto",fontSize:"11px",color:"#2DB400",fontWeight:600}}>🔍 네이버</div>
       </div>
     </div>
   );
