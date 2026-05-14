@@ -267,7 +267,7 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch('/data/restaurants.json?v=20260514').then(r => r.json()),
+      fetch('/data/restaurants.json?v=20260514b').then(r => r.json()),
       fetch('/data/lunch.json?v=20260512').then(r => r.json()),
       fetch('/data/golf.json?v=20260512').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
@@ -381,7 +381,7 @@ export default function App() {
       <header className="header">
         <div className="header-logo">세일즈가이의 <span>식탁</span></div>
         <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 귀경</div>
-        <div className="db-badge">📦 총 {(512 + 421 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
+        <div className="db-badge">📦 총 {(487 + 421 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
       </header>
 
       <nav className="tab-nav">
@@ -409,7 +409,7 @@ export default function App() {
             ))}
           </div>
           <div className="info-banner">
-            🔍 {bizRegion} · {bizGenre!=="전체"?bizGenre+" · ":""}<b>{bizFiltered.length}곳</b> 발견 (전체 512개)
+            🔍 {bizRegion} · {bizGenre!=="전체"?bizGenre+" · ":""}<b>{bizFiltered.length}곳</b> 발견 (전체 487개)
           </div>
           <div className="rest-list">
             {bizFiltered.length===0
