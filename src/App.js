@@ -102,7 +102,7 @@ const GENRE_KEYWORDS = {
 };
 
 const LUNCH_PRICES  = ["전체","1만원이하","1만원대","2만원대"];
-const LUNCH_GENRES  = ["전체","한식·백반","국밥·해장","면류","분식","중식·마라","일식·덮밥","고기","샐러드","양식"];
+const LUNCH_GENRES  = ["전체","한식·백반","국밥·해장","면류","분식","중식·마라","일식·덮밥","고기","버거","치킨","샐러드","양식"];
 const LUNCH_GENRE_MAP = {
   '한식·백반': ['한식백반','한식','비빔밥','삼계탕','도시락','한식정식','한식뷔페','쌈밥','낙지볶음','제육','닭볶음탕','된장찌개','순두부','찌개','백반','빈대떡','갈치','쭈꾸미','불백','돌솥밥','가정식','만두','쌀밥','한식·'],
   '국밥·해장': ['국밥','순대국','설렁탕','해장국','감자탕','뼈해장국','굴국밥','수육국밥','돼지국밥','육개장','어묵탕','부대찌개','닭한마리','전골','뼈'],
@@ -113,6 +113,9 @@ const LUNCH_GENRE_MAP = {
   '고기': ['삼겹살','닭갈비','갈비','돼지갈비','돼지구이','곱창','닭발','족발','치킨','통닭'],
   '샐러드': ['샐러드','포케','건강식','비건','요거트'],
   '양식': ['파스타','피자','버거','브런치','베이글','샌드위치','스테이크','타코','케밥','카레','인도','태국','중동','오므라이스'],
+  // 체인 전용 장르
+  '버거': ['버거'],
+  '치킨': ['치킨'],
 };
 // 카카오 카테고리 → 점심 장르 매핑
 const KAKAO_GENRE_MAP = {
@@ -122,9 +125,11 @@ const KAKAO_GENRE_MAP = {
   '분식':      ['분식','떡볶이','김밥','쫄면'],
   '중식·마라': ['중국음식','중식','마라탕','딤섬'],
   '일식·덮밥': ['일식','초밥','스시','덮밥','돈까스','돈가스'],
-  '고기':      ['고기','삼겹살','갈비','닭갈비','족발','곱창','치킨'],
+  '고기':      ['고기','삼겹살','갈비','닭갈비','족발','곱창'],
+  '버거':      ['햄버거','버거','패스트푸드'],
+  '치킨':      ['치킨','닭강정','닭'],
   '샐러드':    ['샐러드','건강식','포케'],
-  '양식':      ['양식','피자','버거','파스타','브런치','스테이크'],
+  '양식':      ['양식','피자','파스타','브런치','스테이크'],
 };
 
 const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
@@ -206,22 +211,25 @@ function GolfRestCard({ r, onClick }) {
 
 function PublicLunchCard({ r }) {
   return (
-    <div className="rest-card" onClick={() => openNaverSearch(r.name, r.district)}>
+    <div className="rest-card">
       <div className="rest-card-top">
         <div className="rest-emoji">🍴</div>
         <div className="rest-info">
           <div className="rest-name">{r.name}</div>
           <div className="rest-sub">{r.district} · {r.genre}</div>
         </div>
-        <div style={{fontSize:"10px",color:"#7A6A5A",flexShrink:0,textAlign:"right"}}>
-          공공DB<br/>🔍 검색
-        </div>
+        <div style={{fontSize:"9px",color:"#A09080",flexShrink:0,textAlign:"right",background:"#F5F0E8",borderRadius:4,padding:"2px 6px"}}>공공DB</div>
       </div>
-      <div className="rest-note" style={{fontSize:"11px",color:"#8A7A6A"}}>{r.address}</div>
-      <div className="rest-tags">
-        <span className="tag tag-region">{r.district}</span>
-        <span className="tag tag-rating">{r.genre}</span>
-        {r.phone && <span className="tag tag-region">{r.phone}</span>}
+      <div className="rest-note" style={{fontSize:"10px",color:"#8A7A6A"}}>{r.address}{r.phone ? ` · ${r.phone}` : ''}</div>
+      <div style={{display:"flex",gap:6,marginTop:6}}>
+        <button onClick={()=>openNaverSearch(r.name, r.district)}
+          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #00C73C",background:"#F0FFF4",color:"#00875A",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
+          🟢 네이버
+        </button>
+        <button onClick={()=>openYoutubeShorts(r.name)}
+          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #FF0000",background:"#FFF0F0",color:"#CC0000",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
+          ▶ 유튜브
+        </button>
       </div>
     </div>
   );
@@ -229,11 +237,11 @@ function PublicLunchCard({ r }) {
 
 function KakaoPlaceCard({ r }) {
   const genre = r.category_name.split(' > ').slice(1).join(' > ');
-  const walkMin = Math.ceil(Number(r.distance) / 67); // 4km/h 기준
+  const walkMin = Math.ceil(Number(r.distance) / 67);
   const addr = r.road_address_name || r.address_name || '';
   const shortAddr = addr.split(' ').slice(-2).join(' ');
   return (
-    <div className="rest-card" onClick={() => window.open(r.place_url, '_blank')}>
+    <div className="rest-card">
       <div className="rest-card-top">
         <div className="rest-emoji">🍴</div>
         <div className="rest-info">
@@ -245,10 +253,19 @@ function KakaoPlaceCard({ r }) {
           <div style={{fontSize:9,color:"#8A7A6A",marginTop:3}}>🚶 {walkMin}분</div>
         </div>
       </div>
-      <div className="rest-tags">
-        <span className="tag tag-rating">{genre}</span>
-        {r.phone && <span className="tag tag-region">{r.phone}</span>}
-        <span style={{marginLeft:"auto",fontSize:9,color:"#C8A96E",fontWeight:700}}>카카오맵 →</span>
+      <div style={{display:"flex",gap:6,marginTop:6}}>
+        <button onClick={()=>openNaverSearch(r.place_name, null, null)}
+          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #00C73C",background:"#F0FFF4",color:"#00875A",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
+          🟢 네이버
+        </button>
+        <button onClick={()=>openYoutubeShorts(r.place_name)}
+          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #FF0000",background:"#FFF0F0",color:"#CC0000",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
+          ▶ 유튜브
+        </button>
+        <button onClick={()=>window.open(r.place_url,'_blank')}
+          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #FFCD00",background:"#FFFBE6",color:"#997700",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
+          🗺 카카오
+        </button>
       </div>
     </div>
   );
@@ -327,7 +344,7 @@ export default function App() {
   useEffect(() => {
     Promise.all([
       fetch('/data/restaurants.json?v=20260515c').then(r => r.json()),
-      fetch('/data/lunch.json?v=20260512').then(r => r.json()),
+      fetch('/data/lunch.json?v=20260515d').then(r => r.json()),
       fetch('/data/golf.json?v=20260515c').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
       setRestaurants(rest);
@@ -536,7 +553,7 @@ export default function App() {
       <header className="header">
         <div className="header-logo">세일즈가이의 <span>식탁</span></div>
         <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 귀경</div>
-        <div className="db-badge">📦 총 {(552 + 421 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
+        <div className="db-badge">📦 총 {(552 + 441 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
       </header>
 
       <nav className="tab-nav">
