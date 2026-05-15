@@ -494,6 +494,11 @@
       "direction": "여의도·강남",
       "time": "70분",
       "grade": "대중제"
+    },
+    {
+      "id": 105,
+      "name": "안성 베네스트 GC",
+      "region": "경기남부(안성)"
     }
   ],
   "restaurants": [
@@ -2644,6 +2649,78 @@
       "tip": "외포리항·대하새우구이·서해안",
       "direction": "여의도·강남",
       "emoji": "🍱"
+    },
+    {
+      "id": 234,
+      "golf": "안성 베네스트 GC",
+      "name": "안성 맞춤한정식",
+      "genre": "한정식",
+      "distance": "10분",
+      "room": "✅ 룸",
+      "rating": 4.4,
+      "tip": "안성 한정식 명가·VIP룸",
+      "direction": "65",
+      "emoji": "🏮"
+    },
+    {
+      "id": 235,
+      "golf": "안성 베네스트 GC",
+      "name": "안성 한우 원조",
+      "genre": "한우",
+      "distance": "12분",
+      "room": "✅ 룸",
+      "rating": 4.3,
+      "tip": "안성 한우 개별룸",
+      "direction": "65",
+      "emoji": "🥩"
+    },
+    {
+      "id": 236,
+      "golf": "안성 베네스트 GC",
+      "name": "안성 남사당 한우국밥",
+      "genre": "한우국밥·한식",
+      "distance": "8분",
+      "room": "단체가능",
+      "rating": 4.3,
+      "tip": "안성 명물 한우국밥·라운딩 후 따뜻하게",
+      "direction": "강남·여의도",
+      "emoji": "🌿"
+    },
+    {
+      "id": 237,
+      "golf": "안성 베네스트 GC",
+      "name": "안성 배꽃향기 한정식",
+      "genre": "한정식",
+      "distance": "10분",
+      "room": "룸 있음",
+      "rating": 4.5,
+      "tip": "안성 배 특산물 활용 한정식·VIP룸 가능",
+      "direction": "강남·여의도",
+      "emoji": "🏮"
+    },
+    {
+      "id": 238,
+      "golf": "안성 베네스트 GC",
+      "name": "안성 한정식 궁",
+      "genre": "한정식",
+      "distance": "10분",
+      "room": "룸 있음",
+      "rating": 4.5,
+      "tip": "안성한정식명가·VIP룸·고풍스러운분위기",
+      "direction": "강남·여의도",
+      "emoji": "🏮"
+    },
+    {
+      "id": 239,
+      "golf": "안성 베네스트 GC",
+      "name": "안성 배꽃향기 한우",
+      "genre": "한우",
+      "distance": "12분",
+      "room": "룸 있음",
+      "rating": 4.4,
+      "tip": "안성배특산물·한우코스·룸가능",
+      "direction": "강남·여의도",
+      "emoji": "🥩"
     }
   ]
 }
