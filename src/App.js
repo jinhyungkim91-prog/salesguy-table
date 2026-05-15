@@ -628,7 +628,7 @@ export default function App() {
       <header className="header">
         <div className="header-logo">세일즈가이의 <span>식탁</span></div>
         <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 귀경</div>
-        <div className="db-badge">📦 총 {(552 + 363 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
+        <div className="db-badge">📦 총 {(restaurants.length + lunchDB.length + PUBLIC_LUNCH_TOTAL + golfRestaurants.length).toLocaleString()}개 DB</div>
       </header>
 
       <nav className="tab-nav">
@@ -656,7 +656,7 @@ export default function App() {
             ))}
           </div>
           <div className="info-banner">
-            🔍 {bizRegion} · {bizGenre!=="전체"?bizGenre+" · ":""}<b>{bizFiltered.length}곳</b> 발견 (전체 552개)
+            🔍 {bizRegion} · {bizGenre!=="전체"?bizGenre+" · ":""}<b>{bizFiltered.length}곳</b> 발견 (전체 {restaurants.length}개)
           </div>
           <div className="rest-list">
             {bizFiltered.length===0
@@ -736,7 +736,7 @@ export default function App() {
                 : <>📍 반경 {nearbyRadius}m · <b>{filteredKakao.length}곳</b> 발견 (카카오맵)</>
               : publicLoading
                 ? <>🔍 공공DB 검색 중...</>
-                : <>🥢 <b>{lunchSearch.length>=2?(lunchFiltered.length+publicTotal).toLocaleString():(421+PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
+                : <>🥢 <b>{lunchSearch.length>=2?(lunchFiltered.length+publicTotal).toLocaleString():(lunchDB.length+PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
             }
           </div>
 
