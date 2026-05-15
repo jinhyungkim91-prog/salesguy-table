@@ -132,6 +132,9 @@ const KAKAO_GENRE_MAP = {
   '양식':      ['양식','피자','파스타','브런치','스테이크'],
 };
 
+// 공공DB에서 제외할 커피·음료 체인
+const COFFEE_CHAIN_BLOCK = ['할리스','커피빈','아티제','바나프레소','스타벅스','이디야','투썸플레이스','폴바셋','파스쿠찌','드롭탑','엔제리너스','탐앤탐스','카페베네','빽다방','메가커피','컴포즈커피','더벤티','공차','쥬씨','요거트월드'];
+
 const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -695,7 +698,7 @@ export default function App() {
                     {lunchFiltered.map(r=><LunchCard key={r.id} r={r} onClick={r=>openModal(r,"lunch")}/>)}
                     {lunchSearch.length>=2 && !publicLoading &&
                       publicResults
-                        .filter(p=>!lunchFiltered.some(c=>c.name===p.name))
+                        .filter(p=>!lunchFiltered.some(c=>c.name===p.name) && !COFFEE_CHAIN_BLOCK.some(k=>p.name.includes(k)))
                         .map((r,i)=><PublicLunchCard key={`pub-${i}`} r={r}/>)
                     }
                     {lunchSearch.length>=2 && !publicLoading && publicHasMore && (
