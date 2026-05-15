@@ -2,6 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import { supabase } from "./supabaseClient";
 
+function openYoutubeShorts(name) {
+  const clean = name.replace(/\s*\(.*?\)/g, "").trim();
+  const query = encodeURIComponent(clean + " 맛집");
+  window.open("https://www.youtube.com/results?search_query=" + query + "&sp=EgIYAQ", "_blank");
+}
+
 function openNaverSearch(name, area, mapQuery) {
   let query;
   if (mapQuery) {
@@ -242,10 +248,15 @@ function DetailModal({ r, type, onClose }) {
         {type==="golf" && <div className="modal-room"><span className={r.room&&r.room.includes("✅")?"tag tag-room":"tag tag-maybe"}>{r.room&&r.room.includes("✅")?"✅ 룸 있음":"단체가능"}</span></div>}
         <div className="modal-note">{type==="biz"?r.note:type==="golf"?r.tip:r.tip}</div>
         <div className="modal-actions">
-          <button className="btn-kakao" onClick={()=>openNaverSearch(r.name, r.area||null, r.mapQuery)}>
-            네이버에서 찾기
-          </button>
-          <button className={`btn-save ${isFav?"btn-save-on":""}`} onClick={handleFav}>
+          <div style={{display:"flex",gap:8,width:"100%",marginBottom:8}}>
+            <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverSearch(r.name, r.area||null, r.mapQuery)}>
+              🟢 네이버
+            </button>
+            <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.name)}>
+              ▶ 유튜브 쇼츠
+            </button>
+          </div>
+          <button className={`btn-save ${isFav?"btn-save-on":""}`} onClick={handleFav} style={{width:"100%"}}>
             {isFav ? "❤️ 찜 완료" : "🤍 찜하기"}
           </button>
         </div>

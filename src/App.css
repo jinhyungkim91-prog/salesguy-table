@@ -360,7 +360,20 @@ body {
   margin-bottom: 18px;
   line-height: 1.5;
 }
-.modal-actions { display: flex; gap: 10px; }
+.modal-actions { display: flex; flex-direction: column; gap: 0; }
+.btn-youtube {
+  background: #FFF0F0;
+  color: #CC0000;
+  border: 1.5px solid #FF0000;
+  border-radius: 12px;
+  padding: 13px 8px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+  transition: opacity 0.15s;
+}
+.btn-youtube:hover { opacity: 0.85; }
 .btn-kakao {
   flex: 2;
   background: var(--dark);
