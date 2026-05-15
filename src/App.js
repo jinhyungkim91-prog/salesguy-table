@@ -212,39 +212,29 @@ function GolfRestCard({ r, onClick }) {
   );
 }
 
-function PublicLunchCard({ r }) {
+function PublicLunchCard({ r, onClick }) {
   return (
-    <div className="rest-card">
+    <div className="rest-card" onClick={()=>onClick(r)} style={{cursor:"pointer"}}>
       <div className="rest-card-top">
         <div className="rest-emoji">🍴</div>
         <div className="rest-info">
           <div className="rest-name">{r.name}</div>
           <div className="rest-sub">{r.district} · {r.genre}</div>
         </div>
-        <div style={{fontSize:"9px",color:"#A09080",flexShrink:0,textAlign:"right",background:"#F5F0E8",borderRadius:4,padding:"2px 6px"}}>공공DB</div>
+        <div style={{fontSize:"9px",color:"#A09080",flexShrink:0,background:"#F5F0E8",borderRadius:4,padding:"2px 6px"}}>공공DB</div>
       </div>
-      <div className="rest-note" style={{fontSize:"10px",color:"#8A7A6A"}}>{r.address}{r.phone ? ` · ${r.phone}` : ''}</div>
-      <div style={{display:"flex",gap:6,marginTop:6}}>
-        <button onClick={()=>openNaverSearch(r.name, r.district)}
-          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #00C73C",background:"#F0FFF4",color:"#00875A",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
-          🟢 네이버
-        </button>
-        <button onClick={()=>openYoutubeShorts(r.name)}
-          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #FF0000",background:"#FFF0F0",color:"#CC0000",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
-          ▶ 유튜브
-        </button>
-      </div>
+      <div className="rest-note" style={{fontSize:"10px",color:"#8A7A6A"}}>{r.address}</div>
     </div>
   );
 }
 
-function KakaoPlaceCard({ r }) {
+function KakaoPlaceCard({ r, onClick }) {
   const genre = r.category_name.split(' > ').slice(1).join(' > ');
   const walkMin = Math.ceil(Number(r.distance) / 67);
   const addr = r.road_address_name || r.address_name || '';
   const shortAddr = addr.split(' ').slice(-2).join(' ');
   return (
-    <div className="rest-card">
+    <div className="rest-card" onClick={()=>onClick(r)} style={{cursor:"pointer"}}>
       <div className="rest-card-top">
         <div className="rest-emoji">🍴</div>
         <div className="rest-info">
@@ -255,20 +245,6 @@ function KakaoPlaceCard({ r }) {
           <div style={{fontSize:15,fontWeight:900,color:"#00875A",fontFamily:"'DM Mono',monospace",lineHeight:1}}>{r.distance}m</div>
           <div style={{fontSize:9,color:"#8A7A6A",marginTop:3}}>🚶 {walkMin}분</div>
         </div>
-      </div>
-      <div style={{display:"flex",gap:6,marginTop:6}}>
-        <button onClick={()=>openNaverSearch(r.place_name, null, null)}
-          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #00C73C",background:"#F0FFF4",color:"#00875A",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
-          🟢 네이버
-        </button>
-        <button onClick={()=>openYoutubeShorts(r.place_name)}
-          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #FF0000",background:"#FFF0F0",color:"#CC0000",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
-          ▶ 유튜브
-        </button>
-        <button onClick={()=>window.open(r.place_url,'_blank')}
-          style={{flex:1,padding:"7px 4px",borderRadius:8,border:"1.5px solid #FFCD00",background:"#FFFBE6",color:"#997700",fontSize:11,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
-          🗺 카카오
-        </button>
       </div>
     </div>
   );
@@ -288,6 +264,94 @@ function DetailModal({ r, type, onClose }) {
     setIsFav(next.includes(r.id));
   };
 
+  // ── 공공DB 모달 ──
+  if (type === "public") {
+    return (
+      <div className="modal-overlay" onClick={onClose}>
+        <div className="modal-box" onClick={e=>e.stopPropagation()}>
+          <button className="modal-close" onClick={onClose}>✕</button>
+          <div className="modal-emoji">🍴</div>
+          <div className="modal-name">{r.name}</div>
+          <div className="modal-area">{r.district}</div>
+          <div className="modal-row">
+            <div className="modal-item">
+              <div className="modal-label">장르</div>
+              <div className="modal-val">{r.genre || "-"}</div>
+            </div>
+            <div className="modal-item">
+              <div className="modal-label">전화</div>
+              <div className="modal-val" style={{fontSize:11}}>{r.phone || "-"}</div>
+            </div>
+            <div className="modal-item">
+              <div className="modal-label">출처</div>
+              <div className="modal-val" style={{fontSize:10,color:"#A09080"}}>공공DB</div>
+            </div>
+          </div>
+          <div className="modal-note" style={{fontSize:11,color:"#8A7A6A"}}>{r.address}</div>
+          <div className="modal-actions">
+            <div style={{display:"flex",gap:8,width:"100%"}}>
+              <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverSearch(r.name, r.district||null, null)}>
+                🟢 네이버
+              </button>
+              <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.name)}>
+                ▶ 유튜브 쇼츠
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── 카카오 주변검색 모달 ──
+  if (type === "kakao") {
+    const genre = r.category_name ? r.category_name.split(' > ').slice(1).join(' > ') : '';
+    const walkMin = Math.ceil(Number(r.distance) / 67);
+    const addr = r.road_address_name || r.address_name || '';
+    return (
+      <div className="modal-overlay" onClick={onClose}>
+        <div className="modal-box" onClick={e=>e.stopPropagation()}>
+          <button className="modal-close" onClick={onClose}>✕</button>
+          <div className="modal-emoji">🍴</div>
+          <div className="modal-name">{r.place_name}</div>
+          <div className="modal-area">{addr}</div>
+          <div className="modal-row">
+            <div className="modal-item">
+              <div className="modal-label">장르</div>
+              <div className="modal-val" style={{fontSize:10}}>{genre || "-"}</div>
+            </div>
+            <div className="modal-item">
+              <div className="modal-label">거리</div>
+              <div className="modal-val score-hi">{r.distance}m</div>
+            </div>
+            <div className="modal-item">
+              <div className="modal-label">도보</div>
+              <div className="modal-val">🚶 {walkMin}분</div>
+            </div>
+          </div>
+          {r.phone && <div className="modal-note" style={{textAlign:"center",fontSize:12}}>📞 {r.phone}</div>}
+          <div className="modal-actions">
+            <div style={{display:"flex",gap:8,width:"100%",marginBottom:8}}>
+              <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverSearch(r.place_name, null, null)}>
+                🟢 네이버
+              </button>
+              <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.place_name)}>
+                ▶ 유튜브 쇼츠
+              </button>
+            </div>
+            {r.place_url && (
+              <button className="btn-save" style={{width:"100%",background:"#FEE500",color:"#3C1E1E",border:"none"}}
+                onClick={()=>window.open(r.place_url,"_blank")}>
+                🗺️ 카카오맵에서 보기
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── 기존 biz / lunch / golf 모달 ──
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-box" onClick={e=>e.stopPropagation()}>
@@ -676,7 +740,7 @@ export default function App() {
                 : filteredKakao.length === 0
                   ? <div className="empty">반경 {nearbyRadius}m 내 음식점이 없어요 😢<br/><span style={{fontSize:12}}>반경을 늘려보세요</span></div>
                   : <>
-                      {filteredKakao.map((r,i)=><KakaoPlaceCard key={r.id||i} r={r}/>)}
+                      {filteredKakao.map((r,i)=><KakaoPlaceCard key={r.id||i} r={r} onClick={r=>openModal(r,"kakao")}/>)}
                       {kakaoPagination && (
                         <button onClick={loadMore} disabled={moreLoading}
                           style={{width:"100%",padding:"12px",margin:"8px 0",background:"#D5F5E3",border:"1px solid #00875A",borderRadius:10,color:"#00875A",fontWeight:700,fontSize:13,cursor:"pointer"}}>
@@ -693,7 +757,7 @@ export default function App() {
                     {lunchSearch.length>=2 && !publicLoading &&
                       publicResults
                         .filter(p=>!lunchFiltered.some(c=>c.name===p.name) && !COFFEE_CHAIN_BLOCK.some(k=>p.name.includes(k)))
-                        .map((r,i)=><PublicLunchCard key={`pub-${i}`} r={r}/>)
+                        .map((r,i)=><PublicLunchCard key={`pub-${i}`} r={r} onClick={r=>openModal(r,"public")}/>)
                     }
                     {lunchSearch.length>=2 && !publicLoading && publicHasMore && (
                       <button onClick={loadMore} disabled={moreLoading}
