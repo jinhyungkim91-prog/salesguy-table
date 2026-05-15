@@ -345,7 +345,7 @@ export default function App() {
     Promise.all([
       fetch('/data/restaurants.json?v=20260515c').then(r => r.json()),
       fetch('/data/lunch.json?v=20260515e').then(r => r.json()),
-      fetch('/data/golf.json?v=20260515c').then(r => r.json()),
+      fetch('/data/golf.json?v=20260515f').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
       setRestaurants(rest);
       setLunchDB(lunch);
