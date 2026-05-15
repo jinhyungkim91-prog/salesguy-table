@@ -411,7 +411,7 @@ export default function App() {
   useEffect(() => {
     Promise.all([
       fetch('/data/restaurants.json?v=20260515c').then(r => r.json()),
-      fetch('/data/lunch.json?v=20260515e').then(r => r.json()),
+      fetch('/data/lunch.json?v=20260515g').then(r => r.json()),
       fetch('/data/golf.json?v=20260515f').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
       setRestaurants(rest);
@@ -620,7 +620,7 @@ export default function App() {
       <header className="header">
         <div className="header-logo">세일즈가이의 <span>식탁</span></div>
         <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 귀경</div>
-        <div className="db-badge">📦 총 {(552 + 439 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
+        <div className="db-badge">📦 총 {(552 + 433 + PUBLIC_LUNCH_TOTAL + 239).toLocaleString()}개 DB</div>
       </header>
 
       <nav className="tab-nav">
