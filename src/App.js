@@ -4,8 +4,7 @@ import { supabase } from "./supabaseClient";
 
 function openYoutubeShorts(name) {
   const clean = name.replace(/\s*\(.*?\)/g, "").trim();
-  const query = encodeURIComponent(clean + " 맛집");
-  window.open("https://www.youtube.com/results?search_query=" + query + "&sp=EgIYAQ", "_blank");
+  window.open("https://www.youtube.com/results?search_query=" + encodeURIComponent(clean) + "&sp=EgIYAQ", "_blank");
 }
 
 function openNaverSearch(name, area, mapQuery) {
