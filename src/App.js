@@ -101,9 +101,25 @@ const GENRE_KEYWORDS = {
   '파인다이닝': ['파인다이닝','파인'],
 };
 
-const LUNCH_REGIONS = ["전체","강남","종로","영등포","마포","서초","성동","중구","용산","송파","강동","강서","경기"];
 const LUNCH_PRICES  = ["전체","1만원이하","1만원대","2만원대"];
-const LUNCH_GENRES  = ["전체","한식","라멘","국밥","분식","중식","일식","샐러드","마라탕"];
+const LUNCH_GENRES  = ["전체","한식·백반","국밥·해장","면류","분식","중식·마라","일식·덮밥","고기","샐러드","양식"];
+const LUNCH_GENRE_MAP = {
+  '한식·백반': ['한식백반','한식','비빔밥','삼계탕','도시락','한식정식','한식뷔페','쌈밥','낙지볶음','제육','닭볶음탕','된장찌개','순두부','찌개','백반','빈대떡','갈치','쭈꾸미','불백','돌솥밥','가정식','만두','쌀밥','한식·'],
+  '국밥·해장': ['국밥','순대국','설렁탕','해장국','감자탕','뼈해장국','굴국밥','수육국밥','돼지국밥','육개장','어묵탕','부대찌개','닭한마리','전골','뼈'],
+  '면류': ['라멘','칼국수','냉면','국수','쌀국수','우동','마제소바','탄탄멘','탄탄면','막국수','수제비','냉모밀','냉메밀','소바','베트남쌀국수','짬뽕'],
+  '분식': ['분식','떡볶이','김밥','쫄면','비빔국수','충무김밥','순대','토스트·브런치'],
+  '중식·마라': ['중식','마라탕','마라샹궈','딤섬','탕수육','볶음밥','중식·'],
+  '일식·덮밥': ['돈가츠','돈가스','돈카츠','초밥','스시','덮밥','텐동','장어덮밥','참치','회전초밥','타코야끼','일식','돈부리','마제소바'],
+  '고기': ['삼겹살','닭갈비','갈비','돼지갈비','돼지구이','곱창','닭발','족발','치킨','통닭'],
+  '샐러드': ['샐러드','포케','건강식','비건','요거트'],
+  '양식': ['파스타','피자','버거','브런치','베이글','샌드위치','스테이크','타코','케밥','카레','인도','태국','중동','오므라이스'],
+};
+// 구 이름 → 점심 지역 매핑
+const GU_TO_REGION = {
+  '강남구':'강남','서초구':'서초','종로구':'종로','영등포구':'영등포',
+  '마포구':'마포','중구':'중구','송파구':'송파','성동구':'성동',
+  '용산구':'용산','강동구':'강동','강서구':'강서',
+};
 
 const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
 
@@ -299,10 +315,14 @@ export default function App() {
   const [bizSearch, setBizSearch] = useState("");
 
   // 점심 필터
-  const [lunchRegion, setLunchRegion] = useState("전체");
+  const [lunchGenre, setLunchGenre]   = useState("전체");
   const [lunchPrice, setLunchPrice]   = useState("전체");
   const [lunchSearch, setLunchSearch] = useState("");
   const [cheapOnly, setCheapOnly]     = useState(false);
+  // 주변 위치
+  const [userLocation, setUserLocation] = useState(null); // {lat, lng, dong, gu}
+  const [nearbyMode, setNearbyMode]     = useState(false);
+  const [locating, setLocating]         = useState(false);
 
   // 공공 점심 DB (Supabase)
   const [publicResults, setPublicResults] = useState([]);
@@ -314,20 +334,17 @@ export default function App() {
   const debounceRef = useRef(null);
   const PAGE = 50;
 
+  // 텍스트 검색 → 공공DB
   useEffect(() => {
+    if (nearbyMode) return; // 주변 모드일 때는 별도 effect
     if (lunchSearch.length < 2) { setPublicResults([]); setPublicTotal(0); setPublicOffset(0); setPublicHasMore(false); return; }
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(async () => {
       setPublicLoading(true);
       setPublicOffset(0);
-      const applyFilters = (q) => {
-        q = q.ilike('name', `%${lunchSearch}%`);
-        if (lunchRegion !== '전체') q = q.ilike('district', `${lunchRegion}%`);
-        return q;
-      };
       const [{ data }, { count }] = await Promise.all([
-        applyFilters(supabase.from('lunch_public').select('name, address, genre, phone, district')).range(0, PAGE - 1),
-        applyFilters(supabase.from('lunch_public').select('*', { count: 'exact', head: true }))
+        supabase.from('lunch_public').select('name, address, genre, phone, district').ilike('name', `%${lunchSearch}%`).range(0, PAGE - 1),
+        supabase.from('lunch_public').select('*', { count: 'exact', head: true }).ilike('name', `%${lunchSearch}%`)
       ]);
       const results = data || [];
       setPublicResults(results);
@@ -336,13 +353,42 @@ export default function App() {
       setPublicLoading(false);
     }, 400);
     return () => clearTimeout(debounceRef.current);
-  }, [lunchSearch, lunchRegion]);
+  }, [lunchSearch, nearbyMode]);
+
+  // 주변 모드 → 위치 기반 공공DB 검색
+  useEffect(() => {
+    if (!nearbyMode || !userLocation) return;
+    setPublicLoading(true);
+    setPublicOffset(0);
+    const { dong, gu } = userLocation;
+    const buildQ = (base) => {
+      if (dong) return base.ilike('address', `%${dong}%`);
+      if (gu)   return base.ilike('district', `%${gu}%`);
+      return base;
+    };
+    (async () => {
+      const [{ data }, { count }] = await Promise.all([
+        buildQ(supabase.from('lunch_public').select('name, address, genre, phone, district')).range(0, PAGE - 1),
+        buildQ(supabase.from('lunch_public').select('*', { count: 'exact', head: true }))
+      ]);
+      setPublicResults(data || []);
+      setPublicTotal(count || 0);
+      setPublicHasMore((data||[]).length === PAGE);
+      setPublicLoading(false);
+    })();
+  }, [nearbyMode, userLocation]);
 
   const loadMore = async () => {
     setMoreLoading(true);
     const nextOffset = publicOffset + PAGE;
-    let q = supabase.from('lunch_public').select('name, address, genre, phone, district').ilike('name', `%${lunchSearch}%`);
-    if (lunchRegion !== '전체') q = q.ilike('district', `${lunchRegion}%`);
+    let q = supabase.from('lunch_public').select('name, address, genre, phone, district');
+    if (nearbyMode && userLocation) {
+      const { dong, gu } = userLocation;
+      if (dong) q = q.ilike('address', `%${dong}%`);
+      else if (gu) q = q.ilike('district', `%${gu}%`);
+    } else {
+      q = q.ilike('name', `%${lunchSearch}%`);
+    }
     const { data, error } = await q.range(nextOffset, nextOffset + PAGE - 1);
     if (error) console.error('[Supabase 오류]', error);
     const more = data || [];
@@ -355,6 +401,35 @@ export default function App() {
   // 골프 필터
   const [selectedGolf, setSelectedGolf] = useState("베어크리크 CC");
   const [golfSearch, setGolfSearch] = useState("");
+
+  const handleNearby = () => {
+    if (nearbyMode) { setNearbyMode(false); setUserLocation(null); setPublicResults([]); setPublicTotal(0); return; }
+    if (!navigator.geolocation) { alert('위치 서비스를 지원하지 않는 브라우저입니다.'); return; }
+    setLocating(true);
+    navigator.geolocation.getCurrentPosition(
+      async (pos) => {
+        const { latitude: lat, longitude: lng } = pos.coords;
+        try {
+          const res = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`,
+            { headers: { 'Accept-Language': 'ko' } }
+          );
+          const json = await res.json();
+          const addr = json.address || {};
+          const dong = addr.suburb || addr.quarter || addr.neighbourhood || addr.village || '';
+          const gu   = addr.city_district || addr.county || '';
+          setUserLocation({ lat, lng, dong, gu });
+          setNearbyMode(true);
+          setLunchSearch('');
+        } catch(e) {
+          alert('위치를 가져올 수 없어요. 잠시 후 다시 시도해주세요.');
+        }
+        setLocating(false);
+      },
+      () => { setLocating(false); alert('위치 권한을 허용해주세요.'); },
+      { timeout: 8000, maximumAge: 60000 }
+    );
+  };
 
   const openModal = (r, type) => { setSelected(r); setSelType(type); };
 
@@ -369,9 +444,16 @@ export default function App() {
   });
 
   const lunchFiltered = lunchDB.filter(r => {
-    if (lunchRegion!=="전체" && r.region!==lunchRegion) return false;
+    if (nearbyMode && userLocation) {
+      const mapped = GU_TO_REGION[userLocation.gu] || '';
+      if (mapped && r.region !== mapped) return false;
+    }
     if (lunchPrice!=="전체" && r.price!==lunchPrice) return false;
     if (cheapOnly && r.price!=="1만원이하") return false;
+    if (lunchGenre!=="전체") {
+      const kws = LUNCH_GENRE_MAP[lunchGenre] || [lunchGenre];
+      if (!kws.some(k => r.genre.includes(k))) return false;
+    }
     if (lunchSearch && !r.name.includes(lunchSearch) && !r.area.includes(lunchSearch)) return false;
     return true;
   });
@@ -433,43 +515,85 @@ export default function App() {
       {/* ── 직장인 점심 탭 ── */}
       {activeTab==="lunch" && (
         <div className="content">
-          <div className="search-wrap">
-            <span className="search-icon">🔍</span>
-            <input className="search-input" placeholder="식당명 또는 지역으로 검색"
-              value={lunchSearch} onChange={e=>setLunchSearch(e.target.value)} />
+          {/* 검색창 + 주변 버튼 */}
+          <div style={{display:"flex",gap:8,alignItems:"center",padding:"10px 14px 0"}}>
+            <div className="search-wrap" style={{flex:1,margin:0}}>
+              <span className="search-icon">🔍</span>
+              <input className="search-input" placeholder="식당명으로 검색"
+                value={lunchSearch}
+                onChange={e=>{ setLunchSearch(e.target.value); if(nearbyMode){setNearbyMode(false);setUserLocation(null);setPublicResults([]);setPublicTotal(0);} }} />
+            </div>
+            <button
+              onClick={handleNearby}
+              style={{
+                flexShrink:0, padding:"10px 11px", borderRadius:12,
+                border:`1.5px solid ${nearbyMode?"#00875A":locating?"#C8A96E":"#EDE8E0"}`,
+                background: nearbyMode?"#D5F5E3":locating?"#F5EDD8":"white",
+                color: nearbyMode?"#00875A":locating?"#7A5C1E":"#8A7A6A",
+                fontSize:12, fontWeight:800, cursor:locating?"default":"pointer",
+                fontFamily:"'Noto Sans KR',sans-serif", whiteSpace:"nowrap",
+                transition:"all 0.2s"
+              }}>
+              {locating ? "⏳ 위치중" : nearbyMode ? "📍 주변 ON" : "📍 주변"}
+            </button>
           </div>
-          <div className="filter-scroll">
-            {LUNCH_REGIONS.map(r=>(
-              <button key={r} className={`filter-chip ${lunchRegion===r?"on":""}`} onClick={()=>setLunchRegion(r)}>{r}</button>
+
+          {/* 위치 감지 배너 */}
+          {nearbyMode && userLocation && (
+            <div style={{
+              margin:"6px 14px 0", padding:"7px 12px",
+              background:"#D5F5E3", borderRadius:8, border:"1px solid #00875A",
+              fontSize:11, color:"#00875A", fontWeight:700,
+              display:"flex", alignItems:"center", gap:6
+            }}>
+              📍 {[userLocation.dong, userLocation.gu].filter(Boolean).join(' ')} 주변 검색 중
+              <button
+                onClick={()=>{setNearbyMode(false);setUserLocation(null);setPublicResults([]);setPublicTotal(0);}}
+                style={{marginLeft:"auto",background:"none",border:"none",cursor:"pointer",color:"#00875A",fontSize:14,lineHeight:1}}>
+                ✕
+              </button>
+            </div>
+          )}
+
+          {/* 장르 필터 */}
+          <div className="filter-scroll" style={{marginTop:8}}>
+            {LUNCH_GENRES.map(g=>(
+              <button key={g} className={`filter-chip ${lunchGenre===g?"on":""}`} onClick={()=>setLunchGenre(g)}>{g}</button>
             ))}
           </div>
+
+          {/* 가격대 필터 */}
           <div className="filter-scroll">
             {LUNCH_PRICES.map(p=>(
               <button key={p} className={`filter-chip ${lunchPrice===p?"on":""}`} onClick={()=>setLunchPrice(p)}>{p}</button>
             ))}
           </div>
+
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
             {publicLoading
-              ? <>🔍 공공DB 검색 중...</>
-              : <>🥢 {lunchRegion} · <b>{lunchSearch.length>=2 ? (lunchFiltered.length + publicTotal).toLocaleString() : (421 + PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
+              ? <>{nearbyMode?"📍 주변 DB":"🔍 공공DB"} 검색 중...</>
+              : nearbyMode
+                ? <>📍 주변 · <b>{(lunchFiltered.length + publicTotal).toLocaleString()}곳</b> 발견</>
+                : <>🥢 <b>{lunchSearch.length>=2 ? (lunchFiltered.length + publicTotal).toLocaleString() : (421 + PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
             }
           </div>
+
           <div className="rest-list">
             {lunchFiltered.length===0 && publicResults.length===0 && !publicLoading
-              ? <div className="empty">검색 결과가 없어요 😢</div>
+              ? <div className="empty">{nearbyMode?"주변 맛집이 없어요 😢":"검색 결과가 없어요 😢"}</div>
               : <>
                   {lunchFiltered.map(r=><LunchCard key={r.id} r={r} onClick={r=>openModal(r,"lunch")}/>)}
-                  {lunchSearch.length >= 2 && !publicLoading &&
+                  {(lunchSearch.length >= 2 || nearbyMode) && !publicLoading &&
                     publicResults
                       .filter(p => !lunchFiltered.some(c => c.name === p.name))
                       .map((r,i) => <PublicLunchCard key={`pub-${i}`} r={r}/>)
                   }
-                  {lunchSearch.length >= 2 && !publicLoading && publicHasMore && (
+                  {(lunchSearch.length >= 2 || nearbyMode) && !publicLoading && publicHasMore && (
                     <button
                       onClick={loadMore}
                       disabled={moreLoading}
                       style={{width:"100%",padding:"12px",margin:"8px 0",background:"#F5EDD8",border:"1px solid #C8A96E",borderRadius:10,color:"#7A5C1E",fontWeight:700,fontSize:13,cursor:"pointer"}}>
-                      {moreLoading ? "불러오는 중..." : `더 보기 (${Math.min(PAGE, publicTotal - publicOffset - PAGE).toLocaleString()}곳 더)`}
+                      {moreLoading ? "불러오는 중..." : `더 보기`}
                     </button>
                   )}
                 </>
