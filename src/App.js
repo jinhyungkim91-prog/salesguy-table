@@ -114,11 +114,17 @@ const LUNCH_GENRE_MAP = {
   '샐러드': ['샐러드','포케','건강식','비건','요거트'],
   '양식': ['파스타','피자','버거','브런치','베이글','샌드위치','스테이크','타코','케밥','카레','인도','태국','중동','오므라이스'],
 };
-// 구 이름 → 점심 지역 매핑
-const GU_TO_REGION = {
-  '강남구':'강남','서초구':'서초','종로구':'종로','영등포구':'영등포',
-  '마포구':'마포','중구':'중구','송파구':'송파','성동구':'성동',
-  '용산구':'용산','강동구':'강동','강서구':'강서',
+// 카카오 카테고리 → 점심 장르 매핑
+const KAKAO_GENRE_MAP = {
+  '한식·백반': ['한식','비빔밥','삼계탕','보쌈','쌈밥','찌개'],
+  '국밥·해장': ['국밥','해장국','설렁탕','순대국','감자탕','뼈해장국','부대찌개','닭한마리'],
+  '면류':      ['라면','우동','냉면','국수','칼국수','쌀국수','소바','라멘'],
+  '분식':      ['분식','떡볶이','김밥','쫄면'],
+  '중식·마라': ['중국음식','중식','마라탕','딤섬'],
+  '일식·덮밥': ['일식','초밥','스시','덮밥','돈까스','돈가스'],
+  '고기':      ['고기','삼겹살','갈비','닭갈비','족발','곱창','치킨'],
+  '샐러드':    ['샐러드','건강식','포케'],
+  '양식':      ['양식','피자','버거','파스타','브런치','스테이크'],
 };
 
 const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
@@ -216,6 +222,33 @@ function PublicLunchCard({ r }) {
         <span className="tag tag-region">{r.district}</span>
         <span className="tag tag-rating">{r.genre}</span>
         {r.phone && <span className="tag tag-region">{r.phone}</span>}
+      </div>
+    </div>
+  );
+}
+
+function KakaoPlaceCard({ r }) {
+  const genre = r.category_name.split(' > ').slice(1).join(' > ');
+  const walkMin = Math.ceil(Number(r.distance) / 67); // 4km/h 기준
+  const addr = r.road_address_name || r.address_name || '';
+  const shortAddr = addr.split(' ').slice(-2).join(' ');
+  return (
+    <div className="rest-card" onClick={() => window.open(r.place_url, '_blank')}>
+      <div className="rest-card-top">
+        <div className="rest-emoji">🍴</div>
+        <div className="rest-info">
+          <div className="rest-name">{r.place_name}</div>
+          <div className="rest-sub">{shortAddr} · {genre}</div>
+        </div>
+        <div style={{textAlign:"right",flexShrink:0}}>
+          <div style={{fontSize:15,fontWeight:900,color:"#00875A",fontFamily:"'DM Mono',monospace",lineHeight:1}}>{r.distance}m</div>
+          <div style={{fontSize:9,color:"#8A7A6A",marginTop:3}}>🚶 {walkMin}분</div>
+        </div>
+      </div>
+      <div className="rest-tags">
+        <span className="tag tag-rating">{genre}</span>
+        {r.phone && <span className="tag tag-region">{r.phone}</span>}
+        <span style={{marginLeft:"auto",fontSize:9,color:"#C8A96E",fontWeight:700}}>카카오맵 →</span>
       </div>
     </div>
   );
@@ -323,6 +356,11 @@ export default function App() {
   const [userLocation, setUserLocation] = useState(null); // {lat, lng, dong, gu}
   const [nearbyMode, setNearbyMode]     = useState(false);
   const [locating, setLocating]         = useState(false);
+  const [nearbyRadius, setNearbyRadius] = useState(300);
+  const [kakaoPlaces, setKakaoPlaces]   = useState([]);
+  const [kakaoLoading, setKakaoLoading] = useState(false);
+  const [kakaoPagination, setKakaoPagination] = useState(null);
+  const kakaoAppendRef = useRef(false);
 
   // 공공 점심 DB (Supabase)
   const [publicResults, setPublicResults] = useState([]);
@@ -355,40 +393,55 @@ export default function App() {
     return () => clearTimeout(debounceRef.current);
   }, [lunchSearch, nearbyMode]);
 
-  // 주변 모드 → 위치 기반 공공DB 검색
+  // 주변 모드 → 카카오 장소검색 (반경 기반)
   useEffect(() => {
-    if (!nearbyMode || !userLocation) return;
-    setPublicLoading(true);
-    setPublicOffset(0);
-    const { dong, gu } = userLocation;
-    const buildQ = (base) => {
-      if (dong) return base.ilike('address', `%${dong}%`);
-      if (gu)   return base.ilike('district', `%${gu}%`);
-      return base;
-    };
-    (async () => {
-      const [{ data }, { count }] = await Promise.all([
-        buildQ(supabase.from('lunch_public').select('name, address, genre, phone, district')).range(0, PAGE - 1),
-        buildQ(supabase.from('lunch_public').select('*', { count: 'exact', head: true }))
-      ]);
-      setPublicResults(data || []);
-      setPublicTotal(count || 0);
-      setPublicHasMore((data||[]).length === PAGE);
-      setPublicLoading(false);
-    })();
-  }, [nearbyMode, userLocation]);
+    if (!nearbyMode || !userLocation?.lat) return;
+    if (!window.kakao?.maps?.services?.Places) return;
+
+    setKakaoLoading(true);
+    setKakaoPlaces([]);
+    setKakaoPagination(null);
+    kakaoAppendRef.current = false;
+
+    const ps = new window.kakao.maps.services.Places();
+    const loc = new window.kakao.maps.LatLng(userLocation.lat, userLocation.lng);
+
+    ps.categorySearch('FD6', (result, status, pagination) => {
+      if (status === window.kakao.maps.services.Status.OK) {
+        if (kakaoAppendRef.current) {
+          setKakaoPlaces(prev => [...prev, ...result]);
+        } else {
+          setKakaoPlaces(result);
+        }
+        setKakaoPagination(pagination.hasNextPage ? pagination : null);
+      } else {
+        if (!kakaoAppendRef.current) setKakaoPlaces([]);
+      }
+      setKakaoLoading(false);
+      setMoreLoading(false);
+    }, {
+      location: loc,
+      radius: nearbyRadius,
+      sort: window.kakao.maps.services.SortBy.DISTANCE,
+      size: 15,
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [nearbyMode, userLocation?.lat, userLocation?.lng, nearbyRadius]);
 
   const loadMore = async () => {
+    if (nearbyMode) {
+      // 카카오 더보기
+      if (!kakaoPagination?.hasNextPage) return;
+      setMoreLoading(true);
+      kakaoAppendRef.current = true;
+      kakaoPagination.nextPage();
+      return;
+    }
+    // Supabase 더보기
     setMoreLoading(true);
     const nextOffset = publicOffset + PAGE;
-    let q = supabase.from('lunch_public').select('name, address, genre, phone, district');
-    if (nearbyMode && userLocation) {
-      const { dong, gu } = userLocation;
-      if (dong) q = q.ilike('address', `%${dong}%`);
-      else if (gu) q = q.ilike('district', `%${gu}%`);
-    } else {
-      q = q.ilike('name', `%${lunchSearch}%`);
-    }
+    let q = supabase.from('lunch_public').select('name, address, genre, phone, district')
+      .ilike('name', `%${lunchSearch}%`);
     const { data, error } = await q.range(nextOffset, nextOffset + PAGE - 1);
     if (error) console.error('[Supabase 오류]', error);
     const more = data || [];
@@ -403,28 +456,35 @@ export default function App() {
   const [golfSearch, setGolfSearch] = useState("");
 
   const handleNearby = () => {
-    if (nearbyMode) { setNearbyMode(false); setUserLocation(null); setPublicResults([]); setPublicTotal(0); return; }
+    if (nearbyMode) {
+      setNearbyMode(false); setUserLocation(null);
+      setKakaoPlaces([]); setKakaoPagination(null);
+      setPublicResults([]); setPublicTotal(0);
+      return;
+    }
     if (!navigator.geolocation) { alert('위치 서비스를 지원하지 않는 브라우저입니다.'); return; }
     setLocating(true);
     navigator.geolocation.getCurrentPosition(
-      async (pos) => {
+      (pos) => {
         const { latitude: lat, longitude: lng } = pos.coords;
-        try {
-          const res = await fetch(
-            `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`,
-            { headers: { 'Accept-Language': 'ko' } }
-          );
-          const json = await res.json();
-          const addr = json.address || {};
-          const dong = addr.suburb || addr.quarter || addr.neighbourhood || addr.village || '';
-          const gu   = addr.city_district || addr.county || '';
-          setUserLocation({ lat, lng, dong, gu });
-          setNearbyMode(true);
-          setLunchSearch('');
-        } catch(e) {
-          alert('위치를 가져올 수 없어요. 잠시 후 다시 시도해주세요.');
-        }
+        setUserLocation({ lat, lng, dong: '', gu: '' });
+        setNearbyMode(true);
+        setLunchSearch('');
         setLocating(false);
+        // 카카오 역지오코딩으로 동/구 이름 가져오기
+        if (window.kakao?.maps?.services) {
+          const geocoder = new window.kakao.maps.services.Geocoder();
+          geocoder.coord2Address(lng, lat, (result, status) => {
+            if (status === window.kakao.maps.services.Status.OK && result[0]) {
+              const addr = result[0].address;
+              setUserLocation(prev => prev ? {
+                ...prev,
+                dong: addr.region_3depth_name || '',
+                gu:   addr.region_2depth_name || '',
+              } : null);
+            }
+          });
+        }
       },
       () => { setLocating(false); alert('위치 권한을 허용해주세요.'); },
       { timeout: 8000, maximumAge: 60000 }
@@ -443,11 +503,7 @@ export default function App() {
     return true;
   });
 
-  const lunchFiltered = lunchDB.filter(r => {
-    if (nearbyMode && userLocation) {
-      const mapped = GU_TO_REGION[userLocation.gu] || '';
-      if (mapped && r.region !== mapped) return false;
-    }
+  const lunchFiltered = nearbyMode ? [] : lunchDB.filter(r => {
     if (lunchPrice!=="전체" && r.price!==lunchPrice) return false;
     if (cheapOnly && r.price!=="1만원이하") return false;
     if (lunchGenre!=="전체") {
@@ -457,6 +513,13 @@ export default function App() {
     if (lunchSearch && !r.name.includes(lunchSearch) && !r.area.includes(lunchSearch)) return false;
     return true;
   });
+
+  // 카카오 결과에 장르 필터 적용
+  const filteredKakao = lunchGenre === '전체' ? kakaoPlaces :
+    kakaoPlaces.filter(p => {
+      const kws = KAKAO_GENRE_MAP[lunchGenre] || [];
+      return kws.length === 0 || kws.some(k => p.category_name.includes(k));
+    });
 
   const golfRests = golfSearch
     ? golfRestaurants.filter(r =>
@@ -521,37 +584,45 @@ export default function App() {
               <span className="search-icon">🔍</span>
               <input className="search-input" placeholder="식당명으로 검색"
                 value={lunchSearch}
-                onChange={e=>{ setLunchSearch(e.target.value); if(nearbyMode){setNearbyMode(false);setUserLocation(null);setPublicResults([]);setPublicTotal(0);} }} />
+                onChange={e=>{ setLunchSearch(e.target.value); if(nearbyMode){setNearbyMode(false);setUserLocation(null);setKakaoPlaces([]);} }} />
             </div>
-            <button
-              onClick={handleNearby}
-              style={{
-                flexShrink:0, padding:"10px 11px", borderRadius:12,
-                border:`1.5px solid ${nearbyMode?"#00875A":locating?"#C8A96E":"#EDE8E0"}`,
-                background: nearbyMode?"#D5F5E3":locating?"#F5EDD8":"white",
-                color: nearbyMode?"#00875A":locating?"#7A5C1E":"#8A7A6A",
-                fontSize:12, fontWeight:800, cursor:locating?"default":"pointer",
-                fontFamily:"'Noto Sans KR',sans-serif", whiteSpace:"nowrap",
-                transition:"all 0.2s"
-              }}>
-              {locating ? "⏳ 위치중" : nearbyMode ? "📍 주변 ON" : "📍 주변"}
+            <button onClick={handleNearby} style={{
+              flexShrink:0, padding:"10px 11px", borderRadius:12,
+              border:`1.5px solid ${nearbyMode?"#00875A":locating?"#C8A96E":"#EDE8E0"}`,
+              background: nearbyMode?"#D5F5E3":locating?"#F5EDD8":"white",
+              color: nearbyMode?"#00875A":locating?"#7A5C1E":"#8A7A6A",
+              fontSize:12, fontWeight:800, cursor:locating?"default":"pointer",
+              fontFamily:"'Noto Sans KR',sans-serif", whiteSpace:"nowrap", transition:"all 0.2s"
+            }}>
+              {locating?"⏳ 위치중":nearbyMode?"📍 주변 ON":"📍 주변"}
             </button>
           </div>
 
-          {/* 위치 감지 배너 */}
-          {nearbyMode && userLocation && (
-            <div style={{
-              margin:"6px 14px 0", padding:"7px 12px",
-              background:"#D5F5E3", borderRadius:8, border:"1px solid #00875A",
-              fontSize:11, color:"#00875A", fontWeight:700,
-              display:"flex", alignItems:"center", gap:6
-            }}>
-              📍 {[userLocation.dong, userLocation.gu].filter(Boolean).join(' ')} 주변 검색 중
-              <button
-                onClick={()=>{setNearbyMode(false);setUserLocation(null);setPublicResults([]);setPublicTotal(0);}}
-                style={{marginLeft:"auto",background:"none",border:"none",cursor:"pointer",color:"#00875A",fontSize:14,lineHeight:1}}>
-                ✕
-              </button>
+          {/* 주변 모드: 위치 배너 + 반경 선택 */}
+          {nearbyMode && (
+            <div style={{margin:"8px 14px 0",padding:"10px 12px",background:"#D5F5E3",borderRadius:10,border:"1px solid #00875A"}}>
+              <div style={{display:"flex",alignItems:"center",marginBottom:8}}>
+                <span style={{fontSize:11,fontWeight:800,color:"#00875A"}}>
+                  📍 {userLocation?.dong && userLocation?.gu
+                    ? `${userLocation.dong} (${userLocation.gu}) 주변`
+                    : "현재 위치 주변"}
+                </span>
+                <button onClick={()=>{setNearbyMode(false);setUserLocation(null);setKakaoPlaces([]);}}
+                  style={{marginLeft:"auto",background:"none",border:"none",cursor:"pointer",color:"#00875A",fontSize:15,lineHeight:1}}>✕</button>
+              </div>
+              {/* 반경 선택 버튼 */}
+              <div style={{display:"flex",gap:6}}>
+                {[100,200,300,500].map(r=>(
+                  <button key={r} onClick={()=>setNearbyRadius(r)} style={{
+                    flex:1, padding:"5px 0", borderRadius:8,
+                    border:`1.5px solid ${nearbyRadius===r?"#00875A":"#A8D5B8"}`,
+                    background: nearbyRadius===r?"#00875A":"white",
+                    color: nearbyRadius===r?"white":"#00875A",
+                    fontSize:11, fontWeight:800, cursor:"pointer",
+                    fontFamily:"'Noto Sans KR',sans-serif"
+                  }}>{r}m</button>
+                ))}
+              </div>
             </div>
           )}
 
@@ -562,42 +633,62 @@ export default function App() {
             ))}
           </div>
 
-          {/* 가격대 필터 */}
-          <div className="filter-scroll">
-            {LUNCH_PRICES.map(p=>(
-              <button key={p} className={`filter-chip ${lunchPrice===p?"on":""}`} onClick={()=>setLunchPrice(p)}>{p}</button>
-            ))}
-          </div>
+          {/* 가격대 필터 (주변 모드 아닐 때만) */}
+          {!nearbyMode && (
+            <div className="filter-scroll">
+              {LUNCH_PRICES.map(p=>(
+                <button key={p} className={`filter-chip ${lunchPrice===p?"on":""}`} onClick={()=>setLunchPrice(p)}>{p}</button>
+              ))}
+            </div>
+          )}
 
+          {/* 인포 배너 */}
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
-            {publicLoading
-              ? <>{nearbyMode?"📍 주변 DB":"🔍 공공DB"} 검색 중...</>
-              : nearbyMode
-                ? <>📍 주변 · <b>{(lunchFiltered.length + publicTotal).toLocaleString()}곳</b> 발견</>
-                : <>🥢 <b>{lunchSearch.length>=2 ? (lunchFiltered.length + publicTotal).toLocaleString() : (421 + PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
+            {nearbyMode
+              ? kakaoLoading
+                ? <>📍 {nearbyRadius}m 반경 검색 중...</>
+                : <>📍 반경 {nearbyRadius}m · <b>{filteredKakao.length}곳</b> 발견 (카카오맵)</>
+              : publicLoading
+                ? <>🔍 공공DB 검색 중...</>
+                : <>🥢 <b>{lunchSearch.length>=2?(lunchFiltered.length+publicTotal).toLocaleString():(421+PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
             }
           </div>
 
           <div className="rest-list">
-            {lunchFiltered.length===0 && publicResults.length===0 && !publicLoading
-              ? <div className="empty">{nearbyMode?"주변 맛집이 없어요 😢":"검색 결과가 없어요 😢"}</div>
-              : <>
-                  {lunchFiltered.map(r=><LunchCard key={r.id} r={r} onClick={r=>openModal(r,"lunch")}/>)}
-                  {(lunchSearch.length >= 2 || nearbyMode) && !publicLoading &&
-                    publicResults
-                      .filter(p => !lunchFiltered.some(c => c.name === p.name))
-                      .map((r,i) => <PublicLunchCard key={`pub-${i}`} r={r}/>)
-                  }
-                  {(lunchSearch.length >= 2 || nearbyMode) && !publicLoading && publicHasMore && (
-                    <button
-                      onClick={loadMore}
-                      disabled={moreLoading}
-                      style={{width:"100%",padding:"12px",margin:"8px 0",background:"#F5EDD8",border:"1px solid #C8A96E",borderRadius:10,color:"#7A5C1E",fontWeight:700,fontSize:13,cursor:"pointer"}}>
-                      {moreLoading ? "불러오는 중..." : `더 보기`}
-                    </button>
-                  )}
-                </>
-            }
+            {nearbyMode ? (
+              // ── 주변 모드: 카카오 장소 결과 ──
+              kakaoLoading
+                ? <div className="empty" style={{paddingTop:30}}>📍 주변 음식점 찾는 중...</div>
+                : filteredKakao.length === 0
+                  ? <div className="empty">반경 {nearbyRadius}m 내 음식점이 없어요 😢<br/><span style={{fontSize:12}}>반경을 늘려보세요</span></div>
+                  : <>
+                      {filteredKakao.map((r,i)=><KakaoPlaceCard key={r.id||i} r={r}/>)}
+                      {kakaoPagination && (
+                        <button onClick={loadMore} disabled={moreLoading}
+                          style={{width:"100%",padding:"12px",margin:"8px 0",background:"#D5F5E3",border:"1px solid #00875A",borderRadius:10,color:"#00875A",fontWeight:700,fontSize:13,cursor:"pointer"}}>
+                          {moreLoading?"불러오는 중...":"더 보기"}
+                        </button>
+                      )}
+                    </>
+            ) : (
+              // ── 일반 모드: 큐레이션 + 공공DB ──
+              lunchFiltered.length===0 && publicResults.length===0 && !publicLoading
+                ? <div className="empty">검색 결과가 없어요 😢</div>
+                : <>
+                    {lunchFiltered.map(r=><LunchCard key={r.id} r={r} onClick={r=>openModal(r,"lunch")}/>)}
+                    {lunchSearch.length>=2 && !publicLoading &&
+                      publicResults
+                        .filter(p=>!lunchFiltered.some(c=>c.name===p.name))
+                        .map((r,i)=><PublicLunchCard key={`pub-${i}`} r={r}/>)
+                    }
+                    {lunchSearch.length>=2 && !publicLoading && publicHasMore && (
+                      <button onClick={loadMore} disabled={moreLoading}
+                        style={{width:"100%",padding:"12px",margin:"8px 0",background:"#F5EDD8",border:"1px solid #C8A96E",borderRadius:10,color:"#7A5C1E",fontWeight:700,fontSize:13,cursor:"pointer"}}>
+                        {moreLoading?"불러오는 중...":"더 보기"}
+                      </button>
+                    )}
+                  </>
+            )}
           </div>
         </div>
       )}
