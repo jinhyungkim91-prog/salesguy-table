@@ -21,7 +21,7 @@ function openNaverSearch(name, area, mapQuery) {
       // 한글 시작: 괄호 안 영문 제거 → "가온 (Gaon)" → "가온"
       clean = name.replace(/\s*\(.*?\)/g, "").trim();
     }
-    query = area ? clean + " " + area + " 맛집" : clean + " 맛집";
+    query = area ? clean + " " + area : clean;
   }
   window.open("https://search.naver.com/search.naver?query=" + encodeURIComponent(query), "_blank");
 }
