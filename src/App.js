@@ -646,21 +646,15 @@ export default function App() {
             </div>
           )}
 
-          {/* 장르 필터 */}
-          <div className="filter-scroll" style={{marginTop:8}}>
+          {/* 장르 필터 - 2줄 */}
+          <div style={{display:"flex",flexWrap:"wrap",gap:5,padding:"8px 14px 4px"}}>
             {LUNCH_GENRES.map(g=>(
-              <button key={g} className={`filter-chip ${lunchGenre===g?"on":""}`} onClick={()=>setLunchGenre(g)}>{g}</button>
+              <button key={g} className={`filter-chip ${lunchGenre===g?"on":""}`} onClick={()=>setLunchGenre(g)}
+                style={{flex:"0 0 calc(16.66% - 5px)",minWidth:0,textAlign:"center",padding:"5px 2px"}}>
+                {g}
+              </button>
             ))}
           </div>
-
-          {/* 가격대 필터 (주변 모드 아닐 때만) */}
-          {!nearbyMode && (
-            <div className="filter-scroll">
-              {LUNCH_PRICES.map(p=>(
-                <button key={p} className={`filter-chip ${lunchPrice===p?"on":""}`} onClick={()=>setLunchPrice(p)}>{p}</button>
-              ))}
-            </div>
-          )}
 
           {/* 인포 배너 */}
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
