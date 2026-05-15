@@ -14,16 +14,20 @@ function openNaverSearch(name, area, mapQuery) {
   } else {
     let clean;
     if (/^[A-Za-z]/.test(name)) {
-      // 영문 시작: 괄호 안 한글 추출 → "Born and Bred (본앤브레드)" → "본앤브레드"
       const korean = name.match(/\(([^)]*[가-힣][^)]*)\)/);
       clean = korean ? korean[1].trim() : name.trim();
     } else {
-      // 한글 시작: 괄호 안 영문 제거 → "가온 (Gaon)" → "가온"
       clean = name.replace(/\s*\(.*?\)/g, "").trim();
     }
     query = area ? clean + " " + area : clean;
   }
   window.open("https://search.naver.com/search.naver?query=" + encodeURIComponent(query), "_blank");
+}
+
+function openNaverMap(name, address) {
+  // 공공DB: 네이버 지도에서 식당명+주소로 검색 (지도 표시명과 매칭 정확도 향상)
+  const query = address ? name + " " + address : name;
+  window.open("https://map.naver.com/v5/search/" + encodeURIComponent(query), "_blank");
 }
 
 function getFavorites() {
@@ -289,14 +293,18 @@ function DetailModal({ r, type, onClose }) {
           </div>
           <div className="modal-note" style={{fontSize:11,color:"#8A7A6A"}}>{r.address}</div>
           <div className="modal-actions">
-            <div style={{display:"flex",gap:8,width:"100%"}}>
-              <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverSearch(r.name, r.district||null, null)}>
-                🟢 네이버
+            <div style={{display:"flex",gap:8,width:"100%",marginBottom:8}}>
+              <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverMap(r.name, r.address)}>
+                🗺️ 네이버지도
               </button>
               <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.name)}>
                 ▶ 유튜브 쇼츠
               </button>
             </div>
+            <button className="btn-save" style={{width:"100%",background:"#FEE500",color:"#3C1E1E",border:"none"}}
+              onClick={()=>window.open("https://map.kakao.com/link/search/"+encodeURIComponent(r.name+" "+r.address),"_blank")}>
+              🗺️ 카카오맵에서 보기
+            </button>
           </div>
         </div>
       </div>
