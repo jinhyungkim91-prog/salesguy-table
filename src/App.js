@@ -418,14 +418,12 @@ export default function App() {
       return;
     }
     const script = document.createElement('script');
-    script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&libraries=services&autoload=false`;
+    script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&libraries=services`;
     script.onload = () => {
-      window.kakao.maps.load(() => {
-        console.log('[Kakao] SDK 초기화 완료');
-        setKakaoReady(true);
-      });
+      console.log('[Kakao] SDK 로드 완료, maps:', !!window.kakao?.maps);
+      setKakaoReady(true);
     };
-    script.onerror = () => console.error('[Kakao] SDK 로드 실패');
+    script.onerror = (e) => console.error('[Kakao] SDK 로드 실패', e);
     document.head.appendChild(script);
   }, []);
 
