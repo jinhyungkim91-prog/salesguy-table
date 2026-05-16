@@ -669,12 +669,11 @@ export default function App() {
         return getGolfRegionGroup(course?.region) === golfRegion;
       });
 
-  // 드롭다운 코스 목록 필터링 (입력어 + 선택된 지역)
+  // 드롭다운 코스 목록 필터링 (입력어) + 가나다 정렬
   const golfDropCourses = golfCourses.filter(c => {
-    const regionOk = golfRegion === '전체' || getGolfRegionGroup(c.region) === golfRegion;
-    const queryOk  = !golfDropQuery || norm(c.name).includes(norm(golfDropQuery));
-    return regionOk && queryOk;
-  });
+    const queryOk = !golfDropQuery || norm(c.name).includes(norm(golfDropQuery));
+    return queryOk;
+  }).sort((a, b) => a.name.localeCompare(b.name, 'ko'));
   if (dataLoading) return <div className="loading">🍽️ 데이터 불러오는 중...</div>;
 
 
@@ -837,17 +836,7 @@ export default function App() {
       {/* ── 골프 귀경 탭 ── */}
       {activeTab==="golf" && (
         <div className="content">
-          <div className="search-wrap">
-            <span className="search-icon">🔍</span>
-            <input className="search-input" placeholder="⛳ 골프장명 또는 🍽️ 식당명으로 검색"
-              value={golfSearch} onChange={e=>setGolfSearch(e.target.value)} />
-            {golfSearch && (
-              <button onClick={()=>setGolfSearch("")}
-                style={{background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#8A7A6A",padding:"0 4px",lineHeight:1}}>×</button>
-            )}
-          </div>
-          {!golfSearch && (
-            <div style={{background:"white",borderBottom:"1px solid #EDE8E0"}}>
+          <div style={{background:"white",borderBottom:"1px solid #EDE8E0"}}>
               {/* 검색 가능한 코스 드롭다운 */}
               <div style={{padding:"8px 14px 10px"}} ref={golfDropRef}>
                 <div style={{position:"relative"}}>
@@ -884,11 +873,9 @@ export default function App() {
                 </div>
               </div>
             </div>
-          )}
+          </div>
           <div className="info-banner" style={{background:"#FFF0E8",borderColor:"#E05A00",color:"#7A3000"}}>
-            {golfSearch
-              ? <>🔍 "{golfSearch}" 검색 결과 · <b>{golfRests.length}곳</b></>
-              : selectedGolf
+            {selectedGolf
                 ? <>⛳ {selectedGolf} · <b>{golfRests.length}곳</b></>
                 : <>⛳ 전체 골프장 맛집 · <b>{golfRests.length}곳</b></>
             }
