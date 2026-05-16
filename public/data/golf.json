@@ -431,19 +431,31 @@
     },
     {
       "id": 112,
-      "name": "은화삼 CC"
+      "name": "은화삼 CC",
+      "region": "경기남부(용인)",
+      "address": "용인시 처인구 백옥대로",
+      "grade": "회원제"
     },
     {
       "id": 113,
-      "name": "더헤븐 CC"
+      "name": "더헤븐 CC",
+      "region": "경기남부(안산)",
+      "address": "안산시 단원구 대선로",
+      "grade": "회원제"
     },
     {
       "id": 114,
-      "name": "이글몬트 CC"
+      "name": "이글몬트 CC",
+      "region": "경기남부(안성)",
+      "address": "안성시 보개면 보삼로",
+      "grade": "회원제"
     },
     {
       "id": 115,
-      "name": "골프클럽 Q"
+      "name": "골프클럽 Q",
+      "region": "경기남부(안성)",
+      "address": "안성시 죽산면 장계길",
+      "grade": "회원제"
     }
   ],
   "restaurants": [
