@@ -872,9 +872,9 @@ export default function App() {
                   )}
                 </div>
               </div>
-            </div>
           </div>
           <div className="info-banner" style={{background:"#FFF0E8",borderColor:"#E05A00",color:"#7A3000"}}>
+
             {selectedGolf
                 ? <>⛳ {selectedGolf} · <b>{golfRests.length}곳</b></>
                 : <>⛳ 전체 골프장 맛집 · <b>{golfRests.length}곳</b></>
