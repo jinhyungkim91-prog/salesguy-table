@@ -437,11 +437,12 @@ export default function App() {
     Promise.all([
       fetch('/data/restaurants.json?v=20260515c').then(r => r.json()),
       fetch('/data/lunch.json?v=20260515h').then(r => r.json()),
-      fetch('/data/golf.json?v=20260515f').then(r => r.json()),
+      fetch('/data/golf.json?v=20260516a').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
       setRestaurants(rest);
       setLunchDB(lunch);
-      setGolfCourses(golf.courses);
+      const restSet = new Set(golf.restaurants.map(r => r.golf));
+      setGolfCourses(golf.courses.filter(c => restSet.has(c.name)));
       setGolfRestaurants(golf.restaurants);
       setDataLoading(false);
     });
