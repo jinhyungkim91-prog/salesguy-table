@@ -455,6 +455,17 @@ export default function App() {
     });
   }, []);
 
+  // 드롭다운 외부 클릭 시 닫기
+  useEffect(() => {
+    const handler = e => {
+      if (golfDropRef.current && !golfDropRef.current.contains(e.target)) {
+        setGolfDropOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
   const [activeTab, setActiveTab] = useState("biz");
   const [selected, setSelected]   = useState(null);
   const [selType, setSelType]     = useState("biz");
@@ -574,7 +585,11 @@ export default function App() {
 
   // 골프 필터
   const [golfRegion, setGolfRegion] = useState("전체");
+  const [selectedGolf, setSelectedGolf] = useState("");   // 특정 코스 선택
   const [golfSearch, setGolfSearch] = useState("");
+  const [golfDropQuery, setGolfDropQuery] = useState(""); // 드롭다운 검색어
+  const [golfDropOpen, setGolfDropOpen] = useState(false);
+  const golfDropRef = useRef(null);
 
   const handleNearby = () => {
     if (nearbyMode) {
@@ -641,15 +656,26 @@ export default function App() {
       return kws.length === 0 || kws.some(k => p.category_name.includes(k));
     });
 
+  const norm = s => s.replace(/\s/g, '').toLowerCase();
   const golfRests = golfSearch
     ? golfRestaurants.filter(r =>
-        r.name.includes(golfSearch) || r.golf.includes(golfSearch) || (r.genre && r.genre.includes(golfSearch))
+        norm(r.name).includes(norm(golfSearch)) ||
+        norm(r.golf).includes(norm(golfSearch)) ||
+        (r.genre && r.genre.includes(golfSearch))
       )
     : golfRestaurants.filter(r => {
+        if (selectedGolf) return r.golf === selectedGolf;
         if (golfRegion === '전체') return true;
         const course = golfCourses.find(g => g.name === r.golf);
         return getGolfRegionGroup(course?.region) === golfRegion;
       });
+
+  // 드롭다운 코스 목록 필터링 (입력어 + 선택된 지역)
+  const golfDropCourses = golfCourses.filter(c => {
+    const regionOk = golfRegion === '전체' || getGolfRegionGroup(c.region) === golfRegion;
+    const queryOk  = !golfDropQuery || norm(c.name).includes(norm(golfDropQuery));
+    return regionOk && queryOk;
+  });
   if (dataLoading) return <div className="loading">🍽️ 데이터 불러오는 중...</div>;
 
 
@@ -822,20 +848,59 @@ export default function App() {
             )}
           </div>
           {!golfSearch && (
-            <div style={{padding:"8px 14px 10px",background:"white",borderBottom:"1px solid #EDE8E0",display:"flex",gap:6,flexWrap:"wrap"}}>
-              {GOLF_REGIONS.map(rg=>(
-                <button key={rg}
-                  className={`filter-chip ${golfRegion===rg?"on":""}`}
-                  onClick={()=>setGolfRegion(rg)}>
-                  {rg}
-                </button>
-              ))}
+            <div style={{background:"white",borderBottom:"1px solid #EDE8E0"}}>
+              {/* 지역 칩 */}
+              <div style={{padding:"8px 14px 6px",display:"flex",gap:6,flexWrap:"wrap"}}>
+                {GOLF_REGIONS.map(rg=>(
+                  <button key={rg}
+                    className={`filter-chip ${golfRegion===rg&&!selectedGolf?"on":""}`}
+                    onClick={()=>{ setGolfRegion(rg); setSelectedGolf(""); setGolfDropQuery(""); }}>
+                    {rg}
+                  </button>
+                ))}
+              </div>
+              {/* 검색 가능한 코스 드롭다운 */}
+              <div style={{padding:"0 14px 10px"}} ref={golfDropRef}>
+                <div style={{position:"relative"}}>
+                  <input
+                    className="golf-select"
+                    style={{width:"100%",boxSizing:"border-box",cursor:"text",paddingRight:28}}
+                    placeholder="⛳ 골프장 직접 선택 (검색 가능)"
+                    value={golfDropOpen ? golfDropQuery : (selectedGolf || golfDropQuery)}
+                    onFocus={()=>{ setGolfDropOpen(true); setGolfDropQuery(""); }}
+                    onChange={e=>{ setGolfDropQuery(e.target.value); setGolfDropOpen(true); }}
+                  />
+                  {selectedGolf && (
+                    <button onClick={()=>{ setSelectedGolf(""); setGolfDropQuery(""); }}
+                      style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#8A7A6A",lineHeight:1}}>×</button>
+                  )}
+                  {golfDropOpen && (
+                    <div style={{position:"absolute",top:"100%",left:0,right:0,background:"white",border:"1px solid #E0D8CC",borderTop:"none",borderRadius:"0 0 8px 8px",maxHeight:220,overflowY:"auto",zIndex:100,boxShadow:"0 4px 12px rgba(0,0,0,0.1)"}}>
+                      {golfDropCourses.length === 0
+                        ? <div style={{padding:"12px 14px",fontSize:13,color:"#8A7A6A"}}>검색 결과 없음</div>
+                        : golfDropCourses.map(c=>(
+                            <div key={c.id}
+                              onClick={()=>{ setSelectedGolf(c.name); setGolfDropQuery(""); setGolfDropOpen(false); }}
+                              style={{padding:"10px 14px",fontSize:13,cursor:"pointer",borderBottom:"1px solid #F5F0EA",display:"flex",justifyContent:"space-between",alignItems:"center"}}
+                              onMouseEnter={e=>e.currentTarget.style.background="#FFF8F0"}
+                              onMouseLeave={e=>e.currentTarget.style.background="white"}>
+                              <span>{c.name}</span>
+                              <span style={{fontSize:11,color:"#A0896A"}}>{c.region}</span>
+                            </div>
+                          ))
+                      }
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           )}
           <div className="info-banner" style={{background:"#FFF0E8",borderColor:"#E05A00",color:"#7A3000"}}>
             {golfSearch
               ? <>🔍 "{golfSearch}" 검색 결과 · <b>{golfRests.length}곳</b></>
-              : <>⛳ {golfRegion} · <b>{golfRests.length}곳</b> 근처 맛집</>
+              : selectedGolf
+                ? <>⛳ {selectedGolf} · <b>{golfRests.length}곳</b> 근처 맛집</>
+                : <>⛳ {golfRegion} · <b>{golfRests.length}곳</b> 근처 맛집</>
             }
           </div>
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
