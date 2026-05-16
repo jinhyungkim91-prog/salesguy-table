@@ -683,7 +683,7 @@ export default function App() {
     <div className="app">
       <header className="header">
         <div className="header-logo">세일즈가이의 <span>식탁</span></div>
-        <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 근처</div>
+        <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프장 맛집</div>
         <div className="db-badge">📦 총 {(restaurants.length + lunchDB.length + PUBLIC_LUNCH_TOTAL + golfRestaurants.length).toLocaleString()}개 DB</div>
       </header>
 
@@ -849,18 +849,8 @@ export default function App() {
           </div>
           {!golfSearch && (
             <div style={{background:"white",borderBottom:"1px solid #EDE8E0"}}>
-              {/* 지역 칩 */}
-              <div style={{padding:"8px 14px 6px",display:"flex",gap:6,flexWrap:"wrap"}}>
-                {GOLF_REGIONS.map(rg=>(
-                  <button key={rg}
-                    className={`filter-chip ${golfRegion===rg&&!selectedGolf?"on":""}`}
-                    onClick={()=>{ setGolfRegion(rg); setSelectedGolf(""); setGolfDropQuery(""); }}>
-                    {rg}
-                  </button>
-                ))}
-              </div>
               {/* 검색 가능한 코스 드롭다운 */}
-              <div style={{padding:"0 14px 10px"}} ref={golfDropRef}>
+              <div style={{padding:"8px 14px 10px"}} ref={golfDropRef}>
                 <div style={{position:"relative"}}>
                   <input
                     className="golf-select"
@@ -899,8 +889,8 @@ export default function App() {
             {golfSearch
               ? <>🔍 "{golfSearch}" 검색 결과 · <b>{golfRests.length}곳</b></>
               : selectedGolf
-                ? <>⛳ {selectedGolf} · <b>{golfRests.length}곳</b> 근처 맛집</>
-                : <>⛳ {golfRegion} · <b>{golfRests.length}곳</b> 근처 맛집</>
+                ? <>⛳ {selectedGolf} · <b>{golfRests.length}곳</b></>
+                : <>⛳ 전체 골프장 맛집 · <b>{golfRests.length}곳</b></>
             }
           </div>
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
