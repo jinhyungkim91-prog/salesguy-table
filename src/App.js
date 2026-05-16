@@ -294,7 +294,7 @@ function DetailModal({ r, type, onClose }) {
           <div className="modal-note" style={{fontSize:11,color:"#8A7A6A"}}>{r.address}</div>
           <div className="modal-actions">
             <div style={{display:"flex",gap:8,width:"100%",marginBottom:8}}>
-              <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverMap(r.name, r.address)}>
+              <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverMap(r.name, r.district)}>
                 🗺️ 네이버지도
               </button>
               <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.name)}>
@@ -302,7 +302,7 @@ function DetailModal({ r, type, onClose }) {
               </button>
             </div>
             <button className="btn-save" style={{width:"100%",background:"#FEE500",color:"#3C1E1E",border:"none"}}
-              onClick={()=>window.open("https://map.kakao.com/link/search/"+encodeURIComponent(r.name+" "+r.address),"_blank")}>
+              onClick={()=>window.open("https://map.kakao.com/link/search/"+encodeURIComponent(r.name+" "+r.district),"_blank")}>
               🗺️ 카카오맵에서 보기
             </button>
           </div>
