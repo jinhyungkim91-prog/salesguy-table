@@ -462,7 +462,9 @@
     },
     {
       "id": 117,
-      "name": "리베라 CC"
+      "name": "리베라 CC",
+      "region": "경기남부(용인)",
+      "grade": "회원제"
     }
   ],
   "restaurants": [
