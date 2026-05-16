@@ -444,7 +444,7 @@ export default function App() {
     Promise.all([
       fetch('/data/restaurants.json?v=20260515c').then(r => r.json()),
       fetch('/data/lunch.json?v=20260515h').then(r => r.json()),
-      fetch('/data/golf.json?v=20260516b').then(r => r.json()),
+      fetch('/data/golf.json?v=20260516c').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
       setRestaurants(rest);
       setLunchDB(lunch);
@@ -855,12 +855,13 @@ export default function App() {
                     className="golf-select"
                     style={{width:"100%",boxSizing:"border-box",cursor:"text",paddingRight:28}}
                     placeholder="⛳ 골프장 직접 선택 (검색 가능)"
-                    value={golfDropOpen ? golfDropQuery : (selectedGolf || golfDropQuery)}
+                    value={golfDropOpen ? golfDropQuery : (selectedGolf || "")}
                     onFocus={()=>{ setGolfDropOpen(true); setGolfDropQuery(""); }}
+                    onBlur={()=>setTimeout(()=>setGolfDropOpen(false), 150)}
                     onChange={e=>{ setGolfDropQuery(e.target.value); setGolfDropOpen(true); }}
                   />
-                  {selectedGolf && (
-                    <button onClick={()=>{ setSelectedGolf(""); setGolfDropQuery(""); }}
+                  {selectedGolf && !golfDropOpen && (
+                    <button onMouseDown={e=>{ e.preventDefault(); setSelectedGolf(""); setGolfDropQuery(""); }}
                       style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#8A7A6A",lineHeight:1}}>×</button>
                   )}
                   {golfDropOpen && (
@@ -869,7 +870,7 @@ export default function App() {
                         ? <div style={{padding:"12px 14px",fontSize:13,color:"#8A7A6A"}}>검색 결과 없음</div>
                         : golfDropCourses.map(c=>(
                             <div key={c.id}
-                              onClick={()=>{ setSelectedGolf(c.name); setGolfDropQuery(""); setGolfDropOpen(false); }}
+                              onMouseDown={e=>{ e.preventDefault(); setSelectedGolf(c.name); setGolfDropQuery(""); setGolfDropOpen(false); }}
                               style={{padding:"10px 14px",fontSize:13,cursor:"pointer",borderBottom:"1px solid #F5F0EA",display:"flex",justifyContent:"space-between",alignItems:"center"}}
                               onMouseEnter={e=>e.currentTarget.style.background="#FFF8F0"}
                               onMouseLeave={e=>e.currentTarget.style.background="white"}>

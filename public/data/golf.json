@@ -499,6 +499,96 @@
       "id": 105,
       "name": "안성 베네스트 GC",
       "region": "경기남부(안성)"
+    },
+    {
+      "id": 106,
+      "name": "송도 CC",
+      "region": "인천(연수구)",
+      "address": "인천 연수구 송도동",
+      "direction": "여의도·강남",
+      "time": "45분",
+      "grade": "회원제"
+    },
+    {
+      "id": 107,
+      "name": "태광 CC",
+      "region": "경기서부(고양)",
+      "address": "고양시 덕양구",
+      "direction": "광화문·강북",
+      "time": "35분",
+      "grade": "회원제"
+    },
+    {
+      "id": 108,
+      "name": "인서울27",
+      "region": "경기서부(파주)",
+      "address": "파주시",
+      "direction": "광화문·강북",
+      "time": "40분",
+      "grade": "대중제"
+    },
+    {
+      "id": 109,
+      "name": "남부 CC",
+      "region": "경기남부(용인)",
+      "address": "용인시",
+      "direction": "강남·여의도",
+      "time": "50분",
+      "grade": "회원제"
+    },
+    {
+      "id": 110,
+      "name": "한성 CC",
+      "region": "경기북부(포천)",
+      "address": "포천시",
+      "direction": "강남·강북",
+      "time": "60분",
+      "grade": "회원제"
+    },
+    {
+      "id": 111,
+      "name": "골드 CC",
+      "region": "경기남부(이천)",
+      "address": "이천시",
+      "direction": "강남·광화문",
+      "time": "65분",
+      "grade": "회원제"
+    },
+    {
+      "id": 112,
+      "name": "은화삼 CC",
+      "region": "경기남부(화성)",
+      "address": "화성시",
+      "direction": "강남·여의도",
+      "time": "55분",
+      "grade": "회원제"
+    },
+    {
+      "id": 113,
+      "name": "더헤븐 CC",
+      "region": "경기남부(광주)",
+      "address": "광주시",
+      "direction": "강남·광화문",
+      "time": "50분",
+      "grade": "회원제"
+    },
+    {
+      "id": 114,
+      "name": "이글몬트 CC",
+      "region": "경기북부(포천)",
+      "address": "포천시",
+      "direction": "강남·강북",
+      "time": "65분",
+      "grade": "회원제"
+    },
+    {
+      "id": 115,
+      "name": "골프클럽 Q",
+      "region": "경기남부(용인)",
+      "address": "용인시",
+      "direction": "강남·여의도",
+      "time": "50분",
+      "grade": "대중제"
     }
   ],
   "restaurants": [
