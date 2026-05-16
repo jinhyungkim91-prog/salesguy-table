@@ -488,7 +488,16 @@ export default function App() {
   // 주변 모드 → 카카오 장소검색 (반경 기반)
   useEffect(() => {
     if (!nearbyMode || !userLocation?.lat) return;
-    if (!window.kakao?.maps?.services?.Places) return;
+    // 디버그 로그
+    console.log('[Kakao] window.kakao:', !!window.kakao);
+    console.log('[Kakao] maps:', !!window.kakao?.maps);
+    console.log('[Kakao] services:', !!window.kakao?.maps?.services);
+    console.log('[Kakao] Places:', !!window.kakao?.maps?.services?.Places);
+    if (!window.kakao?.maps?.services?.Places) {
+      console.error('[Kakao] Places 서비스 미로드 — SDK 키/도메인 확인 필요');
+      setKakaoLoading(false);
+      return;
+    }
 
     setKakaoLoading(true);
     setKakaoPlaces([]);
@@ -554,6 +563,13 @@ export default function App() {
       setPublicResults([]); setPublicTotal(0);
       return;
     }
+    console.log('[Kakao SDK 상태]', {
+      kakao: !!window.kakao,
+      maps: !!window.kakao?.maps,
+      services: !!window.kakao?.maps?.services,
+      Places: !!window.kakao?.maps?.services?.Places,
+      Geocoder: !!window.kakao?.maps?.services?.Geocoder,
+    });
     if (!navigator.geolocation) { alert('위치 서비스를 지원하지 않는 브라우저입니다.'); return; }
     setLocating(true);
     navigator.geolocation.getCurrentPosition(
