@@ -849,12 +849,16 @@ export default function App() {
                     onBlur={()=>setTimeout(()=>setGolfDropOpen(false), 150)}
                     onChange={e=>{ setGolfDropQuery(e.target.value); setGolfDropOpen(true); }}
                   />
-                  {selectedGolf && !golfDropOpen && (
-                    <button onMouseDown={e=>{ e.preventDefault(); setSelectedGolf(""); setGolfDropQuery(""); }}
-                      style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",fontSize:16,cursor:"pointer",color:"#8A7A6A",lineHeight:1}}>×</button>
-                  )}
                   {golfDropOpen && (
-                    <div style={{position:"absolute",top:"100%",left:0,right:0,background:"white",border:"1px solid #E0D8CC",borderTop:"none",borderRadius:"0 0 8px 8px",maxHeight:220,overflowY:"auto",zIndex:100,boxShadow:"0 4px 12px rgba(0,0,0,0.1)"}}>
+                    <div style={{position:"absolute",top:"100%",left:0,right:0,background:"white",border:"1px solid #E0D8CC",borderTop:"none",borderRadius:"0 0 8px 8px",maxHeight:240,overflowY:"auto",zIndex:100,boxShadow:"0 4px 12px rgba(0,0,0,0.1)"}}>
+                      {/* 전체 보기 고정 항목 */}
+                      {!golfDropQuery && (
+                        <div
+                          onMouseDown={e=>{ e.preventDefault(); setSelectedGolf(""); setGolfDropQuery(""); setGolfDropOpen(false); }}
+                          style={{padding:"10px 14px",fontSize:13,cursor:"pointer",borderBottom:"2px solid #EDE8E0",display:"flex",alignItems:"center",gap:6,fontWeight:600,color:"#5A4A3A",background:"#FFF8F0"}}>
+                          <span>⛳</span><span>전체 보기</span>
+                        </div>
+                      )}
                       {golfDropCourses.length === 0
                         ? <div style={{padding:"12px 14px",fontSize:13,color:"#8A7A6A"}}>검색 결과 없음</div>
                         : golfDropCourses.map(c=>(
