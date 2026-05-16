@@ -399,7 +399,7 @@ function DetailModal({ r, type, onClose }) {
         <div className="modal-note">{type==="biz"?r.note:type==="golf"?r.tip:r.tip}</div>
         <div className="modal-actions">
           <div style={{display:"flex",gap:8,width:"100%",marginBottom:8}}>
-            <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverSearch(r.name, r.area||null, r.mapQuery)}>
+            <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverSearch(r.name, type==="golf"?(r.searchCity||r.area||null):r.area||null, r.mapQuery)}>
               🟢 네이버
             </button>
             <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.name)}>
@@ -833,7 +833,11 @@ export default function App() {
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
             {golfRests.length===0
               ? <div className="empty">해당 조건의 맛집이 없어요 😢</div>
-              : golfRests.map(r=><GolfRestCard key={r.id} r={r} onClick={r=>openModal(r,"golf")}/>)
+              : golfRests.map(r=>{
+                  const course = golfCourses.find(g=>g.name===r.golf);
+                  const city = course?.region?.match(/\(([^)]+)\)/)?.[1] || course?.region || '';
+                  return <GolfRestCard key={r.id} r={{...r, searchCity: city}} onClick={r=>openModal(r,"golf")}/>;
+                })
             }
           </div>
         </div>
