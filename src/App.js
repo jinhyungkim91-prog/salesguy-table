@@ -104,6 +104,12 @@ function calcBizScore(room, genre, rating, source, note) {
 }
 
 const BIZ_REGIONS = ["전체","강남","서초","종로","영등포","용산","마포","중구","송파","성동","경기"];
+const GOLF_REGIONS = ["전체","경기북부","경기남부","경기서부"];
+function getGolfRegionGroup(region = '') {
+  if (region.includes('북부')) return '경기북부';
+  if (region.includes('서부')) return '경기서부';
+  return '경기남부';
+}
 const BIZ_GENRES  = ["전체","한정식","한우","일식","중식","파인다이닝"];
 // 장르 필터: 버튼명 → 매칭 키워드 (미정의 시 버튼명 그대로 includes 검색)
 const GENRE_KEYWORDS = {
@@ -209,7 +215,8 @@ function GolfRestCard({ r, onClick }) {
         <span style={{fontSize:22}}>{r.emoji}</span>
         <div style={{flex:1}}>
           <div className="golf-rest-name">{r.name}</div>
-          <div className="golf-rest-info">{r.genre} · {r.golf}</div>
+          <div className="golf-rest-info">{r.genre}</div>
+          <div style={{fontSize:"10px",color:"#A0896A",marginTop:1}}>⛳ {r.golf}{r.searchCity ? ` · ${r.searchCity}` : ''}</div>
         </div>
         <div className="golf-dist">🚗 {r.distance}</div>
       </div>
@@ -566,7 +573,7 @@ export default function App() {
   };
 
   // 골프 필터
-  const [selectedGolf, setSelectedGolf] = useState("베어크리크 CC");
+  const [golfRegion, setGolfRegion] = useState("전체");
   const [golfSearch, setGolfSearch] = useState("");
 
   const handleNearby = () => {
@@ -638,9 +645,11 @@ export default function App() {
     ? golfRestaurants.filter(r =>
         r.name.includes(golfSearch) || r.golf.includes(golfSearch) || (r.genre && r.genre.includes(golfSearch))
       )
-    : golfRestaurants.filter(r => r.golf === selectedGolf);
-
-  const currentGolf = golfCourses.find(g => g.name === selectedGolf) || golfCourses[0];
+    : golfRestaurants.filter(r => {
+        if (golfRegion === '전체') return true;
+        const course = golfCourses.find(g => g.name === r.golf);
+        return getGolfRegionGroup(course?.region) === golfRegion;
+      });
   if (dataLoading) return <div className="loading">🍽️ 데이터 불러오는 중...</div>;
 
 
@@ -813,21 +822,20 @@ export default function App() {
             )}
           </div>
           {!golfSearch && (
-            <div style={{padding:"6px 14px 10px",background:"white",borderBottom:"1px solid #EDE8E0"}}>
-              <div style={{fontSize:"9px",fontWeight:700,color:"#8A7A6A",marginBottom:5,fontFamily:"monospace"}}>⛳ 오늘 라운딩한 골프장</div>
-              <select className="golf-select"
-                value={selectedGolf}
-                onChange={e=>setSelectedGolf(e.target.value)}>
-                {golfCourses.map(g=>(
-                  <option key={g.id} value={g.name}>{g.name} ({g.region})</option>
-                ))}
-              </select>
+            <div style={{padding:"8px 14px 10px",background:"white",borderBottom:"1px solid #EDE8E0",display:"flex",gap:6,flexWrap:"wrap"}}>
+              {GOLF_REGIONS.map(rg=>(
+                <button key={rg}
+                  className={`filter-chip ${golfRegion===rg?"on":""}`}
+                  onClick={()=>setGolfRegion(rg)}>
+                  {rg}
+                </button>
+              ))}
             </div>
           )}
           <div className="info-banner" style={{background:"#FFF0E8",borderColor:"#E05A00",color:"#7A3000"}}>
             {golfSearch
               ? <>🔍 "{golfSearch}" 검색 결과 · <b>{golfRests.length}곳</b></>
-              : <>🍽️ {selectedGolf} · <b>{golfRests.length}곳</b> 근처 맛집</>
+              : <>⛳ {golfRegion} · <b>{golfRests.length}곳</b> 근처 맛집</>
             }
           </div>
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
