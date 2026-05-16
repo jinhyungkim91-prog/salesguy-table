@@ -409,6 +409,26 @@ function DetailModal({ r, type, onClose }) {
 // 메인 앱
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 export default function App() {
+  // 카카오 SDK 동적 로드
+  const [kakaoReady, setKakaoReady] = useState(false);
+  useEffect(() => {
+    const key = window.__KAKAO_KEY__;
+    if (!key || key === '%REACT_APP_KAKAO_KEY%') {
+      console.error('[Kakao] 환경변수 REACT_APP_KAKAO_KEY 없음');
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&libraries=services&autoload=false`;
+    script.onload = () => {
+      window.kakao.maps.load(() => {
+        console.log('[Kakao] SDK 초기화 완료');
+        setKakaoReady(true);
+      });
+    };
+    script.onerror = () => console.error('[Kakao] SDK 로드 실패');
+    document.head.appendChild(script);
+  }, []);
+
   // 데이터 상태
   const [restaurants, setRestaurants]       = useState([]);
   const [lunchDB, setLunchDB]               = useState([]);
@@ -487,17 +507,7 @@ export default function App() {
 
   // 주변 모드 → 카카오 장소검색 (반경 기반)
   useEffect(() => {
-    if (!nearbyMode || !userLocation?.lat) return;
-    // 디버그 로그
-    console.log('[Kakao] window.kakao:', !!window.kakao);
-    console.log('[Kakao] maps:', !!window.kakao?.maps);
-    console.log('[Kakao] services:', !!window.kakao?.maps?.services);
-    console.log('[Kakao] Places:', !!window.kakao?.maps?.services?.Places);
-    if (!window.kakao?.maps?.services?.Places) {
-      console.error('[Kakao] Places 서비스 미로드 — SDK 키/도메인 확인 필요');
-      setKakaoLoading(false);
-      return;
-    }
+    if (!nearbyMode || !userLocation?.lat || !kakaoReady) return;
 
     setKakaoLoading(true);
     setKakaoPlaces([]);
@@ -527,7 +537,7 @@ export default function App() {
       size: 15,
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [nearbyMode, userLocation?.lat, userLocation?.lng, nearbyRadius]);
+  }, [nearbyMode, userLocation?.lat, userLocation?.lng, nearbyRadius, kakaoReady]);
 
   const loadMore = async () => {
     if (nearbyMode) {
@@ -563,13 +573,6 @@ export default function App() {
       setPublicResults([]); setPublicTotal(0);
       return;
     }
-    console.log('[Kakao SDK 상태]', {
-      kakao: !!window.kakao,
-      maps: !!window.kakao?.maps,
-      services: !!window.kakao?.maps?.services,
-      Places: !!window.kakao?.maps?.services?.Places,
-      Geocoder: !!window.kakao?.maps?.services?.Geocoder,
-    });
     if (!navigator.geolocation) { alert('위치 서비스를 지원하지 않는 브라우저입니다.'); return; }
     setLocating(true);
     navigator.geolocation.getCurrentPosition(
@@ -580,7 +583,7 @@ export default function App() {
         setLunchSearch('');
         setLocating(false);
         // 카카오 역지오코딩으로 동/구 이름 가져오기
-        if (window.kakao?.maps?.services) {
+        if (kakaoReady && window.kakao?.maps?.services) {
           const geocoder = new window.kakao.maps.services.Geocoder();
           geocoder.coord2Address(lng, lat, (result, status) => {
             if (status === window.kakao.maps.services.Status.OK && result[0]) {
