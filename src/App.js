@@ -448,8 +448,7 @@ export default function App() {
     ]).then(([rest, lunch, golf]) => {
       setRestaurants(rest);
       setLunchDB(lunch);
-      const restSet = new Set(golf.restaurants.map(r => r.golf));
-      setGolfCourses(golf.courses.filter(c => restSet.has(c.name)));
+      setGolfCourses(golf.courses);
       setGolfRestaurants(golf.restaurants);
       setDataLoading(false);
     });
@@ -895,7 +894,7 @@ export default function App() {
           </div>
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
             {golfRests.length===0
-              ? <div className="empty">해당 조건의 맛집이 없어요 😢</div>
+              ? <div className="empty">{selectedGolf ? `⛳ ${selectedGolf} 맛집 데이터를 준비 중이에요` : '해당 조건의 맛집이 없어요 😢'}</div>
               : golfRests.map(r=>{
                   const course = golfCourses.find(g=>g.name===r.golf);
                   const city = course?.region?.match(/\(([^)]+)\)/)?.[1] || course?.region || '';
