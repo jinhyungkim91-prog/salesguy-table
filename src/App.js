@@ -656,7 +656,8 @@ export default function App() {
     });
 
   const norm = s => s.replace(/\s/g, '').toLowerCase();
-  const golfRests = golfSearch
+  const distMin = s => parseInt((s || '99분').replace(/[^0-9]/g, '')) || 99;
+  const golfRests = (golfSearch
     ? golfRestaurants.filter(r =>
         norm(r.name).includes(norm(golfSearch)) ||
         norm(r.golf).includes(norm(golfSearch)) ||
@@ -667,7 +668,8 @@ export default function App() {
         if (golfRegion === '전체') return true;
         const course = golfCourses.find(g => g.name === r.golf);
         return getGolfRegionGroup(course?.region) === golfRegion;
-      });
+      })
+  ).slice().sort((a, b) => distMin(a.distance) - distMin(b.distance));
 
   // 드롭다운 코스 목록 필터링 (입력어) + 가나다 정렬
   const golfDropCourses = golfCourses.filter(c => {
