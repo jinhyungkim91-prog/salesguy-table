@@ -405,27 +405,12 @@ function DetailModal({ r, type, onClose }) {
   );
 }
 
+const KAKAO_REST_KEY = process.env.REACT_APP_KAKAO_REST_KEY;
+
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 메인 앱
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 export default function App() {
-  // 카카오 SDK 동적 로드
-  const [kakaoReady, setKakaoReady] = useState(false);
-  useEffect(() => {
-    const key = window.__KAKAO_KEY__;
-    if (!key || key === '%REACT_APP_KAKAO_KEY%') {
-      console.error('[Kakao] 환경변수 REACT_APP_KAKAO_KEY 없음');
-      return;
-    }
-    const script = document.createElement('script');
-    script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&libraries=services`;
-    script.onload = () => {
-      console.log('[Kakao] SDK 로드 완료, maps:', !!window.kakao?.maps);
-      setKakaoReady(true);
-    };
-    script.onerror = (e) => console.error('[Kakao] SDK 로드 실패', e);
-    document.head.appendChild(script);
-  }, []);
 
   // 데이터 상태
   const [restaurants, setRestaurants]       = useState([]);
@@ -469,8 +454,8 @@ export default function App() {
   const [nearbyRadius, setNearbyRadius] = useState(300);
   const [kakaoPlaces, setKakaoPlaces]   = useState([]);
   const [kakaoLoading, setKakaoLoading] = useState(false);
-  const [kakaoPagination, setKakaoPagination] = useState(null);
-  const kakaoAppendRef = useRef(false);
+  const [kakaoHasMore, setKakaoHasMore] = useState(false);
+  const kakaoNextPageRef = useRef(1);
 
   // 공공 점심 DB (Supabase)
   const [publicResults, setPublicResults] = useState([]);
@@ -503,47 +488,52 @@ export default function App() {
     return () => clearTimeout(debounceRef.current);
   }, [lunchSearch, nearbyMode]);
 
-  // 주변 모드 → 카카오 장소검색 (반경 기반)
-  useEffect(() => {
-    if (!nearbyMode || !userLocation?.lat || !kakaoReady) return;
-
+  // 주변 모드 → 카카오 REST API 장소검색 (반경 기반)
+  const fetchKakaoPlaces = async (lat, lng, radius, append = false) => {
     setKakaoLoading(true);
-    setKakaoPlaces([]);
-    setKakaoPagination(null);
-    kakaoAppendRef.current = false;
-
-    const ps = new window.kakao.maps.services.Places();
-    const loc = new window.kakao.maps.LatLng(userLocation.lat, userLocation.lng);
-
-    ps.categorySearch('FD6', (result, status, pagination) => {
-      if (status === window.kakao.maps.services.Status.OK) {
-        if (kakaoAppendRef.current) {
-          setKakaoPlaces(prev => [...prev, ...result]);
-        } else {
-          setKakaoPlaces(result);
-        }
-        setKakaoPagination(pagination.hasNextPage ? pagination : null);
+    if (!append) { setKakaoPlaces([]); kakaoNextPageRef.current = 1; }
+    const page = append ? kakaoNextPageRef.current : 1;
+    try {
+      const params = new URLSearchParams({
+        category_group_code: 'FD6',
+        x: String(lng), y: String(lat),
+        radius: String(radius),
+        sort: 'distance', size: '15', page: String(page),
+      });
+      const res = await fetch(
+        `https://dapi.kakao.com/v2/local/search/category.json?${params}`,
+        { headers: { Authorization: `KakaoAK ${KAKAO_REST_KEY}` } }
+      );
+      const data = await res.json();
+      const places = data.documents || [];
+      if (append) {
+        setKakaoPlaces(prev => [...prev, ...places]);
       } else {
-        if (!kakaoAppendRef.current) setKakaoPlaces([]);
+        setKakaoPlaces(places);
       }
-      setKakaoLoading(false);
-      setMoreLoading(false);
-    }, {
-      location: loc,
-      radius: nearbyRadius,
-      sort: window.kakao.maps.services.SortBy.DISTANCE,
-      size: 15,
-    });
+      const hasMore = !data.meta?.is_end && places.length > 0;
+      setKakaoHasMore(hasMore);
+      if (hasMore) kakaoNextPageRef.current = page + 1;
+    } catch (err) {
+      console.error('[Kakao REST]', err);
+      if (!append) setKakaoPlaces([]);
+      setKakaoHasMore(false);
+    }
+    setKakaoLoading(false);
+    setMoreLoading(false);
+  };
+
+  useEffect(() => {
+    if (!nearbyMode || !userLocation?.lat) return;
+    fetchKakaoPlaces(userLocation.lat, userLocation.lng, nearbyRadius, false);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [nearbyMode, userLocation?.lat, userLocation?.lng, nearbyRadius, kakaoReady]);
+  }, [nearbyMode, userLocation?.lat, userLocation?.lng, nearbyRadius]);
 
   const loadMore = async () => {
     if (nearbyMode) {
-      // 카카오 더보기
-      if (!kakaoPagination?.hasNextPage) return;
+      if (!kakaoHasMore) return;
       setMoreLoading(true);
-      kakaoAppendRef.current = true;
-      kakaoPagination.nextPage();
+      await fetchKakaoPlaces(userLocation.lat, userLocation.lng, nearbyRadius, true);
       return;
     }
     // Supabase 더보기
@@ -567,7 +557,7 @@ export default function App() {
   const handleNearby = () => {
     if (nearbyMode) {
       setNearbyMode(false); setUserLocation(null);
-      setKakaoPlaces([]); setKakaoPagination(null);
+      setKakaoPlaces([]); setKakaoHasMore(false);
       setPublicResults([]); setPublicTotal(0);
       return;
     }
@@ -580,20 +570,19 @@ export default function App() {
         setNearbyMode(true);
         setLunchSearch('');
         setLocating(false);
-        // 카카오 역지오코딩으로 동/구 이름 가져오기
-        if (kakaoReady && window.kakao?.maps?.services) {
-          const geocoder = new window.kakao.maps.services.Geocoder();
-          geocoder.coord2Address(lng, lat, (result, status) => {
-            if (status === window.kakao.maps.services.Status.OK && result[0]) {
-              const addr = result[0].address;
-              setUserLocation(prev => prev ? {
-                ...prev,
-                dong: addr.region_3depth_name || '',
-                gu:   addr.region_2depth_name || '',
-              } : null);
-            }
-          });
-        }
+        // 카카오 REST API 역지오코딩으로 동/구 이름 가져오기
+        fetch(`https://dapi.kakao.com/v2/local/geo/coord2address.json?x=${lng}&y=${lat}`, {
+          headers: { Authorization: `KakaoAK ${KAKAO_REST_KEY}` }
+        }).then(r => r.json()).then(data => {
+          if (data.documents?.[0]) {
+            const addr = data.documents[0].address;
+            setUserLocation(prev => prev ? {
+              ...prev,
+              dong: addr.region_3depth_name || '',
+              gu:   addr.region_2depth_name || '',
+            } : null);
+          }
+        }).catch(() => {});
       },
       () => { setLocating(false); alert('위치 권한을 허용해주세요.'); },
       { timeout: 8000, maximumAge: 60000 }
@@ -766,7 +755,7 @@ export default function App() {
                   ? <div className="empty">반경 {nearbyRadius}m 내 음식점이 없어요 😢<br/><span style={{fontSize:12}}>반경을 늘려보세요</span></div>
                   : <>
                       {filteredKakao.map((r,i)=><KakaoPlaceCard key={r.id||i} r={r} onClick={r=>openModal(r,"kakao")}/>)}
-                      {kakaoPagination && (
+                      {kakaoHasMore && (
                         <button onClick={loadMore} disabled={moreLoading}
                           style={{width:"100%",padding:"12px",margin:"8px 0",background:"#D5F5E3",border:"1px solid #00875A",borderRadius:10,color:"#00875A",fontWeight:700,fontSize:13,cursor:"pointer"}}>
                           {moreLoading?"불러오는 중...":"더 보기"}
