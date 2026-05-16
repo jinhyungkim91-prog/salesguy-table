@@ -24,6 +24,14 @@ function openNaverSearch(name, area, mapQuery) {
   window.open("https://search.naver.com/search.naver?query=" + encodeURIComponent(query), "_blank");
 }
 
+function cleanPublicName(name) {
+  return name
+    .replace(/^주식회사\s+/,'').replace(/\s+주식회사$/,'').replace(/\(주\)/g,'')
+    .replace(/^유한회사\s+/,'').replace(/\s+유한회사$/,'').replace(/\(유\)/g,'')
+    .replace(/^합자회사\s+/,'').replace(/\s+합자회사$/,'')
+    .trim();
+}
+
 function openNaverMap(name, address) {
   // 공공DB: 네이버 지도에서 식당명+주소로 검색 (지도 표시명과 매칭 정확도 향상)
   const query = address ? name + " " + address : name;
@@ -217,12 +225,13 @@ function GolfRestCard({ r, onClick }) {
 }
 
 function PublicLunchCard({ r, onClick }) {
+  const displayName = cleanPublicName(r.name);
   return (
     <div className="rest-card" onClick={()=>onClick(r)} style={{cursor:"pointer"}}>
       <div className="rest-card-top">
         <div className="rest-emoji">🍴</div>
         <div className="rest-info">
-          <div className="rest-name">{r.name}</div>
+          <div className="rest-name">{displayName}</div>
           <div className="rest-sub">{r.district} · {r.genre}</div>
         </div>
         <div style={{fontSize:"9px",color:"#A09080",flexShrink:0,background:"#F5F0E8",borderRadius:4,padding:"2px 6px"}}>공공DB</div>
@@ -270,12 +279,13 @@ function DetailModal({ r, type, onClose }) {
 
   // ── 공공DB 모달 ──
   if (type === "public") {
+    const cleanName = cleanPublicName(r.name);
     return (
       <div className="modal-overlay" onClick={onClose}>
         <div className="modal-box" onClick={e=>e.stopPropagation()}>
           <button className="modal-close" onClick={onClose}>✕</button>
           <div className="modal-emoji">🍴</div>
-          <div className="modal-name">{r.name}</div>
+          <div className="modal-name">{cleanName}</div>
           <div className="modal-area">{r.district}</div>
           <div className="modal-row">
             <div className="modal-item">
@@ -294,15 +304,15 @@ function DetailModal({ r, type, onClose }) {
           <div className="modal-note" style={{fontSize:11,color:"#8A7A6A"}}>{r.address}</div>
           <div className="modal-actions">
             <div style={{display:"flex",gap:8,width:"100%",marginBottom:8}}>
-              <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverMap(r.name, null)}>
+              <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverMap(cleanName, null)}>
                 🗺️ 네이버지도
               </button>
-              <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.name)}>
+              <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(cleanName)}>
                 ▶ 유튜브 쇼츠
               </button>
             </div>
             <button className="btn-save" style={{width:"100%",background:"#FEE500",color:"#3C1E1E",border:"none"}}
-              onClick={()=>window.open("https://map.kakao.com/link/search/"+encodeURIComponent(r.name),"_blank")}>
+              onClick={()=>window.open("https://map.kakao.com/link/search/"+encodeURIComponent(cleanName),"_blank")}>
               🗺️ 카카오맵에서 보기
             </button>
           </div>
