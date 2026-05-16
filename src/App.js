@@ -377,7 +377,7 @@ function DetailModal({ r, type, onClose }) {
         <div className="modal-emoji">{r.emoji || "🍽️"}</div>
         <div className="modal-name">{r.name}</div>
         <div className="modal-area">
-          {type==="golf" ? `${r.golf} · 귀경 ${r.distance}` : `${r.region} · ${r.area}`}
+          {type==="golf" ? `${r.golf} · 🚗 ${r.distance}` : `${r.region} · ${r.area}`}
         </div>
         <div className="modal-row">
           <div className="modal-item">
@@ -389,8 +389,8 @@ function DetailModal({ r, type, onClose }) {
             <div className="modal-val">★ {r.rating}</div>
           </div>
           <div className="modal-item">
-            <div className="modal-label">{type==="biz"?"비즈점수":type==="golf"?"거리":"가격대"}</div>
-            <div className="modal-val score-hi">{type==="biz"?r.score+"점":type==="golf"?r.distance:r.price}</div>
+            <div className="modal-label">{type==="biz"?"비즈점수":type==="golf"?"소요시간":"가격대"}</div>
+            <div className="modal-val score-hi">{type==="biz"?r.score+"점":type==="golf"?"🚗 "+r.distance:r.price}</div>
           </div>
         </div>
         {type==="biz" && <div className="modal-room"><span className={r.room==="✅ 확인"?"tag tag-room":"tag tag-maybe"}>{r.room} 룸</span></div>}
@@ -399,8 +399,12 @@ function DetailModal({ r, type, onClose }) {
         <div className="modal-note">{type==="biz"?r.note:type==="golf"?r.tip:r.tip}</div>
         <div className="modal-actions">
           <div style={{display:"flex",gap:8,width:"100%",marginBottom:8}}>
-            <button className="btn-kakao" style={{flex:1}} onClick={()=>openNaverSearch(r.name, type==="golf"?(r.searchCity||r.area||null):r.area||null, r.mapQuery)}>
-              🟢 네이버
+            <button className="btn-kakao" style={{flex:1}} onClick={()=>
+              type==="golf"
+                ? openNaverMap(r.name, r.searchCity||null)
+                : openNaverSearch(r.name, r.area||null, r.mapQuery)
+            }>
+              {type==="golf" ? "🗺️ 네이버지도" : "🟢 네이버"}
             </button>
             <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.name)}>
               ▶ 유튜브 쇼츠
