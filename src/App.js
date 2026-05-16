@@ -647,7 +647,7 @@ export default function App() {
     <div className="app">
       <header className="header">
         <div className="header-logo">세일즈가이의 <span>식탁</span></div>
-        <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 귀경</div>
+        <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프 근처</div>
         <div className="db-badge">📦 총 {(restaurants.length + lunchDB.length + PUBLIC_LUNCH_TOTAL + golfRestaurants.length).toLocaleString()}개 DB</div>
       </header>
 
@@ -821,17 +821,12 @@ export default function App() {
                   <option key={g.id} value={g.name}>{g.name} ({g.region})</option>
                 ))}
               </select>
-              {currentGolf && (
-                <div style={{fontSize:10,color:"#8A7A6A",marginTop:5}}>
-                  📍 {currentGolf.address} · 서울까지 {currentGolf.time} · {currentGolf.grade}
-                </div>
-              )}
             </div>
           )}
           <div className="info-banner" style={{background:"#FFF0E8",borderColor:"#E05A00",color:"#7A3000"}}>
             {golfSearch
               ? <>🔍 "{golfSearch}" 검색 결과 · <b>{golfRests.length}곳</b></>
-              : <>🍽️ {selectedGolf} · <b>{golfRests.length}곳</b> 귀경 맛집</>
+              : <>🍽️ {selectedGolf} · <b>{golfRests.length}곳</b> 근처 맛집</>
             }
           </div>
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
