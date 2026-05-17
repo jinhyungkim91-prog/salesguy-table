@@ -3139,7 +3139,8 @@
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "골프존카운티 안성H 근처 2.3km · 두부전골",
-      "visited": true
+      "visited": true,
+      "mapQuery": "초당두부 안성"
     },
     {
       "id": 641,
@@ -3202,7 +3203,8 @@
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "이글몬트 CC 근처 2.3km · 두부전골",
-      "visited": true
+      "visited": true,
+      "mapQuery": "초당두부 안성"
     },
     {
       "id": 647,

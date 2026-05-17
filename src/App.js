@@ -416,7 +416,7 @@ function DetailModal({ r, type, onClose }) {
             }>
               {type==="golf" ? "🗺️ 네이버지도" : "🟢 네이버"}
             </button>
-            <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.name)}>
+            <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.mapQuery||r.name)}>
               ▶ 유튜브 쇼츠
             </button>
           </div>
