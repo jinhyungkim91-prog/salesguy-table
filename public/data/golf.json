@@ -469,83 +469,11 @@
   ],
   "restaurants": [
     {
-      "id": 93,
-      "golf": "스카이밸리 CC",
-      "name": "감성식탁 여주",
-      "genre": "한정식",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.6,
-      "tip": "해슬리나인브릿지·스카이밸리 골퍼 단골·6가지 정식·한우육회정식 인기",
-      "direction": "강남·광화문",
-      "emoji": "🏮"
-    },
-    {
-      "id": 94,
-      "golf": "스카이밸리 CC",
-      "name": "청심정 여주",
-      "genre": "오리구이·장어",
-      "distance": "12분",
-      "room": "단체가능",
-      "rating": 4.5,
-      "tip": "남한강 전망·오리+장어 세트·골프 귀경 단골",
-      "direction": "강남·광화문",
-      "emoji": "🍱"
-    },
-    {
-      "id": 95,
-      "golf": "스카이밸리 CC",
-      "name": "장복골 여주",
-      "genre": "숯불구이",
-      "distance": "10분",
-      "room": "단체가능",
-      "rating": 4.5,
-      "tip": "캐치테이블 예약 가능·여주 숯불구이 명소",
-      "direction": "강남·광화문",
-      "emoji": "🍱"
-    },
-    {
-      "id": 118,
-      "golf": "포천힐스 CC",
-      "name": "이동궁전갈비",
-      "genre": "이동갈비",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.5,
-      "tip": "계곡뷰·대형주차·단체모임최적·요청시직원구이",
-      "direction": "강남·강북",
-      "emoji": "🥩"
-    },
-    {
-      "id": 119,
-      "golf": "포천힐스 CC",
-      "name": "소문난이동갈비",
-      "genre": "이동갈비",
-      "distance": "8분",
-      "room": "단체가능",
-      "rating": 4.4,
-      "tip": "직원구이지원·아보카도육회·더덕무침·대하장·쌈채소풍부",
-      "direction": "강남·강북",
-      "emoji": "🥩"
-    },
-    {
-      "id": 120,
-      "golf": "포천힐스 CC",
-      "name": "향유갈비",
-      "genre": "이동갈비",
-      "distance": "9분",
-      "room": "단체가능",
-      "rating": 4.4,
-      "tip": "사이드메뉴다양·2층좌석·이색숙성메뉴",
-      "direction": "강남·강북",
-      "emoji": "🥩"
-    },
-    {
       "id": 234,
       "golf": "안성 베네스트 GC",
       "name": "안성 쌍동이네",
       "genre": "매운탕",
-      "distance": "12분",
+      "distance": "15분",
       "room": "단체가능",
       "rating": "4.3",
       "emoji": "🐟",
@@ -567,7 +495,7 @@
       "golf": "안성 베네스트 GC",
       "name": "청수골",
       "genre": "한식",
-      "distance": "2분",
+      "distance": "3분",
       "room": "단체가능",
       "rating": "4.3",
       "emoji": "🏮",
@@ -585,43 +513,11 @@
       "tip": "제육볶음과 청국장"
     },
     {
-      "id": 238,
-      "golf": "안성 베네스트 GC",
-      "name": "모산골",
-      "genre": "한식",
-      "distance": "3분",
-      "room": "단체가능",
-      "rating": "4.3",
-      "emoji": "🏮",
-      "tip": "쌈밥정식"
-    },
-    {
-      "id": 239,
-      "golf": "안성 베네스트 GC",
-      "name": "안성마춤한우촌",
-      "genre": "소고기구이",
-      "distance": "20분",
-      "room": "✅ 룸 있음",
-      "rating": "4.4",
-      "emoji": "🥩",
-      "tip": "안성 한우 전문·룸 있음"
-    },
-    {
-      "id": 300,
-      "golf": "베어크리크 CC",
-      "name": "들밥",
-      "genre": "한정식",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "베어크리크 CC 근처 2.8km · 한정식"
-    },
-    {
       "id": 301,
       "golf": "베어크리크 CC",
       "name": "청다래",
       "genre": "오리구이",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "베어크리크 CC 근처 1.9km · 오리구이"
@@ -657,64 +553,24 @@
       "tip": "베어크리크 CC 근처 1.6km · 국수"
     },
     {
-      "id": 305,
-      "golf": "아도니스 CC",
-      "name": "뜰",
-      "genre": "한정식",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "아도니스 CC 근처 1.9km · 한정식"
-    },
-    {
       "id": 306,
       "golf": "아도니스 CC",
       "name": "오리더덕구이",
       "genre": "오리구이",
-      "distance": "5분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "아도니스 CC 근처 1.1km · 오리구이"
-    },
-    {
-      "id": 307,
-      "golf": "아도니스 CC",
-      "name": "맛고을",
-      "genre": "해물",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "아도니스 CC 근처 2.5km · 해물"
     },
     {
       "id": 308,
       "golf": "아도니스 CC",
       "name": "소양강숯불닭갈비",
       "genre": "닭요리",
-      "distance": "8분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "아도니스 CC 근처 2.9km · 닭요리"
-    },
-    {
-      "id": 309,
-      "golf": "아도니스 CC",
-      "name": "맛집막국수",
-      "genre": "국수",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "아도니스 CC 근처 2.4km · 국수"
-    },
-    {
-      "id": 310,
-      "golf": "포천힐스 CC",
-      "name": "고갯마루",
-      "genre": "갈비",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "포천힐스 CC 근처 1.9km · 갈비"
     },
     {
       "id": 311,
@@ -731,7 +587,7 @@
       "golf": "포천힐스 CC",
       "name": "은빛호수",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "포천힐스 CC 근처 1.7km · 닭요리"
@@ -761,7 +617,7 @@
       "golf": "일동레이크 GC",
       "name": "운악산의뜰",
       "genre": "오리구이",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "일동레이크 GC 근처 1.5km · 오리구이"
@@ -781,7 +637,7 @@
       "golf": "일동레이크 GC",
       "name": "대가집보양백숙",
       "genre": "닭요리",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "일동레이크 GC 근처 2.1km · 닭요리"
@@ -791,7 +647,7 @@
       "golf": "일동레이크 GC",
       "name": "연두부 포천일동본점",
       "genre": "두부전골",
-      "distance": "3분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "일동레이크 GC 근처 954m · 두부전골"
@@ -801,7 +657,7 @@
       "golf": "일동레이크 GC",
       "name": "고인돌쌈밥",
       "genre": "쌈밥",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "일동레이크 GC 근처 1.7km · 쌈밥"
@@ -811,7 +667,7 @@
       "golf": "크리스탈밸리 CC",
       "name": "공덕갈비",
       "genre": "갈비",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "크리스탈밸리 CC 근처 2.5km · 갈비"
@@ -821,7 +677,7 @@
       "golf": "크리스탈밸리 CC",
       "name": "갓지은밥",
       "genre": "한정식",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "크리스탈밸리 CC 근처 2.6km · 한정식"
@@ -831,7 +687,7 @@
       "golf": "크리스탈밸리 CC",
       "name": "은화별채",
       "genre": "한정식",
-      "distance": "12분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "크리스탈밸리 CC 근처 3.1km · 한정식"
@@ -851,7 +707,7 @@
       "golf": "크리스탈밸리 CC",
       "name": "원조닭갈비 축령산",
       "genre": "닭요리",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "크리스탈밸리 CC 근처 2.7km · 닭요리"
@@ -921,7 +777,7 @@
       "golf": "가평베네스트 GC",
       "name": "대통령산장",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "가평베네스트 GC 근처 1.3km · 닭요리"
@@ -981,7 +837,7 @@
       "golf": "레이크사이드 CC",
       "name": "우람장어",
       "genre": "장어구이",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "레이크사이드 CC 근처 1.5km · 장어구이"
@@ -1001,7 +857,7 @@
       "golf": "레이크사이드 CC",
       "name": "한우꼬리곰탕",
       "genre": "곰탕",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "레이크사이드 CC 근처 1.5km · 곰탕"
@@ -1011,7 +867,7 @@
       "golf": "파인크리크 CC",
       "name": "소나무향기",
       "genre": "갈비",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "파인크리크 CC 근처 2.2km · 갈비"
@@ -1031,7 +887,7 @@
       "golf": "파인크리크 CC",
       "name": "식도락",
       "genre": "닭요리",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "파인크리크 CC 근처 2.1km · 닭요리"
@@ -1051,7 +907,7 @@
       "golf": "파인크리크 CC",
       "name": "별미옥진주냉면",
       "genre": "냉면",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "파인크리크 CC 근처 2.1km · 냉면"
@@ -1061,7 +917,7 @@
       "golf": "송추 CC",
       "name": "장원갈비",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "송추 CC 근처 1.8km · 갈비"
@@ -1071,7 +927,7 @@
       "golf": "송추 CC",
       "name": "소령원숲속",
       "genre": "오리구이",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "송추 CC 근처 1.7km · 오리구이"
@@ -1081,7 +937,7 @@
       "golf": "송추 CC",
       "name": "범산골",
       "genre": "매운탕,해물탕",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "송추 CC 근처 1.2km · 매운탕,해물탕"
@@ -1091,7 +947,7 @@
       "golf": "송추 CC",
       "name": "원조할매닭한마리",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "송추 CC 근처 1.5km · 닭요리"
@@ -1101,60 +957,20 @@
       "golf": "송추 CC",
       "name": "장수마을국수집",
       "genre": "국수",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "송추 CC 근처 1.3km · 국수"
-    },
-    {
-      "id": 350,
-      "golf": "코리아 CC",
-      "name": "석정",
-      "genre": "갈비",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "코리아 CC 근처 1.8km · 갈비"
-    },
-    {
-      "id": 351,
-      "golf": "코리아 CC",
-      "name": "들꽃",
-      "genre": "한정식",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "코리아 CC 근처 1.9km · 한정식"
-    },
-    {
-      "id": 352,
-      "golf": "코리아 CC",
-      "name": "감골오리 용인본점",
-      "genre": "오리구이",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "코리아 CC 근처 1.4km · 오리구이"
     },
     {
       "id": 353,
       "golf": "코리아 CC",
       "name": "구매골식당",
       "genre": "오리구이",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "코리아 CC 근처 1.7km · 오리구이"
-    },
-    {
-      "id": 354,
-      "golf": "코리아 CC",
-      "name": "감골오리 동탄점",
-      "genre": "오리구이",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "코리아 CC 근처 1.9km · 오리구이"
     },
     {
       "id": 355,
@@ -1171,7 +987,7 @@
       "golf": "레이크우드 CC",
       "name": "만포갈비 양주본점",
       "genre": "갈비",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "레이크우드 CC 근처 812m · 갈비"
@@ -1181,7 +997,7 @@
       "golf": "레이크우드 CC",
       "name": "사랑채 숯불갈비 고읍점",
       "genre": "갈비",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "레이크우드 CC 근처 924m · 갈비"
@@ -1201,7 +1017,7 @@
       "golf": "레이크우드 CC",
       "name": "전라도여수식당 본점",
       "genre": "게장",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "레이크우드 CC 근처 950m · 게장"
@@ -1215,16 +1031,6 @@
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "블랙스톤 CC 근처 246m · 한정식"
-    },
-    {
-      "id": 366,
-      "golf": "블랙스톤 CC",
-      "name": "조선시대",
-      "genre": "장어구이",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "블랙스톤 CC 근처 3.9km · 장어구이"
     },
     {
       "id": 367,
@@ -1261,7 +1067,7 @@
       "golf": "사우스스프링스 CC",
       "name": "설악막국수 춘천닭갈비 이천점",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "사우스스프링스 CC 근처 1.8km · 닭요리"
@@ -1275,16 +1081,6 @@
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "사우스스프링스 CC 근처 2.5km · 조개"
-    },
-    {
-      "id": 372,
-      "golf": "사우스스프링스 CC",
-      "name": "일송정",
-      "genre": "쌈밥",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "사우스스프링스 CC 근처 2.4km · 쌈밥"
     },
     {
       "id": 373,
@@ -1307,21 +1103,11 @@
       "tip": "사우스스프링스 CC 근처 1.3km · 해장국"
     },
     {
-      "id": 375,
-      "golf": "곤지암 GC",
-      "name": "수원숯불갈비",
-      "genre": "갈비",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "곤지암 GC 근처 2.4km · 갈비"
-    },
-    {
       "id": 376,
       "golf": "곤지암 GC",
       "name": "영양쌀밥옥이",
       "genre": "한정식",
-      "distance": "8분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "곤지암 GC 근처 2.9km · 한정식"
@@ -1337,21 +1123,11 @@
       "tip": "곤지암 GC 근처 2.3km · 닭요리"
     },
     {
-      "id": 378,
-      "golf": "곤지암 GC",
-      "name": "산정",
-      "genre": "닭요리",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "곤지암 GC 근처 2.6km · 닭요리"
-    },
-    {
       "id": 379,
       "golf": "곤지암 GC",
       "name": "설악막국수춘천닭갈비 곤지암점",
       "genre": "닭요리",
-      "distance": "8분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "곤지암 GC 근처 2.8km · 닭요리"
@@ -1367,21 +1143,11 @@
       "tip": "화산 CC 근처 1.4km · 갈비"
     },
     {
-      "id": 381,
-      "golf": "화산 CC",
-      "name": "부산복집",
-      "genre": "복어",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "화산 CC 근처 1.2km · 복어"
-    },
-    {
       "id": 382,
       "golf": "화산 CC",
       "name": "어식백세화덕생선구이",
       "genre": "해물",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "화산 CC 근처 1.6km · 해물"
@@ -1391,7 +1157,7 @@
       "golf": "화산 CC",
       "name": "김영주 한우소머리곰탕&화로숫불구이 월문점",
       "genre": "곰탕",
-      "distance": "3분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "화산 CC 근처 813m · 곰탕"
@@ -1421,7 +1187,7 @@
       "golf": "수원 CC",
       "name": "숯닭무 호매실점",
       "genre": "갈비",
-      "distance": "3분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "수원 CC 근처 670m · 갈비"
@@ -1431,7 +1197,7 @@
       "golf": "수원 CC",
       "name": "훈장골 수원점",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "수원 CC 근처 1.2km · 갈비"
@@ -1461,7 +1227,7 @@
       "golf": "한양 CC",
       "name": "더담",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "한양 CC 근처 1.2km · 한정식"
@@ -1487,21 +1253,11 @@
       "tip": "한양 CC 근처 1.1km · 삼계탕"
     },
     {
-      "id": 393,
-      "golf": "한양 CC",
-      "name": "소문난팔당냉면",
-      "genre": "냉면",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "한양 CC 근처 614m · 냉면"
-    },
-    {
       "id": 394,
       "golf": "한양 CC",
       "name": "양평신내서울해장국 원당직영점",
       "genre": "해장국",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "한양 CC 근처 638m · 해장국"
@@ -1541,7 +1297,7 @@
       "golf": "뉴코리아 CC",
       "name": "경복궁삼계탕 삼송점",
       "genre": "삼계탕",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "뉴코리아 CC 근처 1.2km · 삼계탕"
@@ -1551,7 +1307,7 @@
       "golf": "뉴코리아 CC",
       "name": "더고기앤쌈밥",
       "genre": "쌈밥",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "뉴코리아 CC 근처 976m · 쌈밥"
@@ -1561,7 +1317,7 @@
       "golf": "김포한강 CC",
       "name": "수갈비",
       "genre": "갈비",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "김포한강 CC 근처 899m · 갈비"
@@ -1571,7 +1327,7 @@
       "golf": "김포한강 CC",
       "name": "이학갈비 김포점",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "김포한강 CC 근처 1.2km · 갈비"
@@ -1581,7 +1337,7 @@
       "golf": "김포한강 CC",
       "name": "설반",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "김포한강 CC 근처 1.3km · 갈비"
@@ -1591,7 +1347,7 @@
       "golf": "김포한강 CC",
       "name": "금빛우리땅갈비",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "김포한강 CC 근처 1.3km · 갈비"
@@ -1601,27 +1357,17 @@
       "golf": "김포한강 CC",
       "name": "김포금쌀밥집 지미재",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "김포한강 CC 근처 1.4km · 한정식"
-    },
-    {
-      "id": 405,
-      "golf": "서서울 CC",
-      "name": "소문난고깃집",
-      "genre": "한정식",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "서서울 CC 근처 1.6km · 한정식"
     },
     {
       "id": 406,
       "golf": "서서울 CC",
       "name": "황금손쭈꾸미",
       "genre": "해물",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "서서울 CC 근처 1.1km · 해물"
@@ -1631,7 +1377,7 @@
       "golf": "서서울 CC",
       "name": "캠핑하고싶닭",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "서서울 CC 근처 1.3km · 닭요리"
@@ -1661,7 +1407,7 @@
       "golf": "김포씨사이드 CC",
       "name": "용진참숯장어구이꽃게탕",
       "genre": "장어구이",
-      "distance": "5분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "김포씨사이드 CC 근처 1.7km · 장어구이"
@@ -1677,21 +1423,11 @@
       "tip": "김포씨사이드 CC 근처 930m · 게장"
     },
     {
-      "id": 412,
-      "golf": "김포씨사이드 CC",
-      "name": "항만식당",
-      "genre": "매운탕,해물탕",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "김포씨사이드 CC 근처 1.6km · 매운탕,해물탕"
-    },
-    {
       "id": 413,
       "golf": "김포씨사이드 CC",
       "name": "오로라연어",
       "genre": "해물",
-      "distance": "5분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "김포씨사이드 CC 근처 1.9km · 해물"
@@ -1701,7 +1437,7 @@
       "golf": "김포씨사이드 CC",
       "name": "소반가 강릉해변메밀막국수 본점",
       "genre": "국수",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "김포씨사이드 CC 근처 1.2km · 국수"
@@ -1711,7 +1447,7 @@
       "golf": "안양 CC",
       "name": "홍가네영양센타",
       "genre": "삼계탕",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "안양 CC 근처 187m · 삼계탕"
@@ -1761,47 +1497,27 @@
       "golf": "안성큐 CC",
       "name": "세영이네",
       "genre": "한정식",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "안성큐 CC 근처 2.2km · 한정식"
-    },
-    {
-      "id": 421,
-      "golf": "안성큐 CC",
-      "name": "임진강민물장어",
-      "genre": "장어구이",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "안성큐 CC 근처 1.8km · 장어구이"
     },
     {
       "id": 422,
       "golf": "안성큐 CC",
       "name": "호수낀닭",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "안성큐 CC 근처 1.6km · 닭요리"
-    },
-    {
-      "id": 423,
-      "golf": "안성큐 CC",
-      "name": "청온",
-      "genre": "닭요리",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "안성큐 CC 근처 2.1km · 닭요리"
     },
     {
       "id": 424,
       "golf": "안성큐 CC",
       "name": "안성추어탕",
       "genre": "추어",
-      "distance": "8분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "안성큐 CC 근처 2.4km · 추어"
@@ -1821,47 +1537,27 @@
       "golf": "스카이밸리 CC",
       "name": "도전리식당",
       "genre": "오리구이",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "스카이밸리 CC 근처 1.6km · 오리구이"
-    },
-    {
-      "id": 427,
-      "golf": "스카이밸리 CC",
-      "name": "동가",
-      "genre": "닭요리",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "스카이밸리 CC 근처 1.6km · 닭요리"
     },
     {
       "id": 428,
       "golf": "스카이밸리 CC",
       "name": "아라코다리",
       "genre": "해물",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "스카이밸리 CC 근처 1.6km · 해물"
-    },
-    {
-      "id": 429,
-      "golf": "스카이밸리 CC",
-      "name": "손두부집",
-      "genre": "두부전골",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "스카이밸리 CC 근처 1.9km · 두부전골"
     },
     {
       "id": 430,
       "golf": "서원밸리 CC",
       "name": "옛날장터갈비",
       "genre": "갈비",
-      "distance": "8분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "서원밸리 CC 근처 2.4km · 갈비"
@@ -1871,7 +1567,7 @@
       "golf": "서원밸리 CC",
       "name": "삼방오리",
       "genre": "오리구이",
-      "distance": "8분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "서원밸리 CC 근처 2.4km · 오리구이"
@@ -1881,7 +1577,7 @@
       "golf": "서원밸리 CC",
       "name": "애룡산장",
       "genre": "매운탕,해물탕",
-      "distance": "8분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "서원밸리 CC 근처 2.6km · 매운탕,해물탕"
@@ -1891,27 +1587,17 @@
       "golf": "서원밸리 CC",
       "name": "농가",
       "genre": "해물",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "서원밸리 CC 근처 2.6km · 해물"
-    },
-    {
-      "id": 434,
-      "golf": "서원밸리 CC",
-      "name": "초리골초계탕",
-      "genre": "닭요리",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "서원밸리 CC 근처 3.0km · 닭요리"
     },
     {
       "id": 435,
       "golf": "힐마루 GC 포천",
       "name": "영중참갈비",
       "genre": "갈비",
-      "distance": "8분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "힐마루 GC 포천 근처 2.0km · 갈비"
@@ -1921,7 +1607,7 @@
       "golf": "힐마루 GC 포천",
       "name": "현도네이동숯불갈비",
       "genre": "갈비",
-      "distance": "8분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "힐마루 GC 포천 근처 2.3km · 갈비"
@@ -1941,7 +1627,7 @@
       "golf": "힐마루 GC 포천",
       "name": "운악막국수숯불닭갈비 포천점",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "힐마루 GC 포천 근처 1.9km · 닭요리"
@@ -1961,30 +1647,10 @@
       "golf": "비전힐스 GC",
       "name": "백봉갈비",
       "genre": "갈비",
-      "distance": "3분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "비전힐스 GC 근처 639m · 갈비"
-    },
-    {
-      "id": 441,
-      "golf": "비전힐스 GC",
-      "name": "채담",
-      "genre": "한정식",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "비전힐스 GC 근처 1.3km · 한정식"
-    },
-    {
-      "id": 442,
-      "golf": "비전힐스 GC",
-      "name": "심마니네약초백숙",
-      "genre": "삼계탕",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "비전힐스 GC 근처 1.2km · 삼계탕"
     },
     {
       "id": 443,
@@ -2001,7 +1667,7 @@
       "golf": "비전힐스 GC",
       "name": "참능이오리닭백숙",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "비전힐스 GC 근처 1.5km · 닭요리"
@@ -2031,20 +1697,10 @@
       "golf": "참밸리 CC",
       "name": "동교산장",
       "genre": "닭요리",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "참밸리 CC 근처 2.1km · 닭요리"
-    },
-    {
-      "id": 448,
-      "golf": "참밸리 CC",
-      "name": "해룡마을국수집",
-      "genre": "국수",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "참밸리 CC 근처 1.4km · 국수"
     },
     {
       "id": 449,
@@ -2071,7 +1727,7 @@
       "golf": "한림광릉 CC",
       "name": "양춘농장",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "한림광릉 CC 근처 1.0km · 닭요리"
@@ -2091,7 +1747,7 @@
       "golf": "한림광릉 CC",
       "name": "나능이버섯백숙",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "한림광릉 CC 근처 1.5km · 닭요리"
@@ -2101,7 +1757,7 @@
       "golf": "한림광릉 CC",
       "name": "별난국수마을 본점",
       "genre": "국수",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "한림광릉 CC 근처 1.5km · 국수"
@@ -2111,7 +1767,7 @@
       "golf": "트리니티 CC",
       "name": "여주본가",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "트리니티 CC 근처 1.2km · 한정식"
@@ -2121,7 +1777,7 @@
       "golf": "트리니티 CC",
       "name": "두마루집두부",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "트리니티 CC 근처 1.7km · 한정식"
@@ -2131,7 +1787,7 @@
       "golf": "트리니티 CC",
       "name": "황토방",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "트리니티 CC 근처 1.9km · 한정식"
@@ -2141,27 +1797,17 @@
       "golf": "트리니티 CC",
       "name": "전라도정식",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "트리니티 CC 근처 1.9km · 한정식"
-    },
-    {
-      "id": 459,
-      "golf": "트리니티 CC",
-      "name": "오리정",
-      "genre": "오리구이",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "트리니티 CC 근처 1.1km · 오리구이"
     },
     {
       "id": 460,
       "golf": "인천국제 CC",
       "name": "또만나요회",
       "genre": "회",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "인천국제 CC 근처 342m · 회"
@@ -2191,7 +1837,7 @@
       "golf": "인천국제 CC",
       "name": "연락골고추장추어탕 3호점",
       "genre": "추어",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "인천국제 CC 근처 809m · 추어"
@@ -2201,7 +1847,7 @@
       "golf": "인천국제 CC",
       "name": "해선재",
       "genre": "바닷가재",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "인천국제 CC 근처 985m · 바닷가재"
@@ -2211,7 +1857,7 @@
       "golf": "남여주 GC",
       "name": "우성해장국",
       "genre": "해장국",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "남여주 GC 근처 1.3km · 해장국"
@@ -2221,7 +1867,7 @@
       "golf": "남여주 GC",
       "name": "아웃백스테이크하우스 여주신세계아울렛점",
       "genre": "아웃백스테이크하우스",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "남여주 GC 근처 2.1km · 아웃백스테이크하우스"
@@ -2241,7 +1887,7 @@
       "golf": "남여주 GC",
       "name": "하거리집",
       "genre": "보양식",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "남여주 GC 근처 1.1km · 보양식"
@@ -2255,16 +1901,6 @@
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "남여주 GC 근처 2.1km · 한식"
-    },
-    {
-      "id": 470,
-      "golf": "마이다스레이크 이천",
-      "name": "산촌누룽지백숙",
-      "genre": "오리구이",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "마이다스레이크 이천 근처 3.4km · 오리구이"
     },
     {
       "id": 471,
@@ -2291,7 +1927,7 @@
       "golf": "마이다스레이크 이천",
       "name": "삼백집국밥",
       "genre": "국밥",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "마이다스레이크 이천 근처 1.0km · 국밥"
@@ -2301,7 +1937,7 @@
       "golf": "마이다스레이크 이천",
       "name": "가남한우소머리국밥",
       "genre": "국밥",
-      "distance": "12분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "마이다스레이크 이천 근처 3.1km · 국밥"
@@ -2321,7 +1957,7 @@
       "golf": "페럼클럽 CC",
       "name": "소나무집바람난오리",
       "genre": "오리구이",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "페럼클럽 CC 근처 934m · 오리구이"
@@ -2335,16 +1971,6 @@
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "페럼클럽 CC 근처 896m · 삼계탕"
-    },
-    {
-      "id": 478,
-      "golf": "페럼클럽 CC",
-      "name": "토담집",
-      "genre": "닭요리",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "페럼클럽 CC 근처 1.5km · 닭요리"
     },
     {
       "id": 479,
@@ -2377,16 +2003,6 @@
       "tip": "해슬리 나인브릿지 근처 1.1km · 닭요리"
     },
     {
-      "id": 482,
-      "golf": "해슬리 나인브릿지",
-      "name": "남촌칼국수",
-      "genre": "칼국수",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🍜",
-      "tip": "해슬리 나인브릿지 근처 986m · 칼국수"
-    },
-    {
       "id": 483,
       "golf": "해슬리 나인브릿지",
       "name": "웅이소국밥",
@@ -2401,7 +2017,7 @@
       "golf": "해슬리 나인브릿지",
       "name": "한옥채전주비빔밥",
       "genre": "한식",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "해슬리 나인브릿지 근처 846m · 한식"
@@ -2411,20 +2027,10 @@
       "golf": "88 CC",
       "name": "산수가장어",
       "genre": "장어구이",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "88 CC 근처 1.7km · 장어구이"
-    },
-    {
-      "id": 486,
-      "golf": "88 CC",
-      "name": "대가",
-      "genre": "해물",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "88 CC 근처 1.3km · 해물"
     },
     {
       "id": 487,
@@ -2437,21 +2043,11 @@
       "tip": "88 CC 근처 1.7km · 해물"
     },
     {
-      "id": 488,
-      "golf": "88 CC",
-      "name": "국수리",
-      "genre": "국수",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "88 CC 근처 1.5km · 국수"
-    },
-    {
       "id": 489,
       "golf": "88 CC",
       "name": "청덕칡냉면",
       "genre": "냉면",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "88 CC 근처 1.5km · 냉면"
@@ -2461,7 +2057,7 @@
       "golf": "남서울 CC",
       "name": "사계절한정식",
       "genre": "한정식",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "남서울 CC 근처 998m · 한정식"
@@ -2471,7 +2067,7 @@
       "golf": "남서울 CC",
       "name": "집게집 판교직영점",
       "genre": "게장",
-      "distance": "3분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "남서울 CC 근처 897m · 게장"
@@ -2481,7 +2077,7 @@
       "golf": "남서울 CC",
       "name": "방아깐",
       "genre": "해물",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "남서울 CC 근처 1.3km · 해물"
@@ -2491,7 +2087,7 @@
       "golf": "남서울 CC",
       "name": "장비빔국수와 굴국밥보쌈",
       "genre": "국수",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "남서울 CC 근처 1.2km · 국수"
@@ -2501,7 +2097,7 @@
       "golf": "남서울 CC",
       "name": "세렌",
       "genre": "양식",
-      "distance": "3분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍝",
       "tip": "남서울 CC 근처 911m · 양식"
@@ -2515,36 +2111,6 @@
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "신원 CC 근처 1.2km · 한정식"
-    },
-    {
-      "id": 496,
-      "golf": "신원 CC",
-      "name": "장어촌",
-      "genre": "장어구이",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "신원 CC 근처 1.4km · 장어구이"
-    },
-    {
-      "id": 497,
-      "golf": "신원 CC",
-      "name": "여울목",
-      "genre": "닭요리",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "신원 CC 근처 722m · 닭요리"
-    },
-    {
-      "id": 498,
-      "golf": "신원 CC",
-      "name": "동강민물매운탕",
-      "genre": "매운탕,해물탕",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "신원 CC 근처 1.1km · 매운탕,해물탕"
     },
     {
       "id": 499,
@@ -2561,7 +2127,7 @@
       "golf": "클럽72",
       "name": "훈장골 신공항점",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "클럽72 근처 1.7km · 갈비"
@@ -2571,7 +2137,7 @@
       "golf": "클럽72",
       "name": "명품관갈비",
       "genre": "갈비",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "클럽72 근처 2.1km · 갈비"
@@ -2581,7 +2147,7 @@
       "golf": "클럽72",
       "name": "백년토종삼계탕 공항신도시점",
       "genre": "삼계탕",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "클럽72 근처 1.7km · 삼계탕"
@@ -2591,20 +2157,10 @@
       "golf": "클럽72",
       "name": "논머리횟집",
       "genre": "회",
-      "distance": "8분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "클럽72 근처 2.2km · 회"
-    },
-    {
-      "id": 504,
-      "golf": "클럽72",
-      "name": "신촌설렁탕",
-      "genre": "설렁탕",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "클럽72 근처 1.8km · 설렁탕"
     },
     {
       "id": 505,
@@ -2617,21 +2173,11 @@
       "tip": "이포 CC 근처 3.7km · 갈비"
     },
     {
-      "id": 506,
-      "golf": "이포 CC",
-      "name": "범실가든",
-      "genre": "오리구이",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "이포 CC 근처 2.9km · 오리구이"
-    },
-    {
       "id": 507,
       "golf": "이포 CC",
       "name": "문장가든숯불양념닭갈비",
       "genre": "닭요리",
-      "distance": "12분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "이포 CC 근처 3.3km · 닭요리"
@@ -2667,16 +2213,6 @@
       "tip": "이스트밸리 CC 근처 2.7km · 닭요리"
     },
     {
-      "id": 511,
-      "golf": "이스트밸리 CC",
-      "name": "퇴촌소나무집",
-      "genre": "닭요리",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "이스트밸리 CC 근처 2.7km · 닭요리"
-    },
-    {
       "id": 512,
       "golf": "이스트밸리 CC",
       "name": "풍도리칼국수",
@@ -2697,41 +2233,21 @@
       "tip": "이스트밸리 CC 근처 3.0km · 쌈밥"
     },
     {
-      "id": 514,
-      "golf": "이스트밸리 CC",
-      "name": "한덕수손두부",
-      "genre": "두부전골",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "이스트밸리 CC 근처 3.3km · 두부전골"
-    },
-    {
       "id": 515,
       "golf": "뉴서울 CC",
       "name": "해와달",
       "genre": "한정식",
-      "distance": "3분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "뉴서울 CC 근처 897m · 한정식"
-    },
-    {
-      "id": 516,
-      "golf": "뉴서울 CC",
-      "name": "광주리",
-      "genre": "갈비",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "뉴서울 CC 근처 953m · 갈비"
     },
     {
       "id": 517,
       "golf": "뉴서울 CC",
       "name": "이배재장어",
       "genre": "장어구이",
-      "distance": "3분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "뉴서울 CC 근처 922m · 장어구이"
@@ -2741,30 +2257,10 @@
       "golf": "뉴서울 CC",
       "name": "부영장어나라",
       "genre": "장어구이",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "뉴서울 CC 근처 1.0km · 장어구이"
-    },
-    {
-      "id": 519,
-      "golf": "뉴서울 CC",
-      "name": "신토불이",
-      "genre": "오리구이",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "뉴서울 CC 근처 815m · 오리구이"
-    },
-    {
-      "id": 520,
-      "golf": "그린힐 CC",
-      "name": "도립애경사났네",
-      "genre": "한정식",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "그린힐 CC 근처 3.1km · 한정식"
     },
     {
       "id": 521,
@@ -2787,16 +2283,6 @@
       "tip": "그린힐 CC 근처 2.6km · 설렁탕"
     },
     {
-      "id": 523,
-      "golf": "그린힐 CC",
-      "name": "두메산골",
-      "genre": "두부전골",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "그린힐 CC 근처 3.1km · 두부전골"
-    },
-    {
       "id": 524,
       "golf": "그린힐 CC",
       "name": "민석이네밥상",
@@ -2811,7 +2297,7 @@
       "golf": "남촌 GC",
       "name": "미식의최강자",
       "genre": "갈비",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "남촌 GC 근처 687m · 갈비"
@@ -2841,7 +2327,7 @@
       "golf": "남촌 GC",
       "name": "아씨닭발",
       "genre": "닭요리",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "남촌 GC 근처 551m · 닭요리"
@@ -2861,7 +2347,7 @@
       "golf": "더시에나 서울CC",
       "name": "맛있는발효밥상 궁뜰 화담숲맛집곤지암맛집",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "더시에나 서울CC 근처 1.5km · 한정식"
@@ -2871,7 +2357,7 @@
       "golf": "더시에나 서울CC",
       "name": "이배재직화쌈밥 곤지암점",
       "genre": "쌈밥",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "더시에나 서울CC 근처 847m · 쌈밥"
@@ -2881,20 +2367,10 @@
       "golf": "더시에나 서울CC",
       "name": "시골막국수와옹심이 곤지암점",
       "genre": "국수",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "더시에나 서울CC 근처 985m · 국수"
-    },
-    {
-      "id": 533,
-      "golf": "더시에나 서울CC",
-      "name": "선녀와나무꾼",
-      "genre": "국수",
       "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
-      "tip": "더시에나 서울CC 근처 1.0km · 국수"
+      "tip": "더시에나 서울CC 근처 985m · 국수"
     },
     {
       "id": 534,
@@ -2911,7 +2387,7 @@
       "golf": "강남300 CC",
       "name": "강천장어",
       "genre": "장어구이",
-      "distance": "5분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "강남300 CC 근처 1.1km · 장어구이"
@@ -2927,81 +2403,41 @@
       "tip": "강남300 CC 근처 1.4km · 장어구이"
     },
     {
-      "id": 537,
-      "golf": "강남300 CC",
-      "name": "새말",
-      "genre": "오리구이",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "강남300 CC 근처 1.3km · 오리구이"
-    },
-    {
       "id": 538,
       "golf": "강남300 CC",
       "name": "청덕원",
       "genre": "오리구이",
-      "distance": "8분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "강남300 CC 근처 2.3km · 오리구이"
-    },
-    {
-      "id": 539,
-      "golf": "강남300 CC",
-      "name": "승화식당",
-      "genre": "닭요리",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "강남300 CC 근처 1.7km · 닭요리"
     },
     {
       "id": 540,
       "golf": "양지파인 CC",
       "name": "대흥갈비",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "양지파인 CC 근처 1.2km · 갈비"
-    },
-    {
-      "id": 541,
-      "golf": "양지파인 CC",
-      "name": "제주마을",
-      "genre": "해물",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "양지파인 CC 근처 1.2km · 해물"
     },
     {
       "id": 542,
       "golf": "양지파인 CC",
       "name": "금성",
       "genre": "두부전골",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "양지파인 CC 근처 1.7km · 두부전골"
-    },
-    {
-      "id": 543,
-      "golf": "양지파인 CC",
-      "name": "원조해장국",
-      "genre": "해장국",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "양지파인 CC 근처 949m · 해장국"
     },
     {
       "id": 544,
       "golf": "양지파인 CC",
       "name": "이화수전통육개장 용인양지점",
       "genre": "이화수전통육개장",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍲",
       "tip": "양지파인 CC 근처 1.1km · 이화수전통육개장"
@@ -3011,7 +2447,7 @@
       "golf": "기흥 CC",
       "name": "자작나무갈비 무봉산점",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "기흥 CC 근처 1.6km · 갈비"
@@ -3021,7 +2457,7 @@
       "golf": "기흥 CC",
       "name": "벌떡장어",
       "genre": "장어구이",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "기흥 CC 근처 1.5km · 장어구이"
@@ -3031,7 +2467,7 @@
       "golf": "기흥 CC",
       "name": "고매골식당",
       "genre": "오리구이",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "기흥 CC 근처 1.1km · 오리구이"
@@ -3041,7 +2477,7 @@
       "golf": "기흥 CC",
       "name": "향미옻닭",
       "genre": "닭요리",
-      "distance": "3분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "기흥 CC 근처 961m · 닭요리"
@@ -3051,27 +2487,17 @@
       "golf": "기흥 CC",
       "name": "쭈꾸미잘하는집 동탄본점",
       "genre": "해물",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "기흥 CC 근처 1.4km · 해물"
-    },
-    {
-      "id": 550,
-      "golf": "인천그랜드 CC",
-      "name": "갈비명가",
-      "genre": "갈비",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "인천그랜드 CC 근처 751m · 갈비"
     },
     {
       "id": 551,
       "golf": "인천그랜드 CC",
       "name": "백년불고기물갈비 북항점",
       "genre": "갈비",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "인천그랜드 CC 근처 781m · 갈비"
@@ -3081,7 +2507,7 @@
       "golf": "인천그랜드 CC",
       "name": "J수산 백합칼국수 조개전문점",
       "genre": "조개",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "인천그랜드 CC 근처 596m · 조개"
@@ -3091,27 +2517,17 @@
       "golf": "인천그랜드 CC",
       "name": "맛짱 원창점",
       "genre": "닭요리",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "인천그랜드 CC 근처 681m · 닭요리"
-    },
-    {
-      "id": 554,
-      "golf": "인천그랜드 CC",
-      "name": "공주얼큰이칼국수",
-      "genre": "칼국수",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🍜",
-      "tip": "인천그랜드 CC 근처 685m · 칼국수"
     },
     {
       "id": 555,
       "golf": "베어즈베스트 청라",
       "name": "돌담우대갈비",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "베어즈베스트 청라 근처 1.3km · 갈비"
@@ -3121,7 +2537,7 @@
       "golf": "베어즈베스트 청라",
       "name": "청정구역",
       "genre": "회",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "베어즈베스트 청라 근처 1.1km · 회"
@@ -3131,7 +2547,7 @@
       "golf": "베어즈베스트 청라",
       "name": "청라물텀벙",
       "genre": "아구",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "베어즈베스트 청라 근처 1.1km · 아구"
@@ -3141,7 +2557,7 @@
       "golf": "베어즈베스트 청라",
       "name": "서산바지락손칼국수",
       "genre": "칼국수",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🍜",
       "tip": "베어즈베스트 청라 근처 1.1km · 칼국수"
@@ -3151,7 +2567,7 @@
       "golf": "베어즈베스트 청라",
       "name": "사리원냉면",
       "genre": "냉면",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "베어즈베스트 청라 근처 1.1km · 냉면"
@@ -3161,7 +2577,7 @@
       "golf": "잭니클라우스 GC",
       "name": "모담 송도점",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "잭니클라우스 GC 근처 1.3km · 한정식"
@@ -3181,7 +2597,7 @@
       "golf": "잭니클라우스 GC",
       "name": "송도간장게장",
       "genre": "게장",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "잭니클라우스 GC 근처 1.3km · 게장"
@@ -3191,7 +2607,7 @@
       "golf": "잭니클라우스 GC",
       "name": "신복관 본점",
       "genre": "해물",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "잭니클라우스 GC 근처 1.6km · 해물"
@@ -3201,7 +2617,7 @@
       "golf": "잭니클라우스 GC",
       "name": "여기가제주인가송도인가 본점",
       "genre": "고기",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "잭니클라우스 GC 근처 752m · 고기"
@@ -3211,7 +2627,7 @@
       "golf": "유니아일랜드 GC",
       "name": "종운호",
       "genre": "회",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "유니아일랜드 GC 근처 930m · 회"
@@ -3221,7 +2637,7 @@
       "golf": "유니아일랜드 GC",
       "name": "어류정항회센터",
       "genre": "회",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "유니아일랜드 GC 근처 931m · 회"
@@ -3231,7 +2647,7 @@
       "golf": "유니아일랜드 GC",
       "name": "99종운호회",
       "genre": "회",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "유니아일랜드 GC 근처 936m · 회"
@@ -3241,7 +2657,7 @@
       "golf": "유니아일랜드 GC",
       "name": "창성호",
       "genre": "해물",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "유니아일랜드 GC 근처 938m · 해물"
@@ -3251,97 +2667,37 @@
       "golf": "유니아일랜드 GC",
       "name": "수복호",
       "genre": "회",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "유니아일랜드 GC 근처 941m · 회"
-    },
-    {
-      "id": 570,
-      "golf": "안성 베네스트 GC",
-      "name": "너와골",
-      "genre": "닭요리",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "안성 베네스트 GC 근처 1.4km · 닭요리"
-    },
-    {
-      "id": 571,
-      "golf": "안성 베네스트 GC",
-      "name": "칠현산장수촌",
-      "genre": "닭요리",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "안성 베네스트 GC 근처 2.4km · 닭요리"
-    },
-    {
-      "id": 572,
-      "golf": "안성 베네스트 GC",
-      "name": "물레방아손두부",
-      "genre": "두부전골",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "안성 베네스트 GC 근처 1.7km · 두부전골"
     },
     {
       "id": 573,
       "golf": "안성 베네스트 GC",
       "name": "고개너머곰탕",
       "genre": "곰탕",
-      "distance": "12분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "안성 베네스트 GC 근처 3.4km · 곰탕"
-    },
-    {
-      "id": 574,
-      "golf": "안성 베네스트 GC",
-      "name": "큰손냉면",
-      "genre": "냉면",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "안성 베네스트 GC 근처 4.2km · 냉면"
-    },
-    {
-      "id": 575,
-      "golf": "송도 CC",
-      "name": "고기굽는집",
-      "genre": "고기",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "송도 CC 근처 767m · 고기"
     },
     {
       "id": 576,
       "golf": "송도 CC",
       "name": "어바웃차이나 송도점",
       "genre": "중식",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🥢",
-      "tip": "송도 CC 근처 874m · 중식"
-    },
-    {
-      "id": 577,
-      "golf": "송도 CC",
-      "name": "목향",
-      "genre": "중식",
       "distance": "5분",
       "room": "단체가능",
       "emoji": "🥢",
-      "tip": "송도 CC 근처 1.5km · 중식"
+      "tip": "송도 CC 근처 874m · 중식"
     },
     {
       "id": 578,
       "golf": "송도 CC",
       "name": "건강밥상심마니",
       "genre": "한식",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "송도 CC 근처 1.7km · 한식"
@@ -3351,7 +2707,7 @@
       "golf": "송도 CC",
       "name": "소소함스튜디오",
       "genre": "도시락",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🍽️",
       "tip": "송도 CC 근처 858m · 도시락"
@@ -3371,7 +2727,7 @@
       "golf": "태광 CC",
       "name": "광교갈비",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "태광 CC 근처 1.5km · 갈비"
@@ -3381,27 +2737,17 @@
       "golf": "태광 CC",
       "name": "살살녹소 본점",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "태광 CC 근처 1.6km · 갈비"
-    },
-    {
-      "id": 583,
-      "golf": "태광 CC",
-      "name": "장수천한방민물장어",
-      "genre": "장어구이",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "태광 CC 근처 1.4km · 장어구이"
     },
     {
       "id": 584,
       "golf": "태광 CC",
       "name": "만미정",
       "genre": "장어구이",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "태광 CC 근처 1.4km · 장어구이"
@@ -3411,7 +2757,7 @@
       "golf": "인서울27",
       "name": "메이필드 서울 봉래헌",
       "genre": "한정식",
-      "distance": "5분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "인서울27 근처 2.0km · 한정식"
@@ -3421,7 +2767,7 @@
       "golf": "인서울27",
       "name": "팽오리농장 본점",
       "genre": "오리구이",
-      "distance": "3분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "인서울27 근처 836m · 오리구이"
@@ -3431,7 +2777,7 @@
       "golf": "남부 CC",
       "name": "명륜진사갈비 용인강남대점",
       "genre": "명륜진사갈비",
-      "distance": "3분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "남부 CC 근처 869m · 명륜진사갈비"
@@ -3461,7 +2807,7 @@
       "golf": "남부 CC",
       "name": "청사초롱왕오리",
       "genre": "오리구이",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "남부 CC 근처 885m · 오리구이"
@@ -3471,7 +2817,7 @@
       "golf": "남부 CC",
       "name": "아구아구아구찜",
       "genre": "아구",
-      "distance": "3분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "남부 CC 근처 844m · 아구"
@@ -3485,16 +2831,6 @@
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "한성 CC 근처 709m · 오리구이"
-    },
-    {
-      "id": 596,
-      "golf": "한성 CC",
-      "name": "삼포가는길",
-      "genre": "해물",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "한성 CC 근처 232m · 해물"
     },
     {
       "id": 597,
@@ -3511,7 +2847,7 @@
       "golf": "한성 CC",
       "name": "교동면옥",
       "genre": "냉면",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "한성 CC 근처 514m · 냉면"
@@ -3521,7 +2857,7 @@
       "golf": "한성 CC",
       "name": "대인설렁탕",
       "genre": "설렁탕",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "한성 CC 근처 539m · 설렁탕"
@@ -3531,7 +2867,7 @@
       "golf": "골드 CC",
       "name": "중리저수지가든",
       "genre": "매운탕,해물탕",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "골드 CC 근처 1.4km · 매운탕,해물탕"
@@ -3541,7 +2877,7 @@
       "golf": "골드 CC",
       "name": "중리장수촌",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "골드 CC 근처 1.5km · 닭요리"
@@ -3551,27 +2887,17 @@
       "golf": "골드 CC",
       "name": "꾸메뜨락직화쭈꾸미 본점",
       "genre": "해물",
-      "distance": "5분",
+      "distance": "15분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "골드 CC 근처 1.6km · 해물"
-    },
-    {
-      "id": 603,
-      "golf": "골드 CC",
-      "name": "물레방아",
-      "genre": "삼계탕",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "골드 CC 근처 1.8km · 삼계탕"
     },
     {
       "id": 604,
       "golf": "골드 CC",
       "name": "메밀래",
       "genre": "국수",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "골드 CC 근처 1.7km · 국수"
@@ -3597,21 +2923,11 @@
       "tip": "은화삼 CC 근처 1.1km · 장어구이"
     },
     {
-      "id": 607,
-      "golf": "은화삼 CC",
-      "name": "장수촌",
-      "genre": "닭요리",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "은화삼 CC 근처 1.0km · 닭요리"
-    },
-    {
       "id": 608,
       "golf": "은화삼 CC",
       "name": "정담명가남원추어탕",
       "genre": "추어",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "은화삼 CC 근처 1.1km · 추어"
@@ -3621,7 +2937,7 @@
       "golf": "은화삼 CC",
       "name": "남이섬닭갈비",
       "genre": "닭요리",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "은화삼 CC 근처 1.5km · 닭요리"
@@ -3631,27 +2947,17 @@
       "golf": "더헤븐 CC",
       "name": "다람농원",
       "genre": "굴,전복",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "더헤븐 CC 근처 661m · 굴,전복"
-    },
-    {
-      "id": 611,
-      "golf": "더헤븐 CC",
-      "name": "노을포차",
-      "genre": "굴,전복",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "더헤븐 CC 근처 835m · 굴,전복"
     },
     {
       "id": 612,
       "golf": "더헤븐 CC",
       "name": "오늘은 굴구이 까먹는날",
       "genre": "굴,전복",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "더헤븐 CC 근처 1.3km · 굴,전복"
@@ -3671,7 +2977,7 @@
       "golf": "더헤븐 CC",
       "name": "예담쌈밥",
       "genre": "쌈밥",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "더헤븐 CC 근처 789m · 쌈밥"
@@ -3681,7 +2987,7 @@
       "golf": "이글몬트 CC",
       "name": "강필남소머리국밥",
       "genre": "한정식",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "이글몬트 CC 근처 2.9km · 한정식"
@@ -3711,77 +3017,37 @@
       "golf": "이글몬트 CC",
       "name": "초당두부",
       "genre": "두부전골",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "이글몬트 CC 근처 2.3km · 두부전골"
-    },
-    {
-      "id": 619,
-      "golf": "이글몬트 CC",
-      "name": "양평해장국",
-      "genre": "해장국",
       "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
-      "tip": "이글몬트 CC 근처 1.5km · 해장국"
+      "tip": "이글몬트 CC 근처 2.3km · 두부전골"
     },
     {
       "id": 620,
       "golf": "골프클럽 Q",
       "name": "맷돌두부집",
       "genre": "두부전골",
-      "distance": "8분",
+      "distance": "12분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "골프클럽 Q 근처 2.2km · 두부전골"
-    },
-    {
-      "id": 621,
-      "golf": "골프클럽 Q",
-      "name": "산마루식당",
-      "genre": "한식",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "골프클럽 Q 근처 1.9km · 한식"
-    },
-    {
-      "id": 622,
-      "golf": "골프클럽 Q",
-      "name": "다원",
-      "genre": "한식",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "골프클럽 Q 근처 2.0km · 한식"
     },
     {
       "id": 623,
       "golf": "골프클럽 Q",
       "name": "안성맞춤한우촌",
       "genre": "고기",
-      "distance": "5분",
+      "distance": "20분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "골프클럽 Q 근처 2.0km · 고기"
-    },
-    {
-      "id": 624,
-      "golf": "골프클럽 Q",
-      "name": "완도집",
-      "genre": "한식",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "골프클럽 Q 근처 2.0km · 한식"
     },
     {
       "id": 625,
       "golf": "캐슬렉스서울",
       "name": "풍천장어월드 하남감일점",
       "genre": "장어구이",
-      "distance": "3분",
+      "distance": "5분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "캐슬렉스서울 근처 935m · 장어구이"
@@ -3791,7 +3057,7 @@
       "golf": "캐슬렉스서울",
       "name": "감이울장작솔닭",
       "genre": "닭요리",
-      "distance": "3분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "캐슬렉스서울 근처 676m · 닭요리"
@@ -3801,7 +3067,7 @@
       "golf": "캐슬렉스서울",
       "name": "허니문 한방삼계탕",
       "genre": "삼계탕",
-      "distance": "3분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "캐슬렉스서울 근처 838m · 삼계탕"
@@ -3811,7 +3077,7 @@
       "golf": "캐슬렉스서울",
       "name": "어부네코다리조림 하남감일점",
       "genre": "어부네코다리조림",
-      "distance": "3분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🐟",
       "tip": "캐슬렉스서울 근처 979m · 어부네코다리조림"
@@ -3821,7 +3087,7 @@
       "golf": "캐슬렉스서울",
       "name": "산아래우렁쌈정식",
       "genre": "쌈밥",
-      "distance": "3분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "캐슬렉스서울 근처 596m · 쌈밥"
@@ -3831,7 +3097,7 @@
       "golf": "리베라 CC",
       "name": "소플러스 동탄역점",
       "genre": "갈비",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🥩",
       "tip": "리베라 CC 근처 1.2km · 갈비"
@@ -3871,7 +3137,7 @@
       "golf": "리베라 CC",
       "name": "궁원삼계탕",
       "genre": "삼계탕",
-      "distance": "5분",
+      "distance": "8분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "리베라 CC 근처 1.2km · 삼계탕"
