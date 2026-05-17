@@ -14,7 +14,7 @@ if (!REST_KEY) { console.error('❌ KAKAO_REST_KEY not found'); process.exit(1);
 const golfPath = path.join(__dirname, '..', 'public', 'data', 'golf.json');
 const golf = JSON.parse(fs.readFileSync(golfPath, 'utf8'));
 
-const TARGET_COURSES = ['샴발라','해비치 서울','프리스틴밸리','푸른솔 포천','티클라우드','썬힐','베뉴지','몽베르','마이다스밸리 청평','노스팜','크리스밸리','웰링턴','여주클래식','소피아그린','블루헤런','ROUTE52','렉스필드','더스타휴','화성상록','아시아나','플라자CC 용인'];
+const TARGET_COURSES = ['해비치 서울','프리스틴밸리','티클라우드','썬힐','베뉴지','몽베르','마이다스밸리 청평','노스팜'];
 const existingNames = new Set(golf.restaurants.map(r => r.name));
 
 function kakaoGet(url, hostname) {
