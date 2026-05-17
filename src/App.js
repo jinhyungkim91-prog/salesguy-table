@@ -672,7 +672,14 @@ export default function App() {
         const course = golfCourses.find(g => g.name === r.golf);
         return getGolfRegionGroup(course?.region) === golfRegion;
       })
-  ).slice().sort((a, b) => distMin(a.distance) - distMin(b.distance));
+  ).slice().sort((a, b) => {
+    // 특정 골프장 선택 시: 거리순
+    if (selectedGolf || golfSearch) return distMin(a.distance) - distMin(b.distance);
+    // 전체 보기: 골프장 가나다순 → 거리순
+    const golfCmp = a.golf.localeCompare(b.golf, 'ko');
+    if (golfCmp !== 0) return golfCmp;
+    return distMin(a.distance) - distMin(b.distance);
+  });
 
   // 드롭다운 코스 목록 필터링 (입력어) + 가나다 정렬
   const golfDropCourses = golfCourses.filter(c => {
