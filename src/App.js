@@ -214,7 +214,10 @@ function GolfRestCard({ r, onClick }) {
       <div className="golf-top">
         <span style={{fontSize:22}}>{r.emoji}</span>
         <div style={{flex:1}}>
-          <div className="golf-rest-name">{r.name}</div>
+          <div className="golf-rest-name">
+            {r.name}
+            {r.visited && <span style={{marginLeft:6,fontSize:"10px",background:"#E05A00",color:"white",borderRadius:4,padding:"1px 5px",fontWeight:600,verticalAlign:"middle"}}>직접방문</span>}
+          </div>
           <div className="golf-rest-info">{r.genre}</div>
           <div style={{fontSize:"10px",color:"#A0896A",marginTop:1}}>⛳ {r.golf}{r.searchCity ? ` · ${r.searchCity}` : ''}</div>
         </div>
