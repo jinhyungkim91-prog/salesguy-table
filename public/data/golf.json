@@ -2052,16 +2052,6 @@
       "mapQuery": "생태랑동태랑 88cc"
     },
     {
-      "id": 489,
-      "golf": "88 CC",
-      "name": "청덕칡냉면",
-      "genre": "냉면",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "88 CC 근처 1.5km · 냉면"
-    },
-    {
       "id": 490,
       "golf": "남서울 CC",
       "name": "사계절한정식",
@@ -3248,6 +3238,76 @@
       "room": "단체가능",
       "emoji": "🏮",
       "tip": "이글몬트 CC 근처 2.0km · 쌈밥"
+    },
+    {
+      "id": 651,
+      "golf": "88 CC",
+      "name": "초당예반",
+      "genre": "한식",
+      "distance": "5분",
+      "room": "단체가능",
+      "emoji": "🏮",
+      "tip": "88 CC 근처 · 한식"
+    },
+    {
+      "id": 652,
+      "golf": "88 CC",
+      "name": "수진옥",
+      "genre": "곰탕·설렁탕",
+      "distance": "5분",
+      "room": "단체가능",
+      "emoji": "🍲",
+      "tip": "88 CC 근처 · 곰탕·설렁탕"
+    },
+    {
+      "id": 653,
+      "golf": "88 CC",
+      "name": "콩사랑 청국장",
+      "genre": "청국장",
+      "distance": "5분",
+      "room": "단체가능",
+      "emoji": "🏮",
+      "tip": "88 CC 근처 · 청국장"
+    },
+    {
+      "id": 654,
+      "golf": "88 CC",
+      "name": "화우정",
+      "genre": "소고기구이",
+      "distance": "4분",
+      "room": "단체가능",
+      "emoji": "🥩",
+      "tip": "88 CC 근처 · 소고기구이"
+    },
+    {
+      "id": 655,
+      "golf": "88 CC",
+      "name": "산내음",
+      "genre": "한식",
+      "distance": "4분",
+      "room": "단체가능",
+      "emoji": "🏮",
+      "tip": "88 CC 근처 · 한식"
+    },
+    {
+      "id": 656,
+      "golf": "88 CC",
+      "name": "참우돈가",
+      "genre": "고기구이",
+      "distance": "8분",
+      "room": "단체가능",
+      "emoji": "🥩",
+      "tip": "88 CC 근처 · 고기구이"
+    },
+    {
+      "id": 657,
+      "golf": "88 CC",
+      "name": "자작나무갈비 용인동백점",
+      "genre": "갈비",
+      "distance": "7분",
+      "room": "단체가능",
+      "emoji": "🥩",
+      "tip": "88 CC 근처 · 갈비"
     }
   ]
 }
