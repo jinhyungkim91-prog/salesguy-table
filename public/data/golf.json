@@ -2476,40 +2476,60 @@
       "golf": "기흥 CC",
       "name": "벌떡장어",
       "genre": "장어구이",
-      "distance": "20분",
+      "distance": "3분",
       "room": "단체가능",
       "emoji": "🐟",
-      "tip": "기흥 CC 근처 1.5km · 장어구이"
-    },
-    {
-      "id": 547,
-      "golf": "기흥 CC",
-      "name": "고매골식당",
-      "genre": "오리구이",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "기흥 CC 근처 1.1km · 오리구이"
-    },
-    {
-      "id": 548,
-      "golf": "기흥 CC",
-      "name": "향미옻닭",
-      "genre": "닭요리",
-      "distance": "15분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "기흥 CC 근처 961m · 닭요리"
+      "tip": "기흥 CC 근처 3분 · 장어구이"
     },
     {
       "id": 549,
       "golf": "기흥 CC",
       "name": "쭈꾸미잘하는집 동탄본점",
       "genre": "해물",
-      "distance": "20분",
+      "distance": "4분",
       "room": "단체가능",
       "emoji": "🐟",
-      "tip": "기흥 CC 근처 1.4km · 해물"
+      "tip": "기흥 CC 근처 4분 · 해물"
+    },
+    {
+      "id": 685,
+      "golf": "기흥 CC",
+      "name": "관악장 동탄본점",
+      "genre": "한식",
+      "distance": "3분",
+      "room": "단체가능",
+      "emoji": "🏮",
+      "tip": "기흥 CC 근처 3분 · 한식"
+    },
+    {
+      "id": 686,
+      "golf": "기흥 CC",
+      "name": "남사골",
+      "genre": "고기구이",
+      "distance": "3분",
+      "room": "단체가능",
+      "emoji": "🥩",
+      "tip": "기흥 CC 근처 3분 · 고기구이"
+    },
+    {
+      "id": 687,
+      "golf": "기흥 CC",
+      "name": "곤드레향기 동탄본점",
+      "genre": "한정식",
+      "distance": "3분",
+      "room": "단체가능",
+      "emoji": "🏮",
+      "tip": "기흥 CC 근처 3분 · 한정식"
+    },
+    {
+      "id": 688,
+      "golf": "기흥 CC",
+      "name": "메밀래 동탄점",
+      "genre": "막국수",
+      "distance": "6분",
+      "room": "단체가능",
+      "emoji": "🍜",
+      "tip": "기흥 CC 근처 6분 · 막국수"
     },
     {
       "id": 551,
