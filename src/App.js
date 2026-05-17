@@ -447,7 +447,7 @@ export default function App() {
     Promise.all([
       fetch('/data/restaurants.json?v=20260515c').then(r => r.json()),
       fetch('/data/lunch.json?v=20260515h').then(r => r.json()),
-      fetch('/data/golf.json?v=20260518b').then(r => r.json()),
+      fetch('/data/golf.json?v=20260518c').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
       setRestaurants(rest);
       setLunchDB(lunch);
@@ -893,7 +893,7 @@ export default function App() {
 
             {selectedGolf
                 ? <>⛳ {selectedGolf} · <b>{golfRests.length}곳</b></>
-                : <>⛳ 전체 골프장 맛집 · <b>{golfRests.length}곳</b></>
+                : <>⛳ 골프장 <b>{golfCourses.length}개</b> · 맛집 <b>{golfRests.length}곳</b></>
             }
           </div>
           <div style={{padding:"0 14px",display:"flex",flexDirection:"column",gap:10,paddingBottom:20}}>
