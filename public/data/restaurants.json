@@ -781,18 +781,6 @@
     "emoji": "🥩"
   },
   {
-    "id": 204,
-    "name": "해우리 코엑스",
-    "region": "강남",
-    "area": "삼성동",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 92,
-    "rating": 4.5,
-    "note": "코엑스 VIP룸",
-    "emoji": "🏮"
-  },
-  {
     "id": 206,
     "name": "모도우 삼성점",
     "region": "강남",
@@ -976,78 +964,6 @@
     "emoji": "🥂"
   },
   {
-    "id": 280,
-    "name": "해우리 여의도",
-    "region": "영등포",
-    "area": "여의도",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "여의도 VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 281,
-    "name": "해우리 여의도IFC",
-    "region": "영등포",
-    "area": "여의도",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 91,
-    "rating": 4.5,
-    "note": "IFC몰·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 285,
-    "name": "해우리 광화문",
-    "region": "종로",
-    "area": "광화문",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "광화문·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 286,
-    "name": "해우리 삼성",
-    "region": "강남",
-    "area": "삼성동",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "삼성역·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 303,
-    "name": "해우리 용산",
-    "region": "용산",
-    "area": "용산",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "용산·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 305,
-    "name": "해우리 인천",
-    "region": "인천",
-    "area": "인천",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "인천·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
     "id": 306,
     "name": "레스토랑 에빗",
     "region": "강남",
@@ -1061,78 +977,6 @@
     "mapQuery": "레스토랑 에빗"
   },
   {
-    "id": 307,
-    "name": "해우리 종로",
-    "region": "종로",
-    "area": "종로",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "종로·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 312,
-    "name": "해우리 수원",
-    "region": "경기",
-    "area": "수원",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "수원·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 313,
-    "name": "해우리 강서",
-    "region": "강서",
-    "area": "강서",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "강서·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 314,
-    "name": "해우리 분당",
-    "region": "경기",
-    "area": "분당",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "분당·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 315,
-    "name": "해우리 송파",
-    "region": "송파",
-    "area": "송파",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "송파·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
-    "id": 316,
-    "name": "해우리 동대문",
-    "region": "동대문",
-    "area": "동대문",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.5,
-    "note": "동대문·VIP코스·룸",
-    "emoji": "🏮"
-  },
-  {
     "id": 319,
     "name": "옥스라이브파이어그릴 도산",
     "region": "강남",
@@ -1143,18 +987,6 @@
     "rating": 4.5,
     "note": "압구정 한우·룸",
     "emoji": "🥩"
-  },
-  {
-    "id": 321,
-    "name": "해우리 역삼센터필드",
-    "region": "강남",
-    "area": "역삼",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 91,
-    "rating": 4.5,
-    "note": "VIP 130,000원 코스·룸",
-    "emoji": "🏮"
   },
   {
     "id": 326,
@@ -1362,18 +1194,6 @@
     "rating": 4.7,
     "note": "접대·특별한날 완벽·숯향·품격있는분위기",
     "emoji": "🥩"
-  },
-  {
-    "id": 384,
-    "name": "해우리 판교",
-    "region": "경기",
-    "area": "판교",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 85,
-    "rating": 4.4,
-    "note": "VIP코스·룸",
-    "emoji": "🏮"
   },
   {
     "id": 387,
@@ -7324,5 +7144,68 @@
     "genre": "한정식",
     "note": "발산역 5번 출구에서 161m",
     "mapQuery": "마실한정식 발산점"
+  },
+  {
+    "id": 1467,
+    "name": "해우리 역삼센터필드점",
+    "region": "강남",
+    "area": "역삼",
+    "genre": "한정식"
+  },
+  {
+    "id": 1468,
+    "name": "해우리 선릉 L7점",
+    "region": "강남",
+    "area": "삼성",
+    "genre": "한정식"
+  },
+  {
+    "id": 1469,
+    "name": "해우리 천호점",
+    "region": "강동",
+    "area": "성내",
+    "genre": "한정식"
+  },
+  {
+    "id": 1470,
+    "name": "해우리 명동점",
+    "region": "중구",
+    "area": "회현",
+    "genre": "한정식"
+  },
+  {
+    "id": 1471,
+    "name": "해우리 서울시청점",
+    "region": "중구",
+    "area": "서소문",
+    "genre": "한정식"
+  },
+  {
+    "id": 1472,
+    "name": "해우리 판교점",
+    "region": "경기",
+    "area": "판교",
+    "genre": "한정식"
+  },
+  {
+    "id": 1473,
+    "name": "해우리 여의도점",
+    "region": "영등포",
+    "area": "여의도",
+    "genre": "한정식"
+  },
+  {
+    "id": 1474,
+    "name": "해우리 평촌롯데점",
+    "region": "경기",
+    "area": "안양",
+    "genre": "한정식"
+  },
+  {
+    "id": 1475,
+    "name": "해우리 수원광교점",
+    "region": "경기",
+    "area": "수원",
+    "genre": "한정식"
   }
 ]
