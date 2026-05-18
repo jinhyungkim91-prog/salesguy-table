@@ -189,15 +189,14 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 4px;
-  padding: 0 14px;
+  padding: 0 14px 0 28px;   /* 왼쪽 28px 들여쓰기 */
   margin-top: 2px;
 }
 .filter-area-indent {
-  font-size: 13px;
-  color: #B8A88A;
+  font-size: 12px;
+  color: #C8B89A;
   line-height: 28px;
   flex-shrink: 0;
-  padding-left: 6px;
 }
 .filter-wrap-area {
   flex: 1;
