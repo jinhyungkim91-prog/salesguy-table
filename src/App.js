@@ -729,10 +729,13 @@ export default function App() {
             ))}
           </div>
           {bizAreaOptions.length > 1 && (
-            <div className="filter-wrap" style={{marginTop:2}}>
-              {bizAreaOptions.map(a=>(
-                <button key={a} className={`filter-chip filter-chip-area ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
-              ))}
+            <div className="filter-area-row">
+              <span className="filter-area-indent">└</span>
+              <div className="filter-wrap filter-wrap-area">
+                {bizAreaOptions.map(a=>(
+                  <button key={a} className={`filter-chip filter-chip-area ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
+                ))}
+              </div>
             </div>
           )}
           <div className="filter-wrap">

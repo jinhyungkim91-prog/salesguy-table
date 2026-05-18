@@ -184,6 +184,25 @@ body {
   color: #F5E6C8;
   border-color: #6B5A3E;
 }
+/* area row 들여쓰기 */
+.filter-area-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0 14px;
+  margin-top: 2px;
+}
+.filter-area-indent {
+  font-size: 13px;
+  color: #B8A88A;
+  line-height: 28px;
+  flex-shrink: 0;
+  padding-left: 6px;
+}
+.filter-wrap-area {
+  flex: 1;
+  padding: 2px 0;
+}
 
 /* ── 룸 토글 ── */
 .room-toggle-wrap {
