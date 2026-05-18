@@ -474,6 +474,7 @@ export default function App() {
 
   // 비즈니스 필터
   const [bizRegion, setBizRegion] = useState("전체");
+  const [bizArea, setBizArea]     = useState("전체");
   const [bizGenre, setBizGenre]   = useState("전체");
   const [bizSearch, setBizSearch] = useState("");
 
@@ -630,13 +631,22 @@ export default function App() {
 
   const openModal = (r, type) => { setSelected(r); setSelType(type); };
 
+  // 선택된 구(region)에 속한 area 목록 동적 추출 (가나다 정렬)
+  const bizAreaOptions = bizRegion === "전체" ? [] : [
+    "전체",
+    ...Array.from(new Set(
+      restaurants.filter(r => r.region === bizRegion).map(r => r.area).filter(Boolean)
+    )).sort((a, b) => a.localeCompare(b, 'ko'))
+  ];
+
   const bizFiltered = restaurants.filter(r => {
-    if (bizRegion!=="전체" && r.region!==bizRegion) return false;
-    if (bizGenre!=="전체") {
+    if (bizRegion !== "전체" && r.region !== bizRegion) return false;
+    if (bizArea !== "전체" && r.area !== bizArea) return false;
+    if (bizGenre !== "전체") {
       const kws = GENRE_KEYWORDS[bizGenre] || [bizGenre];
       if (!kws.some(k => r.genre.includes(k))) return false;
     }
-    if (bizSearch && !r.name.includes(bizSearch) && !r.area.includes(bizSearch)) return false;
+    if (bizSearch && !r.name.includes(bizSearch) && !r.area.includes(bizSearch) && !r.genre.includes(bizSearch)) return false;
     return true;
   });
 
@@ -713,16 +723,23 @@ export default function App() {
           </div>
           <div className="filter-scroll">
             {BIZ_REGIONS.map(r=>(
-              <button key={r} className={`filter-chip ${bizRegion===r?"on":""}`} onClick={()=>setBizRegion(r)}>{r}</button>
+              <button key={r} className={`filter-chip ${bizRegion===r?"on":""}`} onClick={()=>{setBizRegion(r);setBizArea("전체");}}>{r}</button>
             ))}
           </div>
+          {bizAreaOptions.length > 1 && (
+            <div className="filter-scroll" style={{marginTop:4}}>
+              {bizAreaOptions.map(a=>(
+                <button key={a} className={`filter-chip filter-chip-area ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
+              ))}
+            </div>
+          )}
           <div className="filter-scroll">
             {BIZ_GENRES.map(g=>(
               <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>setBizGenre(g)}>{g}</button>
             ))}
           </div>
           <div className="info-banner">
-            🔍 {bizRegion} · {bizGenre!=="전체"?bizGenre+" · ":""}<b>{bizFiltered.length}곳</b> 발견 (전체 {restaurants.length}개)
+            🔍 {bizRegion}{bizArea!=="전체"?" · "+bizArea:""}{bizGenre!=="전체"?" · "+bizGenre:""} · <b>{bizFiltered.length}곳</b> (전체 {restaurants.length}개)
           </div>
           <div className="rest-list">
             {bizFiltered.length===0

@@ -163,6 +163,19 @@ body {
   color: var(--gold);
   border-color: var(--dark);
 }
+/* area(동 단위) chip — 구 chip보다 작고 연한 색조 */
+.filter-chip-area {
+  font-size: 10.5px;
+  padding: 4px 10px;
+  border-color: #C8B89A;
+  color: #7A6A55;
+  background: #FAF6F0;
+}
+.filter-chip-area.on {
+  background: #6B5A3E;
+  color: #F5E6C8;
+  border-color: #6B5A3E;
+}
 
 /* ── 룸 토글 ── */
 .room-toggle-wrap {
