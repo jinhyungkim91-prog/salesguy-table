@@ -144,6 +144,14 @@ body {
   scrollbar-width: none;
 }
 .filter-scroll::-webkit-scrollbar { display: none; }
+/* 비즈니스 탭 — 줄바꿈 허용 */
+.filter-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px 14px;
+}
+.filter-wrap .filter-chip { flex-shrink: unset; }
 .filter-chip {
   flex-shrink: 0;
   padding: 5px 12px;

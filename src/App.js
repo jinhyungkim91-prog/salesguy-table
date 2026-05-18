@@ -721,19 +721,19 @@ export default function App() {
             <input className="search-input" placeholder="식당명 또는 지역으로 검색"
               value={bizSearch} onChange={e=>setBizSearch(e.target.value)} />
           </div>
-          <div className="filter-scroll">
+          <div className="filter-wrap">
             {BIZ_REGIONS.map(r=>(
               <button key={r} className={`filter-chip ${bizRegion===r?"on":""}`} onClick={()=>{setBizRegion(r);setBizArea("전체");}}>{r}</button>
             ))}
           </div>
           {bizAreaOptions.length > 1 && (
-            <div className="filter-scroll" style={{marginTop:4}}>
+            <div className="filter-wrap" style={{marginTop:2}}>
               {bizAreaOptions.map(a=>(
                 <button key={a} className={`filter-chip filter-chip-area ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
               ))}
             </div>
           )}
-          <div className="filter-scroll">
+          <div className="filter-wrap">
             {BIZ_GENRES.map(g=>(
               <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>setBizGenre(g)}>{g}</button>
             ))}
