@@ -19,9 +19,7 @@ function openNaverSearch(name, area, mapQuery) {
     } else {
       clean = name.replace(/\s*\(.*?\)/g, "").trim();
     }
-    // 이름에 지역이 이미 포함되어 있으면 area를 추가하지 않음 (중복 방지)
-    const needsArea = area && !clean.includes(area);
-    query = needsArea ? clean + " " + area : clean;
+    query = clean;
   }
   window.open("https://search.naver.com/search.naver?query=" + encodeURIComponent(query), "_blank");
 }
