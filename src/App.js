@@ -726,9 +726,9 @@ export default function App() {
             ))}
           </div>
           {bizAreaOptions.length > 1 && (
-            <div className="filter-area-row">
-              <span className="filter-area-indent">└</span>
-              <div className="filter-wrap filter-wrap-area">
+            <div style={{display:'flex',alignItems:'flex-start',padding:'2px 14px 0 32px',gap:4}}>
+              <span style={{fontSize:13,color:'#C8B89A',lineHeight:'28px',flexShrink:0}}>└</span>
+              <div className="filter-wrap" style={{flex:1,padding:'2px 0'}}>
                 {bizAreaOptions.map(a=>(
                   <button key={a} className={`filter-chip filter-chip-area ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
                 ))}
