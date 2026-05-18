@@ -176,9 +176,6 @@ function RestaurantCard({ r, onClick }) {
       </div>
       <div className="rest-note">{r.note}</div>
       <div className="rest-tags">
-        <span className={`tag ${r.room==="✅ 확인"?"tag-room":"tag-maybe"}`}>
-          {r.room==="✅ 확인"?"룸 확인":"룸 추정"}
-        </span>
         <span className="tag tag-rating">★ {r.rating}</span>
         <span className="tag tag-region">{r.region}</span>
       </div>
@@ -405,7 +402,7 @@ function DetailModal({ r, type, onClose }) {
             <div className="modal-val score-hi">{type==="biz"?r.score+"점":type==="golf"?"🚗 "+r.distance:r.price}</div>
           </div>
         </div>
-        {type==="biz" && <div className="modal-room"><span className={r.room==="✅ 확인"?"tag tag-room":"tag tag-maybe"}>{r.room} 룸</span></div>}
+        {type==="biz" && null}
         {type==="lunch" && <div className="modal-room"><span className={r.solo==="✅ 혼밥"?"tag tag-room":"tag tag-maybe"}>{r.solo}</span></div>}
         {type==="golf" && <div className="modal-room"><span className={r.room&&r.room.includes("✅")?"tag tag-room":"tag tag-maybe"}>{r.room&&r.room.includes("✅")?"✅ 룸 있음":"단체가능"}</span></div>}
         <div className="modal-note">{type==="biz"?r.note:type==="golf"?r.tip:r.tip}</div>
