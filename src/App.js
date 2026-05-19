@@ -103,7 +103,7 @@ function calcBizScore(room, genre, rating, source, note) {
   return Math.min(100, rs + gs + rts + ss + bs);
 }
 
-const BIZ_REGIONS = ["전체","강남","서초","종로","영등포","용산","마포","중구","송파","성동","경기"];
+const BIZ_AREAS = ["전체","강남·역삼","청담","신사·논현","압구정","삼성·대치","서초·교대","반포·방배","광화문·종로","삼청·인사동","을지로·명동","이태원·한남","용산·삼각지","여의도","홍대·합정","공덕·마포","상암","성수","잠실·송파","마곡"];
 const GOLF_REGIONS = ["전체","경기북부","경기남부","경기서부"];
 function getGolfRegionGroup(region = '') {
   if (region.includes('북부')) return '경기북부';
@@ -474,7 +474,6 @@ export default function App() {
   const [selType, setSelType]     = useState("biz");
 
   // 비즈니스 필터
-  const [bizRegion, setBizRegion] = useState("전체");
   const [bizArea, setBizArea]     = useState("전체");
   const [bizGenre, setBizGenre]   = useState("전체");
   const [bizSearch, setBizSearch] = useState("");
@@ -632,16 +631,7 @@ export default function App() {
 
   const openModal = (r, type) => { setSelected(r); setSelType(type); };
 
-  // 선택된 구(region)에 속한 area 목록 동적 추출 (가나다 정렬)
-  const bizAreaOptions = bizRegion === "전체" ? [] : [
-    "전체",
-    ...Array.from(new Set(
-      restaurants.filter(r => r.region === bizRegion).map(r => r.area).filter(Boolean)
-    )).sort((a, b) => a.localeCompare(b, 'ko'))
-  ];
-
   const bizFiltered = restaurants.filter(r => {
-    if (bizRegion !== "전체" && r.region !== bizRegion) return false;
     if (bizArea !== "전체" && r.area !== bizArea) return false;
     if (bizGenre !== "전체") {
       const kws = GENRE_KEYWORDS[bizGenre] || [bizGenre];
@@ -723,27 +713,17 @@ export default function App() {
               value={bizSearch} onChange={e=>setBizSearch(e.target.value)} />
           </div>
           <div className="filter-wrap">
-            {BIZ_REGIONS.map(r=>(
-              <button key={r} className={`filter-chip ${bizRegion===r?"on":""}`} onClick={()=>{setBizRegion(r);setBizArea("전체");}}>{r}</button>
+            {BIZ_AREAS.map(a=>(
+              <button key={a} className={`filter-chip ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
             ))}
           </div>
-          {bizAreaOptions.length > 1 && (
-            <div style={{display:'flex',alignItems:'flex-start',padding:'2px 14px 0 32px',gap:4}}>
-              <span style={{fontSize:13,color:'#C8B89A',lineHeight:'28px',flexShrink:0}}>└</span>
-              <div className="filter-wrap" style={{flex:1,padding:'2px 0'}}>
-                {bizAreaOptions.map(a=>(
-                  <button key={a} className={`filter-chip filter-chip-area ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
-                ))}
-              </div>
-            </div>
-          )}
           <div className="filter-wrap">
             {BIZ_GENRES.map(g=>(
               <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>setBizGenre(g)}>{g}</button>
             ))}
           </div>
           <div className="info-banner">
-            🔍 {bizRegion}{bizArea!=="전체"?" · "+bizArea:""}{bizGenre!=="전체"?" · "+bizGenre:""} · <b>{bizFiltered.length}곳</b> (전체 {restaurants.length}개)
+            🔍 {bizArea!=="전체"?bizArea:"전체"}{bizGenre!=="전체"?" · "+bizGenre:""} · <b>{bizFiltered.length}곳</b> (전체 {restaurants.length}개)
           </div>
           <div className="rest-list">
             {bizFiltered.length===0
