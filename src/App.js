@@ -63,7 +63,6 @@ function calcBizScore(room, genre, rating, source, note) {
   if (note.includes("전석") || note.includes("전층")) rs = 35;
   else if (note.includes("개별룸") || note.includes("개인실") || note.includes("프라이빗룸")) rs = 28;
   else if (room.includes("✅")) rs = 25;
-  else if (room.includes("🔶")) rs = 15;
   else if (note.includes("조건")) rs = 5;
 
   // ② 장르 격식 (최대 25)
