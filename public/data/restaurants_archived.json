@@ -472,5 +472,83 @@
     "genre": "소고기구이",
     "score": 78,
     "emoji": "🥩"
+  },
+  {
+    "id": 1640,
+    "genre": "LA갈비",
+    "room": "✅ 확인",
+    "emoji": "🥩",
+    "source": "직접 확인",
+    "score": 83,
+    "rating": 4.2,
+    "note": "개별룸",
+    "name": "청기와타운 서울대점",
+    "region": "관악",
+    "district": "봉천"
+  },
+  {
+    "id": 1641,
+    "genre": "LA갈비",
+    "room": "✅ 확인",
+    "emoji": "🥩",
+    "source": "직접 확인",
+    "score": 83,
+    "rating": 4.2,
+    "note": "개별룸",
+    "name": "청기와타운 왕십리역사점",
+    "region": "성동",
+    "district": "왕십리"
+  },
+  {
+    "id": 1642,
+    "genre": "LA갈비",
+    "room": "✅ 확인",
+    "emoji": "🥩",
+    "source": "직접 확인",
+    "score": 83,
+    "rating": 4.2,
+    "note": "개별룸",
+    "name": "청기와타운 길동사거리점",
+    "region": "강동",
+    "district": "길동"
+  },
+  {
+    "id": 1643,
+    "genre": "LA갈비",
+    "room": "✅ 확인",
+    "emoji": "🥩",
+    "source": "직접 확인",
+    "score": 83,
+    "rating": 4.2,
+    "note": "개별룸",
+    "name": "청기와타운 영등포본점",
+    "region": "영등포",
+    "district": "영등포"
+  },
+  {
+    "id": 1644,
+    "genre": "LA갈비",
+    "room": "✅ 확인",
+    "emoji": "🥩",
+    "source": "직접 확인",
+    "score": 83,
+    "rating": 4.2,
+    "note": "개별룸",
+    "name": "청기와타운 구로디지털점",
+    "region": "구로",
+    "district": "구로"
+  },
+  {
+    "id": 1645,
+    "genre": "LA갈비",
+    "room": "✅ 확인",
+    "emoji": "🥩",
+    "source": "직접 확인",
+    "score": 83,
+    "rating": 4.2,
+    "note": "개별룸",
+    "name": "청기와타운 목동41타워점",
+    "region": "양천",
+    "district": "목동"
   }
 ]
