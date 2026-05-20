@@ -109,18 +109,24 @@ function getGolfRegionGroup(region = '') {
   if (region.includes('서부')) return '경기서부';
   return '경기남부';
 }
-const BIZ_GENRES  = ["전체","고기구이","한우","한정식","한식","중식","일식","해산물","양식"];
-// 장르 필터: 버튼명 → 매칭 키워드
+const BIZ_GENRES  = ["전체","고기구이","한식","중식","일식","해산물","양식"];
+// 장르 필터: 버튼명 → 매칭 키워드 (우선순위 순서대로 체크 → 단일 카테고리 결정)
 const GENRE_KEYWORDS = {
-  '고기구이': ['고기구이','소고기구이','LA갈비','짝갈비','갈비','돼지고기구이','돼지갈비','곱창','양갈비','양고기구이','고깃집','소고기구이·양곱창'],
-  '한우': ['한우','와규'],
-  '한정식': ['한정식','한식파인다이닝','한식컨템포러리','궁중음식','채식파인다이닝','한식코스','사찰음식'],
-  '한식': ['한식','냉면','평양냉면','샤브샤브','전골·한식','한식퓨전','요리주점','오리요리'],
-  '중식': ['중식','딤섬','훠궈'],
-  '일식': ['일식','스시','가이세키','이자카야','이자까야','오마카세'],
-  '해산물': ['생선회','게요리','장어','해산물','해물','횟집','생선구이','참치'],
-  '양식': ['이탈리안','프렌치','파스타','양식','파인다이닝','웨스턴','올데이다이닝'],
+  '고기구이': ['고기구이','소고기구이','LA갈비','짝갈비','갈비','돼지고기구이','돼지갈비','곱창','양갈비','양고기구이','고깃집','소고기구이·양곱창','한우','와규'],
+  '한식':    ['한정식','한식파인다이닝','한식컨템포러리','궁중음식','채식파인다이닝','한식코스','사찰음식','한식','냉면','평양냉면','샤브샤브','전골·한식','한식퓨전','요리주점','오리요리'],
+  '중식':    ['중식','딤섬','훠궈'],
+  '일식':    ['일식','스시','가이세키','이자카야','이자까야','오마카세'],
+  '해산물':  ['생선회','게요리','장어','해산물','해물','횟집','생선구이','참치'],
+  '양식':    ['이탈리안','프렌치','파스타','양식','파인다이닝','웨스턴','올데이다이닝'],
 };
+// 우선순위 순서대로 체크해 단일 카테고리 반환 (중복 매칭 방지)
+const GENRE_PRIORITY = ["고기구이","한식","중식","일식","해산물","양식"];
+function getGenreCategory(genre) {
+  for (const cat of GENRE_PRIORITY) {
+    if ((GENRE_KEYWORDS[cat] || []).some(k => genre.includes(k))) return cat;
+  }
+  return null;
+}
 
 const LUNCH_PRICES  = ["전체","1만원이하","1만원대","2만원대"];
 const LUNCH_GENRES  = ["전체","한식·백반","국밥·해장","면류","분식","중식·마라","일식·덮밥","고기","버거","치킨","샐러드","양식"];
@@ -632,10 +638,7 @@ export default function App() {
 
   const bizFiltered = restaurants.filter(r => {
     if (bizArea !== "전체" && r.area !== bizArea) return false;
-    if (bizGenre !== "전체") {
-      const kws = GENRE_KEYWORDS[bizGenre] || [bizGenre];
-      if (!kws.some(k => r.genre.includes(k))) return false;
-    }
+    if (bizGenre !== "전체" && getGenreCategory(r.genre) !== bizGenre) return false;
     if (bizSearch && !r.name.includes(bizSearch) && !r.area.includes(bizSearch) && !r.genre.includes(bizSearch)) return false;
     return true;
   });
