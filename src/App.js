@@ -7,11 +7,6 @@ function openYoutubeShorts(name) {
   window.open("https://www.youtube.com/results?search_query=" + encodeURIComponent(clean) + "&sp=EgIYAQ", "_blank");
 }
 
-function openCatchTable(name, mapQuery) {
-  const query = mapQuery || name.replace(/\s*\(.*?\)/g, "").trim();
-  window.open("https://app.catchtable.co.kr/ct/search/total?keyword=" + encodeURIComponent(query), "_blank");
-}
-
 function openNaverSearch(name, area, mapQuery) {
   let query;
   if (mapQuery) {
@@ -435,12 +430,6 @@ function DetailModal({ r, type, onClose }) {
             }>
               {type==="golf" ? "🗺️ 네이버지도" : "🟢 네이버"}
             </button>
-            {type==="biz" && (
-              <button className="btn-catchtable" style={{flex:1}} onClick={()=>openCatchTable(r.name, r.mapQuery)}>
-                <img src="https://app.catchtable.co.kr/favicon.ico" alt="" style={{width:14,height:14,marginRight:4,verticalAlign:"middle"}} onError={e=>e.target.style.display='none'} />
-                캐치테이블
-              </button>
-            )}
             <button className="btn-youtube" style={{flex:1}} onClick={()=>openYoutubeShorts(r.mapQuery||r.name)}>
               ▶ 유튜브 쇼츠
             </button>

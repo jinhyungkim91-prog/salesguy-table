@@ -413,19 +413,6 @@ body {
   transition: opacity 0.15s;
 }
 .btn-youtube:hover { opacity: 0.85; }
-.btn-catchtable {
-  background: #FFF8F0;
-  color: #E8650A;
-  border: 1.5px solid #E8650A;
-  border-radius: 12px;
-  padding: 13px 8px;
-  font-size: 13px;
-  font-weight: 800;
-  cursor: pointer;
-  font-family: 'Noto Sans KR', sans-serif;
-  transition: opacity 0.15s;
-}
-.btn-catchtable:hover { opacity: 0.85; }
 .btn-kakao {
   flex: 2;
   background: var(--dark);
