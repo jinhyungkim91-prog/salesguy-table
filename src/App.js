@@ -451,7 +451,7 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch('/data/restaurants.json?v=20260520e').then(r => r.json()),
+      fetch('/data/restaurants.json?v=20260520f').then(r => r.json()),
       fetch('/data/lunch.json?v=20260515h').then(r => r.json()),
       fetch('/data/golf.json?v=20260518i').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
