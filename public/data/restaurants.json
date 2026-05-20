@@ -2788,20 +2788,6 @@
     "district": "마포"
   },
   {
-    "id": 1107,
-    "name": "마루심 판교",
-    "region": "경기",
-    "area": "분당·판교",
-    "genre": "일식",
-    "room": "✅ 확인",
-    "score": 80,
-    "rating": 4.5,
-    "note": "히츠마부시 전문·룸5개·판교",
-    "emoji": "🎌",
-    "mapQuery": "마루심 판교점",
-    "district": "판교"
-  },
-  {
     "id": 1108,
     "name": "마루심 강남",
     "region": "강남",
@@ -2869,33 +2855,6 @@
     "emoji": "🍣",
     "mapQuery": "스시소라 대치점",
     "district": "대치"
-  },
-  {
-    "id": 1113,
-    "name": "스시소라 정자",
-    "region": "경기",
-    "area": "분당·판교",
-    "genre": "스시오마카세",
-    "room": "✅ 확인",
-    "score": 90,
-    "rating": 4.7,
-    "note": "분당 정자 스시오마카세·룸",
-    "emoji": "🍣",
-    "mapQuery": "스시소라 정자점"
-  },
-  {
-    "id": 1114,
-    "name": "스시소라 판교",
-    "region": "경기",
-    "area": "분당·판교",
-    "genre": "스시오마카세",
-    "room": "✅ 확인",
-    "score": 85,
-    "rating": 4.7,
-    "note": "판교 스시오마카세",
-    "emoji": "🍣",
-    "mapQuery": "스시소라 판교점",
-    "district": "판교"
   },
   {
     "id": 1117,
@@ -3071,19 +3030,6 @@
     "note": "방이 중식·룸",
     "emoji": "🥢",
     "district": "방이"
-  },
-  {
-    "id": 1135,
-    "name": "몽중헌 판교",
-    "region": "경기",
-    "area": "분당·판교",
-    "genre": "중식",
-    "room": "✅ 확인",
-    "score": 85,
-    "rating": 4.3,
-    "note": "판교 중식·룸",
-    "emoji": "🥢",
-    "district": "판교"
   },
   {
     "id": 1136,
@@ -3503,27 +3449,6 @@
     "district": "여의도"
   },
   {
-    "id": 1174,
-    "name": "돈블랑 판교점",
-    "region": "성남",
-    "area": "분당·판교",
-    "genre": "돼지고기구이",
-    "emoji": "🥩",
-    "score": 82,
-    "rating": "4.2",
-    "district": "판교"
-  },
-  {
-    "id": 1175,
-    "name": "돈블랑 수내점",
-    "region": "성남",
-    "area": "분당·판교",
-    "genre": "돼지고기구이",
-    "emoji": "🥩",
-    "score": 82,
-    "rating": "4.2"
-  },
-  {
     "id": 1176,
     "name": "한와담블랙 강남",
     "region": "강남",
@@ -3696,17 +3621,6 @@
     "score": 83,
     "rating": "4.2",
     "district": "잠실"
-  },
-  {
-    "id": 1195,
-    "name": "크래버대게나라 판교점",
-    "region": "성남",
-    "area": "분당·판교",
-    "genre": "게요리",
-    "emoji": "🦐",
-    "score": 83,
-    "rating": "4.2",
-    "district": "판교"
   },
   {
     "id": 1204,
@@ -3912,17 +3826,6 @@
     "district": "삼성"
   },
   {
-    "id": 1225,
-    "name": "하이보 판교점",
-    "region": "성남",
-    "area": "분당·판교",
-    "genre": "중식",
-    "emoji": "🥢",
-    "score": 86,
-    "rating": "4.3",
-    "district": "판교"
-  },
-  {
     "id": 1238,
     "name": "송추가마골인어반 강남점",
     "region": "강남",
@@ -3985,17 +3888,6 @@
     "rating": "4.3",
     "emoji": "🥩",
     "district": "영등포"
-  },
-  {
-    "id": 1245,
-    "name": "송추가마골 인어반 판교점",
-    "region": "경기",
-    "area": "분당·판교",
-    "genre": "고기구이",
-    "score": 84,
-    "rating": "4.3",
-    "emoji": "🥩",
-    "district": "판교"
   },
   {
     "id": 1247,
@@ -4256,17 +4148,6 @@
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢"
-  },
-  {
-    "id": 1277,
-    "name": "크리스탈제이드 AK 분당점",
-    "region": "경기",
-    "area": "분당·판교",
-    "genre": "중식당",
-    "score": 85,
-    "rating": "4.3",
-    "emoji": "🥢",
-    "district": "분당"
   },
   {
     "id": 1279,
@@ -5037,18 +4918,6 @@
     "rating": "4.3",
     "note": "종각역 3번 출구에서 97m",
     "emoji": "🐟"
-  },
-  {
-    "id": 1348,
-    "name": "이춘복참치 판교점",
-    "region": "경기",
-    "area": "분당·판교",
-    "genre": "생선회",
-    "score": 84,
-    "rating": "4.3",
-    "note": "단독룸 50개",
-    "emoji": "🐟",
-    "district": "판교"
   },
   {
     "id": 1350,
@@ -6071,16 +5940,6 @@
     "score": 82
   },
   {
-    "id": 1472,
-    "name": "해우리 판교점",
-    "region": "경기",
-    "area": "분당·판교",
-    "genre": "한정식",
-    "emoji": "🏮",
-    "score": 82,
-    "district": "판교"
-  },
-  {
     "id": 1473,
     "name": "해우리 여의도점",
     "region": "영등포",
@@ -6768,18 +6627,6 @@
     "emoji": "🥩",
     "note": "나르디43 와인 특별가 쿠폰",
     "district": "마곡"
-  },
-  {
-    "id": 1546,
-    "name": "창고43 판교점",
-    "region": "성남",
-    "area": "분당·판교",
-    "genre": "소고기구이",
-    "room": "✅ 확인",
-    "score": 80,
-    "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
-    "district": "판교"
   },
   {
     "id": 1547,
@@ -7916,20 +7763,6 @@
     "district": "여의도",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸"
-  },
-  {
-    "id": 1660,
-    "genre": "LA갈비",
-    "room": "✅ 확인",
-    "emoji": "🥩",
-    "source": "직접 확인",
-    "name": "청기와타운 서현점",
-    "region": "경기",
-    "area": "분당·판교",
-    "district": "서현",
-    "score": 84,
-    "rating": 4.4,
     "note": "개별룸"
   },
   {
