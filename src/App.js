@@ -53,9 +53,9 @@ function toggleFavorite(id) {
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 비즈니스 점수 자동계산 함수
-// 룸(35) + 장르(25) + 평점(15) + 출처(15) + 보너스(10) = 최대 100점
+// 룸(35) + 장르(25) + 평점(15) + 출처(15) + 보너스(12) + 리뷰수(5) = 최대 107 → cap 100
 // ━━━━━━━━━━━━━━━━━━━━━━━━
-function calcBizScore(room, genre, rating, source, note) {
+function calcBizScore(room, genre, rating, source, note, reviews) {
   const txt = genre + " " + note + " " + source;
 
   // ① 룸 상태 (최대 35)
@@ -99,7 +99,15 @@ function calcBizScore(room, genre, rating, source, note) {
   else if (/전담|소믈리에|럭셔리/.test(txt)) bs = 5;
   else if (/룸|개인실/.test(txt)) bs = 4;
 
-  return Math.min(100, rs + gs + rts + ss + bs);
+  // ⑥ 리뷰수 신뢰도 (최대 5) — 네이버 방문자 리뷰수 기준
+  let rvs = 0;
+  const rv = parseInt(reviews) || 0;
+  if      (rv >= 1000) rvs = 5;
+  else if (rv >=  500) rvs = 3;
+  else if (rv >=  200) rvs = 2;
+  else if (rv >=  100) rvs = 1;
+
+  return Math.min(100, rs + gs + rts + ss + bs + rvs);
 }
 
 const BIZ_AREAS = ["전체","강남·삼성","청담·신사","서초·반포","광화문·도심","여의도","마포·홍대","용산·이태원","잠실·성수","마곡"];
@@ -451,7 +459,7 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch('/data/restaurants.json?v=20260520g').then(r => r.json()),
+      fetch('/data/restaurants.json?v=20260520h').then(r => r.json()),
       fetch('/data/lunch.json?v=20260515h').then(r => r.json()),
       fetch('/data/golf.json?v=20260518i').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
