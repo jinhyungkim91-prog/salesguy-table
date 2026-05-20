@@ -168,7 +168,7 @@ function RestaurantCard({ r, onClick }) {
         <div className="rest-emoji">{r.emoji}</div>
         <div className="rest-info">
           <div className="rest-name">{r.name}</div>
-          <div className="rest-sub">{r.area} · {r.genre}</div>
+          <div className="rest-sub">{r.district || r.region} · {r.genre}</div>
         </div>
         <div className="rest-score-wrap">
           <div className="rest-score">{r.score}</div>
@@ -178,7 +178,7 @@ function RestaurantCard({ r, onClick }) {
       <div className="rest-note">{r.note}</div>
       <div className="rest-tags">
         <span className="tag tag-rating">★ {r.rating}</span>
-        <span className="tag tag-region">{r.region}</span>
+        <span className="tag tag-region">{r.area}</span>
       </div>
     </div>
   );
@@ -387,7 +387,7 @@ function DetailModal({ r, type, onClose }) {
         <div className="modal-emoji">{r.emoji || "🍽️"}</div>
         <div className="modal-name">{r.name}</div>
         <div className="modal-area">
-          {type==="golf" ? `${r.golf} · 🚗 ${r.distance}` : `${r.region} · ${r.area}`}
+          {type==="golf" ? `${r.golf} · 🚗 ${r.distance}` : `${r.region} · ${r.district || r.area}`}
         </div>
         <div className="modal-row">
           <div className="modal-item">
