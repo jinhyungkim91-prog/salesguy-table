@@ -719,7 +719,7 @@ export default function App() {
               <button key={a} className={`filter-chip ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
             ))}
           </div>
-          <div className="filter-wrap">
+          <div className="filter-scroll">
             {BIZ_GENRES.map(g=>(
               <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>setBizGenre(g)}>{g}</button>
             ))}
