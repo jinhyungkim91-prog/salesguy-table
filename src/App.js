@@ -102,7 +102,7 @@ function calcBizScore(room, genre, rating, source, note) {
   return Math.min(100, rs + gs + rts + ss + bs);
 }
 
-const BIZ_AREAS = ["전체","강남·역삼","청담·압구정","신사·논현","삼성·대치","서초·반포","광화문·종로","을지로·명동","용산·이태원","여의도","마포·홍대","잠실·송파","마곡","분당·판교"];
+const BIZ_AREAS = ["전체","강남·역삼","청담·압구정","신사·논현","삼성·대치","서초·반포","광화문·종로","을지로·명동","용산·이태원","여의도","마포·홍대","잠실·성수","마곡","분당·판교"];
 const GOLF_REGIONS = ["전체","경기북부","경기남부","경기서부"];
 function getGolfRegionGroup(region = '') {
   if (region.includes('북부')) return '경기북부';
@@ -451,7 +451,7 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch('/data/restaurants.json?v=20260520b').then(r => r.json()),
+      fetch('/data/restaurants.json?v=20260520c').then(r => r.json()),
       fetch('/data/lunch.json?v=20260515h').then(r => r.json()),
       fetch('/data/golf.json?v=20260518i').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
