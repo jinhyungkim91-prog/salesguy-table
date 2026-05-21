@@ -50,6 +50,17 @@ function toggleFavorite(id) {
   return next;
 }
 
+function getLunchFavorites() {
+  try { return JSON.parse(localStorage.getItem("sgLunchFavorites") || "[]"); }
+  catch { return []; }
+}
+function toggleLunchFavorite(id) {
+  const favs = getLunchFavorites();
+  const next = favs.includes(id) ? favs.filter(f => f !== id) : [...favs, id];
+  localStorage.setItem("sgLunchFavorites", JSON.stringify(next));
+  return next;
+}
+
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 비즈니스 점수 자동계산 함수
@@ -137,16 +148,15 @@ function getGenreCategory(genre) {
 }
 
 const LUNCH_PRICES  = ["전체","1만원이하","1만원대","2만원대"];
-const LUNCH_GENRES  = ["전체","한식·백반","국밥·해장","면류","분식","중식·마라","일식·덮밥","고기","버거","치킨","샐러드","양식"];
+const LUNCH_GENRES  = ["전체","한식·백반","국밥·해장","면류·분식","중식·마라","일식·덮밥","고기","버거","치킨","샐러드·베이커리","양식"];
 const LUNCH_GENRE_MAP = {
   '한식·백반': ['한식백반','한식','비빔밥','삼계탕','도시락','한식정식','한식뷔페','쌈밥','낙지볶음','제육','닭볶음탕','된장찌개','순두부','찌개','백반','빈대떡','갈치','쭈꾸미','불백','돌솥밥','가정식','만두','쌀밥','한식·'],
   '국밥·해장': ['국밥','순대국','설렁탕','해장국','감자탕','뼈해장국','굴국밥','수육국밥','돼지국밥','육개장','어묵탕','부대찌개','닭한마리','전골','뼈'],
-  '면류': ['라멘','칼국수','냉면','국수','쌀국수','우동','마제소바','탄탄멘','탄탄면','막국수','수제비','냉모밀','냉메밀','소바','베트남쌀국수','짬뽕'],
-  '분식': ['분식','떡볶이','김밥','쫄면','비빔국수','충무김밥','순대','토스트·브런치'],
+  '면류·분식': ['라멘','칼국수','냉면','국수','쌀국수','우동','마제소바','탄탄멘','탄탄면','막국수','수제비','냉모밀','냉메밀','소바','베트남쌀국수','짬뽕','분식','떡볶이','김밥','쫄면','비빔국수','충무김밥','순대','토스트·브런치'],
   '중식·마라': ['중식','마라탕','마라샹궈','딤섬','탕수육','볶음밥','중식·'],
   '일식·덮밥': ['돈가츠','돈가스','돈카츠','초밥','스시','덮밥','텐동','장어덮밥','참치','회전초밥','타코야끼','일식','돈부리','마제소바'],
   '고기': ['삼겹살','닭갈비','갈비','돼지갈비','돼지구이','곱창','닭발','족발','치킨','통닭'],
-  '샐러드': ['샐러드','포케','건강식','비건','요거트'],
+  '샐러드·베이커리': ['샐러드','포케','건강식','비건','요거트','베이커리','빵','브레드','베이글','토스트','브런치','떡','카페·베이커리'],
   '양식': ['파스타','피자','버거','브런치','베이글','샌드위치','스테이크','타코','케밥','카레','인도','태국','중동','오므라이스'],
   // 체인 전용 장르
   '버거': ['버거'],
@@ -156,14 +166,13 @@ const LUNCH_GENRE_MAP = {
 const KAKAO_GENRE_MAP = {
   '한식·백반': ['한식','비빔밥','삼계탕','보쌈','쌈밥','찌개'],
   '국밥·해장': ['국밥','해장국','설렁탕','순대국','감자탕','뼈해장국','부대찌개','닭한마리'],
-  '면류':      ['라면','우동','냉면','국수','칼국수','쌀국수','소바','라멘'],
-  '분식':      ['분식','떡볶이','김밥','쫄면'],
+  '면류·분식': ['라면','우동','냉면','국수','칼국수','쌀국수','소바','라멘','분식','떡볶이','김밥','쫄면'],
   '중식·마라': ['중국음식','중식','마라탕','딤섬'],
   '일식·덮밥': ['일식','초밥','스시','덮밥','돈까스','돈가스'],
   '고기':      ['고기','삼겹살','갈비','닭갈비','족발','곱창'],
   '버거':      ['햄버거','버거','패스트푸드'],
   '치킨':      ['치킨','닭강정','닭'],
-  '샐러드':    ['샐러드','건강식','포케'],
+  '샐러드·베이커리': ['샐러드','건강식','포케','베이커리','제과','브런치','떡','카페'],
   '양식':      ['양식','피자','파스타','브런치','스테이크'],
 };
 
@@ -199,6 +208,12 @@ function RestaurantCard({ r, onClick }) {
 }
 
 function LunchCard({ r, onClick }) {
+  const [isFav, setIsFav] = useState(() => getLunchFavorites().includes(r.id));
+  const handleFav = (e) => {
+    e.stopPropagation();
+    const next = toggleLunchFavorite(r.id);
+    setIsFav(next.includes(r.id));
+  };
   return (
     <div className="rest-card" onClick={() => onClick(r)}>
       <div className="rest-card-top">
@@ -207,9 +222,12 @@ function LunchCard({ r, onClick }) {
           <div className="rest-name">{r.name}</div>
           <div className="rest-sub">{r.area} · {r.genre}</div>
         </div>
-        <div style={{textAlign:"right",flexShrink:0}}>
+        <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:4,flexShrink:0}}>
           <div className={`price-badge ${r.price==="1만원이하"?"pb-cheap":r.price==="1만원대"?"pb-mid":"pb-pricey"}`}>{r.price}</div>
-          <div style={{fontSize:"9px",color:"#8A7A6A",marginTop:2}}>★ {r.rating}</div>
+          <div style={{display:"flex",alignItems:"center",gap:6}}>
+            <div style={{fontSize:"9px",color:"#8A7A6A"}}>★ {r.rating}</div>
+            <button onClick={handleFav} style={{background:"none",border:"none",cursor:"pointer",fontSize:16,padding:0,lineHeight:1}}>{isFav?"❤️":"🤍"}</button>
+          </div>
         </div>
       </div>
       <div className="rest-note">{r.tip}</div>
@@ -496,6 +514,8 @@ export default function App() {
   const [lunchPrice, setLunchPrice]   = useState("전체");
   const [lunchSearch, setLunchSearch] = useState("");
   const [cheapOnly, setCheapOnly]     = useState(false);
+  const [lunchFavOnly, setLunchFavOnly] = useState(false);
+  const [randomPick, setRandomPick]   = useState(null);
   // 주변 위치
   const [userLocation, setUserLocation] = useState(null); // {lat, lng, dong, gu}
   const [nearbyMode, setNearbyMode]     = useState(false);
@@ -524,9 +544,10 @@ export default function App() {
     debounceRef.current = setTimeout(async () => {
       setPublicLoading(true);
       setPublicOffset(0);
+      const searchFilter = `name.ilike.%${lunchSearch}%,address.ilike.%${lunchSearch}%,district.ilike.%${lunchSearch}%`;
       const [{ data }, { count }] = await Promise.all([
-        supabase.from('lunch_public').select('name, address, genre, phone, district').ilike('name', `%${lunchSearch}%`).range(0, PAGE - 1),
-        supabase.from('lunch_public').select('*', { count: 'exact', head: true }).ilike('name', `%${lunchSearch}%`)
+        supabase.from('lunch_public').select('name, address, genre, phone, district').or(searchFilter).range(0, PAGE - 1),
+        supabase.from('lunch_public').select('*', { count: 'exact', head: true }).or(searchFilter)
       ]);
       const results = data || [];
       setPublicResults(results);
@@ -589,7 +610,7 @@ export default function App() {
     setMoreLoading(true);
     const nextOffset = publicOffset + PAGE;
     let q = supabase.from('lunch_public').select('name, address, genre, phone, district')
-      .ilike('name', `%${lunchSearch}%`);
+      .or(`name.ilike.%${lunchSearch}%,address.ilike.%${lunchSearch}%,district.ilike.%${lunchSearch}%`);
     const { data, error } = await q.range(nextOffset, nextOffset + PAGE - 1);
     if (error) console.error('[Supabase 오류]', error);
     const more = data || [];
@@ -611,7 +632,7 @@ export default function App() {
     if (nearbyMode) {
       setNearbyMode(false); setUserLocation(null);
       setKakaoPlaces([]); setKakaoHasMore(false);
-      setPublicResults([]); setPublicTotal(0);
+      setPublicResults([]); setPublicTotal(0); setRandomPick(null);
       return;
     }
     if (!navigator.geolocation) { alert('위치 서비스를 지원하지 않는 브라우저입니다.'); return; }
@@ -652,13 +673,14 @@ export default function App() {
   });
 
   const lunchFiltered = nearbyMode ? [] : lunchDB.filter(r => {
+    if (lunchFavOnly && !getLunchFavorites().includes(r.id)) return false;
     if (lunchPrice!=="전체" && r.price!==lunchPrice) return false;
     if (cheapOnly && r.price!=="1만원이하") return false;
     if (lunchGenre!=="전체") {
       const kws = LUNCH_GENRE_MAP[lunchGenre] || [lunchGenre];
       if (!kws.some(k => r.genre.includes(k))) return false;
     }
-    if (lunchSearch && !r.name.includes(lunchSearch) && !r.area.includes(lunchSearch)) return false;
+    if (lunchSearch && !r.name.includes(lunchSearch) && !r.area.includes(lunchSearch) && !r.region?.includes(lunchSearch)) return false;
     return true;
   });
 
@@ -766,6 +788,55 @@ export default function App() {
               {locating?"⏳ 위치중":nearbyMode?"📍 주변 ON":"📍 주변"}
             </button>
           </div>
+
+          {/* 랜덤추천 + 즐겨찾기 버튼 */}
+          <div style={{display:"flex",gap:8,margin:"8px 14px 0"}}>
+              <button onClick={() => {
+                if (!nearbyMode) { handleNearby(); return; }
+                if (filteredKakao.length === 0) return;
+                setRandomPick(filteredKakao[Math.floor(Math.random() * filteredKakao.length)]);
+              }} style={{
+                flex:1, padding:"9px 0", borderRadius:10,
+                border:`1.5px solid ${nearbyMode?"#E8A020":"#C8A96E"}`,
+                background: nearbyMode?"#FFF8ED":"#F5EDD8",
+                color: nearbyMode?"#B8720A":"#7A5C1E",
+                fontSize:13, fontWeight:800,
+                cursor:"pointer", fontFamily:"'Noto Sans KR',sans-serif"
+              }}>{nearbyMode?"🎲 오늘 뭐 먹지?":"🎲 뭐 먹지? (주변 ON 필요)"}</button>
+              <button onClick={() => setLunchFavOnly(v => !v)} style={{
+                flex:1, padding:"9px 0", borderRadius:10,
+                border:`1.5px solid ${lunchFavOnly?"#E05A7A":"#EDE8E0"}`,
+                background: lunchFavOnly?"#FFF0F4":"white",
+                color: lunchFavOnly?"#E05A7A":"#8A7A6A",
+                fontSize:13, fontWeight:800, cursor:"pointer",
+                fontFamily:"'Noto Sans KR',sans-serif"
+              }}>{lunchFavOnly?"❤️ 즐겨찾기":"🤍 즐겨찾기"}</button>
+            </div>
+
+          {/* 랜덤 추천 결과 */}
+          {randomPick && nearbyMode && (
+            <div style={{margin:"8px 14px 0",padding:"14px",background:"#FFF8ED",borderRadius:12,border:"2px solid #E8A020"}}>
+              <div style={{fontSize:11,fontWeight:800,color:"#B8720A",marginBottom:6}}>🎲 오늘의 추천!</div>
+              <div style={{fontWeight:800,fontSize:15,color:"#1A1A1A",marginBottom:2}}>🍽️ {randomPick.place_name}</div>
+              <div style={{fontSize:12,color:"#6A5A4A",marginBottom:4}}>{randomPick.category_name}</div>
+              <div style={{fontSize:12,color:"#6A5A4A",marginBottom:2}}>{randomPick.road_address_name || randomPick.address_name}</div>
+              <div style={{fontSize:12,color:"#00875A",fontWeight:700}}>📍 {Math.round(randomPick.distance)}m · 도보 {Math.ceil(randomPick.distance/67)}분</div>
+              <div style={{display:"flex",gap:8,marginTop:10}}>
+                <button onClick={() => setRandomPick(filteredKakao[Math.floor(Math.random() * filteredKakao.length)])}
+                  style={{flex:1,padding:"7px 0",borderRadius:8,border:"1.5px solid #E8A020",background:"#E8A020",color:"white",fontSize:12,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
+                  🔄 다시 뽑기
+                </button>
+                <button onClick={() => openNaverSearch(randomPick.place_name, '', null)}
+                  style={{flex:1,padding:"7px 0",borderRadius:8,border:"1.5px solid #03C75A",background:"#03C75A",color:"white",fontSize:12,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
+                  🔍 네이버 검색
+                </button>
+                <button onClick={() => setRandomPick(null)}
+                  style={{padding:"7px 12px",borderRadius:8,border:"1.5px solid #EDE8E0",background:"white",color:"#8A7A6A",fontSize:12,fontWeight:800,cursor:"pointer",fontFamily:"'Noto Sans KR',sans-serif"}}>
+                  ✕
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* 주변 모드: 위치 배너 + 반경 선택 */}
           {nearbyMode && (
