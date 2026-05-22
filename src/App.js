@@ -199,6 +199,9 @@ const KAKAO_GENRE_MAP = {
 // 공공DB에서 제외할 커피·음료 체인
 const COFFEE_CHAIN_BLOCK = ['할리스','커피빈','아티제','바나프레소','스타벅스','이디야','투썸플레이스','폴바셋','파스쿠찌','드롭탑','엔제리너스','탐앤탐스','카페베네','빽다방','메가커피','컴포즈커피','더벤티','공차','쥬씨','요거트월드'];
 
+// 공공DB에서 제외할 푸드코트·비식당 키워드
+const FOODCOURT_BLOCK = ['푸드코트','식당가','푸드홀','구내식당','학생식당','푸드빌리지','푸드스트리트'];
+
 const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -571,9 +574,13 @@ export default function App() {
       setPublicLoading(true);
       setPublicOffset(0);
       const searchFilter = `name.ilike.%${lunchSearch}%,address.ilike.%${lunchSearch}%,district.ilike.%${lunchSearch}%`;
+      const applyBlock = q => {
+        FOODCOURT_BLOCK.forEach(kw => { q = q.not('name', 'ilike', `%${kw}%`); });
+        return q;
+      };
       const [{ data }, { count }] = await Promise.all([
-        supabase.from('lunch_public').select('name, address, genre, phone, district').or(searchFilter).range(0, PAGE - 1),
-        supabase.from('lunch_public').select('*', { count: 'exact', head: true }).or(searchFilter)
+        applyBlock(supabase.from('lunch_public').select('name, address, genre, phone, district').or(searchFilter)).range(0, PAGE - 1),
+        applyBlock(supabase.from('lunch_public').select('*', { count: 'exact', head: true }).or(searchFilter))
       ]);
       const results = data || [];
       setPublicResults(results);
@@ -637,6 +644,7 @@ export default function App() {
     const nextOffset = publicOffset + PAGE;
     let q = supabase.from('lunch_public').select('name, address, genre, phone, district')
       .or(`name.ilike.%${lunchSearch}%,address.ilike.%${lunchSearch}%,district.ilike.%${lunchSearch}%`);
+    FOODCOURT_BLOCK.forEach(kw => { q = q.not('name', 'ilike', `%${kw}%`); });
     const { data, error } = await q.range(nextOffset, nextOffset + PAGE - 1);
     if (error) console.error('[Supabase 오류]', error);
     const more = data || [];
@@ -982,7 +990,7 @@ export default function App() {
                     {lunchFiltered.map(r=><LunchCard key={r.id} r={r} onClick={r=>openModal(r,"lunch")}/>)}
                     {lunchSearch.length>=2 && !publicLoading &&
                       publicResults
-                        .filter(p=>!lunchFiltered.some(c=>c.name===p.name) && !COFFEE_CHAIN_BLOCK.some(k=>p.name.includes(k)))
+                        .filter(p=>!lunchFiltered.some(c=>c.name===p.name) && !COFFEE_CHAIN_BLOCK.some(k=>p.name.includes(k)) && !FOODCOURT_BLOCK.some(k=>p.name.includes(k)))
                         .map((r,i)=><PublicLunchCard key={`pub-${i}`} r={r} onClick={r=>openModal(r,"public")}/>)
                     }
                     {lunchSearch.length>=2 && !publicLoading && publicHasMore && (
