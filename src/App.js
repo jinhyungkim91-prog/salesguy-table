@@ -50,6 +50,26 @@ function toggleFavorite(id) {
   return next;
 }
 
+function saveRecentSearch(term, current) {
+  if (!term.trim()) return current;
+  const next = [term, ...current.filter(s => s !== term)].slice(0, 5);
+  localStorage.setItem("sgRecentSearches", JSON.stringify(next));
+  return next;
+}
+
+function highlightText(text, query) {
+  if (!query || !text) return text;
+  const tokens = query.trim().split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return text;
+  const regex = new RegExp(`(${tokens.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+  const parts = text.split(regex);
+  return parts.map((part, i) =>
+    regex.test(part)
+      ? <mark key={i} style={{background:'#FFF176',borderRadius:2,padding:'0 1px'}}>{part}</mark>
+      : part
+  );
+}
+
 function getLunchFavorites() {
   try { return JSON.parse(localStorage.getItem("sgLunchFavorites") || "[]"); }
   catch { return []; }
@@ -184,21 +204,22 @@ const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 공통 컴포넌트
 // ━━━━━━━━━━━━━━━━━━━━━━━━
-function RestaurantCard({ r, onClick }) {
+function RestaurantCard({ r, onClick, highlight }) {
+  const hl = highlight || '';
   return (
     <div className="rest-card" onClick={() => onClick(r)}>
       <div className="rest-card-top">
         <div className="rest-emoji">{r.emoji}</div>
         <div className="rest-info">
-          <div className="rest-name">{r.name}</div>
-          <div className="rest-sub">{r.district || r.region} · {r.genre}</div>
+          <div className="rest-name">{highlightText(r.name, hl)}</div>
+          <div className="rest-sub">{r.district || r.region} · {highlightText(r.genre, hl)}</div>
         </div>
         <div className="rest-score-wrap">
           <div className="rest-score">{r.score}</div>
           <div className="rest-score-label">비즈점수</div>
         </div>
       </div>
-      <div className="rest-note">{r.note}</div>
+      <div className="rest-note">{highlightText(r.note, hl)}</div>
       <div className="rest-tags">
         <span className="tag tag-rating">★ {r.rating}</span>
         <span className="tag tag-region">{r.area}</span>
@@ -508,6 +529,11 @@ export default function App() {
   const [bizArea, setBizArea]     = useState("전체");
   const [bizGenre, setBizGenre]   = useState("전체");
   const [bizSearch, setBizSearch] = useState("");
+  const [bizSearchFocus, setBizSearchFocus] = useState(false);
+  const [recentSearches, setRecentSearches] = useState(() => {
+    try { return JSON.parse(localStorage.getItem("sgRecentSearches") || "[]"); }
+    catch { return []; }
+  });
 
   // 점심 필터
   const [lunchGenre, setLunchGenre]   = useState("전체");
@@ -744,10 +770,37 @@ export default function App() {
       {/* ── 비즈니스 탭 ── */}
       {activeTab==="biz" && (
         <div className="content">
-          <div className="search-wrap">
+          <div className="search-wrap" style={{position:"relative"}}>
             <span className="search-icon">🔍</span>
-            <input className="search-input" placeholder="식당명, 지역, 빌딩명 검색 (예: 대치동 한정식)"
-              value={bizSearch} onChange={e=>setBizSearch(e.target.value)} />
+            <input className="search-input" placeholder="식당명, 지역, 빌딩명 (예: 대치동 한정식)"
+              value={bizSearch}
+              onChange={e => setBizSearch(e.target.value)}
+              onFocus={() => setBizSearchFocus(true)}
+              onBlur={() => setTimeout(() => setBizSearchFocus(false), 150)}
+              onKeyDown={e => {
+                if (e.key === 'Enter' && bizSearch.trim()) {
+                  setRecentSearches(prev => saveRecentSearch(bizSearch.trim(), prev));
+                  e.target.blur();
+                }
+              }}
+            />
+            {bizSearch && (
+              <button onClick={() => setBizSearch('')}
+                style={{position:"absolute",right:12,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",cursor:"pointer",color:"#AAA",fontSize:16,lineHeight:1}}>✕</button>
+            )}
+            {bizSearchFocus && !bizSearch && recentSearches.length > 0 && (
+              <div style={{position:"absolute",top:"calc(100% + 4px)",left:0,right:0,background:"white",border:"1px solid #EDE8E0",borderRadius:12,boxShadow:"0 4px 12px rgba(0,0,0,0.1)",zIndex:100,overflow:"hidden"}}>
+                <div style={{padding:"8px 14px 4px",fontSize:11,color:"#AAA",fontWeight:700}}>최근 검색어</div>
+                {recentSearches.map((s,i) => (
+                  <div key={i} onClick={() => { setBizSearch(s); setBizSearchFocus(false); }}
+                    style={{padding:"9px 14px",fontSize:13,color:"#3A2E28",cursor:"pointer",display:"flex",alignItems:"center",gap:8}}
+                    onMouseEnter={e=>e.currentTarget.style.background="#F7F3EE"}
+                    onMouseLeave={e=>e.currentTarget.style.background="white"}>
+                    <span style={{color:"#C8A96E"}}>🕐</span>{s}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
           <div className="filter-wrap">
             {BIZ_AREAS.map(a=>(
@@ -764,8 +817,20 @@ export default function App() {
           </div>
           <div className="rest-list">
             {bizFiltered.length===0
-              ? <div className="empty">검색 결과가 없어요 😢</div>
-              : bizFiltered.map(r=><RestaurantCard key={r.id} r={r} onClick={r=>openModal(r,"biz")}/>)
+              ? <div className="empty" style={{textAlign:"center",padding:"40px 20px"}}>
+                  <div style={{fontSize:32,marginBottom:12}}>😢</div>
+                  <div style={{fontWeight:700,marginBottom:8}}>검색 결과가 없어요</div>
+                  {bizSearch && (
+                    <div style={{fontSize:13,color:"#8A7A6A",lineHeight:1.6}}>
+                      💡 띄어쓰기로 조합해보세요<br/>
+                      <span style={{color:"#C8A96E",fontWeight:700}}>예: 역삼 한우 룸</span>
+                    </div>
+                  )}
+                </div>
+              : bizFiltered.map(r=><RestaurantCard key={r.id} r={r} onClick={r=>{
+                  if (bizSearch.trim()) setRecentSearches(prev => saveRecentSearch(bizSearch.trim(), prev));
+                  openModal(r,"biz");
+                }} highlight={bizSearch}/>)
             }
           </div>
         </div>
