@@ -477,7 +477,7 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch('/data/restaurants.json?v=20260520h').then(r => r.json()),
+      fetch('/data/restaurants.json?v=20260522').then(r => r.json()),
       fetch('/data/lunch.json?v=20260515h').then(r => r.json()),
       fetch('/data/golf.json?v=20260518i').then(r => r.json()),
     ]).then(([rest, lunch, golf]) => {
@@ -668,7 +668,7 @@ export default function App() {
   const bizFiltered = restaurants.filter(r => {
     if (bizArea !== "전체" && r.area !== bizArea) return false;
     if (bizGenre !== "전체" && getGenreCategory(r.genre) !== bizGenre) return false;
-    if (bizSearch && !r.name.includes(bizSearch) && !r.area.includes(bizSearch) && !r.genre.includes(bizSearch) && !r.district?.includes(bizSearch) && !r.region?.includes(bizSearch)) return false;
+    if (bizSearch && !r.name.includes(bizSearch) && !r.area.includes(bizSearch) && !r.genre.includes(bizSearch) && !r.district?.includes(bizSearch) && !r.region?.includes(bizSearch) && !r.note?.includes(bizSearch)) return false;
     return true;
   });
 
