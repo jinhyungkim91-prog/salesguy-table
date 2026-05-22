@@ -668,7 +668,12 @@ export default function App() {
   const bizFiltered = restaurants.filter(r => {
     if (bizArea !== "전체" && r.area !== bizArea) return false;
     if (bizGenre !== "전체" && getGenreCategory(r.genre) !== bizGenre) return false;
-    if (bizSearch && !r.name.includes(bizSearch) && !r.area.includes(bizSearch) && !r.genre.includes(bizSearch) && !r.district?.includes(bizSearch) && !r.region?.includes(bizSearch) && !r.note?.includes(bizSearch)) return false;
+    if (bizSearch) {
+      const tokens = bizSearch.trim().split(/\s+/);
+      const fields = [r.name, r.area, r.genre, r.district||'', r.region||'', r.note||''];
+      const fullText = fields.join(' ');
+      if (!tokens.every(t => fullText.includes(t))) return false;
+    }
     return true;
   });
 
@@ -741,7 +746,7 @@ export default function App() {
         <div className="content">
           <div className="search-wrap">
             <span className="search-icon">🔍</span>
-            <input className="search-input" placeholder="식당명 또는 지역으로 검색"
+            <input className="search-input" placeholder="식당명, 지역, 빌딩명 검색 (예: 대치동 한정식)"
               value={bizSearch} onChange={e=>setBizSearch(e.target.value)} />
           </div>
           <div className="filter-wrap">
