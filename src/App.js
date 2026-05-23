@@ -699,6 +699,15 @@ export default function App() {
 
   const openModal = (r, type) => { setSelected(r); setSelType(type); };
 
+  // note에서 검색어 기준 거리(m) 추출: "역삼역 2번 출구에서 27m" → 27
+  function extractDist(note, term) {
+    if (!note || !term) return null;
+    const idx = note.indexOf(term);
+    if (idx === -1) return null;
+    const m = note.slice(idx, idx + 40).match(/(\d+)m/);
+    return m ? parseInt(m[1], 10) : null;
+  }
+
   const bizFiltered = restaurants.filter(r => {
     if (bizArea !== "전체" && r.area !== bizArea) return false;
     if (bizGenre !== "전체" && getGenreCategory(r.genre) !== bizGenre) return false;
@@ -709,7 +718,17 @@ export default function App() {
       if (!tokens.every(t => fullText.includes(t))) return false;
     }
     return true;
-  }).sort((a, b) => (b.score || 0) - (a.score || 0));
+  }).sort((a, b) => {
+    if (bizSearch) {
+      const term = bizSearch.trim();
+      const da = extractDist(a.note, term);
+      const db = extractDist(b.note, term);
+      if (da !== null && db !== null) return da - db;   // 둘 다 거리 있으면 가까운 순
+      if (da !== null) return -1;                        // a만 거리 있으면 a 앞
+      if (db !== null) return 1;                         // b만 거리 있으면 b 앞
+    }
+    return (b.score || 0) - (a.score || 0);              // 나머지는 스코어 순
+  });
 
   const lunchFiltered = nearbyMode ? [] : lunchDB.filter(r => {
     if (lunchFavOnly && !getLunchFavorites().includes(r.id)) return false;
