@@ -4,112 +4,118 @@
     "name": "신라호텔 라연",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한식파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 99,
     "rating": 5,
     "note": "신라호텔23층, 남산뷰",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "장충"
   },
   {
     "id": 4,
     "name": "비폴릭 청담",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 98,
     "rating": 4.8,
-    "note": "전석 프라이빗룸·1++BMS9·콜키지1병·상견례",
+    "note": "압구정로데오역 3번 출구에서 488m",
     "emoji": "🥩",
     "district": "청담"
   },
   {
     "id": 6,
-    "name": "본앤브레드 서울",
+    "name": "본앤브레드 오리지널",
     "region": "성동",
     "area": "잠실·성수",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.9,
-    "note": "전석룸·최상위한우",
+    "note": "성동구 마장동 761-4",
     "emoji": "🥩",
-    "mapQuery": "본앤브레드 오리지널 마장동"
+    "mapQuery": "본앤브레드 오리지널 마장동",
+    "district": "마장"
   },
   {
     "id": 7,
     "name": "스와니예",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "이탈리안파인",
+    "genre": "이탈리안",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.9,
-    "note": "이준셰프·미슐랭1스타",
-    "emoji": "🥂"
+    "note": "신사역 6번 출구에서 340m, 신사스퀘어 2층",
+    "emoji": "🥂",
+    "district": "신사",
+    "mapQuery": "스와니예 신사"
   },
   {
     "id": 10,
     "name": "한우부티크 강남점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 97,
     "rating": 4.7,
-    "note": "전석 프라이빗룸·4·6·8인·캐치테이블·8층전망",
-    "emoji": "🥩"
+    "note": "강남역 5번 출구에서 148m",
+    "emoji": "🥩",
+    "district": "서초"
   },
   {
     "id": 13,
     "name": "고우가 광화문점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한식파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 92,
     "rating": 5,
     "note": "광화문역 5번 출구에서 176m, 광화문역 SFC몰 지하2층",
     "emoji": "🏮",
-    "district": "광화문"
+    "district": "태평로"
   },
   {
     "id": 18,
     "name": "청담윤 일식 오마카세",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "룸오마카세",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 97,
     "rating": 4.7,
-    "note": "전석 룸",
+    "note": "압구정로데오역 3번 출구에서 558m",
     "emoji": "🍣",
     "district": "청담"
   },
   {
     "id": 19,
-    "name": "이속우화 한남",
+    "name": "이속우화",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 97,
     "rating": 4.8,
-    "note": "가성비 한우 오마카세",
+    "note": "용산구 한남동 32-25",
     "emoji": "🥩",
-    "district": "한남"
+    "district": "한남",
+    "mapQuery": "이속우화 한남"
   },
   {
     "id": 22,
-    "name": "고우가 여의도",
+    "name": "고우가 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "한식파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.9,
-    "note": "전석룸·체인",
+    "note": "여의도역 1번 출구에서 517m, FKI타워 전경련회관 지하1층",
     "emoji": "🏮",
     "district": "여의도"
   },
@@ -118,7 +124,7 @@
     "name": "고우가 강남 역삼역점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.7,
@@ -136,67 +142,73 @@
     "score": 99,
     "rating": 4.7,
     "note": "다양한 별실, 한옥 별채, 잔디마당, 야외 테라스",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "성북"
   },
   {
     "id": 42,
-    "name": "조우 압구정",
+    "name": "조우",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 96,
     "rating": 4.6,
-    "note": "전석개인실",
+    "note": "압구정역 4번 출구에서 333m",
     "emoji": "🥩",
-    "district": "압구정"
+    "district": "신사",
+    "mapQuery": "조우 고기구이 압구정"
   },
   {
     "id": 46,
     "name": "다이닝마",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "중식파인다이닝",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 5,
-    "note": "룸으로만 구성·샥스핀 전문·99만원 코스",
-    "emoji": "🥂"
+    "note": "강남구 신사동 630-12",
+    "emoji": "🥂",
+    "district": "신사",
+    "mapQuery": "다이닝마 신사"
   },
   {
     "id": 47,
     "name": "동화고옥 The ROOM 강남점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한식코스",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.8,
     "note": "역삼역 4번 출구에서 262m, 빗썸금융타워 지하 2층",
-    "emoji": "🍣"
+    "emoji": "🍣",
+    "district": "역삼"
   },
   {
     "id": 48,
     "name": "레스토랑오와이",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "파인다이닝",
+    "genre": "프랑스",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.7,
-    "note": "5코스프라이빗룸",
-    "emoji": "🥂"
+    "note": "강남구 청담동 19-13",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 49,
     "name": "긴자 청담블루",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "일식코스",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.7,
-    "note": "전석 개인실",
+    "note": "청담스퀘어 B동 3층",
     "emoji": "🍣",
     "district": "청담"
   },
@@ -205,73 +217,79 @@
     "name": "우아라 광화문점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우코스",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 95,
     "rating": 5,
     "note": "더케이트윈타워 지하1층",
     "emoji": "🥩",
-    "district": "광화문"
+    "district": "중학"
   },
   {
     "id": 52,
     "name": "아트스페이스 우월 한우오마카세",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.6,
-    "note": "청담우월홍대분점·1++한우·콜키지프리·레터링",
-    "emoji": "🥩"
+    "note": "홍대입구역 9번 출구에서 378m",
+    "emoji": "🥩",
+    "district": "서교"
   },
   {
     "id": 53,
     "name": "밍글스",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.9,
-    "note": "미슐랭2스타",
-    "emoji": "🥂"
+    "note": "압구정로데오역 3번 출구에서 455m",
+    "emoji": "🥂",
+    "district": "청담",
+    "mapQuery": "밍글스 한식 청담"
   },
   {
     "id": 54,
     "name": "조선팰리스 이타닉 가든",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한식파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.9,
     "note": "조선 팰리스 36층",
-    "emoji": "🥂"
+    "emoji": "🥂",
+    "district": "역삼"
   },
   {
     "id": 55,
     "name": "코자차",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "중식파인다이닝",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.9,
-    "note": "블루리본3",
-    "emoji": "🥂"
+    "note": "청담역 12번 출구에서 152m",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 57,
     "name": "테이블포포",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.9,
-    "note": "블루리본3",
-    "emoji": "🥂"
+    "note": "용산구 한남동 657-138",
+    "emoji": "🥂",
+    "district": "한남"
   },
   {
     "id": 58,
@@ -282,256 +300,275 @@
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.9,
-    "note": "최현석 쉐프",
-    "emoji": "🥢"
+    "note": "강남구 청담동 98-7, 최현석 쉐프",
+    "emoji": "🥢",
+    "district": "청담"
   },
   {
     "id": 59,
-    "name": "솔밤 논현",
+    "name": "솔밤",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한식컨템포러리파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 5,
-    "note": "엄태준셰프·12코스·블루리본3개2025신규",
+    "note": "학동역 10번 출구에서 202m, 백영논현센터 2층, 엄태준셰프",
     "emoji": "🏮",
-    "district": "논현"
+    "district": "논현",
+    "mapQuery": "솔밤 논현"
   },
   {
     "id": 60,
     "name": "더그린테이블",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "채식파인다이닝",
+    "genre": "프렌치",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.9,
     "note": "안국역 3번 출구에서 218m, 아라리오 뮤지엄 신관 5층",
     "emoji": "🥂",
-    "mapQuery": "더그린테이블 종로"
+    "mapQuery": "더그린테이블 종로",
+    "district": "원서"
   },
   {
     "id": 61,
     "name": "소수헌",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 95,
     "rating": 5,
     "note": "박경재 셰프, 도심 속 조용하고 우아한 분위기",
-    "emoji": "🍣"
+    "emoji": "🍣",
+    "district": "만리"
   },
   {
     "id": 63,
     "name": "세븐스도어",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.9,
-    "note": "블루리본3",
-    "emoji": "🥂"
+    "note": "청담역 13번 출구에서 350m",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 64,
     "name": "롯데호텔서울 도림",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "파인다이닝",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.9,
     "note": "메인타워 37층",
-    "emoji": "🥂"
+    "emoji": "🥂",
+    "district": "소공"
   },
   {
     "id": 66,
     "name": "호빈 중식당",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "중식파인다이닝",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 5,
     "note": "앰배서더 서울 풀만 호텔 2층, 후덕죽 마스터셰프",
-    "emoji": "🥂"
+    "emoji": "🥂",
+    "district": "장충"
   },
   {
     "id": 69,
     "name": "대보정 서울시청역점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한우코스",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.6,
     "note": "한우 오마카세부터 단품 메뉴까지 제공",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "서소문"
   },
   {
     "id": 71,
     "name": "한국의집",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "궁중음식파인다이닝",
+    "genre": "한정식",
     "room": "✅ 확인",
     "score": 99,
     "rating": 5,
     "note": "신선한 재료로 만든 궁중 한정식",
     "emoji": "🥂",
-    "mapQuery": "한국의집 필동 한정식"
+    "mapQuery": "한국의집 필동 한정식",
+    "district": "필동"
   },
   {
     "id": 73,
     "name": "미토우",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "일식오마카세",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 5,
-    "note": "블루리본3개2025신규·권영운김보미오너셰프",
-    "emoji": "🍣"
+    "note": "강남구 청담동 17-24, 권영운 김보미 오너셰프",
+    "emoji": "🍣",
+    "district": "청담"
   },
   {
     "id": 76,
     "name": "모수 서울",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 5,
-    "note": "2026신규리본3·안성재셰프복귀",
-    "emoji": "🥂"
+    "note": "용산구 이태원동 258-14",
+    "emoji": "🥂",
+    "district": "이태원",
+    "mapQuery": "모수 서울 양식"
   },
   {
     "id": 77,
     "name": "알라프리마",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "프렌치",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 94,
     "rating": 5,
-    "note": "박무현 셰프·프라이빗 룸 보유",
-    "emoji": "🥂"
+    "note": "학동역 6번 출구에서 406m, 박무현 셰프",
+    "emoji": "🥂",
+    "district": "논현"
   },
   {
     "id": 79,
     "name": "스시아오마츠",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 94,
     "rating": 4.8,
-    "note": "수하동 건물 (노벨과개미) 지하1층",
-    "emoji": "🍣"
+    "note": "노벨과개미 지하1층",
+    "emoji": "🍣",
+    "district": "대치"
   },
   {
     "id": 85,
     "name": "웨스틴 조선 서울 스시조",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 94,
     "rating": 4.9,
     "note": "서울 웨스틴조선호텔 20층",
     "emoji": "🍣",
-    "mapQuery": "웨스틴 조선 서울 일식당 스시조"
+    "mapQuery": "웨스틴 조선 서울 일식당 스시조",
+    "district": "소공"
   },
   {
     "id": 90,
     "name": "고청담 용산점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.8,
-    "note": "비즈니스식사 명시",
+    "note": "신용산역 2번 출구에서 84m, 아모레퍼시픽 본사 B1",
     "emoji": "🥩",
-    "district": "청담"
+    "district": "한강로"
   },
   {
     "id": 100,
     "name": "갓포하루 삼성전자 서초사옥점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "일식오마카세",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 94,
     "rating": 4.8,
-    "note": "바좌석+프라이빗룸·회식데이트모임",
+    "note": "강남역 8번 출구에서 143m",
     "emoji": "🍣",
-    "district": "삼성"
+    "district": "서초"
   },
   {
     "id": 112,
     "name": "레스케이프 팔레드 신",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "중식파인다이닝",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 94,
     "rating": 4.5,
     "note": "회현 7번 출구에서 63m, 레스케이프호텔 6층",
     "emoji": "🥂",
-    "mapQuery": "레스케이프 팔레드 신 중식당"
+    "mapQuery": "레스케이프 팔레드 신 중식당",
+    "district": "회현"
   },
   {
     "id": 113,
-    "name": "이속우화 천공",
+    "name": "이속우화천공",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우오마카세",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 94,
     "rating": 4.7,
-    "note": "1++BMS9·룸·4~6인·캐치테이블",
-    "emoji": "🥩"
+    "note": "압구정역 4번 출구에서 31m",
+    "emoji": "🥩",
+    "district": "신사"
   },
   {
     "id": 114,
     "name": "메이필드호텔 봉래헌",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "한정식",
     "room": "✅ 확인",
     "score": 94,
     "rating": 4.7,
     "note": "메이필드 호텔",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "외발산"
   },
   {
     "id": 118,
     "name": "리스토란테 에오",
     "region": "영등포",
     "area": "여의도",
-    "genre": "이탈리안파인",
+    "genre": "이탈리안",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.8,
-    "note": "더현대 서울 6층",
-    "emoji": "🥂"
+    "note": "여의나루역 1번 출구에서 500m, 더현대 서울 6층",
+    "emoji": "🥂",
+    "district": "여의도"
   },
   {
     "id": 122,
-    "name": "고청담 여의도",
+    "name": "고청담 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.7,
-    "note": "창가룸 인기",
+    "note": "여의나루역 4번 출구에서 424m, 브라이튼 B1F",
     "emoji": "🥩",
-    "district": "청담"
+    "district": "여의도"
   },
   {
     "id": 127,
@@ -544,32 +581,35 @@
     "rating": 4.9,
     "note": "회현 7번 출구에서 63m, 레스케이프호텔 26층",
     "emoji": "🥂",
-    "mapQuery": "레스케이프 라망 시크레 양식당"
+    "mapQuery": "레스케이프 라망 시크레 양식당",
+    "district": "회현"
   },
   {
     "id": 130,
-    "name": "우가 신사",
+    "name": "우가",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우사시미오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.8,
-    "note": "연예인SNS단골·상위1%한우·25만원·프라이빗",
+    "note": "신사역 6번 출구에서 333m, 신사스퀘어 G층",
     "emoji": "🥩",
-    "district": "신사"
+    "district": "신사",
+    "mapQuery": "우가 신사"
   },
   {
     "id": 132,
     "name": "페스타 바이 충후",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 98,
     "rating": 4.6,
     "note": "반얀트리호텔",
-    "emoji": "🥂"
+    "emoji": "🥂",
+    "district": "장충"
   },
   {
     "id": 134,
@@ -580,19 +620,20 @@
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.9,
-    "note": "블루리본3",
-    "emoji": "🥂"
+    "note": "강남구청역 4번 출구에서 195m",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 135,
     "name": "벽제갈비 더청담",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우다이닝",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 93,
     "rating": 5,
-    "note": "2025 신규·개별룸·셰프 직접 구워줌",
+    "note": "강남구 청담동 118-4, 조은빌딩 1층",
     "emoji": "🥩",
     "district": "청담"
   },
@@ -601,35 +642,37 @@
     "name": "웨스틴 조선 서울 나인스 게이트",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.5,
     "note": "서울 웨스틴조선호텔 L층",
-    "emoji": "🥂"
+    "emoji": "🥂",
+    "district": "소공"
   },
   {
     "id": 138,
-    "name": "문보핫팟",
+    "name": "문보 핫팟",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 97,
     "rating": 4.9,
-    "note": "청담 VIP·완전 프라이빗·예약제",
-    "emoji": "🥂"
+    "note": "강남구 청담동 125-1",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 139,
     "name": "왕스덕 논현점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "중식파인다이닝",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.5,
-    "note": "고급중식·프라이빗룸",
+    "note": "신사역 1번 출구에서 196m, 하림타워 지하1층",
     "emoji": "🥂",
     "district": "논현"
   },
@@ -638,11 +681,11 @@
     "name": "한우드림 신사점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 93,
     "rating": 5,
-    "note": "서울한우오마카세Top2",
+    "note": "신사역 8번 출구에서 405m",
     "emoji": "🥩",
     "district": "신사"
   },
@@ -651,72 +694,76 @@
     "name": "한우오마카세 우모크",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.8,
-    "note": "훈연한우오마카세·투플러스한우·직화구이",
-    "emoji": "🥩"
+    "note": "압구정로데오역 5번 출구에서 502m",
+    "emoji": "🥩",
+    "district": "신사"
   },
   {
     "id": 147,
     "name": "설마중",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.7,
-    "note": "가족모임이나 상견례 장소 추천",
-    "emoji": "🏮"
+    "note": "양재역 5번 출구에서 507m",
+    "emoji": "🏮",
+    "district": "양재"
   },
   {
     "id": 150,
-    "name": "경복궁 블랙 마포",
+    "name": "경복궁 마포 로이넷호텔점",
     "region": "마포",
     "area": "마포·홍대",
     "genre": "한정식",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.7,
-    "note": "마포·개별룸",
+    "note": "5호선 마포역 2번출구 250m, 로이넷호텔 2층",
     "emoji": "🏮",
-    "district": "마포"
+    "district": "도화"
   },
   {
     "id": 161,
     "name": "조선팰리스 더 그레이트 홍연",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식파인",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.6,
     "note": "조선 팰리스 36층",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "역삼"
   },
   {
     "id": 164,
     "name": "우텐더",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.4,
-    "note": "개별룸·구워주는 서비스",
-    "emoji": "🥩"
+    "note": "강남구 신사동 643-20",
+    "emoji": "🥩",
+    "district": "신사"
   },
   {
     "id": 174,
     "name": "그리에 청담",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "프렌치",
+    "genre": "프랑스",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.8,
-    "note": "프라이빗 공간",
+    "note": "압구정로데오역 3번 출구에서 445m",
     "emoji": "🥂",
     "district": "청담"
   },
@@ -725,36 +772,39 @@
     "name": "콘피에르 셀렉션 롯데월드몰점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.6,
-    "note": "롯데월드타워·고층·룸",
-    "emoji": "🥂"
+    "note": "잠실역 2번 출구에서 436m, 롯데월드몸 6층",
+    "emoji": "🥂",
+    "district": "신천"
   },
   {
     "id": 185,
     "name": "페어몬트 앰배서더 서울 마리포사",
     "region": "영등포",
     "area": "여의도",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.5,
-    "note": "페어몬트·여의도·룸",
-    "emoji": "🥂"
+    "note": "여의나루역 1번 출구에서 364m",
+    "emoji": "🥂",
+    "district": "여의도"
   },
   {
     "id": 189,
     "name": "한상 더 테이블",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.5,
-    "note": "강남 파인다이닝·룸",
-    "emoji": "🥂"
+    "note": "강남구 청담동 21-7",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 191,
@@ -765,20 +815,20 @@
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.5,
-    "note": "프라이빗룸·코스중심·접대",
+    "note": "잠실역 2번 출구에서 27m, 롯데 에비뉴엘 잠실점 6층",
     "emoji": "🍣",
-    "district": "잠실"
+    "district": "신천"
   },
   {
     "id": 206,
     "name": "모도우 삼성점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.4,
-    "note": "전좌석 프라이빗 룸",
+    "note": "강남구 삼성동 154-8, 금강타워3 지하1층",
     "emoji": "🥩",
     "district": "삼성"
   },
@@ -792,7 +842,8 @@
     "score": 92,
     "rating": 4.5,
     "note": "500년의 역사를 간직한 전통 가옥에서의 한정식",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "수서"
   },
   {
     "id": 212,
@@ -805,7 +856,8 @@
     "rating": 4.5,
     "note": "롯데호텔서울 본관 38층",
     "emoji": "🏮",
-    "mapQuery": "롯데호텔서울 무궁화 한정식"
+    "mapQuery": "롯데호텔서울 무궁화 한정식",
+    "district": "소공"
   },
   {
     "id": 217,
@@ -816,31 +868,34 @@
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.6,
-    "note": "메세나폴리스 1층",
-    "emoji": "🏮"
+    "note": "합정역 10번 출구에서 221m, 메세나폴리스 1층",
+    "emoji": "🏮",
+    "district": "서교"
   },
   {
     "id": 221,
-    "name": "비채나 롯데타워",
+    "name": "비채나",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "한식파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 97,
     "rating": 4.8,
-    "note": "롯데월드타워81층·미슐랭1스타·뷰",
-    "emoji": "🏮"
+    "note": "잠실역 2번 출구에서 432m, 롯데월드타워 81층",
+    "emoji": "🏮",
+    "district": "신천",
+    "mapQuery": "비채나 롯데타워"
   },
   {
     "id": 227,
     "name": "한우물 이태원",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.6,
-    "note": "와인+한우오마카세·캐치테이블전용·69000원",
+    "note": "이태원역 4번 출구에서 316m",
     "emoji": "🥩",
     "district": "이태원"
   },
@@ -854,20 +909,21 @@
     "score": 91,
     "rating": 4.8,
     "note": "선정릉역 3번 출구에서 121m",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "삼성"
   },
   {
     "id": 235,
     "name": "더 라운드 삼성점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "파인다이닝",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 91,
     "rating": 4.5,
     "note": "청담역 1번 출구에서 31m",
     "emoji": "🥂",
-    "mapQuery": "더 라운드 삼성동",
+    "mapQuery": "더 라운드 삼성점",
     "district": "삼성"
   },
   {
@@ -875,49 +931,54 @@
     "name": "삼원가든",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.8,
-    "note": "40년전통·예약제특실룸·한우모둠",
-    "emoji": "🥩"
+    "note": "강남구 신사동 623-5",
+    "emoji": "🥩",
+    "district": "신사",
+    "mapQuery": "삼원가든 신사"
   },
   {
     "id": 244,
     "name": "더 퍼스트 서래향 시청점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "중식파인다이닝",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 91,
     "rating": 4.4,
     "note": "북창동 먹자골목에 위치",
-    "emoji": "🥂"
+    "emoji": "🥂",
+    "district": "남대문로"
   },
   {
     "id": 267,
     "name": "온지음 래스토랑",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한식파인다이닝",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 91,
     "rating": 4.9,
     "note": "조은희, 박성배 셰프",
     "emoji": "🏮",
-    "mapQuery": "온지음 레스토랑"
+    "mapQuery": "온지음 레스토랑",
+    "district": "창성"
   },
   {
     "id": 268,
     "name": "스시 히로아키",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 91,
     "rating": 4.7,
     "note": "역삼초 정문 맞은편 봇밥건물 지하1층",
-    "emoji": "🍣"
+    "emoji": "🍣",
+    "district": "역삼"
   },
   {
     "id": 271,
@@ -930,14 +991,14 @@
     "rating": 4.4,
     "note": "덕수궁디팰리스 지하 1층",
     "emoji": "🏮",
-    "district": "광화문"
+    "district": "신문로"
   },
   {
     "id": 278,
     "name": "야마모토스시 도곡동점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "일식오마카세",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 91,
     "rating": 4.7,
@@ -955,32 +1016,34 @@
     "score": 86,
     "rating": 4.8,
     "note": "서울신라호텔 23층",
-    "emoji": "🥂"
+    "emoji": "🥂",
+    "district": "장충"
   },
   {
     "id": 306,
     "name": "레스토랑 에빗",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 91,
     "rating": 4.8,
-    "note": "이태원파인",
-    "emoji": "🥂"
+    "note": "강남구 신사동 650-13",
+    "emoji": "🥂",
+    "district": "신사"
   },
   {
     "id": 319,
     "name": "옥스라이브파이어그릴 도산",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우코스",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 91,
     "rating": 4.5,
-    "note": "압구정 한우·룸",
+    "note": "강남구 논현동 62-2",
     "emoji": "🥩",
-    "district": "도산"
+    "district": "논현"
   },
   {
     "id": 326,
@@ -993,32 +1056,34 @@
     "rating": 4.5,
     "note": "종각역 1번 출구에서 169m, 타워8빌딩 지하 2층",
     "emoji": "🏮",
-    "district": "광화문"
+    "district": "청진"
   },
   {
     "id": 327,
     "name": "봉우리 역삼본점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한정식코스",
+    "genre": "한정식",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.2,
-    "note": "전좌석 프라이빗 룸",
+    "note": "역삼역 7번 출구에서 342m",
     "emoji": "🍣",
     "district": "역삼"
   },
   {
     "id": 330,
-    "name": "운산 한정식",
+    "name": "운산",
     "region": "영등포",
     "area": "여의도",
     "genre": "한정식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.3,
-    "note": "여의도 최대규모·온돌·다다미·룸",
-    "emoji": "🏮"
+    "note": "여의도동 12, C.C.M.M빌딩 지하1층",
+    "emoji": "🏮",
+    "district": "여의도",
+    "mapQuery": "운산 한정식"
   },
   {
     "id": 334,
@@ -1029,7 +1094,7 @@
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.4,
-    "note": "여의도 금융가·접대·룸",
+    "note": "여의도역 3번 출구에서 301m, BNK 금융타워 지하1층",
     "emoji": "🏮",
     "district": "여의도"
   },
@@ -1038,74 +1103,79 @@
     "name": "통의동 국빈관 경복궁역점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한정식",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 97,
     "rating": 4.6,
     "note": "경복궁역 3번 출구에서 127m",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "통의"
   },
   {
     "id": 345,
     "name": "고청담 광화문 디타워점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우BBQ",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.5,
     "note": "광화문 디타워 건물 5층, 콜키지 무제한 무료",
     "emoji": "🥩",
-    "district": "청담"
+    "district": "청진"
   },
   {
     "id": 347,
-    "name": "레스토랑 오엔",
+    "name": "ON(오엔)",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "프렌치",
+    "genre": "이탈리안",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.8,
-    "note": "런치2테이블·디너2테이블·원테이블 다이닝",
-    "emoji": "🥂"
+    "note": "강남구 압구정동 380-2",
+    "emoji": "🥂",
+    "district": "압구정",
+    "mapQuery": "레스토랑 오엔 압구정"
   },
   {
     "id": 348,
     "name": "육미당 몽산",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.5,
     "note": "강남역 11번 출구에서 211m",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "역삼"
   },
   {
     "id": 358,
     "name": "광화문등심 석촌호수점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "한우꽃등심",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.6,
-    "note": "잠실 개별룸·룸+석촌호수뷰",
+    "note": "송파나루역 1번 출구에서 449m",
     "emoji": "🥩",
-    "district": "광화문"
+    "district": "송파"
   },
   {
     "id": 366,
     "name": "스시리큐",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "일식오마카세",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.8,
-    "note": "청담 일식·룸",
-    "emoji": "🍣"
+    "note": "압구정로데오역 5번 출구에서 513m",
+    "emoji": "🍣",
+    "district": "신사"
   },
   {
     "id": 371,
@@ -1116,33 +1186,36 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.3,
-    "note": "용산 한정식·룸",
-    "emoji": "🏮"
+    "note": "용산역 1번 출구에서 157m, 드래곤힐스파 1층",
+    "emoji": "🏮",
+    "district": "한강로"
   },
   {
     "id": 377,
     "name": "일식 무마미",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "일식코스",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.4,
-    "note": "소규모룸",
-    "emoji": "🍣"
+    "note": "신용산역 1번 출구에서 176m",
+    "emoji": "🍣",
+    "district": "한강로",
+    "mapQuery": "일식 우마미 한강로"
   },
   {
     "id": 380,
     "name": "고운님",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한정식",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.3,
     "note": "남도식 사계절 제철 음식",
     "emoji": "🏮",
-    "district": "삼성",
+    "district": "대치",
     "mapQuery": "고운님 대치"
   },
   {
@@ -1150,13 +1223,13 @@
     "name": "한와담 광화문점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우숯불",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.7,
     "note": "콘코디언 지하 1층",
     "emoji": "🥩",
-    "district": "광화문"
+    "district": "신문로"
   },
   {
     "id": 387,
@@ -1167,7 +1240,7 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.3,
-    "note": "IFC·한정식·룸",
+    "note": "콘래드호텔 L1층",
     "emoji": "🏮",
     "district": "여의도"
   },
@@ -1176,12 +1249,13 @@
     "name": "해담채 강남점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한정식",
+    "genre": "해산물",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4,
     "note": "해초바다요리 전문점",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "역삼"
   },
   {
     "id": 406,
@@ -1192,45 +1266,49 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.4,
-    "note": "더현대서울·여의도·룸",
-    "emoji": "🏮"
+    "note": "여의도역 3번 출구에서 436m",
+    "emoji": "🏮",
+    "district": "여의도"
   },
   {
     "id": 409,
-    "name": "대방골",
+    "name": "대방골 여의도",
     "region": "영등포",
     "area": "여의도",
     "genre": "한정식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.3,
-    "note": "여의도 한정식·룸",
-    "emoji": "🏮"
+    "note": "국회의사당역 1번 출구에서 358m, 여의도 파라곤 지하1층",
+    "emoji": "🏮",
+    "district": "여의도",
+    "mapQuery": "대방골 여의도 한정삭"
   },
   {
     "id": 410,
     "name": "워킹온더클라우드",
     "region": "영등포",
     "area": "여의도",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.3,
-    "note": "63빌딩·양식·룸",
-    "emoji": "🥂"
+    "note": "63빌딩 59층",
+    "emoji": "🥂",
+    "district": "여의도"
   },
   {
     "id": 413,
-    "name": "동화고옥 잠실",
+    "name": "동화고옥 롯데월드몰점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "한식코스",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.2,
-    "note": "잠실 개별룸 Top1·롯데월드몰6F",
+    "note": "잠실역 10번 출구에서 13m, 롯데월드몰 6층",
     "emoji": "🍣",
-    "district": "잠실"
+    "district": "신천"
   },
   {
     "id": 417,
@@ -1241,9 +1319,9 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.4,
-    "note": "압구정 한정식·룸",
+    "note": "압구정역 2번 출구에서 459m",
     "emoji": "🏮",
-    "district": "압구정"
+    "district": "신사"
   },
   {
     "id": 419,
@@ -1256,31 +1334,35 @@
     "rating": 4.7,
     "note": "노보텔 앰배서더 강남 LL층",
     "emoji": "🥢",
-    "mapQuery": "홍보각 역삼"
+    "mapQuery": "홍보각 역삼",
+    "district": "역삼"
   },
   {
     "id": 422,
     "name": "비스트로 드 욘트빌",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "프렌치",
+    "genre": "프랑스",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.6,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🥂"
+    "note": "압구정로데오역 4번 출구에서 235m",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 423,
     "name": "파씨오네",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "프렌치",
+    "genre": "프랑스",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.5,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🥂"
+    "note": "압구정로데오역 5번 출구에서 522m",
+    "emoji": "🥂",
+    "district": "신사",
+    "mapQuery": "파씨오네 신사"
   },
   {
     "id": 425,
@@ -1291,8 +1373,10 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.6,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🥂"
+    "note": "용산구 한남동 32-17",
+    "emoji": "🥂",
+    "district": "한남",
+    "mapQuery": "알레즈 한남"
   },
   {
     "id": 426,
@@ -1303,8 +1387,9 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.6,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🥂"
+    "note": "서울 서대문구 연희로26길 24",
+    "emoji": "🥂",
+    "district": "연희"
   },
   {
     "id": 434,
@@ -1317,7 +1402,8 @@
     "rating": 4.3,
     "note": "한우떡갈비구이, 보리굴비, 장아찌보쌈",
     "emoji": "🏮",
-    "mapQuery": "소선재 삼청"
+    "mapQuery": "소선재 삼청",
+    "district": "삼청"
   },
   {
     "id": 435,
@@ -1328,7 +1414,7 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.5,
-    "note": "대백화점압구정본점 5층",
+    "note": "압구정역 6번 출구에서 88m, 현대백화점압구정본점 5층",
     "emoji": "🥂",
     "district": "압구정"
   },
@@ -1342,7 +1428,8 @@
     "score": 90,
     "rating": 4.4,
     "note": "국가무형문화제 제38호 조선왕조 궁중음식",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "청운"
   },
   {
     "id": 447,
@@ -1354,31 +1441,21 @@
     "score": 90,
     "rating": 4.3,
     "note": "안국역 2번 출구에서 112m",
-    "emoji": "🏮"
-  },
-  {
-    "id": 450,
-    "name": "스시 렌",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "오마카세",
-    "room": "✅ 확인",
-    "score": 90,
-    "rating": 4.7,
-    "note": "카운터형",
-    "emoji": "🍣"
+    "emoji": "🏮",
+    "district": "재동"
   },
   {
     "id": 454,
     "name": "스시이찌 국회의사당점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.7,
-    "note": "여의도 스시",
-    "emoji": "🍣"
+    "note": "국회의사당역 1번 출구에서 299m",
+    "emoji": "🍣",
+    "district": "여의도"
   },
   {
     "id": 458,
@@ -1389,19 +1466,21 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.4,
-    "note": "거래소뒤쪽·여의도접대명소",
-    "emoji": "🏮"
+    "note": "국민은행 동여의도지점 건물 3층",
+    "emoji": "🏮",
+    "district": "여의도",
+    "mapQuery": "영의정 한정식 여의도"
   },
   {
     "id": 466,
-    "name": "스시소라 서초",
+    "name": "스시소라 서초점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.9,
-    "note": "서초역 스시 Top",
+    "note": "서초역 1번 출구에서 177m, 오퓨런스빌딩 1층",
     "emoji": "🍣",
     "district": "서초"
   },
@@ -1410,12 +1489,13 @@
     "name": "스시사이토 쥬욘",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "스시오마카세",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.9,
-    "note": "캐치테이블인기",
-    "emoji": "🍣"
+    "note": "강남구 청담동 114-7",
+    "emoji": "🍣",
+    "district": "청담"
   },
   {
     "id": 485,
@@ -1427,27 +1507,15 @@
     "score": 84,
     "rating": 4.3,
     "note": "서울스퀘어 지하1층",
-    "emoji": "🥩"
-  },
-  {
-    "id": 489,
-    "name": "헤우가 압구정",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "한우",
-    "room": "✅ 확인",
-    "score": 89,
-    "rating": 4.4,
-    "note": "개별룸·오마카세",
     "emoji": "🥩",
-    "district": "압구정"
+    "district": "남대문로"
   },
   {
     "id": 499,
     "name": "백마 김씨네 도곡본점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "돼지갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.3,
@@ -1460,73 +1528,64 @@
     "name": "너애하누",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.3,
     "note": "을지로3가역 1번 출구에서 128m",
     "emoji": "🥩",
-    "mapQuery": "너애하누 을지로"
+    "mapQuery": "너애하누 을지로",
+    "district": "을지로"
   },
   {
     "id": 515,
     "name": "한우공방 인사동",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.4,
     "note": "종각역 3번 출구에서 71m",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "인사"
   },
   {
     "id": 522,
     "name": "레스쁘아 뒤 이부",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "프렌치",
+    "genre": "프랑스",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.7,
-    "note": "오세트라 캐비아, 백옥돔 등 고급 재료를 활용",
-    "emoji": "🥂"
+    "note": "압구정로데오역 3번 출구에서 423m",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 527,
-    "name": "양인환대",
+    "name": "양인환대 신용산",
     "region": "용산",
     "area": "용산·이태원",
     "genre": "양갈비",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.8,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🥩"
-  },
-  {
-    "id": 530,
-    "name": "진대감 논현본점",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "한우삼합",
-    "room": "✅ 확인",
-    "score": 89,
-    "rating": 4.5,
-    "note": "룸·홀혼재·직원구이·차돌삼합·볶음밥",
+    "note": "신용산역 1번 출구에서 138m",
     "emoji": "🥩",
-    "district": "논현"
+    "district": "한강로"
   },
   {
     "id": 535,
-    "name": "모도우 여의도",
+    "name": "모도우 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 84,
     "rating": 4.4,
-    "note": "여의도개별룸Top2",
+    "note": "여의도역 3번 출구에서 163m, 여의도파이낸스타워 4층",
     "emoji": "🥩",
     "district": "여의도"
   },
@@ -1535,7 +1594,7 @@
     "name": "해담채 대치점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한정식",
+    "genre": "해산물",
     "room": "✅ 확인",
     "score": 89,
     "rating": 3.8,
@@ -1552,19 +1611,20 @@
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.4,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🥂"
+    "note": "합정역 9번 출구에서 330m",
+    "emoji": "🥂",
+    "district": "서교"
   },
   {
     "id": 557,
-    "name": "덕승재 상암",
+    "name": "덕승재 상암본점",
     "region": "마포",
     "area": "마포·홍대",
     "genre": "한정식",
     "room": "✅ 확인",
     "score": 89,
     "rating": 3.7,
-    "note": "상암 개별룸 Top1",
+    "note": "DMC이안오피스텔 2단지 221호",
     "emoji": "🏮",
     "district": "상암"
   },
@@ -1577,7 +1637,7 @@
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.2,
-    "note": "방배 한정식·룸",
+    "note": "사당역 14번 출구에서 186m",
     "emoji": "🏮",
     "district": "방배"
   },
@@ -1586,13 +1646,13 @@
     "name": "리샨 삼성타운점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식코스",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.3,
-    "note": "룸코스5만원/인·삼성전자서초사옥B1",
+    "note": "강남역 8번 출구에서 102m, 삼성전자 서초사옥 지하1층",
     "emoji": "🍣",
-    "district": "삼성"
+    "district": "서초"
   },
   {
     "id": 609,
@@ -1603,7 +1663,7 @@
     "room": "✅ 확인",
     "score": 84,
     "rating": 4,
-    "note": "프라이빗룸",
+    "note": "중소기업중앙회 1층",
     "emoji": "🦐",
     "district": "여의도"
   },
@@ -1618,7 +1678,7 @@
     "rating": 4.3,
     "note": "광화문역 1번 출구에서 118m, 센터포인트광화문 2층",
     "emoji": "🥢",
-    "district": "광화문"
+    "district": "도렴"
   },
   {
     "id": 621,
@@ -1631,14 +1691,14 @@
     "rating": 4.4,
     "note": "광화문역 1번 출구에서 118m, 센터포인트광화문 2층",
     "emoji": "🥂",
-    "district": "광화문"
+    "district": "도렴"
   },
   {
     "id": 636,
     "name": "청담백송",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "짝갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.6,
@@ -1649,90 +1709,80 @@
   },
   {
     "id": 637,
-    "name": "쥬에 한남",
+    "name": "쥬에",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "중식딤섬",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 84,
     "rating": 4.7,
-    "note": "4인이상 룸 예약·딤섬+북경오리",
+    "note": "용산구 한남동 3-1",
     "emoji": "🥢",
-    "district": "한남"
+    "district": "한남",
+    "mapQuery": "쥬에 한남"
   },
   {
     "id": 644,
     "name": "스시산원 궁 광화문",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 89,
     "rating": 4.5,
     "note": "케이트윈타워 지하 1층",
     "emoji": "🍣",
-    "district": "광화문"
-  },
-  {
-    "id": 647,
-    "name": "민소한우 여의도",
-    "region": "영등포",
-    "area": "여의도",
-    "genre": "한우",
-    "room": "✅ 확인",
-    "score": 89,
-    "rating": 4.7,
-    "note": "여의도한우성지·예약필수·2개지점",
-    "emoji": "🥩",
-    "district": "여의도"
+    "district": "중학"
   },
   {
     "id": 649,
     "name": "가겐 by 최준호",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "모던 가이세키",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 83,
     "rating": 5,
-    "note": "2026 신규 리본3개·모던 가이세키",
-    "emoji": "🍽️"
+    "note": "강남구 청담동 97-18",
+    "emoji": "🍽️",
+    "district": "청담"
   },
   {
     "id": 656,
     "name": "모도우 광화문점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.1,
     "note": "트윈트리타워 B동 M층",
     "emoji": "🥩",
-    "district": "광화문"
+    "district": "중학"
   },
   {
     "id": 659,
     "name": "소뭉집 본점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우생고기",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
     "note": "뭉티기, 소곱창전골, 소갈비찜, 육회",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "역삼"
   },
   {
     "id": 672,
-    "name": "스시유 여의도",
+    "name": "스시유 여의도점",
     "region": "영등포",
     "area": "여의도",
     "genre": "일식",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.3,
-    "note": "전석 룸형태",
+    "note": "여의나루역 4번 출구에서 392m, 브라이튼 2층",
     "emoji": "🎌",
     "district": "여의도"
   },
@@ -1746,31 +1796,35 @@
     "score": 95,
     "rating": 4.2,
     "note": "광화문역 5번 출구에서 155m",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "무교"
   },
   {
     "id": 699,
     "name": "정육도",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "돼지갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.1,
-    "note": "합정 개별룸 Top3",
-    "emoji": "🥩"
+    "note": "합정역 5번 출구에서 91m",
+    "emoji": "🥩",
+    "district": "합정",
+    "mapQuery": "정육도 합정"
   },
   {
     "id": 701,
     "name": "경천애인2237 삼성본점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.5,
     "note": "주류판매 없음 콜키지 프리",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "삼성"
   },
   {
     "id": 704,
@@ -1782,18 +1836,19 @@
     "score": 88,
     "rating": 4.9,
     "note": "서울신라호텔 2층",
-    "emoji": "🎌"
+    "emoji": "🎌",
+    "district": "장충"
   },
   {
     "id": 726,
     "name": "서울로인 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.3,
-    "note": "여의도 한우·룸",
+    "note": "여의도역 5번 출구에서 101m, 한국교직원공제회관 지하1층",
     "emoji": "🥩",
     "district": "여의도"
   },
@@ -1807,19 +1862,21 @@
     "score": 88,
     "rating": 4.2,
     "note": "대치역 8번 출구에서 34m, 양고기 전문점",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "대치"
   },
   {
     "id": 751,
-    "name": "대가방",
+    "name": "대가방 본점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "중식·탕수육",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
-    "note": "논현·중식·접대용룸",
-    "emoji": "🥢"
+    "note": "선정릉역 1번 출구에서 23m",
+    "emoji": "🥢",
+    "district": "논현"
   },
   {
     "id": 755,
@@ -1831,43 +1888,47 @@
     "score": 83,
     "rating": 4.4,
     "note": "서울신라호텔 2층",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "장충"
   },
   {
     "id": 758,
     "name": "당스",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "프렌치브런치",
+    "genre": "프렌치",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.8,
-    "note": "nan",
-    "emoji": "🥂"
+    "note": "용산구 한강로3가 40-361",
+    "emoji": "🥂",
+    "district": "한강로",
+    "mapQuery": "당스 용산"
   },
   {
     "id": 759,
     "name": "아베크 청담",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "이탈리안",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.9,
-    "note": "파인다이닝",
+    "note": "압구정로데오역 5번 출구에서 138m, 한양타운빌딩 1층",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "신사",
+    "mapQuery": "아베크 청담 양식"
   },
   {
     "id": 761,
     "name": "은성회관 여의도",
     "region": "영등포",
     "area": "여의도",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.5,
-    "note": "한동안침체후명가약진·건물리뉴얼",
+    "note": "샛강역 2번 출구에서 297m",
     "emoji": "🥩",
     "district": "여의도"
   },
@@ -1876,24 +1937,26 @@
     "name": "하이디라오 COEX점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "훠궈",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
     "note": "오크우드몰 지하2층, 중국 훠궈 1위 브랜드",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "삼성"
   },
   {
     "id": 769,
     "name": "하이디라오 대학로점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "훠궈",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
     "note": "혜화역 1번 출구에서 134m",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "혜화"
   },
   {
     "id": 773,
@@ -1904,20 +1967,20 @@
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.5,
-    "note": "멀티룸",
+    "note": "삼각지역 8번 출구에서 108m",
     "emoji": "🥢",
-    "district": "용산"
+    "district": "한강로"
   },
   {
     "id": 779,
     "name": "하이디라오 서초점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "훠궈",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.4,
-    "note": "서초·개별룸",
+    "note": "신논현역 7번 출구에서 66m",
     "emoji": "🥢",
     "district": "서초"
   },
@@ -1926,36 +1989,37 @@
     "name": "대도식당 강남대로점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.4,
-    "note": "서울한우Top2",
-    "emoji": "🥩"
+    "note": "신사역 4번 출구에서 130m, 멀버리힐스 지하3층",
+    "emoji": "🥩",
+    "district": "잠원"
   },
   {
     "id": 785,
     "name": "하이디라오 홍대점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "훠궈",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.4,
-    "note": "홍대·개별룸",
+    "note": "홍대입구역 8번 출구에서 80m, 와이즈파크 5층",
     "emoji": "🥢",
-    "district": "홍대"
+    "district": "동교"
   },
   {
     "id": 786,
     "name": "하이디라오 영등포점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "훠궈",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.4,
-    "note": "영등포·개별룸",
+    "note": "영등포역 5번 출구에서 200m",
     "emoji": "🥢",
     "district": "영등포"
   },
@@ -1964,36 +2028,39 @@
     "name": "서경한우프라자 예술의전당점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.2,
-    "note": "방배 한우·룸",
-    "emoji": "🥩"
+    "note": "서초구 방배동 1006-2",
+    "emoji": "🥩",
+    "district": "방배"
   },
   {
     "id": 816,
     "name": "목탄장 The Black",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.3,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🥩"
+    "note": "압구정로데오역 5번 출구에서 316m",
+    "emoji": "🥩",
+    "district": "신사"
   },
   {
     "id": 825,
     "name": "선수촌가든 올림픽공원본점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 82,
     "rating": 4.4,
-    "note": "룸·위례 대표",
-    "emoji": "🥩"
+    "note": "방이역 1번 출구에서 167m",
+    "emoji": "🥩",
+    "district": "오금"
   },
   {
     "id": 846,
@@ -2004,7 +2071,7 @@
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.5,
-    "note": "10인이상 룸·콜키지1병·발렛5천원",
+    "note": "신사역 8번 출구에서 113m",
     "emoji": "🍽️",
     "district": "신사"
   },
@@ -2019,43 +2086,46 @@
     "rating": 4.4,
     "note": "빗썸금융타워 지하 1층",
     "emoji": "🥂",
-    "mapQuery": "마노디셰프 강남"
+    "mapQuery": "마노디셰프 강남",
+    "district": "역삼"
   },
   {
     "id": 869,
     "name": "도산회관",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우숯불",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.8,
-    "note": "50만원 이상 룸",
+    "note": "강남구 신사동 651-6",
     "emoji": "🥩",
-    "district": "도산"
+    "district": "신사",
+    "mapQuery": "도산회관 신사"
   },
   {
     "id": 870,
     "name": "라미띠에",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "미슐랭프렌치",
+    "genre": "프랑스",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.5,
-    "note": "미슐랭1스타",
-    "emoji": "🥂"
+    "note": "압구정로데오역 3번 출구에서 398m",
+    "emoji": "🥂",
+    "district": "청담"
   },
   {
     "id": 877,
-    "name": "테헤란로 배나무골오리집 양재본점",
+    "name": "배나무골오리집 양재본점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "오리고기",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.5,
-    "note": "강남 개별룸 Top2",
+    "note": "양재시민의숲역 2번 출구에서 299m",
     "emoji": "🍽️",
     "district": "양재"
   },
@@ -2070,21 +2140,21 @@
     "rating": 4.6,
     "note": "D타워 리플레이스 광화문 5층",
     "emoji": "🍽️",
-    "district": "광화문"
+    "district": "청진"
   },
   {
     "id": 883,
     "name": "흑우정 압구정로데오점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "와규",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.8,
-    "note": "24시간·룸",
+    "note": "압구정로데오역 4번 출구에서 454m",
     "emoji": "🍽️",
     "mapQuery": "흑우정 청담",
-    "district": "압구정"
+    "district": "청담"
   },
   {
     "id": 893,
@@ -2096,32 +2166,34 @@
     "score": 87,
     "rating": 4.6,
     "note": "광화문역 8번 출구에서 145m",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "당주"
   },
   {
     "id": 894,
     "name": "사찰음식 전문점 발우공양",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "사찰음식",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.6,
     "note": "조계종에서 운영하고 있는 사찰음식 전문 레스토랑",
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "district": "견지"
   },
   {
     "id": 897,
-    "name": "강강술래 여의도점",
+    "name": "강강술래 당산점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "한우·갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.3,
-    "note": "여의도 가족모임·주말 고기추가이벤트",
+    "note": "선유도역 5번 출구에서 448m",
     "emoji": "🥩",
-    "district": "여의도"
+    "district": "양평"
   },
   {
     "id": 898,
@@ -2132,20 +2204,22 @@
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.4,
-    "note": "25년업력·170평홀+룸·조미료無",
-    "emoji": "🥢"
+    "note": "신촌역 1번 출구에서 243m, 거촌빌딩 지하 1층",
+    "emoji": "🥢",
+    "district": "창천"
   },
   {
     "id": 905,
     "name": "차슈밍",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "짜장면·중식",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.1,
     "note": "강남역 11번 출구에서 200m",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "역삼"
   },
   {
     "id": 906,
@@ -2156,7 +2230,7 @@
     "room": "✅ 확인",
     "score": 87,
     "rating": 4.1,
-    "note": "방이 중식·룸",
+    "note": "몽촌토성역 3번 출구에서 330m",
     "emoji": "🥢",
     "district": "방이"
   },
@@ -2165,12 +2239,13 @@
     "name": "아실라",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "양식퓨전",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.2,
     "note": "강남역 11번 출구에서 315m",
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "district": "역삼"
   },
   {
     "id": 917,
@@ -2181,7 +2256,7 @@
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.3,
-    "note": "단체룸",
+    "note": "방이역 4번 출구에서 196m",
     "emoji": "🍽️",
     "district": "방이"
   },
@@ -2194,9 +2269,10 @@
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.3,
-    "note": "nan",
+    "note": "용산역 1번 출구에서 100m, 아이파크몰 더 센터 패션파크 4층",
     "emoji": "🥂",
-    "mapQuery": "h'Garden999 신용산"
+    "mapQuery": "h'Garden999 신용산",
+    "district": "한강로"
   },
   {
     "id": 928,
@@ -2208,7 +2284,8 @@
     "score": 86,
     "rating": 4.4,
     "note": "종각역 3-1번 출구에서 232m, 아미드호텔 지하1층",
-    "emoji": "🎌"
+    "emoji": "🎌",
+    "district": "관훈"
   },
   {
     "id": 932,
@@ -2220,7 +2297,8 @@
     "score": 86,
     "rating": 4.6,
     "note": "역삼역 2번 출구에서 27m, 강남파이낸스센터 별관(후문) 1층",
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "district": "역삼"
   },
   {
     "id": 937,
@@ -2231,27 +2309,17 @@
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.3,
-    "note": "와인페어링",
-    "emoji": "🥂"
-  },
-  {
-    "id": 938,
-    "name": "페코리노",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "이탈리안",
-    "room": "✅ 확인",
-    "score": 86,
-    "rating": 4.4,
-    "note": "코지한분위기",
-    "emoji": "🥂"
+    "note": "강남구 청담동 117-12",
+    "emoji": "🥂",
+    "district": "청담",
+    "mapQuery": "페어링룸 청담"
   },
   {
     "id": 939,
     "name": "역삼뭉티골",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우코스",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.3,
@@ -2264,13 +2332,13 @@
     "name": "마노디셰프 잠실점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "파스타",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 81,
     "rating": 4.4,
-    "note": "송파 개별룸 Top3",
+    "note": "잠실역 7번 출구에서 182m, 잠실타워 730 지하1층",
     "emoji": "🍽️",
-    "district": "송파"
+    "district": "신천"
   },
   {
     "id": 943,
@@ -2281,19 +2349,20 @@
     "room": "✅ 확인",
     "score": 91,
     "rating": 4.3,
-    "note": "2층·루프탑",
-    "emoji": "🥂"
+    "note": "삼각지역 6번 출구에서 64m, 2층·루프탑",
+    "emoji": "🥂",
+    "district": "한강로"
   },
   {
     "id": 944,
-    "name": "무탄 여의도",
+    "name": "무탄 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "고급중식",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.9,
-    "note": "비즈니스 적합",
+    "note": "여의도역 1번 출구에서 51m, TP타워 2층",
     "emoji": "🥢",
     "district": "여의도"
   },
@@ -2306,8 +2375,10 @@
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.3,
-    "note": "아모레퍼시픽 2F",
-    "emoji": "🥂"
+    "note": "신용산역 2번 출구에서 84m, 아모레퍼시픽 2F",
+    "emoji": "🥂",
+    "district": "한강로",
+    "mapQuery": "쿠촐로 서울 용산"
   },
   {
     "id": 947,
@@ -2318,8 +2389,9 @@
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.6,
-    "note": "룸 5개(6~16인)·호텔직영·주차3시간·무한리필",
-    "emoji": "🍽️"
+    "note": "신사역 5번 출구에서 241m",
+    "emoji": "🍽️",
+    "district": "잠원"
   },
   {
     "id": 954,
@@ -2330,33 +2402,35 @@
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.4,
-    "note": "상암 중식·룸",
-    "emoji": "🥢"
+    "note": "홍대입구역 1번 출구에서 415m",
+    "emoji": "🥢",
+    "district": "동교"
   },
   {
     "id": 957,
     "name": "리샨 삼성타운",
     "region": "강남",
-    "area": "강남·삼성",
+    "area": "반포·서초",
     "genre": "중식",
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.3,
     "note": "강남역 8번 출구에서 102m, 삼성전자 서초사옥 지하1층",
     "emoji": "🥢",
-    "district": "삼성"
+    "district": "서초"
   },
   {
     "id": 958,
     "name": "우브리앙",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 86,
     "rating": 3,
     "note": "노보텔 앰배서더 강남 LL층",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "역삼"
   },
   {
     "id": 960,
@@ -2367,33 +2441,22 @@
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.3,
-    "note": "2층 전체 프라이빗",
+    "note": "압구정로데오역 4번 출구에서 389m",
     "emoji": "🏮",
     "district": "청담"
   },
   {
     "id": 964,
-    "name": "테이스팅룸",
+    "name": "테이스팅룸 IFC몰",
     "region": "영등포",
     "area": "여의도",
     "genre": "이탈리안",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.1,
-    "note": "IFC몰",
-    "emoji": "🥂"
-  },
-  {
-    "id": 978,
-    "name": "한우리 본점",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "한정식",
-    "room": "✅ 확인",
-    "score": 85,
-    "rating": 4.1,
-    "note": "논현동 한정식 전문",
-    "emoji": "🏮"
+    "note": "여의도역 3번 출구에서 424m",
+    "emoji": "🥂",
+    "district": "여의도"
   },
   {
     "id": 979,
@@ -2406,53 +2469,55 @@
     "rating": 4.5,
     "note": "광화문역 1번 출구에서 110m",
     "emoji": "🏮",
-    "district": "광화문",
+    "district": "내수",
     "mapQuery": "광화문 한옥집 내수동"
   },
   {
     "id": 980,
-    "name": "마루심 반포",
+    "name": "마루심 반포점",
     "region": "서초",
     "area": "서초·반포",
     "genre": "일식",
     "room": "✅ 확인",
     "score": 80,
     "rating": 4.5,
-    "note": "룸 있는 식당 베스트",
+    "note": "반포역 3번 출구에서 806m",
     "emoji": "🎌",
     "district": "반포"
   },
   {
     "id": 981,
-    "name": "몽중헌 잠실",
+    "name": "몽중헌 방이점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "딤섬",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 80,
     "rating": 4.1,
-    "note": "송파 개별룸 Top1",
+    "note": "몽촌토성역 2번 출구에서 80m, S타워 20, 21층",
     "emoji": "🍽️",
-    "district": "잠실"
+    "district": "방이"
   },
   {
     "id": 988,
     "name": "미 피아체",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "이탈리안",
+    "genre": "이탈리아",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.2,
-    "note": "파인다이닝",
-    "emoji": "🥂"
+    "note": "강남구 청담동 17-29",
+    "emoji": "🥂",
+    "district": "청담",
+    "mapQuery": "미 피아체 청담"
   },
   {
     "id": 989,
     "name": "곰바위 본점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이·양곱창",
+    "genre": "양대창",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.3,
@@ -2465,7 +2530,7 @@
     "name": "해화옥 신논현 직영점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "전골·한식",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.4,
@@ -2478,7 +2543,7 @@
     "name": "청담제주물항 도곡점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "횟집",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4,
@@ -2491,35 +2556,37 @@
     "name": "포포인츠 강남 에볼루션",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "올데이다이닝",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.3,
     "note": "포포인츠 바이 쉐라톤 서울 강남 3층",
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "district": "신사"
   },
   {
     "id": 1011,
     "name": "안다즈 서울 조각보",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한식퓨전",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 84,
     "rating": 4.5,
-    "note": "안다즈5성급·3개다이닝공간",
-    "emoji": "🏮"
+    "note": "압구정역 3번 출구에서 81m, 안다즈 서울 강남 2층",
+    "emoji": "🏮",
+    "district": "신사"
   },
   {
     "id": 1018,
     "name": "소와나 한남본점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "한우오마카세",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 84,
     "rating": 4.4,
-    "note": "투뿔한우오마카세코스·한남본점·룸",
+    "note": "용산구 한남동 684-16",
     "emoji": "🎌",
     "district": "한남"
   },
@@ -2528,13 +2595,13 @@
     "name": "양인환대 홍대점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "고깃집",
+    "genre": "양갈비",
     "room": "✅ 확인",
     "score": 84,
     "rating": 4.1,
-    "note": "홍대 단체룸",
+    "note": "홍대입구역 9번 출구에서 369m",
     "emoji": "🍽️",
-    "district": "홍대"
+    "district": "서교"
   },
   {
     "id": 1027,
@@ -2545,21 +2612,9 @@
     "room": "✅ 확인",
     "score": 84,
     "rating": 4.4,
-    "note": "룸 있는 식당",
-    "emoji": "🎌"
-  },
-  {
-    "id": 1029,
-    "name": "청담이상 대흥점",
-    "region": "마포",
-    "area": "마포·홍대",
-    "genre": "이자카야",
-    "room": "✅ 확인",
-    "score": 84,
-    "rating": 4.2,
-    "note": "대흥역 이자카야·룸",
-    "emoji": "🍽️",
-    "district": "청담"
+    "note": "학동역 8번 출구에서 182m",
+    "emoji": "🎌",
+    "district": "논현"
   },
   {
     "id": 1040,
@@ -2570,43 +2625,47 @@
     "room": "✅ 확인",
     "score": 84,
     "rating": 4.3,
-    "note": "룸 있는 식당 베스트",
-    "emoji": "🏮"
+    "note": "신사역 1번 출구에서 284m",
+    "emoji": "🏮",
+    "district": "논현",
+    "mapQuery": "김수사 논현"
   },
   {
     "id": 1044,
     "name": "계향각",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한식",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 84,
     "rating": 4.4,
     "note": "국내 유일의 수원식단요리 전문점",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "동숭"
   },
   {
     "id": 1053,
     "name": "예천한우정육타운",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.1,
     "note": "삼성중앙역 6번 출구에서 289m",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "삼성"
   },
   {
     "id": 1056,
     "name": "해봉정육 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.2,
-    "note": "여의도한우",
+    "note": "여의도역 3번 출구에서 88m",
     "emoji": "🥩",
     "district": "여의도"
   },
@@ -2615,12 +2674,13 @@
     "name": "백억하누 선릉점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.1,
     "note": "상록회관건물 로비층",
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "district": "역삼"
   },
   {
     "id": 1063,
@@ -2633,18 +2693,18 @@
     "rating": 3.7,
     "note": "광화문역 8번 출구에서 192m, 세종문화회관 지하 1층",
     "emoji": "🏮",
-    "district": "광화문"
+    "district": "세종로"
   },
   {
     "id": 1067,
-    "name": "고방채 서여의도",
+    "name": "고방채 서여의도 KBS 3호점",
     "region": "영등포",
     "area": "여의도",
     "genre": "한식",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.8,
-    "note": "KBS3호점",
+    "note": "국회의사당역 4번 출구에서 200m, 한국교육시설안전원 1층",
     "emoji": "🏮",
     "district": "여의도"
   },
@@ -2657,7 +2717,7 @@
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.5,
-    "note": "단체룸",
+    "note": "여의도역 3번 출구에서 163m, 여의도파이낸스타워 4층",
     "emoji": "🏮",
     "district": "여의도"
   },
@@ -2666,12 +2726,13 @@
     "name": "익스퀴진",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "웨스턴",
+    "genre": "양식",
     "room": "✅ 확인",
     "score": 82,
     "rating": 4.5,
-    "note": "미슐랭1스타",
-    "emoji": "🍽️"
+    "note": "청담역 9번 출구에서 245m",
+    "emoji": "🍽️",
+    "district": "논현"
   },
   {
     "id": 1085,
@@ -2682,20 +2743,24 @@
     "room": "✅ 확인",
     "score": 82,
     "rating": 4.6,
-    "note": "nan",
-    "emoji": "🍽️"
+    "note": "압구정로데오역 4번 출구에서 255m",
+    "emoji": "🍽️",
+    "district": "청담",
+    "mapQuery": "스시스미레 청담"
   },
   {
     "id": 1088,
     "name": "산다이",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "가이세키",
+    "genre": "일식",
     "room": "✅ 확인",
     "score": 82,
     "rating": 4.6,
-    "note": "하루1회 저녁 가이세키",
-    "emoji": "🍽️"
+    "note": "강남구 청담동 20-2",
+    "emoji": "🍽️",
+    "district": "청담",
+    "mapQuery": "산다이 청담"
   },
   {
     "id": 1091,
@@ -2706,54 +2771,42 @@
     "room": "✅ 확인",
     "score": 82,
     "rating": 4.2,
-    "note": "IFC몰",
+    "note": "여의도역 3번 출구에서 515m, IFC몰 L3층",
     "emoji": "🥢",
     "district": "여의도"
-  },
-  {
-    "id": 1094,
-    "name": "청담해정",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "한식",
-    "room": "✅ 확인",
-    "score": 81,
-    "rating": 4.4,
-    "note": "1층 커튼룸, 최소이용금액 30만원",
-    "emoji": "🏮",
-    "district": "청담"
   },
   {
     "id": 1098,
     "name": "팀호완 용산점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "딤섬",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 80,
     "rating": 4,
-    "note": "아이파크몰1F",
+    "note": "용산역 1번 출구에서 204m, 아이파크몰1F",
     "emoji": "🍽️",
-    "district": "용산"
+    "district": "한강로"
   },
   {
     "id": 1101,
     "name": "해담채 시청점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한정식",
+    "genre": "한삭",
     "room": "✅ 확인",
     "score": 84,
     "rating": 4,
     "note": "HSBC빌딩 지하1층",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "봉래"
   },
   {
     "id": 1102,
     "name": "해담채 삼성점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한정식",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 84,
     "rating": 4,
@@ -2770,74 +2823,62 @@
     "room": "✅ 확인",
     "score": 89,
     "rating": 4,
-    "note": "서초·남부터미널·개별룸",
-    "emoji": "🏮"
+    "note": "남부터미널역 6번 출구에서 191m",
+    "emoji": "🏮",
+    "district": "서초"
   },
   {
     "id": 1106,
-    "name": "마루심 마포",
+    "name": "마루심 마포점",
     "region": "마포",
     "area": "마포·홍대",
     "genre": "일식",
     "room": "✅ 확인",
     "score": 79,
     "rating": 4.4,
-    "note": "히츠마부시 전문·마포역",
+    "note": "서울 마포구 용강동 51-3",
     "emoji": "🎌",
     "mapQuery": "마루심 마포점",
-    "district": "마포"
+    "district": "용강"
   },
   {
     "id": 1108,
     "name": "마루심 강남점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "일식",
+    "genre": "장어구이",
     "room": "✅ 확인",
     "score": 80,
     "rating": 4.5,
     "note": "히츠마부시 전문·강남·룸",
     "emoji": "🎌",
-    "mapQuery": "마루심 강남점"
-  },
-  {
-    "id": 1109,
-    "name": "스시소라 청담",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "스시오마카세",
-    "room": "✅ 확인",
-    "score": 85,
-    "rating": 4.8,
-    "note": "청담 스시오마카세",
-    "emoji": "🍣",
-    "mapQuery": "스시소라 청담점",
-    "district": "청담"
+    "mapQuery": "마루심 강남점",
+    "district": "역삼"
   },
   {
     "id": 1110,
     "name": "스시소라 광화문점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 86,
     "rating": 4.8,
     "note": "르메이에르 지하1층",
     "emoji": "🍣",
     "mapQuery": "스시소라 광화문점",
-    "district": "광화문"
+    "district": "종로"
   },
   {
     "id": 1111,
-    "name": "스시소라 마포",
+    "name": "스시소라 마포점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.8,
-    "note": "마포 스시오마카세·룸",
+    "note": "마포역 3번 출구에서 288m, 마포아크로타워 지하1층",
     "emoji": "🍣",
     "mapQuery": "스시소라 마포점",
     "district": "마포"
@@ -2847,7 +2888,7 @@
     "name": "스시소라 대치점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "스시오마카세",
+    "genre": "스시",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.8,
@@ -2861,44 +2902,46 @@
     "name": "하이디라오 명동점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "훠궈",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 83,
     "rating": 4.4,
     "note": "을지로입구역 6번 출구에서 103m",
     "emoji": "🥢",
-    "district": "명동"
+    "district": "을지로"
   },
   {
     "id": 1119,
     "name": "동화고옥 서울역점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한식코스",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 95,
     "rating": 4.8,
     "note": "서울역 9번 출구에서 55m, 서울스퀘어 지하 1층",
-    "emoji": "🍣"
+    "emoji": "🍣",
+    "district": "남대문로"
   },
   {
     "id": 1120,
     "name": "동화고옥 선릉점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한식코스",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.8,
     "note": "선릉역 6번 출구에서 4m, 화남빌딩 14층",
-    "emoji": "🍣"
+    "emoji": "🍣",
+    "district": "역삼"
   },
   {
     "id": 1121,
     "name": "동화고옥 을지로점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한식코스",
+    "genre": "한식",
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.8,
@@ -2908,14 +2951,14 @@
   },
   {
     "id": 1122,
-    "name": "경복궁 블랙 잠원",
+    "name": "경복궁 블랙 잠원점",
     "region": "서초",
     "area": "서초·반포",
     "genre": "한정식",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.7,
-    "note": "잠원·개별룸",
+    "note": "반포역 5번 출구에서 289m, 파스텔프라자 1층",
     "emoji": "🏮",
     "district": "잠원"
   },
@@ -2924,19 +2967,20 @@
     "name": "경복궁 블랙 오크우드",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한정식",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 93,
     "rating": 4.7,
     "note": "오크우드프리미어 호텔 1층",
-    "emoji": "🏮"
+    "emoji": "🏮",
+    "district": "삼성"
   },
   {
     "id": 1128,
     "name": "벽제갈비 타워팰리스점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우다이닝",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.8,
@@ -2946,40 +2990,42 @@
   },
   {
     "id": 1129,
-    "name": "벽제갈비 방이",
+    "name": "벽제갈비 방이점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "한우다이닝",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.8,
-    "note": "방이·룸",
+    "note": "방이역 4번 출구에서 175m",
     "emoji": "🥩",
     "district": "방이"
   },
   {
     "id": 1130,
-    "name": "벽제갈비 신촌",
+    "name": "벽제갈비 신촌점",
     "region": "서대문",
     "area": "마포·홍대",
-    "genre": "한우다이닝",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 88,
     "rating": 4.8,
-    "note": "신촌·룸",
-    "emoji": "🥩"
+    "note": "신촌역 3번 출구에서 305m",
+    "emoji": "🥩",
+    "district": "창천"
   },
   {
     "id": 1131,
     "name": "웨스틴 조선 서울 홍연",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "중식파인",
+    "genre": "중식",
     "room": "✅ 확인",
     "score": 92,
     "rating": 4.6,
     "note": "웨스틴 조선 서울 저층 로비",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "소공"
   },
   {
     "id": 900,
@@ -2991,7 +3037,8 @@
     "score": 87,
     "rating": 4.3,
     "note": "삼일 빌딩 2층",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "관철"
   },
   {
     "id": 1132,
@@ -3003,7 +3050,8 @@
     "score": 88,
     "rating": 4.2,
     "note": "오크우드프리미어 호텔 3층",
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "district": "삼성"
   },
   {
     "id": 1133,
@@ -3019,29 +3067,17 @@
     "district": "삼성"
   },
   {
-    "id": 1134,
-    "name": "몽중헌 방이점",
-    "region": "송파",
-    "area": "잠실·성수",
-    "genre": "중식",
-    "room": "✅ 확인",
-    "score": 85,
-    "rating": 4.3,
-    "note": "방이 중식·룸",
-    "emoji": "🥢",
-    "district": "방이"
-  },
-  {
     "id": 1136,
     "name": "몽중헌 강남점",
     "region": "강남",
-    "area": "강남·삼성",
+    "area": "반포·서초",
     "genre": "중식",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.3,
     "note": "릿타워 지하 1층",
-    "emoji": "🥢"
+    "emoji": "🥢",
+    "district": "서초"
   },
   {
     "id": 1137,
@@ -3052,9 +3088,9 @@
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.3,
-    "note": "공덕 중식·룸",
+    "note": "공덕역 9번 출구에서 15m, 효성 해링턴스퀘어 A동 2F",
     "emoji": "🥢",
-    "district": "공덕"
+    "district": "도화"
   },
   {
     "id": 1138,
@@ -3065,7 +3101,7 @@
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.3,
-    "note": "문정 중식·룸",
+    "note": "문정역 2번 출구에서 163m",
     "emoji": "🥢",
     "district": "문정"
   },
@@ -3091,20 +3127,20 @@
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.3,
-    "note": "청담 중식·룸",
+    "note": "강남구 청담동 97",
     "emoji": "🥢",
     "district": "청담"
   },
   {
     "id": 1141,
-    "name": "몽중헌 반포",
+    "name": "몽중헌 반포점",
     "region": "서초",
     "area": "서초·반포",
     "genre": "중식",
     "room": "✅ 확인",
     "score": 85,
     "rating": 4.3,
-    "note": "반포 중식·룸",
+    "note": "반포역 3번 출구에서 525m",
     "emoji": "🥢",
     "district": "반포"
   },
@@ -3113,12 +3149,13 @@
     "name": "서울로인 서울숲점",
     "region": "성동",
     "area": "잠실·성수",
-    "genre": "한우",
-    "note": "갤러리아포레상가 2층",
+    "genre": "고기구이",
+    "note": "서울숲역 4번 출구에서 173m, 갤러리아포레상가 2층",
     "emoji": "🥩",
     "score": 86,
     "rating": "4.4",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "성수"
   },
   {
     "id": 1143,
@@ -3131,7 +3168,8 @@
     "score": 86,
     "rating": 4.3,
     "room": "✅ 확인",
-    "mapQuery": "친니 중식당"
+    "mapQuery": "친니 중식당",
+    "district": "세종로"
   },
   {
     "id": 1144,
@@ -3139,23 +3177,12 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "일식",
-    "note": "정통 히츠마부시와 한우스테이크덮밥",
+    "note": "교대역 4번 출구에서 157m",
     "emoji": "🎌",
     "score": 84,
     "rating": "4.3",
-    "room": "✅ 확인"
-  },
-  {
-    "id": 1145,
-    "name": "유유서울",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "양식",
-    "note": "와인전문 레스토랑&와인샵",
-    "emoji": "🍽️",
-    "score": 85,
-    "rating": "4.3",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1146,
@@ -3168,7 +3195,8 @@
     "score": 89,
     "rating": 4.4,
     "room": "✅ 확인",
-    "mapQuery": "포도나무 한정식 경복궁"
+    "mapQuery": "포도나무 한정식 경복궁",
+    "district": "내자"
   },
   {
     "id": 1147,
@@ -3176,11 +3204,12 @@
     "region": "용산",
     "area": "용산·이태원",
     "genre": "이탈리안",
-    "note": "녹사평역 근처에 위치한 분위기 좋은 이탈리안 다이닝",
+    "note": "녹사평역 1번 출구에서 185m",
     "emoji": "🥂",
     "score": 88,
     "rating": "4.5",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "이태원"
   },
   {
     "id": 1148,
@@ -3193,7 +3222,8 @@
     "score": 89,
     "rating": 4.4,
     "room": "✅ 확인",
-    "mapQuery": "송학 한정식 광화문"
+    "mapQuery": "송학 한정식 광화문",
+    "district": "서린"
   },
   {
     "id": 1149,
@@ -3201,24 +3231,26 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "일식",
-    "note": "서울 3대 장어덮밥 맛집",
+    "note": "서초구 서초동 1343-7",
     "emoji": "🎌",
     "score": 84,
     "rating": "4.3",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1150,
-    "name": "다원 여의도",
+    "name": "다원",
     "region": "영등포",
     "area": "여의도",
     "genre": "한정식",
-    "note": "국회앞 한정식 맛집",
+    "note": "국회의사당역 3번 출구에서 42m",
     "emoji": "🏮",
     "score": 89,
     "rating": "4.4",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "mapQuery": "다원 여의도 한식"
   },
   {
     "id": 1151,
@@ -3231,7 +3263,8 @@
     "score": 89,
     "rating": 4.4,
     "room": "✅ 확인",
-    "mapQuery": "한정식 미향 내자동"
+    "mapQuery": "한정식 미향 내자동",
+    "district": "내자"
   },
   {
     "id": 1152,
@@ -3244,31 +3277,33 @@
     "score": 89,
     "rating": 4.4,
     "room": "✅ 확인",
-    "mapQuery": "중원한정식 광화문"
+    "mapQuery": "중원한정식 광화문",
+    "district": "내자"
   },
   {
     "id": 1153,
     "name": "서래미소 본점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "한우",
-    "note": "친절함과 편안함이 있는 프라이빗 룸",
+    "genre": "고기구이",
+    "note": "서초구 반포동 92-12",
     "emoji": "🥩",
     "score": 86,
     "rating": "4.4",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "반포"
   },
   {
     "id": 1154,
     "name": "서래미소 광화문점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "note": "경복궁역 3번 출구에서 80m",
     "emoji": "🥩",
     "score": 86,
     "rating": 4.4,
-    "district": "광화문",
+    "district": "통의",
     "room": "✅ 확인"
   },
   {
@@ -3277,11 +3312,12 @@
     "region": "용산",
     "area": "용산·이태원",
     "genre": "일식",
-    "note": "흑백요리사의 특별한 닭꼬치",
+    "note": "서울역 10번 출구에서 329m",
     "emoji": "🎌",
     "score": 84,
     "rating": "4.3",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "동자"
   },
   {
     "id": 1156,
@@ -3289,23 +3325,25 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "중식",
-    "note": "중식 대가의 수타면과 수제딤섬을 즐길 수 있는 모던 중식 레스토랑",
+    "note": "교대역 14번 출구에서 107m",
     "emoji": "🥢",
     "score": 86,
     "rating": "4.3",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1157,
     "name": "램하우스 교대역점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "양고기구이",
-    "note": "블루리본 Pick 양고기 전문점",
+    "genre": "양고기",
+    "note": "교대역 10번 출구에서 143m",
     "emoji": "🥩",
     "score": 84,
     "rating": "4.3",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1158,
@@ -3313,7 +3351,7 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "일식",
-    "note": "사모님 정식으로 맛보는 알찬 구성",
+    "note": "서초역 8번 출구에서 238m",
     "emoji": "🎌",
     "score": 84,
     "rating": "4.3",
@@ -3325,8 +3363,8 @@
     "name": "육회관블랙 신사점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "요리주점",
-    "note": "포차 / 전 / 탕 등등 다양한 안주거리",
+    "genre": "한식",
+    "note": "신사역 8번 출구에서 314m",
     "emoji": "🍽️",
     "score": 82,
     "rating": "4.2",
@@ -3338,12 +3376,12 @@
     "name": "육회관블랙 신용산점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "요리주점",
-    "note": "포차 / 전 / 탕 등등 다양한 안주거리",
+    "genre": "한식",
+    "note": "신용산역 1번 출구에서 156m",
     "emoji": "🍽️",
     "score": 82,
     "rating": "4.2",
-    "district": "용산",
+    "district": "한강로",
     "room": "✅ 확인"
   },
   {
@@ -3351,8 +3389,8 @@
     "name": "영천영화 청담점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우",
-    "note": "된장찌개와 어우러진 육회비빔밥",
+    "genre": "고기구이",
+    "note": "강남구 청담동 50-13",
     "emoji": "🥩",
     "score": 86,
     "rating": "4.4",
@@ -3364,12 +3402,14 @@
     "name": "우정",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우",
-    "note": "메밀면사리 곁들인 담백한 불고기",
+    "genre": "고기구이",
+    "note": "압구정로데오역 4번 출구에서 215m",
     "emoji": "🥩",
     "score": 86,
     "rating": "4.4",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청담",
+    "mapQuery": "우정 고기구이 청담"
   },
   {
     "id": 1163,
@@ -3381,7 +3421,7 @@
     "emoji": "🏮",
     "score": 89,
     "rating": 4.4,
-    "district": "을지로",
+    "district": "수하",
     "room": "✅ 확인"
   },
   {
@@ -3394,7 +3434,7 @@
     "emoji": "🏮",
     "score": 89,
     "rating": 4.4,
-    "district": "광화문",
+    "district": "중학",
     "room": "✅ 확인"
   },
   {
@@ -3403,7 +3443,7 @@
     "region": "영등포",
     "area": "여의도",
     "genre": "한정식",
-    "note": "타임스퀘어",
+    "note": "영등포역 6번 출구에서 401m, 타임스퀘어",
     "emoji": "🏮",
     "score": 89,
     "rating": "4.4",
@@ -3416,31 +3456,34 @@
     "region": "강남",
     "area": "청담·신사",
     "genre": "양식",
-    "note": "장작과 숯을 활용하여 다양한 양식을 선보이는 모던 다이닝 ",
+    "note": "학동역 7번 출구에서 371m",
     "emoji": "🍽️",
     "score": 85,
     "rating": "4.3",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "논현",
+    "mapQuery": "이닛 논현"
   },
   {
     "id": 1169,
     "name": "돝고기 506",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "돼지고기구이",
+    "genre": "고기구이",
     "note": "역삼역 4번 출구에서 17m",
     "emoji": "🥩",
     "score": 82,
     "rating": 4.2,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1170,
     "name": "돈블랑 청담스퀘어점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "돼지고기구이",
-    "note": "콜키지 프리 서비스",
+    "genre": "고기구이",
+    "note": "청담스퀘어 B동 4층",
     "emoji": "🥩",
     "score": 82,
     "rating": "4.2",
@@ -3452,101 +3495,110 @@
     "name": "돈블랑 석촌호수점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "돼지고기구이",
+    "genre": "고기구이",
     "emoji": "🥩",
     "score": 82,
     "rating": "4.2",
-    "district": "석촌",
-    "room": "✅ 확인"
+    "district": "송파",
+    "room": "✅ 확인",
+    "note": "송파나루역 1번 출구에서 449m"
   },
   {
     "id": 1172,
     "name": "돈블랑 송파문정역점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "돼지고기구이",
+    "genre": "고기구이",
     "emoji": "🥩",
     "score": 82,
     "rating": "4.2",
-    "district": "송파",
-    "room": "✅ 확인"
+    "district": "문정",
+    "room": "✅ 확인",
+    "note": "문정역 4번 출구에서 141m, 송파테라타워2 B동 1층"
   },
   {
     "id": 1173,
     "name": "돈블랑 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "돼지고기구이",
+    "genre": "고기구이",
     "emoji": "🥩",
     "score": 82,
     "rating": "4.2",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "샛강역 2번 출구에서 353m"
   },
   {
     "id": 1176,
     "name": "한와담블랙 강남",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우",
+    "genre": "고기구이",
     "note": "빗썸금융타워 지하2층",
     "emoji": "🥩",
     "score": 86,
     "rating": 4.4,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1177,
     "name": "한와담 한남본점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "한우",
+    "genre": "고기구이",
     "emoji": "🥩",
     "score": 86,
     "rating": "4.4",
     "district": "한남",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "용산구 한남동 75-1"
   },
   {
     "id": 1178,
     "name": "한와담 가든",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "emoji": "🥩",
     "score": 86,
     "rating": 4.4,
     "room": "✅ 확인",
-    "note": "동대입구역 3번 출구에서 123m"
+    "note": "동대입구역 3번 출구에서 123m",
+    "district": "장충"
   },
   {
     "id": 1179,
     "name": "한와담스테이션 서울역점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "한우",
+    "genre": "고기구이",
     "emoji": "🥩",
     "score": 86,
     "rating": "4.4",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "동자",
+    "note": "서울역 2번 출구에서 77m"
   },
   {
     "id": 1180,
     "name": "한와담블랙 센트로폴리스점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "emoji": "🥩",
     "score": 86,
     "rating": 4.4,
     "room": "✅ 확인",
-    "note": "종각역 3-1번 출구에서 91m, 센트로폴리스 A동 2층"
+    "note": "종각역 3-1번 출구에서 91m, 센트로폴리스 A동 2층",
+    "district": "공평"
   },
   {
     "id": 1181,
     "name": "한와담 마곡 원그로브점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "한우",
     "emoji": "🥩",
     "score": 86,
@@ -3560,12 +3612,13 @@
     "name": "민규 을지로",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "note": "미래에셋센터원 B1층",
     "emoji": "🥩",
     "score": 86,
     "rating": 4.4,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "수하"
   },
   {
     "id": 1185,
@@ -3573,7 +3626,7 @@
     "region": "영등포",
     "area": "여의도",
     "genre": "한식",
-    "note": "다양한 전통주와 함께 즐기기에 좋은 장소",
+    "note": "여의도역 3번 출구에서 105m, 오투타워 3층",
     "emoji": "🏮",
     "score": 84,
     "rating": "4.3",
@@ -3590,32 +3643,35 @@
     "emoji": "🏮",
     "score": 84,
     "rating": 4.3,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "공평"
   },
   {
     "id": 1187,
     "name": "우보 테라스",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우오마카세",
-    "note": "각 룸마다 넓은 개별 테라스",
+    "genre": "고기구이",
+    "note": "강남구 신사동 648-23",
     "emoji": "🥩",
     "score": 93,
     "rating": "4.7",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "신사"
   },
   {
     "id": 1188,
     "name": "상우가든",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "note": "을지로3가역 10번 출구에서 226m",
     "emoji": "🥩",
     "score": 86,
     "rating": 4.4,
     "room": "✅ 확인",
-    "mapQuery": "상우가든 을지로"
+    "mapQuery": "상우가든 을지로",
+    "district": "저동"
   },
   {
     "id": 1189,
@@ -3623,83 +3679,92 @@
     "region": "영등포",
     "area": "여의도",
     "genre": "한식",
-    "note": "예술이 된 한식의 품",
+    "note": "샛강역 1번 출구에서 239m, NH농협캐피탈 빌딩 지하 1층",
     "emoji": "🏮",
     "score": 84,
     "rating": "4.3",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1190,
     "name": "글로드",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "파인다이닝",
-    "note": "미슐랭 출신 쉐프들이 운영하는 파인다이닝 레스토랑",
-    "mapQuery": "압구정 글로드",
+    "genre": "양식",
+    "note": "압구정역 2번 출구에서 485m",
+    "mapQuery": "글로드 신사",
     "emoji": "🥂",
     "score": 93,
     "rating": "4.7",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "신사"
   },
   {
     "id": 1191,
     "name": "크래버대게나라 서초점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "게요리",
+    "genre": "해산물",
     "emoji": "🦐",
     "score": 83,
     "rating": "4.2",
     "district": "서초",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "남부터미널역 3번 출구에서 442m"
   },
   {
     "id": 1192,
     "name": "크래버대게나라 강남점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "게요리",
+    "genre": "해산물",
     "emoji": "🦐",
     "score": 83,
     "rating": "4.2",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "논현",
+    "note": "강남구 논현동 261"
   },
   {
     "id": 1194,
     "name": "크래버대게나라 잠실점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "게요리",
+    "genre": "해산물",
     "emoji": "🦐",
     "score": 83,
     "rating": "4.2",
-    "district": "잠실",
-    "room": "✅ 확인"
+    "district": "방이",
+    "room": "✅ 확인",
+    "note": "송파구 방이동 165-4"
   },
   {
     "id": 1204,
     "name": "스코파더쉐프",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "이탈리안",
-    "note": "시칠리안 피자와 트러플 파스타가 인기 메뉴",
+    "genre": "이탈리아",
+    "note": "강남구 청담동 123-53",
     "emoji": "🥂",
     "score": 88,
     "rating": "4.5",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청담"
   },
   {
     "id": 1205,
     "name": "소꿉",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우",
-    "note": "청담 프라이빗한 룸 소고기집",
+    "genre": "고기구이",
+    "note": "강남구 청담동 117-10",
     "emoji": "🥩",
     "score": 86,
     "rating": "4.4",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청담",
+    "mapQuery": "소꿉 청담"
   },
   {
     "id": 1206,
@@ -3707,11 +3772,12 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "스시",
-    "note": "홍새우로 완성하는 특별한 마무리",
+    "note": "강남역 6번 출구에서 150m, 서초트라팰리스 2층",
     "emoji": "🍣",
     "score": 84,
     "rating": "4.4",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1207,
@@ -3736,19 +3802,20 @@
     "emoji": "🏮",
     "score": 89,
     "rating": 4.4,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1209,
     "name": "프로간장게장 신사본점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "게요리",
-    "note": "짜지 않고 달콤한 간장게장의 정석",
+    "genre": "해산물",
+    "note": "신사역 4번 출구에서 153m",
     "emoji": "🦐",
     "score": 83,
     "rating": "4.2",
-    "district": "신사",
+    "district": "잠원",
     "room": "✅ 확인"
   },
   {
@@ -3756,37 +3823,39 @@
     "name": "프로간장게장 경복궁점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "게요리",
+    "genre": "해산물",
     "emoji": "🦐",
     "score": 83,
     "rating": 4.2,
     "room": "✅ 확인",
-    "note": "케이트윈타워 지하1층"
+    "note": "케이트윈타워 지하1층",
+    "district": "중학"
   },
   {
     "id": 1212,
     "name": "콘피에르",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "note": "서울역 4번 출구에서 163m, 그랜드센트럴 빌딩 지하 2층",
     "emoji": "🥂",
     "score": 93,
     "rating": 4.7,
     "room": "✅ 확인",
-    "mapQuery": "콘피에르 남대문"
+    "mapQuery": "콘피에르 남대문",
+    "district": "남대문로"
   },
   {
     "id": 1213,
     "name": "콘피에르 셀렉션 광화문 그랑서울점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "파인다이닝",
+    "genre": "양식",
     "note": "종각역 1번 출구에서 177m, 그랑서울 4층",
     "emoji": "🥂",
     "score": 93,
     "rating": 4.7,
-    "district": "광화문",
+    "district": "청진",
     "room": "✅ 확인"
   },
   {
@@ -3794,24 +3863,25 @@
     "name": "연타발 선릉점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "곱창·막창",
+    "genre": "양대창",
     "note": "대우아이빌 1층",
     "emoji": "🥩",
     "score": 84,
     "rating": 4.3,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치"
   },
   {
     "id": 1215,
     "name": "연타발 압구정본점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "곱창·막창",
-    "note": "숯불 향 가득한 특양구이와 대창구이",
+    "genre": "양대창",
+    "note": "강남구 신사동 629-32",
     "emoji": "🥩",
     "score": 84,
     "rating": "4.3",
-    "district": "압구정",
+    "district": "신사",
     "room": "✅ 확인"
   },
   {
@@ -3819,20 +3889,21 @@
     "name": "연타발 시청점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "곱창·막창",
+    "genre": "양대창",
     "note": "을지로입구역 1-1번 출구에서 198m, 패스트파이브 타워 지하 1층",
     "emoji": "🥩",
     "score": 84,
     "rating": 4.3,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "다동"
   },
   {
     "id": 1217,
     "name": "연타발 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "곱창·막창",
-    "note": "숯불 향 가득한 특양구이와 대창구이",
+    "genre": "양대창",
+    "note": "국회의사당역 3번 출구에서 247m",
     "emoji": "🥩",
     "score": 84,
     "rating": "4.3",
@@ -3845,11 +3916,11 @@
     "region": "강남",
     "area": "청담·신사",
     "genre": "냉면",
-    "note": "압구정 평양냉면 맛집",
+    "note": "강남구 신사동 638-10",
     "emoji": "🍽️",
     "score": 82,
     "rating": "4.2",
-    "district": "압구정",
+    "district": "신사",
     "room": "✅ 확인"
   },
   {
@@ -3858,23 +3929,25 @@
     "region": "강남",
     "area": "청담·신사",
     "genre": "냉면",
-    "note": "푸짐한 재료가 가득한 어복쟁반",
+    "note": "압구정역 2번 출구에서 340m",
     "emoji": "🍽️",
     "score": 82,
     "rating": "4.2",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "신사"
   },
   {
     "id": 1220,
     "name": "도직한우",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우",
-    "note": "당일 도축된 신선한 한우",
+    "genre": "고기구이",
+    "note": "강남구 청담동 124-4",
     "emoji": "🥩",
     "score": 86,
     "rating": "4.4",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청담"
   },
   {
     "id": 1221,
@@ -3886,7 +3959,8 @@
     "emoji": "🥢",
     "score": 86,
     "rating": 4.3,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "남대문로"
   },
   {
     "id": 1223,
@@ -3911,7 +3985,8 @@
     "rating": 4.3,
     "emoji": "🥩",
     "room": "✅ 확인",
-    "note": "역삼역 3번 출구에서 160m, 포스코타워 역삼 지하 1층"
+    "note": "역삼역 3번 출구에서 160m, 포스코타워 역삼 지하 1층",
+    "district": "역삼"
   },
   {
     "id": 1239,
@@ -3922,8 +3997,9 @@
     "score": 84,
     "rating": "4.3",
     "emoji": "🥩",
-    "district": "잠실",
-    "room": "✅ 확인"
+    "district": "신천",
+    "room": "✅ 확인",
+    "note": "잠실역 7번 출구에서 182m, 잠실타워 730 지하1층"
   },
   {
     "id": 1240,
@@ -3934,8 +4010,9 @@
     "score": 84,
     "rating": "4.3",
     "emoji": "🥩",
-    "district": "마포",
-    "room": "✅ 확인"
+    "district": "염리",
+    "room": "✅ 확인",
+    "note": "공덕역 1번 출구에서 329m, 재화스퀘어 지하 1층"
   },
   {
     "id": 1242,
@@ -3947,7 +4024,8 @@
     "rating": 4.3,
     "emoji": "🥩",
     "room": "✅ 확인",
-    "note": "흥국생명빌딩 지하1층"
+    "note": "흥국생명빌딩 지하1층",
+    "district": "새문안로"
   },
   {
     "id": 1243,
@@ -3971,8 +4049,9 @@
     "score": 84,
     "rating": "4.3",
     "emoji": "🥩",
-    "district": "영등포",
-    "room": "✅ 확인"
+    "district": "문래",
+    "room": "✅ 확인",
+    "note": "문래역 6번 출구에서 555m, 영시티 S타워 로비층"
   },
   {
     "id": 1247,
@@ -3984,7 +4063,8 @@
     "rating": "4.3",
     "emoji": "🥩",
     "district": "상암",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "문화방송 지하1층 116호"
   },
   {
     "id": 1251,
@@ -3995,7 +4075,9 @@
     "score": 82,
     "rating": "4.2",
     "emoji": "🍽️",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "note": "교대역 1번 출구에서 179m"
   },
   {
     "id": 1252,
@@ -4020,7 +4102,8 @@
     "rating": 4.2,
     "emoji": "🍽️",
     "room": "✅ 확인",
-    "note": "회현 7번 출구에서 98m"
+    "note": "회현 7번 출구에서 98m",
+    "district": "충무로"
   },
   {
     "id": 1254,
@@ -4031,50 +4114,55 @@
     "score": 82,
     "rating": "4.2",
     "emoji": "🍽️",
-    "district": "홍대",
-    "room": "✅ 확인"
+    "district": "서교",
+    "room": "✅ 확인",
+    "note": "서울 마포구 서교동 460-25"
   },
   {
     "id": 1256,
     "name": "대가원 서울 본점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "샤브샤브",
     "score": 84,
     "rating": 4.3,
     "emoji": "🍽️",
     "room": "✅ 확인",
-    "note": "마곡역 3번 출구에서 258m, GMG엘스타 4층"
+    "note": "마곡역 3번 출구에서 258m, GMG엘스타 4층",
+    "district": "마곡"
   },
   {
     "id": 1258,
     "name": "육목원",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "note": "강남역 4번 출구에서 387m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1259,
     "name": "불이야 강남점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "논현",
+    "note": "학동역 10번 출구에서 409m, 건설회관 지하1층"
   },
   {
     "id": 1260,
     "name": "불이아 역삼점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
@@ -4087,18 +4175,20 @@
     "name": "불이아 교대점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "note": "교대역 5번 출구에서 39m"
   },
   {
     "id": 1262,
     "name": "불이아 삼성점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
@@ -4111,12 +4201,13 @@
     "name": "불이아 홍대본점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
-    "district": "홍대",
-    "room": "✅ 확인"
+    "district": "동교",
+    "room": "✅ 확인",
+    "note": "홍대입구역 1번 출구에서 88m"
   },
   {
     "id": 1264,
@@ -4141,7 +4232,8 @@
     "rating": "4.3",
     "emoji": "🏮",
     "district": "양재",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "양재역 5번 출구에서 425m"
   },
   {
     "id": 1266,
@@ -4152,19 +4244,22 @@
     "score": 84,
     "rating": "4.3",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "note": "교대역 4번 출구에서 157m, 지파이브센트럴프라자"
   },
   {
     "id": 1267,
     "name": "태산1970 서울시청본점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "score": 86,
     "rating": 4.4,
     "note": "시청역 9번 출구에서 168m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서소문"
   },
   {
     "id": 1268,
@@ -4177,7 +4272,8 @@
     "note": "대게와 킹크랩, 랍스터",
     "emoji": "🎌",
     "mapQuery": "대치 후지 일식당",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치"
   },
   {
     "id": 1269,
@@ -4187,29 +4283,30 @@
     "genre": "일식",
     "score": 84,
     "rating": 4.3,
-    "note": "전석 프라이빗 룸 (2인~32인 가능)",
+    "note": "전석 프라이빗 룸 (2인~32인 가능",
     "emoji": "🎌",
     "room": "✅ 확인",
-    "mapQuery": "진수사 역삼"
+    "mapQuery": "진수사 역삼",
+    "district": "역삼"
   },
   {
     "id": 1270,
     "name": "이화정갈비명가 마곡발산점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "고기구이",
     "score": 84,
     "rating": 4.3,
     "note": "발산역 4번 출구에서 261m",
     "emoji": "🥩",
-    "district": "마곡",
+    "district": "등촌",
     "room": "✅ 확인"
   },
   {
     "id": 1271,
     "name": "일편등심 마곡발산점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "고기구이",
     "score": 84,
     "rating": 4.3,
@@ -4227,8 +4324,9 @@
     "score": 84,
     "rating": "4.3",
     "emoji": "🥩",
-    "district": "홍대",
-    "room": "✅ 확인"
+    "district": "동교",
+    "room": "✅ 확인",
+    "note": "홍대입구역 8번 출구에서 116m"
   },
   {
     "id": 1273,
@@ -4240,18 +4338,19 @@
     "rating": 4.3,
     "note": "강남역 11번 출구에서 168m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1275,
     "name": "크리스탈제이드 광화문상하이팰리스점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
-    "district": "광화문",
+    "district": "수송",
     "room": "✅ 확인",
     "note": "서머셋팰리스 호텔 1층"
   },
@@ -4260,18 +4359,20 @@
     "name": "크리스탈제이드 IFC몰점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도",
+    "note": "여의도역 3번 출구에서 495m, IFC몰 L3층"
   },
   {
     "id": 1279,
     "name": "크리스탈제이드 상하이 팰리스 도곡점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
@@ -4284,43 +4385,33 @@
     "name": "크리스탈제이드 상하이 팰리스 잠원점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
     "district": "잠원",
-    "room": "✅ 확인"
-  },
-  {
-    "id": 1281,
-    "name": "크리스탈제이드 현대 압구정본점",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "중식당",
-    "score": 85,
-    "rating": "4.3",
-    "emoji": "🥢",
-    "district": "압구정",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "반포역 5번 출구에서 289m, 파스텔프라자 1층"
   },
   {
     "id": 1282,
     "name": "크리스탈제이드 상하이팰리스 용산아이파크몰점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
     "district": "용산",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "용산역 1번 출구에서 100m, 용산아이파크몰 리빙관 7층"
   },
   {
     "id": 1284,
     "name": "크리스탈제이드 소공점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
@@ -4333,24 +4424,25 @@
     "name": "차이윤 서여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "국회의사당역 1번 출구에서 358m, 여의도파라곤1층"
   },
   {
     "id": 1286,
     "name": "미꼬담 마곡발산점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "한정식",
     "score": 89,
     "rating": 4.4,
     "note": "발산역 4번 출구에서 261m",
     "emoji": "🏮",
-    "district": "마곡",
+    "district": "등촌",
     "room": "✅ 확인"
   },
   {
@@ -4361,7 +4453,7 @@
     "genre": "고기구이",
     "score": 84,
     "rating": "4.3",
-    "note": "전 좌석 프라이빗 룸",
+    "note": "샛강역 2번 출구에서 350m",
     "emoji": "🥩",
     "district": "여의도",
     "room": "✅ 확인"
@@ -4387,7 +4479,7 @@
     "genre": "고기구이",
     "score": 84,
     "rating": "4.3",
-    "note": "18개의 프라이빗룸, 100인까지 수용 가능한 대형룸",
+    "note": "여의도역 3번 출구에서 204m, 현대차증권빌딩 B1층",
     "emoji": "🥩",
     "district": "여의도",
     "room": "✅ 확인"
@@ -4397,24 +4489,26 @@
     "name": "대장장어 본점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "장어",
+    "genre": "장어구이",
     "score": 83,
     "rating": "4.2",
     "note": "방이역 4번 출구에서 420m",
     "emoji": "🍽️",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방이"
   },
   {
     "id": 1291,
     "name": "양심장어 잠실방이점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "장어",
+    "genre": "장어구이",
     "score": 83,
     "rating": "4.2",
     "emoji": "🍽️",
-    "district": "잠실",
-    "room": "✅ 확인"
+    "district": "방이",
+    "room": "✅ 확인",
+    "note": "방이역 4번 출구에서 418m"
   },
   {
     "id": 1292,
@@ -4424,41 +4518,43 @@
     "genre": "고기구이",
     "score": 84,
     "rating": "4.3",
-    "note": "한우 짝갈비와 서울식 불고기",
+    "note": "농협재단빌딩 지하1층",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1293,
     "name": "장심도 블랙",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "장어",
+    "area": "강서",
+    "genre": "장어구이",
     "score": 83,
     "rating": 4.2,
     "emoji": "🍽️",
     "room": "✅ 확인",
-    "note": "장심도블랙 한옥단청"
+    "note": "장심도블랙 한옥단청",
+    "district": "마곡"
   },
   {
     "id": 1294,
     "name": "우살롱 압구정점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "한우",
+    "genre": "고기구이",
     "score": 86,
     "rating": "4.4",
-    "note": "2인부터 10인이상까지 이용 가능한 단독 룸으로 구성",
+    "note": "압구정역 3번 출구에서 196m",
     "emoji": "🥩",
-    "district": "압구정",
+    "district": "신사",
     "room": "✅ 확인"
   },
   {
     "id": 1295,
     "name": "일품한우 마곡본점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "한우",
+    "area": "강서",
+    "genre": "고기구이",
     "score": 86,
     "rating": 4.4,
     "note": "마곡나루역 1번 출구에서 228m",
@@ -4471,22 +4567,23 @@
     "name": "설우 서대문점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "score": 86,
     "rating": 4.4,
     "note": "서대문역 3번 출구에서 27m, NH농협 타워 지하 1층",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "평동"
   },
   {
     "id": 1297,
     "name": "서울안심정육 서여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "한우",
+    "genre": "고기구이",
     "score": 86,
     "rating": "4.4",
-    "note": "와인, 위스키 콜키지 프리 ",
+    "note": "국회의사당역 1번 출구에서 399m",
     "emoji": "🥩",
     "district": "여의도",
     "room": "✅ 확인"
@@ -4496,10 +4593,10 @@
     "name": "신홍러우 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
-    "note": "콜키지 1병 무료",
+    "note": "여의나루역 4번 출구에서 386m, 브라이튼 지하1층",
     "emoji": "🥢",
     "district": "여의도",
     "room": "✅ 확인"
@@ -4509,19 +4606,20 @@
     "name": "우하나 종각역점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "한우",
+    "genre": "고기구이",
     "score": 86,
     "rating": 4.4,
     "note": "종각역 1번 출구에서 93m, 그랑서울 2층",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청진"
   },
   {
     "id": 1300,
     "name": "페이홍러우 삼성점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "note": "북경오리 전문",
@@ -4533,13 +4631,14 @@
     "id": 1301,
     "name": "페이홍러우 원그로브점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "중식당",
+    "area": "강서",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "note": "마곡역 2번 출구에서 152m, 원그로브몰 A동 2층",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "마곡"
   },
   {
     "id": 1302,
@@ -4549,9 +4648,9 @@
     "genre": "고기구이",
     "score": 84,
     "rating": "4.3",
-    "note": "와인 콜키지 병당 2만원, 위스키 등 기타 3만원",
+    "note": "마포역 1번 출구에서 197m",
     "emoji": "🥩",
-    "district": "마포",
+    "district": "용강",
     "room": "✅ 확인"
   },
   {
@@ -4564,7 +4663,8 @@
     "rating": 4.3,
     "note": "콜키지 프리",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치"
   },
   {
     "id": 1304,
@@ -4576,7 +4676,8 @@
     "rating": 4.3,
     "note": "선릉역 1번 출구에서 154m",
     "emoji": "🎌",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치"
   },
   {
     "id": 1305,
@@ -4586,16 +4687,17 @@
     "genre": "고기구이",
     "score": 84,
     "rating": "4.3",
-    "note": "전통 방식의 고추장과 고급 한우 육회, 신선한 채소를 사용",
+    "note": "강남구 논현동 66-1",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "논현"
   },
   {
     "id": 1306,
     "name": "투뿔한우 No.9 마곡본점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "한우",
+    "area": "강서",
+    "genre": "고기구이",
     "score": 86,
     "rating": 4.4,
     "note": "마곡나루역 1번 출구에서 215m, 두산더랜드타워 B동 2층",
@@ -4608,10 +4710,10 @@
     "name": "차이킹 문정점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
-    "note": "룸 예약은 4인 이상부터 가능",
+    "note": "문정역 4번 출구에서 22m, SKV1 A동 2층",
     "emoji": "🥢",
     "district": "문정",
     "room": "✅ 확인"
@@ -4621,22 +4723,23 @@
     "name": "대진 도원참치 강남역점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "참치",
+    "genre": "생선회",
     "score": 83,
     "rating": 4.2,
     "note": "강남역 12번 출구에서 107m",
     "emoji": "🍣",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1309,
     "name": "서우 룸 다이닝 서울성수점",
     "region": "성동",
     "area": "잠실·성수",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
-    "note": "룸 예약은 2인부터 가능하며, 최대 40인까지 수용이 가능",
+    "note": "서울숲역 5번 출구에서 228m, 갤러리아포레 지하 1층",
     "emoji": "🥢",
     "district": "성수",
     "room": "✅ 확인"
@@ -4645,11 +4748,11 @@
     "id": 1310,
     "name": "진진수라 코엑스마곡점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "한정식",
     "score": 89,
     "rating": "4.4",
-    "note": "모임과 상견례 회식 장소 및 세미나 장소",
+    "note": "마곡나루역 1번 출구에서 396m, 코엑스마곡 지하2층",
     "emoji": "🏮",
     "district": "마곡",
     "room": "✅ 확인"
@@ -4664,19 +4767,21 @@
     "rating": 4.3,
     "note": "혜화역 4번 출구에서 273m, A&A타워 1층",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "명륜"
   },
   {
     "id": 1312,
     "name": "차이룸 강남점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "note": "강남역 3번 출구에서 76m",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1313,
@@ -4699,19 +4804,20 @@
     "genre": "고기구이",
     "score": 84,
     "rating": "4.3",
-    "note": "숙성 소고기, 위스키 전문점",
+    "note": "석촌역 1번 출구에서 537m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "송파"
   },
   {
     "id": 1315,
     "name": "일념돼지 마곡본점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "고기구이",
     "score": 84,
     "rating": "4.3",
-    "note": "프라이빗한 룸과 단체 회식 모임 수용",
+    "note": "마곡역 3번 출구에서 334m",
     "emoji": "🥩",
     "district": "마곡",
     "room": "✅ 확인"
@@ -4720,7 +4826,7 @@
     "id": 1316,
     "name": "서울안심정육 마곡점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "고기구이",
     "score": 84,
     "rating": "4.3",
@@ -4739,14 +4845,15 @@
     "rating": "4.4",
     "note": "한성백제역 3번 출구에서 679m",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방이"
   },
   {
     "id": 1318,
     "name": "청월관 도곡",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "note": "콜키지 무제한프리",
@@ -4759,20 +4866,21 @@
     "name": "야키니쿠 규",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "note": "호주산 고마블 와규",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "mapQuery": "야키니쿠 규 삼성"
+    "mapQuery": "야키니쿠 규 삼성",
+    "district": "삼성"
   },
   {
     "id": 1320,
     "name": "명인등심 삼성직영점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "note": "친환경 목장과 직거래",
@@ -4785,43 +4893,46 @@
     "name": "명인등심 압구정본점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥩",
-    "district": "압구정",
-    "room": "✅ 확인"
+    "district": "신사",
+    "room": "✅ 확인",
+    "note": "강남구 신사동 587-14"
   },
   {
     "id": 1322,
     "name": "명인등심 상암직영점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥩",
     "district": "상암",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "디지털미디어시티역 9번 출구에서 310m"
   },
   {
     "id": 1323,
     "name": "명인등심 마포공덕 직영점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥩",
-    "district": "마포",
-    "room": "✅ 확인"
+    "district": "공덕",
+    "room": "✅ 확인",
+    "note": "공덕역 4번 출구에서 291m"
   },
   {
     "id": 1324,
     "name": "보름쇠 삼성점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "note": "9년연속 미쉐린가이드 선정",
@@ -4834,24 +4945,26 @@
     "name": "명우돈가",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥩",
     "room": "✅ 확인",
-    "note": "숙성육 전문점"
+    "note": "숙성육 전문점",
+    "district": "삼성"
   },
   {
     "id": 1326,
     "name": "아우정",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "note": "오크우드 호텔 맞은편",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "삼성"
   },
   {
     "id": 1327,
@@ -4897,12 +5010,12 @@
     "name": "보보식당 압구정",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
-    "note": "디너 룸 이용 시 최소 주문 금액 400,000원",
+    "note": "압구정로데오역 6번 출구에서 423m, 로빈명품관 1층",
     "emoji": "🥢",
-    "district": "압구정",
+    "district": "신사",
     "room": "✅ 확인"
   },
   {
@@ -4910,12 +5023,12 @@
     "name": "보보식당 광화문",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "note": "광화문역 2번 출구에서 12m, KT 광화문빌딩 WEST",
     "emoji": "🥢",
-    "district": "광화문",
+    "district": "세종로",
     "room": "✅ 확인"
   },
   {
@@ -4928,7 +5041,9 @@
     "rating": "4.3",
     "note": "국회의사당역 1번 출구에서 358m",
     "emoji": "🎌",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도",
+    "mapQuery": "화담 일식 여의도"
   },
   {
     "id": 1333,
@@ -4938,7 +5053,7 @@
     "genre": "생선회",
     "score": 84,
     "rating": "4.3",
-    "note": "런치 메뉴는 반상차림, 한상차림, 계절정식, 저녁에는 패밀리코스, 형제코스 ",
+    "note": "논현역 1번 출구에서 136m",
     "emoji": "🐟",
     "district": "논현",
     "room": "✅ 확인"
@@ -4948,31 +5063,34 @@
     "name": "서래향 선릉점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
     "room": "✅ 확인",
-    "note": "선릉역 5번 출구에서 183m"
+    "note": "선릉역 5번 출구에서 183m",
+    "district": "역삼"
   },
   {
     "id": 1336,
     "name": "서래향",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
     "mapQuery": "서래향 반포",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "반포",
+    "note": "서초구 반포동 91-4"
   },
   {
     "id": 1337,
     "name": "서래향 삼성대치점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
@@ -4984,59 +5102,65 @@
     "name": "더퍼스트 서래향 원베일리",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "반포",
+    "note": "고속터미널역 8-1번 출구에서 448m, 반포원베일리 스퀘어 지하1층"
   },
   {
     "id": 1339,
     "name": "서래향 수서점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
     "room": "✅ 확인",
-    "note": "수서역 3번 출구에서 132m"
+    "note": "수서역 3번 출구에서 132m",
+    "district": "수서"
   },
   {
     "id": 1340,
     "name": "서래향 대학로점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
     "room": "✅ 확인",
-    "note": "혜화역 2번 출구에서 224m, 유니플렉스 공연장 1층"
+    "note": "혜화역 2번 출구에서 224m, 유니플렉스 공연장 1층",
+    "district": "동숭"
   },
   {
     "id": 1341,
     "name": "더퍼스트 서래향 시청점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "note": "더 스테이 클래식 호텔 1층",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "남대문로"
   },
   {
     "id": 1342,
-    "name": "이춘복참치 강남고속터미널",
+    "name": "이춘복참치 강남고속터미널점",
     "region": "서초",
     "area": "서초·반포",
     "genre": "생선회",
     "score": 84,
     "rating": "4.3",
-    "note": "강남 신세계 백화점 무료주차 3시간 제공",
+    "note": "고속터미널역 8번 출구에서 43m, 센트럴시티 1M층",
     "emoji": "🐟",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "반포"
   },
   {
     "id": 1343,
@@ -5046,9 +5170,9 @@
     "genre": "생선회",
     "score": 84,
     "rating": "4.3",
-    "note": "단독룸 50개",
+    "note": "잠실역 7번 출구에서 11m, 캐슬플라자 2층",
     "emoji": "🐟",
-    "district": "잠실",
+    "district": "신천",
     "room": "✅ 확인"
   },
   {
@@ -5061,7 +5185,7 @@
     "rating": "4.3",
     "note": "남영역 1번 출구에서 190m",
     "emoji": "🐟",
-    "district": "용산",
+    "district": "남영",
     "room": "✅ 확인"
   },
   {
@@ -5072,9 +5196,9 @@
     "genre": "생선회",
     "score": 84,
     "rating": "4.3",
-    "note": "단독룸 30개",
+    "note": "공덕역 10번 출구에서 38m, 효성해링턴 스퀘어 2층",
     "emoji": "🐟",
-    "district": "공덕",
+    "district": "도화",
     "room": "✅ 확인"
   },
   {
@@ -5087,7 +5211,7 @@
     "rating": 4.3,
     "note": "을지로입구역 4번 출구에서 262m, 미래에셋 센터원빌딩 지하2층",
     "emoji": "🐟",
-    "district": "을지로",
+    "district": "수하",
     "room": "✅ 확인"
   },
   {
@@ -5100,13 +5224,14 @@
     "rating": 4.3,
     "note": "종각역 3번 출구에서 97m, YMCA빌딩 1층",
     "emoji": "🐟",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "종로"
   },
   {
     "id": 1350,
     "name": "이춘복참치 발산역점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "생선회",
     "score": 84,
     "rating": "4.3",
@@ -5120,12 +5245,14 @@
     "name": "우수",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "한우",
+    "genre": "고기구이",
     "score": 86,
     "rating": "4.4",
-    "note": "롯데캐슬프레지던트 상가 지하2층",
+    "note": "공덕역 2번 출구에서 142m, 롯데캐슬프레지던트 상가 지하2층",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "공덕",
+    "mapQuery": "우수 마포 고기구이"
   },
   {
     "id": 1354,
@@ -5145,12 +5272,13 @@
     "name": "차이나룸 몬드리안호텔점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
-    "note": "모던한 인테리어와 프라이빗한 룸 공간",
+    "note": "몬드리안호텔 2층",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "이태원"
   },
   {
     "id": 1356,
@@ -5160,9 +5288,9 @@
     "genre": "생선구이",
     "score": 83,
     "rating": "4.2",
-    "note": "화덕 생선구이와 솥밥, 다양한 해산물 요리",
+    "note": "가락시장역 6번 출구에서 190m",
     "emoji": "🐟",
-    "district": "송파",
+    "district": "가락",
     "room": "✅ 확인"
   },
   {
@@ -5173,43 +5301,46 @@
     "genre": "한정식",
     "score": 89,
     "rating": "4.4",
-    "note": "남도 한정식",
+    "note": "압구정로데오역 4번 출구에서 401m",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청담"
   },
   {
     "id": 1358,
     "name": "전설의우대갈비 강남직영점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "note": "강남역 11번 출구에서 112m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1359,
     "name": "전설의우대갈비 서울시청직영점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": 4.3,
     "note": "을지로입구역 1-1번 출구에서 191m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "다동"
   },
   {
     "id": 1360,
     "name": "전설의우대갈비 서울상암직영점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
-    "note": "누리꿈스퀘어 공동제작센타 2층",
+    "note": "수색역 1번 출구에서 694m, 누리꿈스퀘어 공동제작센타 2층",
     "emoji": "🥩",
     "district": "상암",
     "room": "✅ 확인"
@@ -5219,12 +5350,12 @@
     "name": "전설의우대갈비 잠실석촌호수직영점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
     "note": "잠실역 10번 출구에서 519m",
     "emoji": "🥩",
-    "district": "잠실",
+    "district": "방이",
     "room": "✅ 확인"
   },
   {
@@ -5232,7 +5363,7 @@
     "name": "전설의우대갈비 여의도직영점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
     "note": "국회의사당역 1번 출구에서 358m",
@@ -5244,11 +5375,11 @@
     "id": 1364,
     "name": "전설의우대갈비 마곡직영점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "소고기구이",
+    "area": "강서",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
-    "note": "발산역 8번 출구에서 265m",
+    "note": "발산역 8번 출구에서 265m, 열린M타워2차 3층",
     "emoji": "🥩",
     "district": "마곡",
     "room": "✅ 확인"
@@ -5258,12 +5389,12 @@
     "name": "구룡각 잠실 가락시장역점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "소고기구이",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
-    "note": "3시간 무료 주차, 빔프로젝터 마이크 등 세미나 설비",
+    "note": "가락시장역 1번 출구에서 59m",
     "emoji": "🥩",
-    "district": "잠실",
+    "district": "가락",
     "room": "✅ 확인"
   },
   {
@@ -5271,24 +5402,28 @@
     "name": "우부",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
-    "note": "파크원타워2 지하1층",
+    "note": "여의나루역 1번 출구에서 546m, 파크원타워2 지하1층",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도",
+    "mapQuery": "우부 여의도"
   },
   {
     "id": 1368,
     "name": "궁전갈비",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 85,
     "rating": "4.3",
-    "note": "콜키지 프리 운영으로 와인 모임도 가능",
+    "note": "마포역 3번 출구에서 175m, 콜키지 프리",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "도화",
+    "mapQuery": "궁전갈비 마포"
   },
   {
     "id": 1369,
@@ -5298,10 +5433,11 @@
     "genre": "양식",
     "score": 85,
     "rating": "4.3",
-    "note": "키즈존 반려동물 가능",
+    "note": "삼각지역 3번 출구에서 250m",
     "emoji": "🍽️",
-    "district": "용산",
-    "room": "✅ 확인"
+    "district": "한강로",
+    "room": "✅ 확인",
+    "mapQuery": "아치서울 용산점 양식"
   },
   {
     "id": 1370,
@@ -5313,40 +5449,43 @@
     "rating": 4.3,
     "note": "정동빌딩 신관 1층",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "정동"
   },
   {
     "id": 1372,
     "name": "동원 민물장어",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "해물",
+    "genre": "장어구이",
     "score": 83,
     "rating": 4.2,
     "note": "시청역 7번 출구에서 284m",
     "emoji": "🦐",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "북창"
   },
   {
     "id": 1373,
     "name": "js가든 센터필드점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1374,
     "name": "혼미 여의도직영점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "이자까야",
+    "genre": "일식",
     "score": 82,
     "rating": "4.2",
-    "note": "전 좌석 프라이빗 룸술집 & 수제 야키토리 전문점",
+    "note": "영등포구 여의도동 44-25",
     "emoji": "🍽️",
     "district": "여의도",
     "room": "✅ 확인"
@@ -5356,12 +5495,13 @@
     "name": "중림각",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": 4.3,
     "note": "충정로역 4번 출구에서 365m",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "중림"
   },
   {
     "id": 1383,
@@ -5374,7 +5514,8 @@
     "note": "시청역 7번 출구에서 274m",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "mapQuery": "남도한식 정든님 북창"
+    "mapQuery": "남도한식 정든님 북창",
+    "district": "북창"
   },
   {
     "id": 1384,
@@ -5385,7 +5526,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "논현",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "언주역 1번 출구에서 57m"
   },
   {
     "id": 1385,
@@ -5396,7 +5538,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "도곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "재능교육빌딩 1층"
   },
   {
     "id": 1386,
@@ -5417,8 +5560,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "district": "압구정",
-    "room": "✅ 확인"
+    "district": "신사",
+    "room": "✅ 확인",
+    "note": "압구정역 3번 출구에서 389m"
   },
   {
     "id": 1388,
@@ -5428,8 +5572,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "district": "용산",
-    "room": "✅ 확인"
+    "district": "한강로",
+    "room": "✅ 확인",
+    "note": "신용산역 1번 출구에서 195m"
   },
   {
     "id": 1389,
@@ -5437,10 +5582,10 @@
     "region": "송파",
     "area": "잠실·성수",
     "genre": "중식",
-    "note": "4인부터 최대 70인까지 수용 가능한 프라이빗 룸",
+    "note": "송파나루역 1번 출구에서 482m",
     "emoji": "🥢",
     "score": 75,
-    "district": "잠실",
+    "district": "송파",
     "room": "✅ 확인"
   },
   {
@@ -5451,7 +5596,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "하왕십리",
+    "note": "상왕십리역 4번 출구에서 179m"
   },
   {
     "id": 1391,
@@ -5461,8 +5608,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "district": "왕십리",
-    "room": "✅ 확인"
+    "district": "하왕십리",
+    "room": "✅ 확인",
+    "note": "상왕십리역 4번 출구에서 179m"
   },
   {
     "id": 1392,
@@ -5472,8 +5620,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "district": "마포",
-    "room": "✅ 확인"
+    "district": "도화",
+    "room": "✅ 확인",
+    "note": "공덕역 8번출구 여의도 방향 200m"
   },
   {
     "id": 1393,
@@ -5481,10 +5630,10 @@
     "region": "중구",
     "area": "광화문·도심",
     "genre": "중식",
-    "note": "iM금융센터 3층",
+    "note": "종각역 5번 출구에서 158m, iM금융센터 3층",
     "emoji": "🥢",
     "score": 75,
-    "district": "을지로",
+    "district": "다동",
     "room": "✅ 확인"
   },
   {
@@ -5493,10 +5642,10 @@
     "region": "종로",
     "area": "광화문·도심",
     "genre": "중식",
-    "note": "동원빌딩 별관 2층",
+    "note": "광화문역 1번 출구에서 257m, 동원빌딩 별관 2층",
     "emoji": "🥢",
     "score": 75,
-    "district": "광화문",
+    "district": "당주",
     "room": "✅ 확인"
   },
   {
@@ -5508,7 +5657,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "여의도역 3번 출구에서 88m, 오투타워 2층"
   },
   {
     "id": 1399,
@@ -5518,8 +5668,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "district": "잠실",
-    "room": "✅ 확인"
+    "district": "신천",
+    "room": "✅ 확인",
+    "note": "잠실역 10번 출구에서 13m, 롯데월드몰 5층"
   },
   {
     "id": 1400,
@@ -5529,8 +5680,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "district": "잠실",
-    "room": "✅ 확인"
+    "district": "신천",
+    "room": "✅ 확인",
+    "note": "잠실역 7번 출구에서 11m, 캐슬플라자 2층"
   },
   {
     "id": 1401,
@@ -5540,8 +5692,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "district": "광화문",
-    "room": "✅ 확인"
+    "district": "태평로",
+    "room": "✅ 확인",
+    "note": "광화문역 5번 출구에서 170m, 서울파이낸스센터 B2층"
   },
   {
     "id": 1402,
@@ -5551,7 +5704,10 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "수하",
+    "mapQuery": "차이797 청계천점 수하",
+    "note": "미래에셋센터원빌딩 지하2층"
   },
   {
     "id": 1403,
@@ -5561,7 +5717,9 @@
     "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방배",
+    "note": "서초구 방배동 810-2"
   },
   {
     "id": 1405,
@@ -5572,7 +5730,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "여의도역 5번 출구에서 101m, 한국교직원공제회관 지하1층"
   },
   {
     "id": 1409,
@@ -5580,10 +5739,11 @@
     "region": "중구",
     "area": "광화문·도심",
     "genre": "중식",
-    "note": "시청역 인근",
+    "note": "시청역 9번 출구에서 31m, ENA Center 빌딩 지하1층",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서소문"
   },
   {
     "id": 1410,
@@ -5591,21 +5751,24 @@
     "region": "중구",
     "area": "광화문·도심",
     "genre": "한정식",
-    "note": "남도 해산물요리, 다수의 룸과 대형 연회장 보유",
+    "note": "해남2빌딩 지하1층",
     "emoji": "🏮",
     "score": 82,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "남대문로",
+    "mapQuery": "아리연 남대문"
   },
   {
     "id": 1411,
     "name": "우탭 강남점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "한우",
-    "note": "25개 이상의 독립룸 매장 구조",
+    "genre": "고기구이",
+    "note": "강남역 6번 출구에서 106m",
     "emoji": "🐮",
     "score": 82,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1412,
@@ -5613,11 +5776,12 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "중식",
-    "note": "참나무 화덕 정통 방식의 베이징덕 (카오야)",
+    "note": "신사역 5번 출구에서 241m",
     "mapQuery": "더 리버사이드호텔 중식당 따뚱",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "잠원"
   },
   {
     "id": 1413,
@@ -5625,10 +5789,10 @@
     "region": "송파",
     "area": "잠실·성수",
     "genre": "중식",
-    "note": "1930년 대 상하이 문화의 현대적인 신여성 컨셉",
+    "note": "잠실역 10번 출구에서 319m, KT송파빌딩 호텔동 B1",
     "emoji": "🥢",
     "score": 75,
-    "district": "잠실",
+    "district": "신천",
     "room": "✅ 확인"
   },
   {
@@ -5637,10 +5801,11 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "중식",
-    "note": "1930년 대 상하이 문화의 현대적인 신여성 컨셉",
+    "note": "고속터미널역 3번 출구에서 125m",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "반포"
   },
   {
     "id": 1415,
@@ -5648,7 +5813,7 @@
     "region": "영등포",
     "area": "여의도",
     "genre": "중식",
-    "note": "1930년 대 상하이 문화의 현대적인 신여성 컨셉",
+    "note": "샛강역 1번 출구에서 274m",
     "emoji": "🥢",
     "score": 75,
     "district": "여의도",
@@ -5659,8 +5824,8 @@
     "name": "모도우 The ROOM 대치점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "한우",
-    "note": "와인 콜키지프리 매장",
+    "genre": "고기구이",
+    "note": "노벨빌딩 지하 1층, 전석 프라이빗 룸",
     "emoji": "🐮",
     "score": 82,
     "district": "대치",
@@ -5672,7 +5837,7 @@
     "region": "강남",
     "area": "강남·삼성",
     "genre": "고기구이",
-    "note": "와인콜키지 2병까지 무료",
+    "note": "한티역 3번 출구에서 296m",
     "emoji": "🥩",
     "score": 78,
     "district": "대치",
@@ -5684,7 +5849,7 @@
     "region": "강남",
     "area": "청담·신사",
     "genre": "고기구이",
-    "note": "와인콜키지 2병까지 무료",
+    "note": "청담역 8번 출구에서 214m",
     "emoji": "🥩",
     "score": 78,
     "district": "청담",
@@ -5696,7 +5861,7 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "고기구이",
-    "note": "와인콜키지 2병까지 무료",
+    "note": "잠원역 3번 출구에서 443m",
     "emoji": "🥩",
     "score": 78,
     "district": "잠원",
@@ -5708,7 +5873,7 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "고기구이",
-    "note": "와인콜키지 2병까지 무료",
+    "note": "내방역 5번 출구에서 376m",
     "emoji": "🥩",
     "score": 78,
     "district": "방배",
@@ -5720,7 +5885,7 @@
     "region": "송파",
     "area": "잠실·성수",
     "genre": "고기구이",
-    "note": "와인콜키지 2병까지 무료",
+    "note": "종합운동장역 9번 출구에서 390m",
     "emoji": "🥩",
     "score": 78,
     "district": "잠실",
@@ -5732,10 +5897,11 @@
     "region": "성동",
     "area": "잠실·성수",
     "genre": "고기구이",
-    "note": "와인콜키지 2병까지 무료",
+    "note": "왕십리역 10번 출구에서 262m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "행당"
   },
   {
     "id": 1423,
@@ -5743,7 +5909,7 @@
     "region": "중구",
     "area": "광화문·도심",
     "genre": "고기구이",
-    "note": "와인콜키지 2병까지 무료",
+    "note": "을지로3가역 11번 출구에서 25m",
     "emoji": "🥩",
     "score": 78,
     "district": "을지로",
@@ -5757,19 +5923,21 @@
     "genre": "고기구이",
     "emoji": "🥩",
     "score": 78,
-    "district": "용산",
-    "room": "✅ 확인"
+    "district": "한강로",
+    "room": "✅ 확인",
+    "note": "신용산역 2번 출구에서 406m"
   },
   {
     "id": 1427,
     "name": "직화장인 마곡",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "고기구이",
     "emoji": "🥩",
     "score": 78,
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "발산역 9번 출구에서 370m"
   },
   {
     "id": 1428,
@@ -5779,7 +5947,9 @@
     "genre": "고기구이",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "황학",
+    "note": "신당역 2번 출구에서 228m"
   },
   {
     "id": 1429,
@@ -5789,40 +5959,46 @@
     "genre": "고기구이",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "note": "교대역 14번 출구에서 248m"
   },
   {
     "id": 1430,
-    "name": "직화장인 신사",
+    "name": "직화장인 신사점",
     "region": "강남",
     "area": "청담·신사",
     "genre": "고기구이",
     "emoji": "🥩",
     "score": 78,
     "district": "신사",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "강남구 신사동 506"
   },
   {
     "id": 1431,
     "name": "까사 안토니오",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "이탈리안",
-    "note": "9개의 프라이빗룸, 전용 프로포즈룸,  와인 셀러룸, 연회홀:",
+    "genre": "이탈리아",
+    "note": "학동역 4번 출구에서 297m",
     "emoji": "🍝",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "논현"
   },
   {
     "id": 1432,
     "name": "도이",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "note": "역삼역 7번 출구에서 273m",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼",
+    "mapQuery": "도이 역삼"
   },
   {
     "id": 1434,
@@ -5830,10 +6006,11 @@
     "region": "송파",
     "area": "잠실·성수",
     "genre": "고기구이",
-    "note": "무료발렛",
+    "note": "개롱역 1번 출구에서 658m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "오금"
   },
   {
     "id": 1435,
@@ -5841,7 +6018,7 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "고기구이",
-    "note": "1977년 개점",
+    "note": "양재역 2번 출구에서 498m",
     "emoji": "🥩",
     "score": 78,
     "district": "서초",
@@ -5855,17 +6032,23 @@
     "genre": "고기구이",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "mapQuery": "한우온 서초 고기구이",
+    "note": "서초구 서초동 1340-2"
   },
   {
     "id": 1437,
     "name": "하오차이",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식당",
+    "genre": "중식",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "mapQuery": "하오차이 서초",
+    "note": "남부터미널역 5번 출구에서 307m"
   },
   {
     "id": 1439,
@@ -5873,21 +6056,12 @@
     "region": "강남",
     "area": "강남·삼성",
     "genre": "한식",
-    "note": "대표 메뉴 갓김치등갈비찜, 돌산 불 쭈꾸미, 빠삭오징어튀김전",
+    "note": "갓김치등갈비찜, 돌산 불 쭈꾸미, 빠삭오징어튀김전",
     "emoji": "🏮",
     "score": 70,
-    "room": "✅ 확인"
-  },
-  {
-    "id": 1440,
-    "name": "숯불상회",
-    "region": "송파",
-    "area": "잠실·성수",
-    "genre": "고기구이",
-    "note": "숙성 소고기, 위스키 전문점",
-    "emoji": "🥩",
-    "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치",
+    "mapQuery": "돌산등대집 대치"
   },
   {
     "id": 1441,
@@ -5895,7 +6069,7 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "고기구이",
-    "note": "전 좌석 개별룸 또는 프라이빗 룸",
+    "note": "내방역 6번 출구에서 391m",
     "emoji": "🥩",
     "score": 78,
     "district": "방배",
@@ -5907,21 +6081,22 @@
     "region": "마포",
     "area": "마포·홍대",
     "genre": "한식",
-    "note": "정갈한 한상",
+    "note": "공덕역 1번 출구에서 338m, 재화스퀘어 지하1층",
     "emoji": "🏮",
     "score": 70,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "염리"
   },
   {
     "id": 1443,
     "name": "암소서울 광화문",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "소고기구이",
-    "note": "그랑서울 1타워 4층",
+    "genre": "고기구이",
+    "note": "그랑서울 타워1 4층",
     "emoji": "🥩",
     "score": 78,
-    "district": "광화문",
+    "district": "청진",
     "room": "✅ 확인"
   },
   {
@@ -5930,21 +6105,24 @@
     "region": "마포",
     "area": "마포·홍대",
     "genre": "고기구이",
-    "note": "프라이빗 룸, 최대 140명 대관, 모든 주류 콜키지 프리, 반려동물 동반 가능",
+    "note": "광흥창역 4번 출구에서 451m, 모든 주류 콜키지 프리",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "신수",
+    "mapQuery": "신수로 마포 고기구이"
   },
   {
     "id": 1445,
     "name": "노조미일식",
     "region": "영등포",
     "area": "여의도",
-    "genre": "일식당",
+    "genre": "일식",
     "note": "국회의사당역 3번 출구에서 168m",
     "emoji": "🍱",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1446,
@@ -5952,17 +6130,18 @@
     "region": "강남",
     "area": "청담·신사",
     "genre": "한식",
-    "note": "프라이빗 룸과 커튼 테이블, 뭉티기 전문",
+    "note": "강남구청역 3번 출구에서 5m",
     "emoji": "🏮",
     "score": 70,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "논현"
   },
   {
     "id": 1447,
     "name": "모미지 마곡발산점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "일식당",
+    "area": "강서",
+    "genre": "일식",
     "note": "발산역 2번 출구에서 174m",
     "emoji": "🍱",
     "score": 78,
@@ -5978,7 +6157,8 @@
     "note": "시청역 7번 출구에서 165m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "북창"
   },
   {
     "id": 1449,
@@ -5988,15 +6168,17 @@
     "genre": "한정식",
     "emoji": "🏮",
     "score": 82,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치",
+    "note": "노벨빌딩 지하 1층, 전석 프라이빗 룸"
   },
   {
     "id": 1451,
     "name": "락희안 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "중식당",
-    "note": "시그니처 메뉴는 동북식 대파꿔바로우와 전복돌판누룽지탕",
+    "genre": "중식",
+    "note": "여의도역 3번 출구에서 392m,",
     "emoji": "🥢",
     "score": 75,
     "district": "여의도",
@@ -6007,19 +6189,21 @@
     "name": "스시교",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "일식당",
+    "genre": "일식",
     "note": "교대역 11번 출구에서 142m",
     "emoji": "🍱",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "mapQuery": "스시고 서초"
   },
   {
     "id": 1453,
     "name": "소감 마곡본점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "소고기구이",
-    "note": "전체 프라이빗 룸으로 4인룸, 6인룸, 단체룸(7~28인), 전체 36인 대관까지 예약 가능",
+    "area": "강서",
+    "genre": "고기구이",
+    "note": "마곡역 3번 출구에서 360m, 보타닉파크타워2 202호",
     "emoji": "🥩",
     "score": 78,
     "district": "마곡",
@@ -6029,7 +6213,7 @@
     "id": 1454,
     "name": "산솔 신논현점",
     "region": "강남",
-    "area": "청담·신사",
+    "area": "강남·삼성",
     "genre": "고기구이",
     "note": "신논현역 3번 출구에서 165m",
     "emoji": "🥩",
@@ -6042,11 +6226,11 @@
     "name": "야키니쿠 우 공덕직영점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "소고기구이",
-    "note": "서울 한복판, 숲길을 걷다 만나는 기와집",
+    "genre": "고기구이",
+    "note": "대흥역 3번 출구에서 410m",
     "emoji": "🥩",
     "score": 78,
-    "district": "공덕",
+    "district": "염리",
     "room": "✅ 확인"
   },
   {
@@ -6054,8 +6238,8 @@
     "name": "육랩 여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
-    "note": "여의도역 5번 출구에서 71m",
+    "genre": "고기구이",
+    "note": "여의도역 5번 출구에서 71m, 여의도 종합상가 2층",
     "emoji": "🥩",
     "score": 78,
     "district": "여의도",
@@ -6066,22 +6250,23 @@
     "name": "흑우정 강남역본점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "소고기구이",
-    "note": "8개 이상의 독립 프라이빗 룸 10대 이상 전용 주차 공간",
+    "genre": "고기구이",
+    "note": "신논현역 7번 출구에서 262m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1459,
     "name": "솔직한우 용산점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "note": "용산역 1번 출구에서 358m",
     "emoji": "🥩",
     "score": 78,
-    "district": "용산",
+    "district": "한강로",
     "room": "✅ 확인"
   },
   {
@@ -6089,8 +6274,8 @@
     "name": "청담 마코토",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "일식당",
-    "note": "블루리본 2014년부터 12년 연속 등재",
+    "genre": "일식",
+    "note": "강남구 청담동 92-18, 이에스빌딩 2층",
     "emoji": "🍱",
     "score": 78,
     "district": "청담",
@@ -6101,11 +6286,11 @@
     "name": "소울한우 마포역본점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "소고기구이",
-    "note": "18개 전 좌석 프라이빗 룸",
+    "genre": "고기구이",
+    "note": "마포역 3번 출구에서 158m",
     "emoji": "🥩",
     "score": 78,
-    "district": "마포",
+    "district": "도화",
     "room": "✅ 확인"
   },
   {
@@ -6117,7 +6302,8 @@
     "note": "삼각지역 3번 출구에서 197m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "한강로"
   },
   {
     "id": 1463,
@@ -6137,7 +6323,7 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "장어구이",
-    "note": "강화갯벌특대장어와 고창풍천특대장어 구이",
+    "note": "서초구 방배동 807-3",
     "emoji": "🐟",
     "score": 78,
     "district": "방배",
@@ -6159,9 +6345,9 @@
     "id": 1466,
     "name": "마실한정식 발산점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "한정식",
-    "note": "발산역 5번 출구에서 161m",
+    "note": "발산역 5번 출구에서 161m, 신우빌딩 2층",
     "emoji": "🏮",
     "score": 82,
     "district": "발산",
@@ -6176,7 +6362,8 @@
     "emoji": "🏮",
     "score": 82,
     "district": "역삼",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "역삼 센터필드 East동 1층 해우리"
   },
   {
     "id": 1468,
@@ -6186,28 +6373,33 @@
     "genre": "한정식",
     "emoji": "🏮",
     "score": 82,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "삼성",
+    "note": "선릉역 10번 출구에서 220m, L7 HOTELS 강남타워 지하1층"
   },
   {
     "id": 1470,
     "name": "해우리 명동점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한정식",
+    "genre": "한식",
     "emoji": "🏮",
     "score": 82,
-    "district": "명동",
-    "room": "✅ 확인"
+    "district": "회현",
+    "room": "✅ 확인",
+    "note": "회현 1번 출구에서 30m, 리더스뷰남산 지하1층"
   },
   {
     "id": 1471,
     "name": "해우리 서울시청점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "한정식",
+    "genre": "한식",
     "emoji": "🏮",
     "score": 82,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서소문",
+    "note": "시청역 10번 출구에서 195m, 정안빌딩 지하1층"
   },
   {
     "id": 1473,
@@ -6218,15 +6410,16 @@
     "emoji": "🏮",
     "score": 82,
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "여의도역 3번 출구에서 244m, 여의도 파이낸스센터 지하 1층"
   },
   {
     "id": 1476,
     "name": "솔직한우 역삼점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
-    "note": "취향대로 즐기는 정육식당, 역삼역 8번 출구에서 123m",
+    "genre": "고기구이",
+    "note": "역삼역 8번 출구에서 123m",
     "emoji": "🥩",
     "score": 78,
     "district": "역삼",
@@ -6237,33 +6430,35 @@
     "name": "정동1946 서울시청본점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "소고기구이",
-    "note": "콜키지 프리, 시청역 10번 출구에서 166m",
+    "genre": "고기구이",
+    "note": "시청역 10번 출구에서 166m, 콜키지 프리",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "정동"
   },
   {
     "id": 1479,
     "name": "모미지 선릉점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "일식당",
+    "genre": "일식",
     "note": "프리미엄 이자카야, 전 좌석 프라이빗룸",
     "emoji": "🍱",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치"
   },
   {
     "id": 1480,
     "name": "모미지 잠실방이점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "일식당",
-    "note": "프리미엄 이자카야, 전 좌석 프라이빗룸",
+    "genre": "일식",
+    "note": "송파나루역 2번 출구에서 517m",
     "emoji": "🍱",
     "score": 78,
-    "district": "잠실",
+    "district": "방이",
     "room": "✅ 확인"
   },
   {
@@ -6271,12 +6466,13 @@
     "name": "외백",
     "region": "영등포",
     "area": "여의도",
-    "genre": "중식당",
-    "note": "since 1985",
+    "genre": "중식",
+    "note": "국회의사당역 3번 출구에서 365m, kcc파크타운 3층",
     "emoji": "🥢",
     "mapQuery": "외백 여의도 중식당",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1482,
@@ -6287,7 +6483,8 @@
     "note": "여의도역 3번 출구에서 48m, 교보증권 빌딩 지하1층 아케이드",
     "emoji": "🐟",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1483,
@@ -6295,10 +6492,11 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "고기구이",
-    "note": "평양냉면과 숯불구이 전문",
+    "note": "강남역 8번 출구에서 418m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1484,
@@ -6306,7 +6504,7 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "한식",
-    "note": "콜키지 2병 무료",
+    "note": "교대역 10번 출구에서 294m",
     "emoji": "🏮",
     "score": 70,
     "district": "서초",
@@ -6317,12 +6515,13 @@
     "name": "루위",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "중식당",
-    "note": "생방송투데이 및 채널A 방송 TV 밥한번먹자 등",
+    "genre": "중식",
+    "note": "강남구 신사동 587-14, 동현빌딩 1층",
     "emoji": "🥢",
-    "mapQuery": "루위 중식당",
+    "mapQuery": "루위 중식당 신사",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "신사"
   },
   {
     "id": 1487,
@@ -6330,17 +6529,18 @@
     "region": "중구",
     "area": "광화문·도심",
     "genre": "한식",
-    "note": "시청역 6번 출구에서 193m",
+    "note": "시청역 6번 출구에서 193m, JEI재능교육빌딩 1층",
     "emoji": "🏮",
     "score": 70,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "을지로"
   },
   {
     "id": 1488,
     "name": "참맛집 상암점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "note": "스탠포드호텔 건너편",
     "emoji": "🥩",
     "score": 78,
@@ -6351,12 +6551,13 @@
     "id": 1489,
     "name": "우나기 욘다이메 키쿠카와 원그로브점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "일식당",
-    "note": "전통 나고야 스타일의 장어 요리",
+    "area": "강서",
+    "genre": "일식",
+    "note": "마곡역 2번 출구에서 347m, 원그로브 A동 1층",
     "emoji": "🍱",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "마곡"
   },
   {
     "id": 1490,
@@ -6364,10 +6565,10 @@
     "region": "중구",
     "area": "광화문·도심",
     "genre": "한정식",
-    "note": "무료한복체험 포토존, 무료현수막",
+    "note": "명동역 10번 출구에서 52m, 무료한복체험 포토존, 무료현수막",
     "emoji": "🏮",
     "score": 82,
-    "district": "명동",
+    "district": "충무로",
     "room": "✅ 확인"
   },
   {
@@ -6376,7 +6577,7 @@
     "region": "용산",
     "area": "용산·이태원",
     "genre": "고기구이",
-    "note": "양주와 위스키 콜키지 프리, 기본적인 영어 응대 가능",
+    "note": "숙대입구역 6번 출구에서 54m",
     "emoji": "🥩",
     "score": 78,
     "district": "남영",
@@ -6387,20 +6588,21 @@
     "name": "타와",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "일식당",
-    "note": "시청역 10번 출구에서 16m",
+    "genre": "일식",
+    "note": "시청역 10번 출구에서 16m, 한산빌딩 지하1층",
     "emoji": "🍱",
     "mapQuery": "타와 일식당",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서소문"
   },
   {
     "id": 1493,
     "name": "이루 KBS 서여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "중식당",
-    "note": "대표메뉴 동북식 대파꿔바로우",
+    "genre": "중식",
+    "note": "국회의사당역 4번 출구에서 226m",
     "emoji": "🥢",
     "score": 75,
     "district": "여의도",
@@ -6411,24 +6613,26 @@
     "name": "도원",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "note": "서대문역 4번 출구에서 64m, 서울적십자병원 별관 3층",
     "emoji": "🥢",
-    "mapQuery": "도원 광화문",
+    "mapQuery": "도원 중식당 평동",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "평동"
   },
   {
     "id": 1496,
     "name": "노운",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "한식",
-    "note": "작은 한식당 예약은 캐치테이블",
+    "note": "발산역 1번 출구에서 353m",
     "emoji": "🏮",
     "mapQuery": "노운 마곡",
     "score": 70,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "마곡"
   },
   {
     "id": 1498,
@@ -6436,30 +6640,30 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "고기구이",
-    "note": "양념돼지갈비 , 양념소갈비 전문",
+    "note": "신사역 4번 출구에서 324m",
     "emoji": "🥩",
     "score": 78,
-    "district": "신사",
+    "district": "잠원",
     "room": "✅ 확인"
   },
   {
     "id": 1499,
     "name": "어다리횟집 발산역점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "생선회",
     "note": "발산역 3번 출구에서 85m, 생일 & 기념일 고객 회케이크 제공",
     "emoji": "🐟",
     "score": 75,
-    "district": "발산",
+    "district": "등촌",
     "room": "✅ 확인"
   },
   {
     "id": 1500,
     "name": "취빈 발산역점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "중식당",
+    "area": "강서",
+    "genre": "중식",
     "emoji": "🥢",
     "score": 75,
     "district": "발산",
@@ -6486,15 +6690,16 @@
     "note": "서울역 4번 출구에서 167m, 그랜드센트럴 지하3층",
     "emoji": "🏮",
     "score": 82,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "남대문로"
   },
   {
     "id": 1503,
     "name": "상해루 코엑스 마곡점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "중식당",
-    "note": "코엑스 마곡 르웨스트 지하 2층",
+    "area": "강서",
+    "genre": "중식",
+    "note": "마곡나루역 1번 출구에서 219m, 코엑스 마곡 르웨스트 지하 2층",
     "emoji": "🥢",
     "score": 75,
     "district": "마곡",
@@ -6505,11 +6710,12 @@
     "name": "이자카야호주 다이닝룸 교대남부터미널",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "일식당",
+    "genre": "일식",
     "note": "남부터미널역 6번 출구에서 191m",
     "emoji": "🍱",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1505,
@@ -6517,32 +6723,38 @@
     "region": "강남",
     "area": "청담·신사",
     "genre": "고기구이",
-    "note": "소고기 및 양고기",
+    "note": "신사역 8번 출구에서 417m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "신사",
+    "mapQuery": "소양탐정 신사"
   },
   {
     "id": 1506,
     "name": "아방궁",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
-    "note": "전 좌석 프라이빗 룸",
+    "genre": "중식",
+    "note": "강남역 4번 출구에서 232m, 전 좌석 프라이빗 룸",
     "emoji": "🥢",
     "mapQuery": "아방궁 역삼",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1507,
     "name": "동해도 일식",
     "region": "영등포",
     "area": "여의도",
-    "genre": "일식당",
+    "genre": "일식",
     "emoji": "🍱",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도",
+    "mapQuery": "동해도 일식 여의도",
+    "note": "국회의사당역 3번 출구에서 354m"
   },
   {
     "id": 1509,
@@ -6553,7 +6765,9 @@
     "note": "신용산역 5번 출구에서 115m",
     "emoji": "🐟",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "한강로",
+    "mapQuery": "기꾸참치 한강로"
   },
   {
     "id": 1510,
@@ -6561,23 +6775,25 @@
     "region": "송파",
     "area": "잠실·성수",
     "genre": "한식",
-    "note": "국밥과 국시(고기) 전문 식당",
+    "note": "송파구 방이동 182-2",
     "emoji": "🏮",
     "mapQuery": "한티옥 방이역",
     "score": 70,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방이"
   },
   {
     "id": 1511,
     "name": "회빈",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "note": "since1988",
     "emoji": "🥢",
     "mapQuery": "회빈 역삼중식당",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1512,
@@ -6588,7 +6804,8 @@
     "note": "합정역 4번 출구에서 149m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서교"
   },
   {
     "id": 1513,
@@ -6596,10 +6813,10 @@
     "region": "마포",
     "area": "마포·홍대",
     "genre": "한식",
-    "note": "대표 메뉴로 보리굴비, 갈비찜, 갈치구이, 갈치조림",
+    "note": "공덕역 3번 출구에서 628m",
     "emoji": "🏮",
     "score": 70,
-    "district": "마포",
+    "district": "공덕",
     "room": "✅ 확인"
   },
   {
@@ -6611,14 +6828,16 @@
     "note": "한화금융센터_63_58층",
     "emoji": "🍝",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도",
+    "mapQuery": "여의도63빌딩 터치더스카이"
   },
   {
     "id": 1516,
     "name": "위앤스시 마곡본점",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "일식당",
+    "area": "강서",
+    "genre": "일식",
     "note": "마곡역 4번 출구에서 174m",
     "emoji": "🍱",
     "score": 78,
@@ -6646,7 +6865,8 @@
     "note": "저온훈연 장어",
     "emoji": "🐟",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "삼성"
   },
   {
     "id": 1519,
@@ -6654,7 +6874,7 @@
     "region": "영등포",
     "area": "여의도",
     "genre": "고기구이",
-    "note": "한우와 해산물, 회",
+    "note": "샛강역 2번 출구에서 223m",
     "emoji": "🥩",
     "score": 78,
     "district": "여의도",
@@ -6665,18 +6885,20 @@
     "name": "유다까",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "일식당",
+    "genre": "일식",
     "note": "선정릉역 4번 출구에서 209m",
     "emoji": "🍱",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼",
+    "mapQuery": "유다까 역삼"
   },
   {
     "id": 1521,
     "name": "스시유 삼성본점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "일식당",
+    "genre": "일식",
     "note": "일식 오마카세 코스",
     "emoji": "🍱",
     "score": 78,
@@ -6689,17 +6911,18 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "생선회",
-    "note": "코스요리는 3번까지 리필 가능",
+    "note": "양재역 2번 출구에서 413m",
     "emoji": "🐟",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1523,
     "name": "호경전 서초점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식당",
+    "genre": "중식",
     "note": "교대역 4번 출구에서 108m",
     "emoji": "🥢",
     "score": 75,
@@ -6710,12 +6933,12 @@
     "id": 1524,
     "name": "할머니가차려주는밥상 마곡발산점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "한정식",
     "note": "발산역 5번 출구에서 84m",
     "emoji": "🏮",
     "score": 82,
-    "district": "마곡",
+    "district": "발산",
     "room": "✅ 확인"
   },
   {
@@ -6724,32 +6947,36 @@
     "region": "종로",
     "area": "광화문·도심",
     "genre": "양식",
-    "note": "라클렛 치즈, 치즈 퐁듀, 뢰스티, 돈등심 스테이크 등 스위스 대표 메뉴 제공",
+    "note": "경복궁역 3번 출구에서 323m, 끄레아주차장 안",
     "emoji": "🍝",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "통의"
   },
   {
     "id": 1526,
     "name": "우천식육식당 강남구청점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "note": "강남구청역 2번 출구에서 215m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "논현"
   },
   {
     "id": 1527,
     "name": "바우한우",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "note": "선릉역 4번 출구에서 163m",
     "emoji": "🥩",
     "score": 78,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼",
+    "mapQuery": "바우한우 역삼"
   },
   {
     "id": 1528,
@@ -6757,43 +6984,46 @@
     "region": "서초",
     "area": "서초·반포",
     "genre": "생선회",
-    "note": "교대역 10번 출구에서 79m",
+    "note": "교대역 10번 출구에서 79m, 국제빌딩 지하 1층",
     "emoji": "🐟",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1529,
     "name": "루원 by 락희안",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "note": "종각역 1번 출구에서 93m, 그랑서울 타워1 4층",
     "emoji": "🥢",
     "score": 75,
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청진"
   },
   {
     "id": 1530,
     "name": "창고43 강남점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰"
+    "note": "강남역 4번 출구에서 27m",
+    "district": "역삼"
   },
   {
     "id": 1531,
     "name": "창고43 역삼점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
+    "note": "카이트타워 1층",
     "district": "역삼"
   },
   {
@@ -6801,22 +7031,23 @@
     "name": "창고43 교대점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰"
+    "note": "교대역 7번 출구에서 25m",
+    "district": "서초"
   },
   {
     "id": 1533,
     "name": "창고43 삼성점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
+    "note": "삼성역 4번 출구에서 27m",
     "district": "삼성"
   },
   {
@@ -6824,11 +7055,11 @@
     "name": "창고43 청담점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
+    "note": "압구정로데오역 4번 출구에서 485m, JS빌딩 1,2층",
     "district": "청담"
   },
   {
@@ -6836,46 +7067,47 @@
     "name": "창고43 잠실점",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
-    "district": "잠실"
+    "note": "석촌역 8번 출구에서 439m",
+    "district": "석촌"
   },
   {
     "id": 1536,
     "name": "창고43 명동점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
-    "district": "명동"
+    "note": "을지로3가역 12번 출구에서 63m, 파인애비뉴 A동 지하1층",
+    "district": "을지로"
   },
   {
     "id": 1537,
     "name": "창고43 시청점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰"
+    "note": "시청역 9번 출구에서 31m",
+    "district": "서소문"
   },
   {
     "id": 1538,
     "name": "창고43 무교점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
+    "note": "시청역 4번 출구에서 186m, 더익스체인지서울 2층",
     "district": "무교"
   },
   {
@@ -6883,44 +7115,47 @@
     "name": "창고43 본점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰"
+    "note": "여의도역 5번 출구에서 295m, 여의도백화점 m1층",
+    "district": "여의도"
   },
   {
     "id": 1540,
     "name": "창고43 샛강점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰"
+    "note": "샛강역 3번 출구에서 202m, 나라키움여의도 2층",
+    "district": "여의도"
   },
   {
     "id": 1541,
     "name": "창고43 여의강변점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰"
+    "note": "영등포구 여의도동 11-11, 한서리버파크 3층복사",
+    "district": "여의도"
   },
   {
     "id": 1542,
     "name": "창고43 서여의도점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
+    "note": "국회의사당역 1번 출구에서 364m, 여의도파라곤 1층",
     "district": "여의도"
   },
   {
@@ -6928,33 +7163,33 @@
     "name": "창고43 상암점",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
+    "note": "디지털미디어시티역 9번 출구에서 488m, DDMC 타워 2층",
     "district": "상암"
   },
   {
     "id": 1545,
     "name": "창고43 마곡점",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "소고기구이",
     "room": "✅ 확인",
     "score": 80,
     "emoji": "🥩",
-    "note": "나르디43 와인 특별가 쿠폰",
+    "note": "발산역 8번 출구에서 325m, 쿠쿠마곡빌딩 2층",
     "district": "마곡"
   },
   {
     "id": 1547,
     "name": "100년장어촌 마곡본가",
     "region": "강서",
-    "area": "마곡·발산",
+    "area": "강서",
     "genre": "장어구이",
     "score": 78,
-    "note": "장어구이와 한우",
+    "note": "마곡역 3번 출구에서 419m, 장어구이와 한우",
     "emoji": "🐟",
     "district": "마곡",
     "room": "✅ 확인"
@@ -6964,11 +7199,11 @@
     "name": "신류 용산점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
-    "note": "아모레퍼시픽 본사 지하 1층",
+    "note": "신용산역 2번 출구에서 84m, 아모레퍼시픽 본사 지하 1층",
     "emoji": "🥢",
-    "district": "용산",
+    "district": "한강로",
     "room": "✅ 확인"
   },
   {
@@ -6978,16 +7213,17 @@
     "area": "서초·반포",
     "genre": "한식",
     "score": 75,
-    "note": "제주 은갈치정식, 생선구이정식, 해물뚝배기, 보말톳칼국수 등",
+    "note": "서초구 방배동 797-8",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방배"
   },
   {
     "id": 1550,
     "name": "호시우보 여의도TP타워점",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
     "note": "여의도역 1번 출구에서 51m",
     "emoji": "🥩",
@@ -7001,9 +7237,9 @@
     "area": "광화문·도심",
     "genre": "한식",
     "score": 75,
-    "note": "광화문역 1번 출구에서 193m",
+    "note": "광화문역 1번 출구에서 193m, 세종빌딩 1층",
     "emoji": "🏮",
-    "district": "광화문",
+    "district": "당주",
     "room": "✅ 확인"
   },
   {
@@ -7011,11 +7247,12 @@
     "name": "우와정",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
-    "note": "4층 전관 9개의 프라이빗 룸",
+    "note": "고속터미널역 5번 출구에서 582m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "반포"
   },
   {
     "id": 1554,
@@ -7025,18 +7262,22 @@
     "genre": "한정식",
     "score": 78,
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "도화",
+    "mapQuery": "색동저고리 마포 한정식",
+    "note": "마포역 3번 출구에서 299m"
   },
   {
     "id": 1555,
     "name": "우노",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
     "emoji": "🥩",
     "mapQuery": "우노 선릉",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치"
   },
   {
     "id": 1558,
@@ -7047,18 +7288,20 @@
     "score": 75,
     "note": "뚝섬역 5번 출구에서 157m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "성수"
   },
   {
     "id": 1559,
     "name": "파크루안",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "note": "역삼역 1번 출구에서 189m",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1560,
@@ -7069,7 +7312,8 @@
     "score": 80,
     "note": "광화문 정원 속 프라이빗룸과 세미나 가능",
     "emoji": "🍝",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "정동"
   },
   {
     "id": 1561,
@@ -7078,7 +7322,7 @@
     "area": "서초·반포",
     "genre": "한정식",
     "score": 78,
-    "note": "빔프로젝터, 마이크 시스템 완비. 세미나,단체회식시 대관료 무료",
+    "note": "서초역 7번 출구에서 369m",
     "emoji": "🏮",
     "district": "서초",
     "room": "✅ 확인"
@@ -7090,9 +7334,9 @@
     "area": "광화문·도심",
     "genre": "생선회",
     "score": 75,
-    "note": "저온 숙성회 전문",
+    "note": "종각역 4번 출구에서 285m",
     "emoji": "🐟",
-    "district": "종로",
+    "district": "관철",
     "room": "✅ 확인"
   },
   {
@@ -7102,10 +7346,11 @@
     "area": "강남·삼성",
     "genre": "양식",
     "score": 75,
-    "note": "프라이빗 룸 최소2명부터 최대 40명까지 가능",
+    "note": "신논현역 4번 출구에서 125m",
     "emoji": "🍝",
     "mapQuery": "베네티 강남",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1564,
@@ -7128,7 +7373,7 @@
     "score": 75,
     "note": "뉴질랜드,호주산 베이비램 양갈비 참숯 화로구이 할랄전문점",
     "emoji": "🥩",
-    "district": "광화문",
+    "district": "태평로",
     "room": "✅ 확인"
   },
   {
@@ -7136,29 +7381,31 @@
     "name": "담청각",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "note": "청담역 10번 출구에서 122m",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청담"
   },
   {
     "id": 1567,
     "name": "백가향",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "note": "삼성역 3번 출구에서 131m",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "삼성"
   },
   {
     "id": 1569,
     "name": "가연중식당 강남역삼점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "note": "역삼역 3번 출구에서 102m",
     "emoji": "🥢",
@@ -7198,7 +7445,8 @@
     "score": 75,
     "note": "교대역 12번 출구에서 101m, 활어막회 대방어회 전문",
     "emoji": "🐟",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1575,
@@ -7209,7 +7457,7 @@
     "score": 78,
     "note": "디팰리스 지하 1층",
     "emoji": "🏮",
-    "district": "광화문",
+    "district": "신문로",
     "room": "✅ 확인"
   },
   {
@@ -7219,10 +7467,11 @@
     "area": "강남·삼성",
     "genre": "일식",
     "score": 78,
-    "note": "4개의 독립된 프라이빗 룸으로만 운영",
+    "note": "4개의 독립된 프라이빗 룸",
     "emoji": "🍱",
     "mapQuery": "이코이 역삼",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1577,
@@ -7243,9 +7492,10 @@
     "area": "광화문·도심",
     "genre": "한식",
     "score": 75,
-    "note": "에너지플러스 서울로 13층",
+    "note": "서울역 7번 출구에서 108m, 에너지플러스 서울로 13층",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "남대문로"
   },
   {
     "id": 1579,
@@ -7254,31 +7504,33 @@
     "area": "강남·삼성",
     "genre": "일식",
     "score": 78,
-    "note": "야나가와식 세이로무시 & 히츠마부시 전문점",
+    "note": "선정릉역 2번 출구에서 132m, 야나가와식 세이로무시 & 히츠마부시 전문점",
     "emoji": "🍱",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "삼성"
   },
   {
     "id": 1581,
     "name": "이타마에",
     "region": "영등포",
     "area": "여의도",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
-    "note": "여의도역 6번 출구에서 67m,  아일렉스빌딩 5층",
+    "note": "여의도역 6번 출구에서 67m, 아일렉스빌딩 5층",
     "emoji": "🍱",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1582,
     "name": "은우 더 블랙 도산점",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
-    "note": "동선이 완전히 분리된 단독 공간",
+    "note": "강남구 논현동 96-14",
     "emoji": "🥩",
-    "district": "도산",
+    "district": "논현",
     "room": "✅ 확인"
   },
   {
@@ -7286,11 +7538,11 @@
     "name": "동해도 광화문점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
-    "note": "시그너스빌딩 지하1층",
+    "note": "광화문역 5번 출구에서 319m, 시그너스빌딩 지하1층",
     "emoji": "🍱",
-    "district": "광화문",
+    "district": "무교",
     "room": "✅ 확인"
   },
   {
@@ -7302,18 +7554,20 @@
     "score": 75,
     "note": "캐주얼 다이닝/한식비스트로",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1585,
     "name": "이모와슌 스타필드 그랑서울점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
-    "note": "그랑서울 타워1 4층",
+    "note": "종각역 1번 출구에서 177m, 그랑서울 타워1 4층",
     "emoji": "🍱",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "청진"
   },
   {
     "id": 1586,
@@ -7322,7 +7576,7 @@
     "area": "청담·신사",
     "genre": "한식",
     "score": 75,
-    "note": "나주의 한우곰탕과 무안의 낙지",
+    "note": "강남구 청담동 23",
     "emoji": "🏮",
     "district": "청담",
     "room": "✅ 확인"
@@ -7334,9 +7588,9 @@
     "area": "잠실·성수",
     "genre": "일식당",
     "score": 78,
-    "note": "소피텔 지하 1층",
+    "note": "잠실역 10번 출구에서 319m, 소피텔 지하 1층",
     "emoji": "🍱",
-    "district": "잠실",
+    "district": "신천",
     "room": "✅ 확인"
   },
   {
@@ -7344,11 +7598,12 @@
     "name": "성균관 사시미 선릉점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
     "note": "오마카세 일식 기반의(카이세키) 코스요리 전문",
     "emoji": "🍱",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치"
   },
   {
     "id": 1589,
@@ -7369,31 +7624,35 @@
     "area": "여의도",
     "genre": "한식",
     "score": 75,
-    "note": "글루텐 프리 비건 등 식습관 고려 메뉴 제공",
+    "note": "여의나루역 4번 출구에서 455m, 글루텐 프리, 비건",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1591,
     "name": "라움 마곡",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "중식당",
+    "area": "강서",
+    "genre": "중식",
     "score": 75,
     "emoji": "🥢",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "mapQuery": "라움 마곡 중식당",
+    "note": "발산역 8번 출구에서 375m"
   },
   {
     "id": 1592,
     "name": "한우뜸 포스코센터선릉점",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
     "note": "포스코센터 지하1층",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "대치"
   },
   {
     "id": 1593,
@@ -7402,21 +7661,23 @@
     "area": "잠실·성수",
     "genre": "일식당",
     "score": 78,
-    "note": "석촌호수와 올림픽공원 사이에 위치",
+    "note": "송파구 방이동 67-2",
     "emoji": "🍱",
-    "mapQuery": "해담 잠실",
-    "room": "✅ 확인"
+    "mapQuery": "해담 일식당 방이",
+    "room": "✅ 확인",
+    "district": "방이"
   },
   {
     "id": 1594,
     "name": "자연산 해담일식 대게마을",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
     "note": "센터필드강남 조선팰리스호텔 뒤편",
     "emoji": "🍱",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "역삼"
   },
   {
     "id": 1595,
@@ -7435,22 +7696,24 @@
     "name": "심포니오브차이나",
     "region": "송파",
     "area": "잠실·성수",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
-    "note": "갤러리아팰리스 지하 1층",
+    "note": "잠실역 4번 출구에서 436m, 갤러리아팰리스 지하 1층",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "잠실"
   },
   {
     "id": 1597,
     "name": "긴자 사당점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
     "note": "사당역 12번 출구에서 33m, 파스텔시티 3층",
     "emoji": "🍱",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방배"
   },
   {
     "id": 1598,
@@ -7459,20 +7722,22 @@
     "area": "잠실·성수",
     "genre": "고기구이",
     "score": 75,
-    "note": "숙성육 전문",
+    "note": "송파나루역 2번 출구에서 489m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방이"
   },
   {
     "id": 1599,
     "name": "우참판 서래본점",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
-    "note": "몽마르뜨빌딩 3층",
+    "note": "서초구 반포동 96-6, 몽마르뜨빌딩 3층",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "반포"
   },
   {
     "id": 1600,
@@ -7481,56 +7746,49 @@
     "area": "여의도",
     "genre": "고기구이",
     "score": 75,
-    "note": "소금구이 한판과 고추장 오겹살",
+    "note": "샛강역 1번 출구에서 283m",
     "emoji": "🥩",
     "mapQuery": "너와집 여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1601,
     "name": "기후",
     "region": "성동",
     "area": "잠실·성수",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
-    "note": "서울숲 드림타워 1층 후문",
+    "note": "성수역 3번 출구에서 408m, 서울숲 드림타워 1층",
     "emoji": "🍱",
-    "mapQuery": "기후 성수 일식당",
-    "room": "✅ 확인"
+    "mapQuery": "기후 일식당 성수",
+    "room": "✅ 확인",
+    "district": "성수"
   },
   {
     "id": 1602,
     "name": "호신각",
     "region": "강남",
     "area": "강남·삼성",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "삼성",
+    "note": "특제 짬뽕, 전가복, 팔보채, 커플새우"
   },
   {
     "id": 1603,
     "name": "설담",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "소고기구이",
+    "area": "강서",
+    "genre": "고기구이",
     "score": 78,
-    "note": "마곡 NY타워 11층",
+    "note": "마곡역 3번 출구에서 469m, 마곡 NY타워 11층",
     "emoji": "🥩",
     "mapQuery": "설담 마곡",
-    "room": "✅ 확인"
-  },
-  {
-    "id": 1604,
-    "name": "우천식육식당 청담본점",
-    "region": "강남",
-    "area": "청담·신사",
-    "genre": "소고기구이",
-    "score": 78,
-    "note": "리베라호텔 이면 뒷골목",
-    "emoji": "🥩",
-    "district": "청담",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "마곡"
   },
   {
     "id": 1605,
@@ -7541,7 +7799,9 @@
     "score": 75,
     "note": "사당역 14번 출구에서 160m",
     "emoji": "🐟",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방배",
+    "mapQuery": "속초바다야 방배"
   },
   {
     "id": 1606,
@@ -7552,7 +7812,7 @@
     "score": 75,
     "note": "압구정로데오역 5번 출구에서 272m",
     "emoji": "🏮",
-    "district": "압구정",
+    "district": "신사",
     "room": "✅ 확인"
   },
   {
@@ -7564,7 +7824,8 @@
     "score": 75,
     "note": "사당역 13번 출구에서 163m",
     "emoji": "🥩",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방배"
   },
   {
     "id": 1608,
@@ -7575,7 +7836,7 @@
     "score": 78,
     "note": "미래에셋 센터원 지하 1층",
     "emoji": "🏮",
-    "district": "을지로",
+    "district": "수하",
     "room": "✅ 확인"
   },
   {
@@ -7583,23 +7844,24 @@
     "name": "우담",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
-    "note": "암소 한우 전문점",
+    "note": "강남구 논현동 97-20",
     "emoji": "🥩",
-    "mapQuery": "우담 논현",
-    "room": "✅ 확인"
+    "mapQuery": "우담 고기구이 논현",
+    "room": "✅ 확인",
+    "district": "논현"
   },
   {
     "id": 1610,
     "name": "대송참숯 광화문점",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
-    "note": "타워8빌딩 지하 1층",
+    "note": "종각역 1번 출구에서 155m, 타워8빌딩 지하 1층",
     "emoji": "🥩",
-    "district": "광화문",
+    "district": "청진",
     "room": "✅ 확인"
   },
   {
@@ -7607,7 +7869,7 @@
     "name": "우섬 여의도",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
     "note": "국회의사당역 4번 출구에서 97m, 사케다이닝 컨셉의 한우오마카세",
     "emoji": "🥩",
@@ -7619,11 +7881,13 @@
     "name": "매일향",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "note": "방배동 함지박사거리",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "방배",
+    "mapQuery": "매일향 방배"
   },
   {
     "id": 1613,
@@ -7642,7 +7906,7 @@
     "name": "천상한우 여의도",
     "region": "영등포",
     "area": "여의도",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
     "note": "국회의사당역 3번 출구에서 299m",
     "emoji": "🥩",
@@ -7654,22 +7918,26 @@
     "name": "맛이차이나",
     "region": "마포",
     "area": "마포·홍대",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "note": "상수역 4번 출구에서 180m",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "상수",
+    "mapQuery": "맛이차이나 마포"
   },
   {
     "id": 1618,
     "name": "초선과여포",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "note": "강남역 5번 출구에서 189m",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "mapQuery": "초선과여포 서초"
   },
   {
     "id": 1619,
@@ -7678,9 +7946,11 @@
     "area": "마포·홍대",
     "genre": "생선회",
     "score": 75,
-    "note": "북방 참다랑어",
+    "note": "디지털미디어시티역 9번 출구에서 382m",
     "emoji": "🐟",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "상암",
+    "mapQuery": "봉참치 상암"
   },
   {
     "id": 1620,
@@ -7689,7 +7959,7 @@
     "area": "여의도",
     "genre": "장어구이",
     "score": 78,
-    "note": "강화 갯벌장어와 고창 풍천장어",
+    "note": "여의도역 5번 출구에서 345m, 맨하탄빌딩",
     "emoji": "🐟",
     "district": "여의도",
     "room": "✅ 확인"
@@ -7701,7 +7971,7 @@
     "area": "여의도",
     "genre": "고기구이",
     "score": 75,
-    "note": "숙성 한우, 숙성 한돈",
+    "note": "샛강역 2번 출구에서 422m",
     "emoji": "🥩",
     "district": "여의도",
     "room": "✅ 확인"
@@ -7715,7 +7985,7 @@
     "score": 75,
     "note": "광화문역 2번 출구에서 9m, KT타워 지하1층",
     "emoji": "🐟",
-    "district": "광화문",
+    "district": "세종로",
     "room": "✅ 확인"
   },
   {
@@ -7723,11 +7993,11 @@
     "name": "갈비명가이상 명동점",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
     "note": "회현역 1번 출구에서 53m, 리더스뷰남산 2층",
     "emoji": "🥩",
-    "district": "명동",
+    "district": "회현",
     "room": "✅ 확인"
   },
   {
@@ -7735,12 +8005,13 @@
     "name": "청담13",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
-    "note": "활 아귀회와 수육, 독도 꽃새우",
+    "note": "강남구 청담동 13",
     "emoji": "🍱",
     "district": "청담",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "mapQuery": "청담13 일식당 도산대로 70길"
   },
   {
     "id": 1625,
@@ -7751,7 +8022,7 @@
     "score": 75,
     "note": "삼성역 1번 출구에서 184m",
     "emoji": "🐟",
-    "district": "삼성",
+    "district": "대치",
     "room": "✅ 확인"
   },
   {
@@ -7759,57 +8030,65 @@
     "name": "신승관",
     "region": "종로",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
-    "note": "르메이에르 건물 2층",
+    "note": "종각역 1번 출구에서 235m, 르메이에르 건물 2층",
     "emoji": "🥢",
     "mapQuery": "신승관 종로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "종로"
   },
   {
     "id": 1627,
     "name": "뜨락",
     "region": "강남",
     "area": "청담·신사",
-    "genre": "소고기구이",
+    "genre": "고기구이",
     "score": 78,
-    "note": "한우 다이닝",
+    "note": "강남구 청담동 130-13",
     "emoji": "🥩",
-    "mapQuery": "뜨락 청담 소고기",
-    "room": "✅ 확인"
+    "mapQuery": "뜨락 청담 고기구이",
+    "room": "✅ 확인",
+    "district": "청담"
   },
   {
     "id": 1628,
     "name": "진스시",
     "region": "서초",
     "area": "서초·반포",
-    "genre": "일식당",
+    "genre": "일식",
     "score": 78,
     "emoji": "🍱",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초",
+    "mapQuery": "진스시 서초",
+    "note": "양재역 2번 출구에서 439m"
   },
   {
     "id": 1629,
     "name": "초류향",
     "region": "중구",
     "area": "광화문·도심",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
-    "note": "유의융 셰프",
+    "note": "을지로입구역 1-1번 출구에서 240m",
     "emoji": "🥢",
     "mapQuery": "초류향 을지로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "다동"
   },
   {
     "id": 1630,
     "name": "일식비",
     "region": "강서",
-    "area": "마곡·발산",
-    "genre": "일식당",
+    "area": "강서",
+    "genre": "일식",
     "score": 78,
-    "note": "에이스프라자 3층",
+    "note": "발산역 9번 출구에서 476m, 에이스프라자 3층",
     "emoji": "🍱",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "마곡",
+    "mapQuery": "일식비 마곡"
   },
   {
     "id": 1632,
@@ -7818,7 +8097,7 @@
     "area": "여의도",
     "genre": "한식",
     "score": 75,
-    "note": "대치동 판동면옥의 여의도점",
+    "note": "국회의사당역 3번 출구에서 489m, 기계회관 본점 1층",
     "emoji": "🏮",
     "district": "여의도",
     "room": "✅ 확인"
@@ -7832,7 +8111,7 @@
     "score": 75,
     "note": "을지로4가역 3번 출구에서 71m",
     "emoji": "🥩",
-    "district": "을지로",
+    "district": "주교",
     "room": "✅ 확인"
   },
   {
@@ -7842,9 +8121,11 @@
     "area": "청담·신사",
     "genre": "장어구이",
     "score": 78,
-    "note": "을지병원 사거리, 장어 파인 다이닝",
+    "note": "강남구 신사동 587-14",
     "emoji": "🐟",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "신사",
+    "mapQuery": "더일 장어구이"
   },
   {
     "id": 1635,
@@ -7853,9 +8134,10 @@
     "area": "여의도",
     "genre": "장어구이",
     "score": 78,
-    "note": "국내산 민물장어 숯불구이",
+    "note": "샛강역 2번 출구에서 364m",
     "emoji": "🐟",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "여의도"
   },
   {
     "id": 1636,
@@ -7878,7 +8160,7 @@
     "score": 75,
     "note": "종각역 4번 출구에서 188m, 호주산/미국산 와규, 할랄 인증 양고기",
     "emoji": "🥩",
-    "district": "종로",
+    "district": "관철",
     "room": "✅ 확인"
   },
   {
@@ -7886,11 +8168,12 @@
     "name": "도원스타일 서울역점",
     "region": "용산",
     "area": "용산·이태원",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 75,
     "note": "서울역 1번 출구에서 21m",
     "emoji": "🥢",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "동자"
   },
   {
     "id": 1640,
@@ -7899,10 +8182,11 @@
     "area": "마포·홍대",
     "genre": "한정식",
     "score": 78,
-    "note": "떡갈비, 간장게장,보리굴비",
+    "note": "서대문구 연희동 81-22",
     "emoji": "🏮",
     "mapQuery": "수빈 한정식 연희동",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "연희"
   },
   {
     "id": 1641,
@@ -7911,9 +8195,10 @@
     "area": "광화문·도심",
     "genre": "한정식",
     "score": 78,
-    "note": "한정식 맡김차림 전문점",
+    "note": "삼청동 문화거리 근처 북촌마을",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "팔판"
   },
   {
     "id": 1642,
@@ -7924,7 +8209,8 @@
     "score": 75,
     "note": "강남역 6번 출구에서 150m, 서초타운트라팰리스 지하1층",
     "emoji": "🏮",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "서초"
   },
   {
     "id": 1643,
@@ -7933,9 +8219,9 @@
     "area": "용산·이태원",
     "genre": "한식",
     "score": 75,
-    "note": "서울 샤브샤브 전문점",
+    "note": "용산역 1번 출구에서 435m",
     "emoji": "🏮",
-    "district": "용산",
+    "district": "한강로",
     "room": "✅ 확인"
   },
   {
@@ -7945,14 +8231,15 @@
     "area": "잠실·성수",
     "genre": "고기구이",
     "score": 75,
-    "note": "한우, 제주돼지 한정식집",
+    "note": "송파구 석촌동 156",
     "emoji": "🥩",
     "mapQuery": "사랑채 고기구이 잠실",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "district": "석촌"
   },
   {
     "id": 1645,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -7966,7 +8253,7 @@
   },
   {
     "id": 1646,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -7980,7 +8267,7 @@
   },
   {
     "id": 1647,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -7990,11 +8277,11 @@
     "district": "선릉",
     "score": 84,
     "rating": 4.4,
-    "note": "선릉역 1번 출구에서 260m"
+    "note": "선릉역 1번 출구에서 260m,"
   },
   {
     "id": 1648,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -8004,25 +8291,11 @@
     "district": "교대",
     "score": 84,
     "rating": 4.3,
-    "note": "개별룸"
-  },
-  {
-    "id": 1649,
-    "genre": "LA갈비",
-    "room": "✅ 확인",
-    "emoji": "🥩",
-    "source": "직접 확인",
-    "name": "청기와타운 신사역점",
-    "region": "강남",
-    "area": "청담·신사",
-    "district": "신사",
-    "score": 84,
-    "rating": 4.3,
-    "note": "개별룸"
+    "note": "교대역 14번 출구에서 244m"
   },
   {
     "id": 1650,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -8032,11 +8305,11 @@
     "district": "잠실",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸"
+    "note": "종합운동장역 9번 출구에서 324m"
   },
   {
     "id": 1651,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -8046,11 +8319,11 @@
     "district": "방배",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸"
+    "note": "사당역 11번 출구에서 302m"
   },
   {
     "id": 1652,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -8060,11 +8333,11 @@
     "district": "가락",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸"
+    "note": "가락시장역 3번 출구에서 378m"
   },
   {
     "id": 1653,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -8074,25 +8347,25 @@
     "district": "남영",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸"
+    "note": "숙대입구역 6번 출구에서 44m"
   },
   {
     "id": 1654,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
     "name": "청기와타운 충무로점",
     "region": "중구",
     "area": "광화문·도심",
-    "district": "충무로",
+    "district": "인현",
     "score": 84,
     "rating": 4.3,
     "note": "충무로역 7번 출구에서 201m"
   },
   {
     "id": 1655,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -8106,49 +8379,49 @@
   },
   {
     "id": 1656,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
     "name": "청기와타운 종로점",
     "region": "종로",
     "area": "광화문·도심",
-    "district": "종로",
+    "district": "관철",
     "score": 84,
     "rating": 4.4,
     "note": "종각역 4번 출구에서 315m"
   },
   {
     "id": 1657,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
     "name": "청기와타운 마포점",
     "region": "마포",
     "area": "마포·홍대",
-    "district": "마포",
+    "district": "옹강",
     "score": 85,
     "rating": 4.51,
-    "note": "개별룸"
+    "note": "마포역 1번 출구에서 407m"
   },
   {
     "id": 1658,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
     "name": "청기와타운 서대문역점",
     "region": "중구",
     "area": "광화문·도심",
-    "district": "광화문",
+    "district": "순화",
     "score": 83,
     "rating": 4.2,
     "note": "서대문역 6번 출구에서 288m"
   },
   {
     "id": 1659,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
@@ -8158,35 +8431,35 @@
     "district": "여의도",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸"
+    "note": "국회의사당역 1번 출구에서 417m"
   },
   {
     "id": 1661,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
     "name": "청기와타운 홍대점",
     "region": "마포",
     "area": "마포·홍대",
-    "district": "홍대",
+    "district": "서교",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸 · 콜키지 프리"
+    "note": "홍대입구역 9번 출구에서 269m"
   },
   {
     "id": 1662,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
     "name": "청기와타운 발산마곡점",
     "region": "강서",
-    "area": "마곡·발산",
-    "district": "발산",
+    "area": "강서",
+    "district": "등촌",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸"
+    "note": "발산역 4번 출구에서 131m"
   },
   {
     "id": 1241,
@@ -8198,30 +8471,33 @@
     "rating": "4.3",
     "emoji": "🥩",
     "district": "둔촌",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "둔촌동역 2번 출구에서 79m, 프레온스테이션5 지하 1층"
   },
   {
     "id": 1274,
     "name": "크리스탈제이드 현대백화점 천호점",
     "region": "강동",
     "area": "잠실·성수",
-    "genre": "중식당",
+    "genre": "중식",
     "score": 85,
     "rating": "4.3",
     "emoji": "🥢",
     "district": "천호",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "천호역 4번 출구에서 38m, 현대백화점 천호점 12층"
   },
   {
     "id": 1438,
     "name": "긴자 올림픽점",
     "region": "강동",
     "area": "잠실·성수",
-    "genre": "일식당",
+    "genre": "일식",
     "emoji": "🍱",
     "score": 78,
     "district": "성내",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "note": "강동구 성내동 448-21"
   },
   {
     "id": 1469,
@@ -8231,8 +8507,9 @@
     "genre": "한정식",
     "emoji": "🏮",
     "score": 82,
-    "district": "천호",
-    "room": "✅ 확인"
+    "district": "성내",
+    "room": "✅ 확인",
+    "note": "천호역 6번 출구에서 466m"
   },
   {
     "id": 1477,
@@ -8251,8 +8528,8 @@
     "name": "모리향 강동점",
     "region": "강동",
     "area": "잠실·성수",
-    "genre": "중식당",
-    "note": "50명이상 동시 수용 가능한 룸과 100명까지 대관가능",
+    "genre": "중식",
+    "note": "강동역 2번 출구에서 343m",
     "emoji": "🥢",
     "score": 75,
     "district": "길동",
@@ -8267,35 +8544,35 @@
     "score": 75,
     "note": "둔촌동역 4번 출구에서 257m",
     "emoji": "🥩",
-    "district": "둔촌",
+    "district": "성내",
     "room": "✅ 확인"
   },
   {
     "id": 1663,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸",
+    "note": "왕십리역 12번 출구에서 93m",
     "name": "청기와타운 왕십리역사점",
     "region": "성동",
-    "district": "왕십리",
+    "district": "행당",
     "area": "잠실·성수"
   },
   {
     "id": 1664,
-    "genre": "LA갈비",
+    "genre": "고기구이",
     "room": "✅ 확인",
     "emoji": "🥩",
     "source": "직접 확인",
     "score": 83,
     "rating": 4.2,
-    "note": "개별룸",
+    "note": "길동역 3번 출구에서 526m",
     "name": "청기와타운 길동사거리점",
     "region": "강동",
-    "district": "길동",
+    "district": "둔촌",
     "area": "잠실·성수"
   }
 ]
