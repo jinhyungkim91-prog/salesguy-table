@@ -532,6 +532,7 @@ export default function App() {
   const [bizArea, setBizArea]     = useState("전체");
   const [bizGenre, setBizGenre]   = useState("전체");
   const [bizSearch, setBizSearch] = useState("");
+  const [bizRoomOnly, setBizRoomOnly] = useState(false);
   const [bizSearchFocus, setBizSearchFocus] = useState(false);
   const [recentSearches, setRecentSearches] = useState(() => {
     try { return JSON.parse(localStorage.getItem("sgRecentSearches") || "[]"); }
@@ -711,6 +712,7 @@ export default function App() {
   const bizFiltered = restaurants.filter(r => {
     if (bizArea !== "전체" && r.area !== bizArea) return false;
     if (bizGenre !== "전체" && getGenreCategory(r.genre) !== bizGenre) return false;
+    if (bizRoomOnly && r.room_type !== '전석룸') return false;
     if (bizSearch) {
       const tokens = bizSearch.trim().split(/\s+/);
       const fields = [r.name, r.area, r.genre, r.district||'', r.region||'', r.note||''];
@@ -839,8 +841,17 @@ export default function App() {
               <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>setBizGenre(g)}>{g}</button>
             ))}
           </div>
+          <div style={{padding:"4px 16px 2px"}}>
+            <button
+              onClick={()=>setBizRoomOnly(v=>!v)}
+              style={{fontSize:12,fontWeight:700,padding:"5px 14px",borderRadius:20,border:"1.5px solid",cursor:"pointer",
+                background: bizRoomOnly ? "#7A5C1E" : "transparent",
+                color: bizRoomOnly ? "#fff" : "#7A5C1E",
+                borderColor:"#7A5C1E"}}
+            >🚪 전석 프라이빗 룸</button>
+          </div>
           <div className="info-banner">
-            🔍 {bizArea!=="전체"?bizArea:"전체"}{bizGenre!=="전체"?" · "+bizGenre:""} · <b>{bizFiltered.length}곳</b> (전체 {restaurants.length}개)
+            🔍 {bizArea!=="전체"?bizArea:"전체"}{bizGenre!=="전체"?" · "+bizGenre:""}{bizRoomOnly?" · 전석룸":""} · <b>{bizFiltered.length}곳</b> (전체 {restaurants.length}개)
           </div>
           <div className="rest-list">
             {bizFiltered.length===0

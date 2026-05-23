@@ -10,7 +10,8 @@
     "rating": 5,
     "note": "신라호텔23층, 남산뷰",
     "emoji": "🏮",
-    "district": "장충"
+    "district": "장충",
+    "room_type": "룸있음"
   },
   {
     "id": 4,
@@ -23,7 +24,8 @@
     "rating": 4.8,
     "note": "압구정로데오역 3번 출구에서 488m",
     "emoji": "🥩",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 6,
@@ -37,7 +39,8 @@
     "note": "성동구 마장동 761-4",
     "emoji": "🥩",
     "mapQuery": "본앤브레드 오리지널 마장동",
-    "district": "마장"
+    "district": "마장",
+    "room_type": "룸있음"
   },
   {
     "id": 7,
@@ -51,7 +54,8 @@
     "note": "신사역 6번 출구에서 340m, 신사스퀘어 2층",
     "emoji": "🥂",
     "district": "신사",
-    "mapQuery": "스와니예 신사"
+    "mapQuery": "스와니예 신사",
+    "room_type": "룸있음"
   },
   {
     "id": 10,
@@ -64,7 +68,8 @@
     "rating": 4.7,
     "note": "강남역 5번 출구에서 148m",
     "emoji": "🥩",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 13,
@@ -77,7 +82,8 @@
     "rating": 5,
     "note": "광화문역 5번 출구에서 176m, 광화문역 SFC몰 지하2층",
     "emoji": "🏮",
-    "district": "태평로"
+    "district": "태평로",
+    "room_type": "룸있음"
   },
   {
     "id": 18,
@@ -90,7 +96,8 @@
     "rating": 4.7,
     "note": "압구정로데오역 3번 출구에서 558m",
     "emoji": "🍣",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 19,
@@ -104,7 +111,8 @@
     "note": "용산구 한남동 32-25",
     "emoji": "🥩",
     "district": "한남",
-    "mapQuery": "이속우화 한남"
+    "mapQuery": "이속우화 한남",
+    "room_type": "룸있음"
   },
   {
     "id": 22,
@@ -117,7 +125,8 @@
     "rating": 4.9,
     "note": "여의도역 1번 출구에서 517m, FKI타워 전경련회관 지하1층",
     "emoji": "🏮",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 36,
@@ -130,7 +139,8 @@
     "rating": 4.7,
     "note": "역삼역 2번 출구에서 27m, 강남파이낸스센터(GFC) 지하1층",
     "emoji": "🥩",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 40,
@@ -143,7 +153,8 @@
     "rating": 4.7,
     "note": "다양한 별실, 한옥 별채, 잔디마당, 야외 테라스",
     "emoji": "🏮",
-    "district": "성북"
+    "district": "성북",
+    "room_type": "룸있음"
   },
   {
     "id": 42,
@@ -157,7 +168,8 @@
     "note": "압구정역 4번 출구에서 333m",
     "emoji": "🥩",
     "district": "신사",
-    "mapQuery": "조우 고기구이 압구정"
+    "mapQuery": "조우 고기구이 압구정",
+    "room_type": "룸있음"
   },
   {
     "id": 46,
@@ -171,7 +183,8 @@
     "note": "강남구 신사동 630-12",
     "emoji": "🥂",
     "district": "신사",
-    "mapQuery": "다이닝마 신사"
+    "mapQuery": "다이닝마 신사",
+    "room_type": "룸있음"
   },
   {
     "id": 47,
@@ -184,7 +197,8 @@
     "rating": 4.8,
     "note": "역삼역 4번 출구에서 262m, 빗썸금융타워 지하 2층",
     "emoji": "🍣",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "전석룸"
   },
   {
     "id": 48,
@@ -197,7 +211,8 @@
     "rating": 4.7,
     "note": "강남구 청담동 19-13",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 49,
@@ -210,7 +225,8 @@
     "rating": 4.7,
     "note": "청담스퀘어 B동 3층",
     "emoji": "🍣",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 51,
@@ -223,7 +239,8 @@
     "rating": 5,
     "note": "더케이트윈타워 지하1층",
     "emoji": "🥩",
-    "district": "중학"
+    "district": "중학",
+    "room_type": "룸있음"
   },
   {
     "id": 52,
@@ -236,7 +253,8 @@
     "rating": 4.6,
     "note": "홍대입구역 9번 출구에서 378m",
     "emoji": "🥩",
-    "district": "서교"
+    "district": "서교",
+    "room_type": "룸있음"
   },
   {
     "id": 53,
@@ -250,7 +268,8 @@
     "note": "압구정로데오역 3번 출구에서 455m",
     "emoji": "🥂",
     "district": "청담",
-    "mapQuery": "밍글스 한식 청담"
+    "mapQuery": "밍글스 한식 청담",
+    "room_type": "룸있음"
   },
   {
     "id": 54,
@@ -263,7 +282,8 @@
     "rating": 4.9,
     "note": "센터필드 이스트타워 | 조선 팰리스 36층",
     "emoji": "🥂",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 55,
@@ -276,7 +296,8 @@
     "rating": 4.9,
     "note": "청담역 12번 출구에서 152m",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 57,
@@ -289,7 +310,8 @@
     "rating": 4.9,
     "note": "용산구 한남동 657-138",
     "emoji": "🥂",
-    "district": "한남"
+    "district": "한남",
+    "room_type": "룸있음"
   },
   {
     "id": 58,
@@ -302,7 +324,8 @@
     "rating": 4.9,
     "note": "강남구 청담동 98-7, 최현석 쉐프",
     "emoji": "🥢",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 59,
@@ -316,7 +339,8 @@
     "note": "학동역 10번 출구에서 202m, 백영논현센터 2층, 엄태준셰프",
     "emoji": "🏮",
     "district": "논현",
-    "mapQuery": "솔밤 논현"
+    "mapQuery": "솔밤 논현",
+    "room_type": "룸있음"
   },
   {
     "id": 60,
@@ -330,7 +354,8 @@
     "note": "안국역 3번 출구에서 218m, 아라리오 뮤지엄 신관 5층",
     "emoji": "🥂",
     "mapQuery": "더그린테이블 종로",
-    "district": "원서"
+    "district": "원서",
+    "room_type": "룸있음"
   },
   {
     "id": 61,
@@ -343,7 +368,8 @@
     "rating": 5,
     "note": "박경재 셰프, 도심 속 조용하고 우아한 분위기",
     "emoji": "🍣",
-    "district": "만리"
+    "district": "만리",
+    "room_type": "룸있음"
   },
   {
     "id": 63,
@@ -356,7 +382,8 @@
     "rating": 4.9,
     "note": "청담역 13번 출구에서 350m",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 64,
@@ -369,7 +396,8 @@
     "rating": 4.9,
     "note": "메인타워 37층",
     "emoji": "🥂",
-    "district": "소공"
+    "district": "소공",
+    "room_type": "룸있음"
   },
   {
     "id": 66,
@@ -382,7 +410,8 @@
     "rating": 5,
     "note": "앰배서더 서울 풀만 호텔 2층, 후덕죽 마스터셰프",
     "emoji": "🥂",
-    "district": "장충"
+    "district": "장충",
+    "room_type": "룸있음"
   },
   {
     "id": 69,
@@ -395,7 +424,8 @@
     "rating": 4.6,
     "note": "한우 오마카세부터 단품 메뉴까지 제공",
     "emoji": "🥩",
-    "district": "서소문"
+    "district": "서소문",
+    "room_type": "룸있음"
   },
   {
     "id": 71,
@@ -409,7 +439,8 @@
     "note": "신선한 재료로 만든 궁중 한정식",
     "emoji": "🥂",
     "mapQuery": "한국의집 필동 한정식",
-    "district": "필동"
+    "district": "필동",
+    "room_type": "룸있음"
   },
   {
     "id": 73,
@@ -422,7 +453,8 @@
     "rating": 5,
     "note": "강남구 청담동 17-24, 권영운 김보미 오너셰프",
     "emoji": "🍣",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 76,
@@ -436,7 +468,8 @@
     "note": "용산구 이태원동 258-14",
     "emoji": "🥂",
     "district": "이태원",
-    "mapQuery": "모수 서울 양식"
+    "mapQuery": "모수 서울 양식",
+    "room_type": "룸있음"
   },
   {
     "id": 77,
@@ -449,7 +482,8 @@
     "rating": 5,
     "note": "학동역 6번 출구에서 406m, 박무현 셰프",
     "emoji": "🥂",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 79,
@@ -462,7 +496,8 @@
     "rating": 4.8,
     "note": "노벨과개미 지하1층",
     "emoji": "🍣",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 85,
@@ -476,7 +511,8 @@
     "note": "서울 웨스틴조선호텔 20층",
     "emoji": "🍣",
     "mapQuery": "웨스틴 조선 서울 일식당 스시조",
-    "district": "소공"
+    "district": "소공",
+    "room_type": "룸있음"
   },
   {
     "id": 90,
@@ -489,7 +525,8 @@
     "rating": 4.8,
     "note": "신용산역 2번 출구에서 84m, 아모레퍼시픽 본사 B1",
     "emoji": "🥩",
-    "district": "한강로"
+    "district": "한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 100,
@@ -502,7 +539,8 @@
     "rating": 4.8,
     "note": "강남역 8번 출구에서 143m",
     "emoji": "🍣",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 112,
@@ -516,7 +554,8 @@
     "note": "회현 7번 출구에서 63m, 레스케이프호텔 6층",
     "emoji": "🥂",
     "mapQuery": "레스케이프 팔레드 신 중식당",
-    "district": "회현"
+    "district": "회현",
+    "room_type": "룸있음"
   },
   {
     "id": 113,
@@ -529,7 +568,8 @@
     "rating": 4.7,
     "note": "압구정역 4번 출구에서 31m",
     "emoji": "🥩",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 114,
@@ -542,7 +582,8 @@
     "rating": 4.7,
     "note": "메이필드 호텔",
     "emoji": "🏮",
-    "district": "외발산"
+    "district": "외발산",
+    "room_type": "룸있음"
   },
   {
     "id": 118,
@@ -555,7 +596,8 @@
     "rating": 4.8,
     "note": "여의나루역 1번 출구에서 500m, 더현대 서울 6층",
     "emoji": "🥂",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 122,
@@ -568,7 +610,8 @@
     "rating": 4.7,
     "note": "여의나루역 4번 출구에서 424m, 브라이튼 B1F",
     "emoji": "🥩",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 127,
@@ -582,7 +625,8 @@
     "note": "회현 7번 출구에서 63m, 레스케이프호텔 26층",
     "emoji": "🥂",
     "mapQuery": "레스케이프 라망 시크레 양식당",
-    "district": "회현"
+    "district": "회현",
+    "room_type": "룸있음"
   },
   {
     "id": 130,
@@ -596,7 +640,8 @@
     "note": "신사역 6번 출구에서 333m, 신사스퀘어 G층",
     "emoji": "🥩",
     "district": "신사",
-    "mapQuery": "우가 신사"
+    "mapQuery": "우가 신사",
+    "room_type": "룸있음"
   },
   {
     "id": 132,
@@ -609,7 +654,8 @@
     "rating": 4.6,
     "note": "반얀트리호텔",
     "emoji": "🥂",
-    "district": "장충"
+    "district": "장충",
+    "room_type": "룸있음"
   },
   {
     "id": 134,
@@ -622,7 +668,8 @@
     "rating": 4.9,
     "note": "강남구청역 4번 출구에서 195m",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 135,
@@ -635,7 +682,8 @@
     "rating": 5,
     "note": "강남구 청담동 118-4, 조은빌딩 1층",
     "emoji": "🥩",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 137,
@@ -648,7 +696,8 @@
     "rating": 4.5,
     "note": "서울 웨스틴조선호텔 L층",
     "emoji": "🥂",
-    "district": "소공"
+    "district": "소공",
+    "room_type": "룸있음"
   },
   {
     "id": 138,
@@ -661,7 +710,8 @@
     "rating": 4.9,
     "note": "강남구 청담동 125-1",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 139,
@@ -674,7 +724,8 @@
     "rating": 4.5,
     "note": "신사역 1번 출구에서 196m, 하림타워 지하1층",
     "emoji": "🥂",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 144,
@@ -687,7 +738,8 @@
     "rating": 5,
     "note": "신사역 8번 출구에서 405m",
     "emoji": "🥩",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 145,
@@ -700,7 +752,8 @@
     "rating": 4.8,
     "note": "압구정로데오역 5번 출구에서 502m",
     "emoji": "🥩",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 147,
@@ -713,7 +766,8 @@
     "rating": 4.7,
     "note": "양재역 5번 출구에서 507m",
     "emoji": "🏮",
-    "district": "양재"
+    "district": "양재",
+    "room_type": "룸있음"
   },
   {
     "id": 150,
@@ -726,7 +780,8 @@
     "rating": 4.7,
     "note": "5호선 마포역 2번출구 250m, 로이넷호텔 2층",
     "emoji": "🏮",
-    "district": "도화"
+    "district": "도화",
+    "room_type": "룸있음"
   },
   {
     "id": 161,
@@ -739,7 +794,8 @@
     "rating": 4.6,
     "note": "센터필드 이스트타워 | 조선 팰리스 36층",
     "emoji": "🥢",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 164,
@@ -752,7 +808,8 @@
     "rating": 4.4,
     "note": "강남구 신사동 643-20",
     "emoji": "🥩",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 174,
@@ -765,7 +822,8 @@
     "rating": 4.8,
     "note": "압구정로데오역 3번 출구에서 445m",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 183,
@@ -778,7 +836,8 @@
     "rating": 4.6,
     "note": "잠실역 2번 출구에서 436m, 롯데월드몸 6층",
     "emoji": "🥂",
-    "district": "신천"
+    "district": "신천",
+    "room_type": "룸있음"
   },
   {
     "id": 185,
@@ -791,7 +850,8 @@
     "rating": 4.5,
     "note": "파크원 타워 | 여의나루역 1번 출구에서 364m",
     "emoji": "🥂",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 189,
@@ -804,7 +864,8 @@
     "rating": 4.5,
     "note": "강남구 청담동 21-7",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 191,
@@ -817,7 +878,8 @@
     "rating": 4.5,
     "note": "잠실역 2번 출구에서 27m, 롯데 에비뉴엘 잠실점 6층",
     "emoji": "🍣",
-    "district": "신천"
+    "district": "신천",
+    "room_type": "룸있음"
   },
   {
     "id": 206,
@@ -830,7 +892,8 @@
     "rating": 4.4,
     "note": "강남구 삼성동 154-8, 금강타워3 지하1층",
     "emoji": "🥩",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 211,
@@ -843,7 +906,8 @@
     "rating": 4.5,
     "note": "500년의 역사를 간직한 전통 가옥에서의 한정식",
     "emoji": "🏮",
-    "district": "수서"
+    "district": "수서",
+    "room_type": "룸있음"
   },
   {
     "id": 212,
@@ -857,7 +921,8 @@
     "note": "롯데호텔서울 본관 38층",
     "emoji": "🏮",
     "mapQuery": "롯데호텔서울 무궁화 한정식",
-    "district": "소공"
+    "district": "소공",
+    "room_type": "룸있음"
   },
   {
     "id": 217,
@@ -870,7 +935,8 @@
     "rating": 4.6,
     "note": "합정역 10번 출구에서 221m, 메세나폴리스 1층",
     "emoji": "🏮",
-    "district": "서교"
+    "district": "서교",
+    "room_type": "룸있음"
   },
   {
     "id": 221,
@@ -884,7 +950,8 @@
     "note": "잠실역 2번 출구에서 432m, 롯데월드타워 81층",
     "emoji": "🏮",
     "district": "신천",
-    "mapQuery": "비채나 롯데타워"
+    "mapQuery": "비채나 롯데타워",
+    "room_type": "룸있음"
   },
   {
     "id": 227,
@@ -897,7 +964,8 @@
     "rating": 4.6,
     "note": "이태원역 4번 출구에서 316m",
     "emoji": "🥩",
-    "district": "이태원"
+    "district": "이태원",
+    "room_type": "룸있음"
   },
   {
     "id": 230,
@@ -910,7 +978,8 @@
     "rating": 4.8,
     "note": "선정릉역 3번 출구에서 121m",
     "emoji": "🏮",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 235,
@@ -924,7 +993,8 @@
     "note": "청담역 1번 출구에서 31m",
     "emoji": "🥂",
     "mapQuery": "더 라운드 삼성점",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 239,
@@ -938,7 +1008,8 @@
     "note": "강남구 신사동 623-5",
     "emoji": "🥩",
     "district": "신사",
-    "mapQuery": "삼원가든 신사"
+    "mapQuery": "삼원가든 신사",
+    "room_type": "룸있음"
   },
   {
     "id": 244,
@@ -951,7 +1022,8 @@
     "rating": 4.4,
     "note": "북창동 먹자골목에 위치",
     "emoji": "🥂",
-    "district": "남대문로"
+    "district": "남대문로",
+    "room_type": "룸있음"
   },
   {
     "id": 267,
@@ -965,7 +1037,8 @@
     "note": "조은희, 박성배 셰프",
     "emoji": "🏮",
     "mapQuery": "온지음 레스토랑",
-    "district": "창성"
+    "district": "창성",
+    "room_type": "룸있음"
   },
   {
     "id": 268,
@@ -978,7 +1051,8 @@
     "rating": 4.7,
     "note": "역삼초 정문 맞은편 봇밥건물 지하1층",
     "emoji": "🍣",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 271,
@@ -991,7 +1065,8 @@
     "rating": 4.4,
     "note": "덕수궁디팰리스 지하 1층",
     "emoji": "🏮",
-    "district": "신문로"
+    "district": "신문로",
+    "room_type": "룸있음"
   },
   {
     "id": 278,
@@ -1004,7 +1079,8 @@
     "rating": 4.7,
     "note": "반트스포츠센터 1층",
     "emoji": "🍣",
-    "district": "도곡"
+    "district": "도곡",
+    "room_type": "룸있음"
   },
   {
     "id": 279,
@@ -1017,7 +1093,8 @@
     "rating": 4.8,
     "note": "서울신라호텔 23층",
     "emoji": "🥂",
-    "district": "장충"
+    "district": "장충",
+    "room_type": "룸있음"
   },
   {
     "id": 306,
@@ -1030,7 +1107,8 @@
     "rating": 4.8,
     "note": "강남구 신사동 650-13",
     "emoji": "🥂",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 319,
@@ -1043,7 +1121,8 @@
     "rating": 4.5,
     "note": "강남구 논현동 62-2",
     "emoji": "🥩",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 326,
@@ -1056,7 +1135,8 @@
     "rating": 4.5,
     "note": "종각역 1번 출구에서 169m, 타워8빌딩 지하 2층",
     "emoji": "🏮",
-    "district": "청진"
+    "district": "청진",
+    "room_type": "룸있음"
   },
   {
     "id": 327,
@@ -1069,7 +1149,8 @@
     "rating": 4.2,
     "note": "역삼역 7번 출구에서 342m",
     "emoji": "🍣",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 330,
@@ -1083,7 +1164,8 @@
     "note": "여의도동 12, C.C.M.M빌딩 지하1층",
     "emoji": "🏮",
     "district": "여의도",
-    "mapQuery": "운산 한정식"
+    "mapQuery": "운산 한정식",
+    "room_type": "룸있음"
   },
   {
     "id": 334,
@@ -1096,7 +1178,8 @@
     "rating": 4.4,
     "note": "여의도역 3번 출구에서 301m, BNK 금융타워 지하1층",
     "emoji": "🏮",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 338,
@@ -1109,7 +1192,8 @@
     "rating": 4.6,
     "note": "경복궁역 3번 출구에서 127m",
     "emoji": "🏮",
-    "district": "통의"
+    "district": "통의",
+    "room_type": "룸있음"
   },
   {
     "id": 345,
@@ -1122,7 +1206,8 @@
     "rating": 4.5,
     "note": "광화문 디타워 건물 5층, 콜키지 무제한 무료",
     "emoji": "🥩",
-    "district": "청진"
+    "district": "청진",
+    "room_type": "룸있음"
   },
   {
     "id": 347,
@@ -1136,7 +1221,8 @@
     "note": "강남구 압구정동 380-2",
     "emoji": "🥂",
     "district": "압구정",
-    "mapQuery": "레스토랑 오엔 압구정"
+    "mapQuery": "레스토랑 오엔 압구정",
+    "room_type": "룸있음"
   },
   {
     "id": 348,
@@ -1149,7 +1235,8 @@
     "rating": 4.5,
     "note": "강남역 11번 출구에서 211m",
     "emoji": "🥩",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 358,
@@ -1162,7 +1249,8 @@
     "rating": 4.6,
     "note": "송파나루역 1번 출구에서 449m",
     "emoji": "🥩",
-    "district": "송파"
+    "district": "송파",
+    "room_type": "룸있음"
   },
   {
     "id": 366,
@@ -1175,7 +1263,8 @@
     "rating": 4.8,
     "note": "압구정로데오역 5번 출구에서 513m",
     "emoji": "🍣",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 371,
@@ -1188,7 +1277,8 @@
     "rating": 4.3,
     "note": "용산역 1번 출구에서 157m, 드래곤힐스파 1층",
     "emoji": "🏮",
-    "district": "한강로"
+    "district": "한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 377,
@@ -1202,7 +1292,8 @@
     "note": "신용산역 1번 출구에서 176m",
     "emoji": "🍣",
     "district": "한강로",
-    "mapQuery": "일식 우마미 한강로"
+    "mapQuery": "일식 우마미 한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 380,
@@ -1216,7 +1307,8 @@
     "note": "남도식 사계절 제철 음식",
     "emoji": "🏮",
     "district": "대치",
-    "mapQuery": "고운님 대치"
+    "mapQuery": "고운님 대치",
+    "room_type": "룸있음"
   },
   {
     "id": 383,
@@ -1229,7 +1321,8 @@
     "rating": 4.7,
     "note": "콘코디언 지하 1층",
     "emoji": "🥩",
-    "district": "신문로"
+    "district": "신문로",
+    "room_type": "룸있음"
   },
   {
     "id": 387,
@@ -1242,7 +1335,8 @@
     "rating": 4.3,
     "note": "콘래드호텔 L1층",
     "emoji": "🏮",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 393,
@@ -1255,7 +1349,8 @@
     "rating": 4,
     "note": "해초바다요리 전문점",
     "emoji": "🏮",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 406,
@@ -1268,7 +1363,8 @@
     "rating": 4.4,
     "note": "여의도역 3번 출구에서 436m",
     "emoji": "🏮",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 409,
@@ -1282,7 +1378,8 @@
     "note": "국회의사당역 1번 출구에서 358m, 여의도 파라곤 지하1층",
     "emoji": "🏮",
     "district": "여의도",
-    "mapQuery": "대방골 여의도 한정삭"
+    "mapQuery": "대방골 여의도 한정삭",
+    "room_type": "룸있음"
   },
   {
     "id": 410,
@@ -1295,7 +1392,8 @@
     "rating": 4.3,
     "note": "63빌딩 59층",
     "emoji": "🥂",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 413,
@@ -1308,7 +1406,8 @@
     "rating": 4.2,
     "note": "잠실역 10번 출구에서 13m, 롯데월드몰 6층",
     "emoji": "🍣",
-    "district": "신천"
+    "district": "신천",
+    "room_type": "룸있음"
   },
   {
     "id": 417,
@@ -1321,7 +1420,8 @@
     "rating": 4.4,
     "note": "압구정역 2번 출구에서 459m",
     "emoji": "🏮",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 419,
@@ -1335,7 +1435,8 @@
     "note": "노보텔 앰배서더 강남 LL층",
     "emoji": "🥢",
     "mapQuery": "홍보각 역삼",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 422,
@@ -1348,7 +1449,8 @@
     "rating": 4.6,
     "note": "압구정로데오역 4번 출구에서 235m",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 423,
@@ -1362,7 +1464,8 @@
     "note": "압구정로데오역 5번 출구에서 522m",
     "emoji": "🥂",
     "district": "신사",
-    "mapQuery": "파씨오네 신사"
+    "mapQuery": "파씨오네 신사",
+    "room_type": "룸있음"
   },
   {
     "id": 425,
@@ -1376,7 +1479,8 @@
     "note": "용산구 한남동 32-17",
     "emoji": "🥂",
     "district": "한남",
-    "mapQuery": "알레즈 한남"
+    "mapQuery": "알레즈 한남",
+    "room_type": "룸있음"
   },
   {
     "id": 426,
@@ -1389,7 +1493,8 @@
     "rating": 4.6,
     "note": "서울 서대문구 연희로26길 24",
     "emoji": "🥂",
-    "district": "연희"
+    "district": "연희",
+    "room_type": "룸있음"
   },
   {
     "id": 434,
@@ -1403,7 +1508,8 @@
     "note": "한우떡갈비구이, 보리굴비, 장아찌보쌈",
     "emoji": "🏮",
     "mapQuery": "소선재 삼청",
-    "district": "삼청"
+    "district": "삼청",
+    "room_type": "룸있음"
   },
   {
     "id": 435,
@@ -1416,7 +1522,8 @@
     "rating": 4.5,
     "note": "압구정역 6번 출구에서 88m, 현대백화점압구정본점 5층",
     "emoji": "🥂",
-    "district": "압구정"
+    "district": "압구정",
+    "room_type": "룸있음"
   },
   {
     "id": 443,
@@ -1429,7 +1536,8 @@
     "rating": 4.4,
     "note": "국가무형문화제 제38호 조선왕조 궁중음식",
     "emoji": "🏮",
-    "district": "청운"
+    "district": "청운",
+    "room_type": "룸있음"
   },
   {
     "id": 447,
@@ -1442,7 +1550,8 @@
     "rating": 4.3,
     "note": "안국역 2번 출구에서 112m",
     "emoji": "🏮",
-    "district": "재동"
+    "district": "재동",
+    "room_type": "룸있음"
   },
   {
     "id": 454,
@@ -1455,7 +1564,8 @@
     "rating": 4.7,
     "note": "국회의사당역 1번 출구에서 299m",
     "emoji": "🍣",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 458,
@@ -1469,7 +1579,8 @@
     "note": "국민은행 동여의도지점 건물 3층",
     "emoji": "🏮",
     "district": "여의도",
-    "mapQuery": "영의정 한정식 여의도"
+    "mapQuery": "영의정 한정식 여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 466,
@@ -1482,7 +1593,8 @@
     "rating": 4.9,
     "note": "서초역 1번 출구에서 177m, 오퓨런스빌딩 1층",
     "emoji": "🍣",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 467,
@@ -1495,7 +1607,8 @@
     "rating": 4.9,
     "note": "강남구 청담동 114-7",
     "emoji": "🍣",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 485,
@@ -1508,7 +1621,8 @@
     "rating": 4.3,
     "note": "서울스퀘어 지하1층",
     "emoji": "🥩",
-    "district": "남대문로"
+    "district": "남대문로",
+    "room_type": "룸있음"
   },
   {
     "id": 499,
@@ -1521,7 +1635,8 @@
     "rating": 4.3,
     "note": "매봉역 1번 출구에서 39m",
     "emoji": "🥩",
-    "district": "도곡"
+    "district": "도곡",
+    "room_type": "룸있음"
   },
   {
     "id": 513,
@@ -1535,7 +1650,8 @@
     "note": "을지로3가역 1번 출구에서 128m",
     "emoji": "🥩",
     "mapQuery": "너애하누 을지로",
-    "district": "을지로"
+    "district": "을지로",
+    "room_type": "룸있음"
   },
   {
     "id": 515,
@@ -1548,7 +1664,8 @@
     "rating": 4.4,
     "note": "종각역 3번 출구에서 71m",
     "emoji": "🥩",
-    "district": "인사"
+    "district": "인사",
+    "room_type": "룸있음"
   },
   {
     "id": 522,
@@ -1561,7 +1678,8 @@
     "rating": 4.7,
     "note": "압구정로데오역 3번 출구에서 423m",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 527,
@@ -1574,7 +1692,8 @@
     "rating": 4.8,
     "note": "신용산역 1번 출구에서 138m",
     "emoji": "🥩",
-    "district": "한강로"
+    "district": "한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 535,
@@ -1587,7 +1706,8 @@
     "rating": 4.4,
     "note": "여의도역 3번 출구에서 163m, 여의도파이낸스타워 4층",
     "emoji": "🥩",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 552,
@@ -1600,7 +1720,8 @@
     "rating": 3.8,
     "note": "해초바다요리 전문점",
     "emoji": "🏮",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 556,
@@ -1613,7 +1734,8 @@
     "rating": 4.4,
     "note": "합정역 9번 출구에서 330m",
     "emoji": "🥂",
-    "district": "서교"
+    "district": "서교",
+    "room_type": "룸있음"
   },
   {
     "id": 557,
@@ -1626,7 +1748,8 @@
     "rating": 3.7,
     "note": "DMC이안오피스텔 2단지 221호",
     "emoji": "🏮",
-    "district": "상암"
+    "district": "상암",
+    "room_type": "룸있음"
   },
   {
     "id": 570,
@@ -1639,7 +1762,8 @@
     "rating": 4.2,
     "note": "사당역 14번 출구에서 186m",
     "emoji": "🏮",
-    "district": "방배"
+    "district": "방배",
+    "room_type": "룸있음"
   },
   {
     "id": 588,
@@ -1652,7 +1776,8 @@
     "rating": 4.3,
     "note": "강남역 8번 출구에서 102m, 삼성전자 서초사옥 지하1층",
     "emoji": "🍣",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 609,
@@ -1665,7 +1790,8 @@
     "rating": 4,
     "note": "중소기업중앙회 1층",
     "emoji": "🦐",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 613,
@@ -1678,7 +1804,8 @@
     "rating": 4.3,
     "note": "광화문역 1번 출구에서 118m, 센터포인트광화문 2층",
     "emoji": "🥢",
-    "district": "도렴"
+    "district": "도렴",
+    "room_type": "룸있음"
   },
   {
     "id": 621,
@@ -1691,7 +1818,8 @@
     "rating": 4.4,
     "note": "광화문역 1번 출구에서 118m, 센터포인트광화문 2층",
     "emoji": "🥂",
-    "district": "도렴"
+    "district": "도렴",
+    "room_type": "룸있음"
   },
   {
     "id": 636,
@@ -1705,7 +1833,8 @@
     "note": "구 프리마호텔 뒤편, 병수 제한 없는 콜키지 프리",
     "emoji": "🥩",
     "district": "청담",
-    "mapQuery": "청담백송 소고기구이"
+    "mapQuery": "청담백송 소고기구이",
+    "room_type": "룸있음"
   },
   {
     "id": 637,
@@ -1719,7 +1848,8 @@
     "note": "용산구 한남동 3-1",
     "emoji": "🥢",
     "district": "한남",
-    "mapQuery": "쥬에 한남"
+    "mapQuery": "쥬에 한남",
+    "room_type": "룸있음"
   },
   {
     "id": 644,
@@ -1732,7 +1862,8 @@
     "rating": 4.5,
     "note": "케이트윈타워 지하 1층",
     "emoji": "🍣",
-    "district": "중학"
+    "district": "중학",
+    "room_type": "룸있음"
   },
   {
     "id": 649,
@@ -1745,7 +1876,8 @@
     "rating": 5,
     "note": "강남구 청담동 97-18",
     "emoji": "🍽️",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 656,
@@ -1758,7 +1890,8 @@
     "rating": 4.1,
     "note": "트윈트리타워 B동 M층",
     "emoji": "🥩",
-    "district": "중학"
+    "district": "중학",
+    "room_type": "룸있음"
   },
   {
     "id": 659,
@@ -1771,7 +1904,8 @@
     "rating": 4.4,
     "note": "뭉티기, 소곱창전골, 소갈비찜, 육회",
     "emoji": "🥩",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 672,
@@ -1784,7 +1918,8 @@
     "rating": 4.3,
     "note": "여의나루역 4번 출구에서 392m, 브라이튼 2층",
     "emoji": "🎌",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 683,
@@ -1797,7 +1932,8 @@
     "rating": 4.2,
     "note": "광화문역 5번 출구에서 155m",
     "emoji": "🏮",
-    "district": "무교"
+    "district": "무교",
+    "room_type": "룸있음"
   },
   {
     "id": 699,
@@ -1811,7 +1947,8 @@
     "note": "합정역 5번 출구에서 91m",
     "emoji": "🥩",
     "district": "합정",
-    "mapQuery": "정육도 합정"
+    "mapQuery": "정육도 합정",
+    "room_type": "룸있음"
   },
   {
     "id": 701,
@@ -1824,7 +1961,8 @@
     "rating": 4.5,
     "note": "주류판매 없음 콜키지 프리",
     "emoji": "🥩",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 704,
@@ -1837,7 +1975,8 @@
     "rating": 4.9,
     "note": "서울신라호텔 2층",
     "emoji": "🎌",
-    "district": "장충"
+    "district": "장충",
+    "room_type": "룸있음"
   },
   {
     "id": 726,
@@ -1850,7 +1989,8 @@
     "rating": 4.3,
     "note": "여의도역 5번 출구에서 101m, 한국교직원공제회관 지하1층",
     "emoji": "🥩",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 741,
@@ -1863,7 +2003,8 @@
     "rating": 4.2,
     "note": "대치역 8번 출구에서 34m, 양고기 전문점",
     "emoji": "🥩",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 751,
@@ -1876,7 +2017,8 @@
     "rating": 4.4,
     "note": "선정릉역 1번 출구에서 23m",
     "emoji": "🥢",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 755,
@@ -1889,7 +2031,8 @@
     "rating": 4.4,
     "note": "서울신라호텔 2층",
     "emoji": "🥢",
-    "district": "장충"
+    "district": "장충",
+    "room_type": "룸있음"
   },
   {
     "id": 758,
@@ -1903,7 +2046,8 @@
     "note": "용산구 한강로3가 40-361",
     "emoji": "🥂",
     "district": "한강로",
-    "mapQuery": "당스 용산"
+    "mapQuery": "당스 용산",
+    "room_type": "룸있음"
   },
   {
     "id": 759,
@@ -1917,7 +2061,8 @@
     "note": "압구정로데오역 5번 출구에서 138m, 한양타운빌딩 1층",
     "emoji": "🥂",
     "district": "신사",
-    "mapQuery": "아베크 청담 양식"
+    "mapQuery": "아베크 청담 양식",
+    "room_type": "룸있음"
   },
   {
     "id": 761,
@@ -1930,7 +2075,8 @@
     "rating": 4.5,
     "note": "샛강역 2번 출구에서 297m",
     "emoji": "🥩",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 766,
@@ -1943,7 +2089,8 @@
     "rating": 4.4,
     "note": "오크우드몰 지하2층, 중국 훠궈 1위 브랜드",
     "emoji": "🥢",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 769,
@@ -1956,7 +2103,8 @@
     "rating": 4.4,
     "note": "혜화역 1번 출구에서 134m",
     "emoji": "🥢",
-    "district": "혜화"
+    "district": "혜화",
+    "room_type": "룸있음"
   },
   {
     "id": 773,
@@ -1969,7 +2117,8 @@
     "rating": 4.5,
     "note": "삼각지역 8번 출구에서 108m",
     "emoji": "🥢",
-    "district": "한강로"
+    "district": "한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 779,
@@ -1982,7 +2131,8 @@
     "rating": 4.4,
     "note": "신논현역 7번 출구에서 66m",
     "emoji": "🥢",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 781,
@@ -1995,7 +2145,8 @@
     "rating": 4.4,
     "note": "신사역 4번 출구에서 130m, 멀버리힐스 지하3층",
     "emoji": "🥩",
-    "district": "잠원"
+    "district": "잠원",
+    "room_type": "룸있음"
   },
   {
     "id": 785,
@@ -2008,7 +2159,8 @@
     "rating": 4.4,
     "note": "홍대입구역 8번 출구에서 80m, 와이즈파크 5층",
     "emoji": "🥢",
-    "district": "동교"
+    "district": "동교",
+    "room_type": "룸있음"
   },
   {
     "id": 786,
@@ -2021,7 +2173,8 @@
     "rating": 4.4,
     "note": "영등포역 5번 출구에서 200m",
     "emoji": "🥢",
-    "district": "영등포"
+    "district": "영등포",
+    "room_type": "룸있음"
   },
   {
     "id": 808,
@@ -2034,7 +2187,8 @@
     "rating": 4.2,
     "note": "서초구 방배동 1006-2",
     "emoji": "🥩",
-    "district": "방배"
+    "district": "방배",
+    "room_type": "룸있음"
   },
   {
     "id": 816,
@@ -2047,7 +2201,8 @@
     "rating": 4.3,
     "note": "압구정로데오역 5번 출구에서 316m",
     "emoji": "🥩",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 825,
@@ -2060,7 +2215,8 @@
     "rating": 4.4,
     "note": "방이역 1번 출구에서 167m",
     "emoji": "🥩",
-    "district": "오금"
+    "district": "오금",
+    "room_type": "룸있음"
   },
   {
     "id": 846,
@@ -2073,7 +2229,8 @@
     "rating": 4.5,
     "note": "신사역 8번 출구에서 113m",
     "emoji": "🍽️",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 868,
@@ -2087,7 +2244,8 @@
     "note": "빗썸금융타워 지하 1층",
     "emoji": "🥂",
     "mapQuery": "마노디셰프 강남",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 869,
@@ -2101,7 +2259,8 @@
     "note": "강남구 신사동 651-6",
     "emoji": "🥩",
     "district": "신사",
-    "mapQuery": "도산회관 신사"
+    "mapQuery": "도산회관 신사",
+    "room_type": "룸있음"
   },
   {
     "id": 870,
@@ -2114,7 +2273,8 @@
     "rating": 4.5,
     "note": "압구정로데오역 3번 출구에서 398m",
     "emoji": "🥂",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 877,
@@ -2127,7 +2287,8 @@
     "rating": 4.5,
     "note": "양재시민의숲역 2번 출구에서 299m",
     "emoji": "🍽️",
-    "district": "양재"
+    "district": "양재",
+    "room_type": "룸있음"
   },
   {
     "id": 879,
@@ -2140,7 +2301,8 @@
     "rating": 4.6,
     "note": "D타워 리플레이스 광화문 5층",
     "emoji": "🍽️",
-    "district": "청진"
+    "district": "청진",
+    "room_type": "룸있음"
   },
   {
     "id": 883,
@@ -2154,7 +2316,8 @@
     "note": "압구정로데오역 4번 출구에서 454m",
     "emoji": "🍽️",
     "mapQuery": "흑우정 청담",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 893,
@@ -2167,7 +2330,8 @@
     "rating": 4.6,
     "note": "광화문역 8번 출구에서 145m",
     "emoji": "🥢",
-    "district": "당주"
+    "district": "당주",
+    "room_type": "룸있음"
   },
   {
     "id": 894,
@@ -2180,7 +2344,8 @@
     "rating": 4.6,
     "note": "조계종에서 운영하고 있는 사찰음식 전문 레스토랑",
     "emoji": "🍽️",
-    "district": "견지"
+    "district": "견지",
+    "room_type": "룸있음"
   },
   {
     "id": 897,
@@ -2193,7 +2358,8 @@
     "rating": 4.3,
     "note": "선유도역 5번 출구에서 448m",
     "emoji": "🥩",
-    "district": "양평"
+    "district": "양평",
+    "room_type": "룸있음"
   },
   {
     "id": 898,
@@ -2206,7 +2372,8 @@
     "rating": 4.4,
     "note": "신촌역 1번 출구에서 243m, 거촌빌딩 지하 1층",
     "emoji": "🥢",
-    "district": "창천"
+    "district": "창천",
+    "room_type": "룸있음"
   },
   {
     "id": 905,
@@ -2219,7 +2386,8 @@
     "rating": 4.1,
     "note": "강남역 11번 출구에서 200m",
     "emoji": "🥢",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 906,
@@ -2232,7 +2400,8 @@
     "rating": 4.1,
     "note": "몽촌토성역 3번 출구에서 330m",
     "emoji": "🥢",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 912,
@@ -2245,7 +2414,8 @@
     "rating": 4.2,
     "note": "강남역 11번 출구에서 315m",
     "emoji": "🍽️",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 917,
@@ -2258,7 +2428,8 @@
     "rating": 4.3,
     "note": "방이역 4번 출구에서 196m",
     "emoji": "🍽️",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 925,
@@ -2272,7 +2443,8 @@
     "note": "용산역 1번 출구에서 100m, 아이파크몰 더 센터 패션파크 4층",
     "emoji": "🥂",
     "mapQuery": "h'Garden999 신용산",
-    "district": "한강로"
+    "district": "한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 928,
@@ -2285,7 +2457,8 @@
     "rating": 4.4,
     "note": "종각역 3-1번 출구에서 232m, 아미드호텔 지하1층",
     "emoji": "🎌",
-    "district": "관훈"
+    "district": "관훈",
+    "room_type": "룸있음"
   },
   {
     "id": 932,
@@ -2298,7 +2471,8 @@
     "rating": 4.6,
     "note": "역삼역 2번 출구에서 27m, 강남파이낸스센터 별관(후문) 1층",
     "emoji": "🍽️",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 937,
@@ -2312,7 +2486,8 @@
     "note": "강남구 청담동 117-12",
     "emoji": "🥂",
     "district": "청담",
-    "mapQuery": "페어링룸 청담"
+    "mapQuery": "페어링룸 청담",
+    "room_type": "룸있음"
   },
   {
     "id": 939,
@@ -2325,7 +2500,8 @@
     "rating": 4.3,
     "note": "역삼역 3번 출구에서 203m",
     "emoji": "🥩",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 940,
@@ -2338,7 +2514,8 @@
     "rating": 4.4,
     "note": "잠실역 7번 출구에서 182m, 잠실타워 730 지하1층",
     "emoji": "🍽️",
-    "district": "신천"
+    "district": "신천",
+    "room_type": "룸있음"
   },
   {
     "id": 943,
@@ -2351,7 +2528,8 @@
     "rating": 4.3,
     "note": "삼각지역 6번 출구에서 64m, 2층·루프탑",
     "emoji": "🥂",
-    "district": "한강로"
+    "district": "한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 944,
@@ -2364,7 +2542,8 @@
     "rating": 4.9,
     "note": "여의도역 1번 출구에서 51m, TP타워 2층",
     "emoji": "🥢",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 946,
@@ -2378,7 +2557,8 @@
     "note": "신용산역 2번 출구에서 84m, 아모레퍼시픽 2F",
     "emoji": "🥂",
     "district": "한강로",
-    "mapQuery": "쿠촐로 서울 용산"
+    "mapQuery": "쿠촐로 서울 용산",
+    "room_type": "룸있음"
   },
   {
     "id": 947,
@@ -2391,7 +2571,8 @@
     "rating": 4.6,
     "note": "신사역 5번 출구에서 241m",
     "emoji": "🍽️",
-    "district": "잠원"
+    "district": "잠원",
+    "room_type": "룸있음"
   },
   {
     "id": 954,
@@ -2404,7 +2585,8 @@
     "rating": 4.4,
     "note": "홍대입구역 1번 출구에서 415m",
     "emoji": "🥢",
-    "district": "동교"
+    "district": "동교",
+    "room_type": "룸있음"
   },
   {
     "id": 957,
@@ -2417,7 +2599,8 @@
     "rating": 4.3,
     "note": "강남역 8번 출구에서 102m, 삼성전자 서초사옥 지하1층",
     "emoji": "🥢",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 958,
@@ -2430,7 +2613,8 @@
     "rating": 3,
     "note": "노보텔 앰배서더 강남 LL층",
     "emoji": "🥩",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 960,
@@ -2443,7 +2627,8 @@
     "rating": 4.3,
     "note": "압구정로데오역 4번 출구에서 389m",
     "emoji": "🏮",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 964,
@@ -2456,7 +2641,8 @@
     "rating": 4.1,
     "note": "여의도역 3번 출구에서 424m",
     "emoji": "🥂",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 979,
@@ -2470,7 +2656,8 @@
     "note": "광화문역 1번 출구에서 110m",
     "emoji": "🏮",
     "district": "내수",
-    "mapQuery": "광화문 한옥집 내수동"
+    "mapQuery": "광화문 한옥집 내수동",
+    "room_type": "룸있음"
   },
   {
     "id": 980,
@@ -2483,7 +2670,8 @@
     "rating": 4.5,
     "note": "반포역 3번 출구에서 806m",
     "emoji": "🎌",
-    "district": "반포"
+    "district": "반포",
+    "room_type": "룸있음"
   },
   {
     "id": 981,
@@ -2496,7 +2684,8 @@
     "rating": 4.1,
     "note": "몽촌토성역 2번 출구에서 80m, S타워 20, 21층",
     "emoji": "🍽️",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 988,
@@ -2510,7 +2699,8 @@
     "note": "강남구 청담동 17-29",
     "emoji": "🥂",
     "district": "청담",
-    "mapQuery": "미 피아체 청담"
+    "mapQuery": "미 피아체 청담",
+    "room_type": "룸있음"
   },
   {
     "id": 989,
@@ -2523,7 +2713,8 @@
     "rating": 4.3,
     "note": "봉은사역 2번 출구에서 137m",
     "emoji": "🍽️",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 992,
@@ -2536,7 +2727,8 @@
     "rating": 4.4,
     "note": "신논현역 3번 출구에서 248m, 24시간 영업",
     "emoji": "🏮",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1004,
@@ -2549,7 +2741,8 @@
     "rating": 4,
     "note": "제주향토음식 전문점",
     "emoji": "🍽️",
-    "district": "도곡"
+    "district": "도곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1009,
@@ -2562,7 +2755,8 @@
     "rating": 4.3,
     "note": "포포인츠 바이 쉐라톤 서울 강남 3층",
     "emoji": "🍽️",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 1011,
@@ -2575,7 +2769,8 @@
     "rating": 4.5,
     "note": "압구정역 3번 출구에서 81m, 안다즈 서울 강남 2층",
     "emoji": "🏮",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 1018,
@@ -2588,7 +2783,8 @@
     "rating": 4.4,
     "note": "용산구 한남동 684-16",
     "emoji": "🎌",
-    "district": "한남"
+    "district": "한남",
+    "room_type": "룸있음"
   },
   {
     "id": 1020,
@@ -2601,7 +2797,8 @@
     "rating": 4.1,
     "note": "홍대입구역 9번 출구에서 369m",
     "emoji": "🍽️",
-    "district": "서교"
+    "district": "서교",
+    "room_type": "룸있음"
   },
   {
     "id": 1027,
@@ -2614,7 +2811,8 @@
     "rating": 4.4,
     "note": "학동역 8번 출구에서 182m",
     "emoji": "🎌",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1040,
@@ -2628,7 +2826,8 @@
     "note": "신사역 1번 출구에서 284m",
     "emoji": "🏮",
     "district": "논현",
-    "mapQuery": "김수사 논현"
+    "mapQuery": "김수사 논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1044,
@@ -2641,7 +2840,8 @@
     "rating": 4.4,
     "note": "국내 유일의 수원식단요리 전문점",
     "emoji": "🏮",
-    "district": "동숭"
+    "district": "동숭",
+    "room_type": "룸있음"
   },
   {
     "id": 1053,
@@ -2654,7 +2854,8 @@
     "rating": 4.1,
     "note": "삼성중앙역 6번 출구에서 289m",
     "emoji": "🥩",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1056,
@@ -2667,7 +2868,8 @@
     "rating": 4.2,
     "note": "여의도역 3번 출구에서 88m",
     "emoji": "🥩",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1059,
@@ -2680,7 +2882,8 @@
     "rating": 4.1,
     "note": "상록회관건물 로비층",
     "emoji": "🥩",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1063,
@@ -2693,7 +2896,8 @@
     "rating": 3.7,
     "note": "광화문역 8번 출구에서 192m, 세종문화회관 지하 1층",
     "emoji": "🏮",
-    "district": "세종로"
+    "district": "세종로",
+    "room_type": "룸있음"
   },
   {
     "id": 1067,
@@ -2706,7 +2910,8 @@
     "rating": 4.8,
     "note": "국회의사당역 4번 출구에서 200m, 한국교육시설안전원 1층",
     "emoji": "🏮",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1080,
@@ -2719,7 +2924,8 @@
     "rating": 4.5,
     "note": "여의도역 3번 출구에서 163m, 여의도파이낸스타워 4층",
     "emoji": "🏮",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1084,
@@ -2732,7 +2938,8 @@
     "rating": 4.5,
     "note": "청담역 9번 출구에서 245m",
     "emoji": "🍽️",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1085,
@@ -2746,7 +2953,8 @@
     "note": "압구정로데오역 4번 출구에서 255m",
     "emoji": "🍽️",
     "district": "청담",
-    "mapQuery": "스시스미레 청담"
+    "mapQuery": "스시스미레 청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1088,
@@ -2760,7 +2968,8 @@
     "note": "강남구 청담동 20-2",
     "emoji": "🍽️",
     "district": "청담",
-    "mapQuery": "산다이 청담"
+    "mapQuery": "산다이 청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1091,
@@ -2773,7 +2982,8 @@
     "rating": 4.2,
     "note": "여의도역 3번 출구에서 515m, IFC몰 L3층",
     "emoji": "🥢",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1098,
@@ -2786,7 +2996,8 @@
     "rating": 4,
     "note": "용산역 1번 출구에서 204m, 아이파크몰1F",
     "emoji": "🍽️",
-    "district": "한강로"
+    "district": "한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 1101,
@@ -2799,7 +3010,8 @@
     "rating": 4,
     "note": "HSBC빌딩 지하1층",
     "emoji": "🏮",
-    "district": "봉래"
+    "district": "봉래",
+    "room_type": "룸있음"
   },
   {
     "id": 1102,
@@ -2812,7 +3024,8 @@
     "rating": 4,
     "note": "해성1빌딩 지하1층, 해초바다요리 전문점",
     "emoji": "🏮",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1103,
@@ -2825,7 +3038,8 @@
     "rating": 4,
     "note": "남부터미널역 6번 출구에서 191m",
     "emoji": "🏮",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1106,
@@ -2839,7 +3053,8 @@
     "note": "서울 마포구 용강동 51-3",
     "emoji": "🎌",
     "mapQuery": "마루심 마포점",
-    "district": "용강"
+    "district": "용강",
+    "room_type": "룸있음"
   },
   {
     "id": 1108,
@@ -2853,7 +3068,8 @@
     "note": "히츠마부시 전문·강남·룸",
     "emoji": "🎌",
     "mapQuery": "마루심 강남점",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1110,
@@ -2867,7 +3083,8 @@
     "note": "르메이에르 지하1층",
     "emoji": "🍣",
     "mapQuery": "스시소라 광화문점",
-    "district": "종로"
+    "district": "종로",
+    "room_type": "룸있음"
   },
   {
     "id": 1111,
@@ -2881,7 +3098,8 @@
     "note": "마포역 3번 출구에서 288m, 마포아크로타워 지하1층",
     "emoji": "🍣",
     "mapQuery": "스시소라 마포점",
-    "district": "마포"
+    "district": "마포",
+    "room_type": "룸있음"
   },
   {
     "id": 1112,
@@ -2895,7 +3113,8 @@
     "note": "스시오마카세",
     "emoji": "🍣",
     "mapQuery": "스시소라 대치점",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1117,
@@ -2908,7 +3127,8 @@
     "rating": 4.4,
     "note": "을지로입구역 6번 출구에서 103m",
     "emoji": "🥢",
-    "district": "을지로"
+    "district": "을지로",
+    "room_type": "룸있음"
   },
   {
     "id": 1119,
@@ -2921,7 +3141,8 @@
     "rating": 4.8,
     "note": "서울역 9번 출구에서 55m, 서울스퀘어 지하 1층",
     "emoji": "🍣",
-    "district": "남대문로"
+    "district": "남대문로",
+    "room_type": "룸있음"
   },
   {
     "id": 1120,
@@ -2934,7 +3155,8 @@
     "rating": 4.8,
     "note": "선릉역 6번 출구에서 4m, 화남빌딩 14층",
     "emoji": "🍣",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1121,
@@ -2947,7 +3169,8 @@
     "rating": 4.8,
     "note": "을지로4가역 9번 출구에서 25m, 을지트윈타워 1층",
     "emoji": "🍣",
-    "district": "을지로"
+    "district": "을지로",
+    "room_type": "룸있음"
   },
   {
     "id": 1122,
@@ -2960,7 +3183,8 @@
     "rating": 4.7,
     "note": "반포역 5번 출구에서 289m, 파스텔프라자 1층",
     "emoji": "🏮",
-    "district": "잠원"
+    "district": "잠원",
+    "room_type": "룸있음"
   },
   {
     "id": 1123,
@@ -2973,7 +3197,8 @@
     "rating": 4.7,
     "note": "오크우드프리미어 호텔 1층",
     "emoji": "🏮",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1128,
@@ -2986,7 +3211,8 @@
     "rating": 4.8,
     "note": "반트타워팰리스 1층",
     "emoji": "🥩",
-    "district": "도곡"
+    "district": "도곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1129,
@@ -2999,7 +3225,8 @@
     "rating": 4.8,
     "note": "방이역 4번 출구에서 175m",
     "emoji": "🥩",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 1130,
@@ -3012,7 +3239,8 @@
     "rating": 4.8,
     "note": "신촌역 3번 출구에서 305m",
     "emoji": "🥩",
-    "district": "창천"
+    "district": "창천",
+    "room_type": "룸있음"
   },
   {
     "id": 1131,
@@ -3025,7 +3253,8 @@
     "rating": 4.6,
     "note": "웨스틴 조선 서울 저층 로비",
     "emoji": "🥢",
-    "district": "소공"
+    "district": "소공",
+    "room_type": "룸있음"
   },
   {
     "id": 900,
@@ -3038,7 +3267,8 @@
     "rating": 4.3,
     "note": "삼일 빌딩 2층",
     "emoji": "🥢",
-    "district": "관철"
+    "district": "관철",
+    "room_type": "룸있음"
   },
   {
     "id": 1132,
@@ -3051,7 +3281,8 @@
     "rating": 4.2,
     "note": "오크우드프리미어 호텔 3층",
     "emoji": "🍽️",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1133,
@@ -3064,7 +3295,8 @@
     "rating": 4.2,
     "note": "오크우드프리미어 호텔 3층",
     "emoji": "🏮",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1136,
@@ -3077,7 +3309,8 @@
     "rating": 4.3,
     "note": "릿타워 지하 1층",
     "emoji": "🥢",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1137,
@@ -3090,7 +3323,8 @@
     "rating": 4.3,
     "note": "공덕역 9번 출구에서 15m, 효성 해링턴스퀘어 A동 2F",
     "emoji": "🥢",
-    "district": "도화"
+    "district": "도화",
+    "room_type": "룸있음"
   },
   {
     "id": 1138,
@@ -3103,7 +3337,8 @@
     "rating": 4.3,
     "note": "문정역 2번 출구에서 163m",
     "emoji": "🥢",
-    "district": "문정"
+    "district": "문정",
+    "room_type": "룸있음"
   },
   {
     "id": 1139,
@@ -3116,7 +3351,8 @@
     "rating": 4.3,
     "note": "에스타워 1층",
     "emoji": "🥢",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1140,
@@ -3129,7 +3365,8 @@
     "rating": 4.3,
     "note": "강남구 청담동 97",
     "emoji": "🥢",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1141,
@@ -3142,7 +3379,8 @@
     "rating": 4.3,
     "note": "반포역 3번 출구에서 525m",
     "emoji": "🥢",
-    "district": "반포"
+    "district": "반포",
+    "room_type": "룸있음"
   },
   {
     "id": 1142,
@@ -3155,7 +3393,8 @@
     "score": 86,
     "rating": "4.4",
     "room": "✅ 확인",
-    "district": "성수"
+    "district": "성수",
+    "room_type": "룸있음"
   },
   {
     "id": 1143,
@@ -3169,7 +3408,8 @@
     "rating": 4.3,
     "room": "✅ 확인",
     "mapQuery": "친니 중식당",
-    "district": "세종로"
+    "district": "세종로",
+    "room_type": "룸있음"
   },
   {
     "id": 1144,
@@ -3182,7 +3422,8 @@
     "score": 84,
     "rating": "4.3",
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1146,
@@ -3196,7 +3437,8 @@
     "rating": 4.4,
     "room": "✅ 확인",
     "mapQuery": "포도나무 한정식 경복궁",
-    "district": "내자"
+    "district": "내자",
+    "room_type": "룸있음"
   },
   {
     "id": 1147,
@@ -3209,7 +3451,8 @@
     "score": 88,
     "rating": "4.5",
     "room": "✅ 확인",
-    "district": "이태원"
+    "district": "이태원",
+    "room_type": "룸있음"
   },
   {
     "id": 1148,
@@ -3223,7 +3466,8 @@
     "rating": 4.4,
     "room": "✅ 확인",
     "mapQuery": "송학 한정식 광화문",
-    "district": "서린"
+    "district": "서린",
+    "room_type": "룸있음"
   },
   {
     "id": 1149,
@@ -3236,7 +3480,8 @@
     "score": 84,
     "rating": "4.3",
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1150,
@@ -3250,7 +3495,8 @@
     "rating": "4.4",
     "district": "여의도",
     "room": "✅ 확인",
-    "mapQuery": "다원 여의도 한식"
+    "mapQuery": "다원 여의도 한식",
+    "room_type": "룸있음"
   },
   {
     "id": 1151,
@@ -3264,7 +3510,8 @@
     "rating": 4.4,
     "room": "✅ 확인",
     "mapQuery": "한정식 미향 내자동",
-    "district": "내자"
+    "district": "내자",
+    "room_type": "룸있음"
   },
   {
     "id": 1152,
@@ -3278,7 +3525,8 @@
     "rating": 4.4,
     "room": "✅ 확인",
     "mapQuery": "중원한정식 광화문",
-    "district": "내자"
+    "district": "내자",
+    "room_type": "룸있음"
   },
   {
     "id": 1153,
@@ -3291,7 +3539,8 @@
     "score": 86,
     "rating": "4.4",
     "room": "✅ 확인",
-    "district": "반포"
+    "district": "반포",
+    "room_type": "룸있음"
   },
   {
     "id": 1154,
@@ -3304,7 +3553,8 @@
     "score": 86,
     "rating": 4.4,
     "district": "통의",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1155,
@@ -3317,7 +3567,8 @@
     "score": 84,
     "rating": "4.3",
     "room": "✅ 확인",
-    "district": "동자"
+    "district": "동자",
+    "room_type": "룸있음"
   },
   {
     "id": 1156,
@@ -3330,7 +3581,8 @@
     "score": 86,
     "rating": "4.3",
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1157,
@@ -3343,7 +3595,8 @@
     "score": 84,
     "rating": "4.3",
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1158,
@@ -3356,7 +3609,8 @@
     "score": 84,
     "rating": "4.3",
     "district": "서초",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1159,
@@ -3369,7 +3623,8 @@
     "score": 82,
     "rating": "4.2",
     "district": "신사",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1160,
@@ -3382,7 +3637,8 @@
     "score": 82,
     "rating": "4.2",
     "district": "한강로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1161,
@@ -3395,7 +3651,8 @@
     "score": 86,
     "rating": "4.4",
     "district": "청담",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1162,
@@ -3409,7 +3666,8 @@
     "rating": "4.4",
     "room": "✅ 확인",
     "district": "청담",
-    "mapQuery": "우정 고기구이 청담"
+    "mapQuery": "우정 고기구이 청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1163,
@@ -3422,7 +3680,8 @@
     "score": 89,
     "rating": 4.4,
     "district": "수하",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1164,
@@ -3435,7 +3694,8 @@
     "score": 89,
     "rating": 4.4,
     "district": "중학",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1165,
@@ -3448,7 +3708,8 @@
     "score": 89,
     "rating": "4.4",
     "district": "영등포",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1168,
@@ -3462,7 +3723,8 @@
     "rating": "4.3",
     "room": "✅ 확인",
     "district": "논현",
-    "mapQuery": "이닛 논현"
+    "mapQuery": "이닛 논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1169,
@@ -3475,7 +3737,8 @@
     "score": 82,
     "rating": 4.2,
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1170,
@@ -3488,7 +3751,8 @@
     "score": 82,
     "rating": "4.2",
     "district": "청담",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1171,
@@ -3501,7 +3765,8 @@
     "rating": "4.2",
     "district": "송파",
     "room": "✅ 확인",
-    "note": "송파나루역 1번 출구에서 449m"
+    "note": "송파나루역 1번 출구에서 449m",
+    "room_type": "룸있음"
   },
   {
     "id": 1172,
@@ -3514,7 +3779,8 @@
     "rating": "4.2",
     "district": "문정",
     "room": "✅ 확인",
-    "note": "문정역 4번 출구에서 141m, 송파테라타워2 B동 1층"
+    "note": "문정역 4번 출구에서 141m, 송파테라타워2 B동 1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1173,
@@ -3527,7 +3793,8 @@
     "rating": "4.2",
     "district": "여의도",
     "room": "✅ 확인",
-    "note": "샛강역 2번 출구에서 353m"
+    "note": "샛강역 2번 출구에서 353m",
+    "room_type": "룸있음"
   },
   {
     "id": 1176,
@@ -3540,7 +3807,8 @@
     "score": 86,
     "rating": 4.4,
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1177,
@@ -3553,7 +3821,8 @@
     "rating": "4.4",
     "district": "한남",
     "room": "✅ 확인",
-    "note": "용산구 한남동 75-1"
+    "note": "용산구 한남동 75-1",
+    "room_type": "룸있음"
   },
   {
     "id": 1178,
@@ -3566,7 +3835,8 @@
     "rating": 4.4,
     "room": "✅ 확인",
     "note": "동대입구역 3번 출구에서 123m",
-    "district": "장충"
+    "district": "장충",
+    "room_type": "룸있음"
   },
   {
     "id": 1179,
@@ -3579,7 +3849,8 @@
     "rating": "4.4",
     "room": "✅ 확인",
     "district": "동자",
-    "note": "서울역 2번 출구에서 77m"
+    "note": "서울역 2번 출구에서 77m",
+    "room_type": "룸있음"
   },
   {
     "id": 1180,
@@ -3592,7 +3863,8 @@
     "rating": 4.4,
     "room": "✅ 확인",
     "note": "종각역 3-1번 출구에서 91m, 센트로폴리스 A동 2층",
-    "district": "공평"
+    "district": "공평",
+    "room_type": "룸있음"
   },
   {
     "id": 1181,
@@ -3605,7 +3877,8 @@
     "rating": 4.4,
     "district": "마곡",
     "room": "✅ 확인",
-    "note": "마곡역 2번 출구에서 226m, 원그로브몰 A동 2층"
+    "note": "마곡역 2번 출구에서 226m, 원그로브몰 A동 2층",
+    "room_type": "룸있음"
   },
   {
     "id": 1184,
@@ -3618,7 +3891,8 @@
     "score": 86,
     "rating": 4.4,
     "room": "✅ 확인",
-    "district": "수하"
+    "district": "수하",
+    "room_type": "룸있음"
   },
   {
     "id": 1185,
@@ -3631,7 +3905,8 @@
     "score": 84,
     "rating": "4.3",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1186,
@@ -3644,7 +3919,8 @@
     "score": 84,
     "rating": 4.3,
     "room": "✅ 확인",
-    "district": "공평"
+    "district": "공평",
+    "room_type": "룸있음"
   },
   {
     "id": 1187,
@@ -3657,7 +3933,8 @@
     "score": 93,
     "rating": "4.7",
     "room": "✅ 확인",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 1188,
@@ -3671,7 +3948,8 @@
     "rating": 4.4,
     "room": "✅ 확인",
     "mapQuery": "상우가든 을지로",
-    "district": "저동"
+    "district": "저동",
+    "room_type": "룸있음"
   },
   {
     "id": 1189,
@@ -3684,7 +3962,8 @@
     "score": 84,
     "rating": "4.3",
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1190,
@@ -3698,7 +3977,8 @@
     "score": 93,
     "rating": "4.7",
     "room": "✅ 확인",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 1191,
@@ -3711,7 +3991,8 @@
     "rating": "4.2",
     "district": "서초",
     "room": "✅ 확인",
-    "note": "남부터미널역 3번 출구에서 442m"
+    "note": "남부터미널역 3번 출구에서 442m",
+    "room_type": "룸있음"
   },
   {
     "id": 1192,
@@ -3724,7 +4005,8 @@
     "rating": "4.2",
     "room": "✅ 확인",
     "district": "논현",
-    "note": "강남구 논현동 261"
+    "note": "강남구 논현동 261",
+    "room_type": "룸있음"
   },
   {
     "id": 1194,
@@ -3737,7 +4019,8 @@
     "rating": "4.2",
     "district": "방이",
     "room": "✅ 확인",
-    "note": "송파구 방이동 165-4"
+    "note": "송파구 방이동 165-4",
+    "room_type": "룸있음"
   },
   {
     "id": 1204,
@@ -3750,7 +4033,8 @@
     "score": 88,
     "rating": "4.5",
     "room": "✅ 확인",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1205,
@@ -3764,7 +4048,8 @@
     "rating": "4.4",
     "room": "✅ 확인",
     "district": "청담",
-    "mapQuery": "소꿉 청담"
+    "mapQuery": "소꿉 청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1206,
@@ -3777,7 +4062,8 @@
     "score": 84,
     "rating": "4.4",
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1207,
@@ -3790,7 +4076,8 @@
     "score": 89,
     "rating": 4.4,
     "district": "역삼",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1208,
@@ -3803,7 +4090,8 @@
     "score": 89,
     "rating": 4.4,
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1209,
@@ -3816,7 +4104,8 @@
     "score": 83,
     "rating": "4.2",
     "district": "잠원",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1210,
@@ -3829,7 +4118,8 @@
     "rating": 4.2,
     "room": "✅ 확인",
     "note": "케이트윈타워 지하1층",
-    "district": "중학"
+    "district": "중학",
+    "room_type": "룸있음"
   },
   {
     "id": 1212,
@@ -3843,7 +4133,8 @@
     "rating": 4.7,
     "room": "✅ 확인",
     "mapQuery": "콘피에르 남대문",
-    "district": "남대문로"
+    "district": "남대문로",
+    "room_type": "룸있음"
   },
   {
     "id": 1213,
@@ -3856,7 +4147,8 @@
     "score": 93,
     "rating": 4.7,
     "district": "청진",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1214,
@@ -3869,7 +4161,8 @@
     "score": 84,
     "rating": 4.3,
     "room": "✅ 확인",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1215,
@@ -3882,7 +4175,8 @@
     "score": 84,
     "rating": "4.3",
     "district": "신사",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1216,
@@ -3895,7 +4189,8 @@
     "score": 84,
     "rating": 4.3,
     "room": "✅ 확인",
-    "district": "다동"
+    "district": "다동",
+    "room_type": "룸있음"
   },
   {
     "id": 1217,
@@ -3908,7 +4203,8 @@
     "score": 84,
     "rating": "4.3",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1218,
@@ -3921,7 +4217,8 @@
     "score": 82,
     "rating": "4.2",
     "district": "신사",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1219,
@@ -3934,7 +4231,8 @@
     "score": 82,
     "rating": "4.2",
     "room": "✅ 확인",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 1220,
@@ -3947,7 +4245,8 @@
     "score": 86,
     "rating": "4.4",
     "room": "✅ 확인",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1221,
@@ -3960,7 +4259,8 @@
     "score": 86,
     "rating": 4.3,
     "room": "✅ 확인",
-    "district": "남대문로"
+    "district": "남대문로",
+    "room_type": "룸있음"
   },
   {
     "id": 1223,
@@ -3973,7 +4273,8 @@
     "rating": 4.3,
     "district": "삼성",
     "room": "✅ 확인",
-    "note": "삼성역 3번 출구에서 203m, 딤섬과 전가복,동파육"
+    "note": "삼성역 3번 출구에서 203m, 딤섬과 전가복,동파육",
+    "room_type": "룸있음"
   },
   {
     "id": 1238,
@@ -3986,7 +4287,8 @@
     "emoji": "🥩",
     "room": "✅ 확인",
     "note": "역삼역 3번 출구에서 160m, 포스코타워 역삼 지하 1층",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1239,
@@ -3999,7 +4301,8 @@
     "emoji": "🥩",
     "district": "신천",
     "room": "✅ 확인",
-    "note": "잠실역 7번 출구에서 182m, 잠실타워 730 지하1층"
+    "note": "잠실역 7번 출구에서 182m, 잠실타워 730 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1240,
@@ -4012,7 +4315,8 @@
     "emoji": "🥩",
     "district": "염리",
     "room": "✅ 확인",
-    "note": "공덕역 1번 출구에서 329m, 재화스퀘어 지하 1층"
+    "note": "공덕역 1번 출구에서 329m, 재화스퀘어 지하 1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1242,
@@ -4025,7 +4329,8 @@
     "emoji": "🥩",
     "room": "✅ 확인",
     "note": "흥국생명빌딩 지하1층",
-    "district": "새문안로"
+    "district": "새문안로",
+    "room_type": "룸있음"
   },
   {
     "id": 1243,
@@ -4038,7 +4343,8 @@
     "emoji": "🥩",
     "district": "광화문",
     "room": "✅ 확인",
-    "note": "광화문역 1번 출구에서 118m, 센터포인트광화문 2층"
+    "note": "광화문역 1번 출구에서 118m, 센터포인트광화문 2층",
+    "room_type": "룸있음"
   },
   {
     "id": 1244,
@@ -4051,7 +4357,8 @@
     "emoji": "🥩",
     "district": "문래",
     "room": "✅ 확인",
-    "note": "문래역 6번 출구에서 555m, 영시티 S타워 로비층"
+    "note": "문래역 6번 출구에서 555m, 영시티 S타워 로비층",
+    "room_type": "룸있음"
   },
   {
     "id": 1247,
@@ -4064,7 +4371,8 @@
     "emoji": "🥩",
     "district": "상암",
     "room": "✅ 확인",
-    "note": "문화방송 지하1층 116호"
+    "note": "문화방송 지하1층 116호",
+    "room_type": "룸있음"
   },
   {
     "id": 1251,
@@ -4077,7 +4385,8 @@
     "emoji": "🍽️",
     "room": "✅ 확인",
     "district": "서초",
-    "note": "교대역 1번 출구에서 179m"
+    "note": "교대역 1번 출구에서 179m",
+    "room_type": "룸있음"
   },
   {
     "id": 1252,
@@ -4090,7 +4399,8 @@
     "emoji": "🍽️",
     "district": "삼성",
     "room": "✅ 확인",
-    "note": "삼성중앙역 6번 출구에서 313m"
+    "note": "삼성중앙역 6번 출구에서 313m",
+    "room_type": "룸있음"
   },
   {
     "id": 1253,
@@ -4103,7 +4413,8 @@
     "emoji": "🍽️",
     "room": "✅ 확인",
     "note": "회현 7번 출구에서 98m",
-    "district": "충무로"
+    "district": "충무로",
+    "room_type": "룸있음"
   },
   {
     "id": 1254,
@@ -4116,7 +4427,8 @@
     "emoji": "🍽️",
     "district": "서교",
     "room": "✅ 확인",
-    "note": "서울 마포구 서교동 460-25"
+    "note": "서울 마포구 서교동 460-25",
+    "room_type": "룸있음"
   },
   {
     "id": 1256,
@@ -4129,7 +4441,8 @@
     "emoji": "🍽️",
     "room": "✅ 확인",
     "note": "마곡역 3번 출구에서 258m, GMG엘스타 4층",
-    "district": "마곡"
+    "district": "마곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1258,
@@ -4142,7 +4455,8 @@
     "note": "강남역 4번 출구에서 387m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1259,
@@ -4155,7 +4469,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "논현",
-    "note": "학동역 10번 출구에서 409m, 건설회관 지하1층"
+    "note": "학동역 10번 출구에서 409m, 건설회관 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1260,
@@ -4168,7 +4483,8 @@
     "emoji": "🥢",
     "district": "역삼",
     "room": "✅ 확인",
-    "note": "역삼역 7번 출구에서 164m, 훠궈 전문점"
+    "note": "역삼역 7번 출구에서 164m, 훠궈 전문점",
+    "room_type": "룸있음"
   },
   {
     "id": 1261,
@@ -4181,7 +4497,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "서초",
-    "note": "교대역 5번 출구에서 39m"
+    "note": "교대역 5번 출구에서 39m",
+    "room_type": "룸있음"
   },
   {
     "id": 1262,
@@ -4194,7 +4511,8 @@
     "emoji": "🥢",
     "district": "삼성",
     "room": "✅ 확인",
-    "note": "코엑스 오크우드 호텔 건너편, 훠궈 전문점"
+    "note": "코엑스 오크우드 호텔 건너편, 훠궈 전문점",
+    "room_type": "룸있음"
   },
   {
     "id": 1263,
@@ -4207,7 +4525,8 @@
     "emoji": "🥢",
     "district": "동교",
     "room": "✅ 확인",
-    "note": "홍대입구역 1번 출구에서 88m"
+    "note": "홍대입구역 1번 출구에서 88m",
+    "room_type": "룸있음"
   },
   {
     "id": 1264,
@@ -4220,7 +4539,8 @@
     "emoji": "🏮",
     "district": "역삼",
     "room": "✅ 확인",
-    "note": "역삼역 2번 출구에서 282m"
+    "note": "역삼역 2번 출구에서 282m",
+    "room_type": "룸있음"
   },
   {
     "id": 1265,
@@ -4233,7 +4553,8 @@
     "emoji": "🏮",
     "district": "양재",
     "room": "✅ 확인",
-    "note": "양재역 5번 출구에서 425m"
+    "note": "양재역 5번 출구에서 425m",
+    "room_type": "룸있음"
   },
   {
     "id": 1266,
@@ -4246,7 +4567,8 @@
     "emoji": "🏮",
     "room": "✅ 확인",
     "district": "서초",
-    "note": "교대역 4번 출구에서 157m, 지파이브센트럴프라자"
+    "note": "교대역 4번 출구에서 157m, 지파이브센트럴프라자",
+    "room_type": "룸있음"
   },
   {
     "id": 1267,
@@ -4259,7 +4581,8 @@
     "note": "시청역 9번 출구에서 168m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "서소문"
+    "district": "서소문",
+    "room_type": "룸있음"
   },
   {
     "id": 1268,
@@ -4273,7 +4596,8 @@
     "emoji": "🎌",
     "mapQuery": "대치 후지 일식당",
     "room": "✅ 확인",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1269,
@@ -4287,7 +4611,8 @@
     "emoji": "🎌",
     "room": "✅ 확인",
     "mapQuery": "진수사 역삼",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "전석룸"
   },
   {
     "id": 1270,
@@ -4300,7 +4625,8 @@
     "note": "발산역 4번 출구에서 261m",
     "emoji": "🥩",
     "district": "등촌",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1271,
@@ -4313,7 +4639,8 @@
     "note": "발산역 2번 출구에서 165m, 열린프라자 3층",
     "emoji": "🥩",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1272,
@@ -4326,7 +4653,8 @@
     "emoji": "🥩",
     "district": "동교",
     "room": "✅ 확인",
-    "note": "홍대입구역 8번 출구에서 116m"
+    "note": "홍대입구역 8번 출구에서 116m",
+    "room_type": "룸있음"
   },
   {
     "id": 1273,
@@ -4339,7 +4667,8 @@
     "note": "강남역 11번 출구에서 168m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1275,
@@ -4352,7 +4681,8 @@
     "emoji": "🥢",
     "district": "수송",
     "room": "✅ 확인",
-    "note": "서머셋팰리스 호텔 1층"
+    "note": "서머셋팰리스 호텔 1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1276,
@@ -4365,7 +4695,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "여의도",
-    "note": "여의도역 3번 출구에서 495m, IFC몰 L3층"
+    "note": "여의도역 3번 출구에서 495m, IFC몰 L3층",
+    "room_type": "룸있음"
   },
   {
     "id": 1279,
@@ -4378,7 +4709,8 @@
     "emoji": "🥢",
     "district": "도곡",
     "room": "✅ 확인",
-    "note": "린스퀘어 지하1층"
+    "note": "린스퀘어 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1280,
@@ -4391,7 +4723,8 @@
     "emoji": "🥢",
     "district": "잠원",
     "room": "✅ 확인",
-    "note": "반포역 5번 출구에서 289m, 파스텔프라자 1층"
+    "note": "반포역 5번 출구에서 289m, 파스텔프라자 1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1282,
@@ -4404,7 +4737,8 @@
     "emoji": "🥢",
     "district": "용산",
     "room": "✅ 확인",
-    "note": "용산역 1번 출구에서 100m, 용산아이파크몰 리빙관 7층"
+    "note": "용산역 1번 출구에서 100m, 용산아이파크몰 리빙관 7층",
+    "room_type": "룸있음"
   },
   {
     "id": 1284,
@@ -4417,7 +4751,8 @@
     "emoji": "🥢",
     "district": "소공",
     "room": "✅ 확인",
-    "note": "한국빌딩 지하1층"
+    "note": "한국빌딩 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1285,
@@ -4430,7 +4765,8 @@
     "emoji": "🥢",
     "district": "여의도",
     "room": "✅ 확인",
-    "note": "국회의사당역 1번 출구에서 358m, 여의도파라곤1층"
+    "note": "국회의사당역 1번 출구에서 358m, 여의도파라곤1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1286,
@@ -4443,7 +4779,8 @@
     "note": "발산역 4번 출구에서 261m",
     "emoji": "🏮",
     "district": "등촌",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1287,
@@ -4456,7 +4793,8 @@
     "note": "샛강역 2번 출구에서 350m",
     "emoji": "🥩",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1288,
@@ -4469,7 +4807,8 @@
     "note": "을지로입구역 1-1번 출구에서 23m, 더존을지타워 지하 1층",
     "emoji": "🥩",
     "district": "을지로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1289,
@@ -4482,7 +4821,8 @@
     "note": "여의도역 3번 출구에서 204m, 현대차증권빌딩 B1층",
     "emoji": "🥩",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1290,
@@ -4495,7 +4835,8 @@
     "note": "방이역 4번 출구에서 420m",
     "emoji": "🍽️",
     "room": "✅ 확인",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 1291,
@@ -4508,7 +4849,8 @@
     "emoji": "🍽️",
     "district": "방이",
     "room": "✅ 확인",
-    "note": "방이역 4번 출구에서 418m"
+    "note": "방이역 4번 출구에서 418m",
+    "room_type": "룸있음"
   },
   {
     "id": 1292,
@@ -4521,7 +4863,8 @@
     "note": "농협재단빌딩 지하1층",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1293,
@@ -4534,7 +4877,8 @@
     "emoji": "🍽️",
     "room": "✅ 확인",
     "note": "장심도블랙 한옥단청",
-    "district": "마곡"
+    "district": "마곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1294,
@@ -4547,7 +4891,8 @@
     "note": "압구정역 3번 출구에서 196m",
     "emoji": "🥩",
     "district": "신사",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1295,
@@ -4560,7 +4905,8 @@
     "note": "마곡나루역 1번 출구에서 228m",
     "emoji": "🥩",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1296,
@@ -4573,7 +4919,8 @@
     "note": "서대문역 3번 출구에서 27m, NH농협 타워 지하 1층",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "평동"
+    "district": "평동",
+    "room_type": "룸있음"
   },
   {
     "id": 1297,
@@ -4586,7 +4933,8 @@
     "note": "국회의사당역 1번 출구에서 399m",
     "emoji": "🥩",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1298,
@@ -4599,7 +4947,8 @@
     "note": "여의나루역 4번 출구에서 386m, 브라이튼 지하1층",
     "emoji": "🥢",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1299,
@@ -4612,7 +4961,8 @@
     "note": "종각역 1번 출구에서 93m, 그랑서울 2층",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "청진"
+    "district": "청진",
+    "room_type": "룸있음"
   },
   {
     "id": 1300,
@@ -4625,7 +4975,8 @@
     "note": "북경오리 전문",
     "emoji": "🥢",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1301,
@@ -4638,7 +4989,8 @@
     "note": "마곡역 2번 출구에서 152m, 원그로브몰 A동 2층",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "마곡"
+    "district": "마곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1302,
@@ -4651,7 +5003,8 @@
     "note": "마포역 1번 출구에서 197m",
     "emoji": "🥩",
     "district": "용강",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1303,
@@ -4664,7 +5017,8 @@
     "note": "콜키지 프리",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1304,
@@ -4677,7 +5031,8 @@
     "note": "선릉역 1번 출구에서 154m",
     "emoji": "🎌",
     "room": "✅ 확인",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1305,
@@ -4690,7 +5045,8 @@
     "note": "강남구 논현동 66-1",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1306,
@@ -4703,7 +5059,8 @@
     "note": "마곡나루역 1번 출구에서 215m, 두산더랜드타워 B동 2층",
     "emoji": "🥩",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1307,
@@ -4716,7 +5073,8 @@
     "note": "문정역 4번 출구에서 22m, SKV1 A동 2층",
     "emoji": "🥢",
     "district": "문정",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1308,
@@ -4729,7 +5087,8 @@
     "note": "강남역 12번 출구에서 107m",
     "emoji": "🍣",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1309,
@@ -4742,7 +5101,8 @@
     "note": "서울숲역 5번 출구에서 228m, 갤러리아포레 지하 1층",
     "emoji": "🥢",
     "district": "성수",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1310,
@@ -4755,7 +5115,8 @@
     "note": "마곡나루역 1번 출구에서 396m, 코엑스마곡 지하2층",
     "emoji": "🏮",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1311,
@@ -4768,7 +5129,8 @@
     "note": "혜화역 4번 출구에서 273m, A&A타워 1층",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "명륜"
+    "district": "명륜",
+    "room_type": "룸있음"
   },
   {
     "id": 1312,
@@ -4781,7 +5143,8 @@
     "note": "강남역 3번 출구에서 76m",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1313,
@@ -4794,7 +5157,8 @@
     "note": "김인복 셰프의 평양냉면과 숯불구이 전문점",
     "emoji": "🥩",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1314,
@@ -4807,7 +5171,8 @@
     "note": "석촌역 1번 출구에서 537m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "송파"
+    "district": "송파",
+    "room_type": "룸있음"
   },
   {
     "id": 1315,
@@ -4820,7 +5185,8 @@
     "note": "마곡역 3번 출구에서 334m",
     "emoji": "🥩",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1316,
@@ -4833,7 +5199,8 @@
     "note": "발산역 9번 출구에서 213m",
     "emoji": "🥩",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1317,
@@ -4846,7 +5213,8 @@
     "note": "한성백제역 3번 출구에서 679m",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 1318,
@@ -4859,7 +5227,8 @@
     "note": "콜키지 무제한프리",
     "emoji": "🥩",
     "district": "도곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1319,
@@ -4873,7 +5242,8 @@
     "emoji": "🥩",
     "room": "✅ 확인",
     "mapQuery": "야키니쿠 규 삼성",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1320,
@@ -4886,7 +5256,8 @@
     "note": "친환경 목장과 직거래",
     "emoji": "🥩",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1321,
@@ -4899,7 +5270,8 @@
     "emoji": "🥩",
     "district": "신사",
     "room": "✅ 확인",
-    "note": "강남구 신사동 587-14"
+    "note": "강남구 신사동 587-14",
+    "room_type": "룸있음"
   },
   {
     "id": 1322,
@@ -4912,7 +5284,8 @@
     "emoji": "🥩",
     "district": "상암",
     "room": "✅ 확인",
-    "note": "디지털미디어시티역 9번 출구에서 310m"
+    "note": "디지털미디어시티역 9번 출구에서 310m",
+    "room_type": "룸있음"
   },
   {
     "id": 1323,
@@ -4925,7 +5298,8 @@
     "emoji": "🥩",
     "district": "공덕",
     "room": "✅ 확인",
-    "note": "공덕역 4번 출구에서 291m"
+    "note": "공덕역 4번 출구에서 291m",
+    "room_type": "룸있음"
   },
   {
     "id": 1324,
@@ -4938,7 +5312,8 @@
     "note": "9년연속 미쉐린가이드 선정",
     "emoji": "🥩",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1325,
@@ -4951,7 +5326,8 @@
     "emoji": "🥩",
     "room": "✅ 확인",
     "note": "숙성육 전문점",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1326,
@@ -4964,7 +5340,8 @@
     "note": "오크우드 호텔 맞은편",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1327,
@@ -4977,7 +5354,8 @@
     "emoji": "🏮",
     "district": "삼성",
     "room": "✅ 확인",
-    "note": "삼성중앙역 5번 출구에서 270m"
+    "note": "삼성중앙역 5번 출구에서 270m",
+    "room_type": "룸있음"
   },
   {
     "id": 1328,
@@ -4990,7 +5368,8 @@
     "note": " 와인, 샴페인, 위스키, 바이주 등 콜키지 1병 free",
     "emoji": "🏮",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1329,
@@ -5003,7 +5382,8 @@
     "note": "활고등어회, 제철회 전문점",
     "emoji": "🐟",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1330,
@@ -5016,7 +5396,8 @@
     "note": "압구정로데오역 6번 출구에서 423m, 로빈명품관 1층",
     "emoji": "🥢",
     "district": "신사",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1331,
@@ -5029,7 +5410,8 @@
     "note": "광화문역 2번 출구에서 12m, KT 광화문빌딩 WEST",
     "emoji": "🥢",
     "district": "세종로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1332,
@@ -5043,7 +5425,8 @@
     "emoji": "🎌",
     "room": "✅ 확인",
     "district": "여의도",
-    "mapQuery": "화담 일식 여의도"
+    "mapQuery": "화담 일식 여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1333,
@@ -5056,7 +5439,8 @@
     "note": "논현역 1번 출구에서 136m",
     "emoji": "🐟",
     "district": "논현",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1335,
@@ -5069,7 +5453,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "note": "선릉역 5번 출구에서 183m",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1336,
@@ -5083,7 +5468,8 @@
     "mapQuery": "서래향 반포",
     "room": "✅ 확인",
     "district": "반포",
-    "note": "서초구 반포동 91-4"
+    "note": "서초구 반포동 91-4",
+    "room_type": "룸있음"
   },
   {
     "id": 1337,
@@ -5095,7 +5481,8 @@
     "rating": 4.3,
     "emoji": "🥢",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1338,
@@ -5108,7 +5495,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "반포",
-    "note": "고속터미널역 8-1번 출구에서 448m, 반포원베일리 스퀘어 지하1층"
+    "note": "고속터미널역 8-1번 출구에서 448m, 반포원베일리 스퀘어 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1339,
@@ -5121,7 +5509,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "note": "수서역 3번 출구에서 132m",
-    "district": "수서"
+    "district": "수서",
+    "room_type": "룸있음"
   },
   {
     "id": 1340,
@@ -5134,7 +5523,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "note": "혜화역 2번 출구에서 224m, 유니플렉스 공연장 1층",
-    "district": "동숭"
+    "district": "동숭",
+    "room_type": "룸있음"
   },
   {
     "id": 1341,
@@ -5147,7 +5537,8 @@
     "note": "더 스테이 클래식 호텔 1층",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "남대문로"
+    "district": "남대문로",
+    "room_type": "룸있음"
   },
   {
     "id": 1342,
@@ -5160,7 +5551,8 @@
     "note": "고속터미널역 8번 출구에서 43m, 센트럴시티 1M층",
     "emoji": "🐟",
     "room": "✅ 확인",
-    "district": "반포"
+    "district": "반포",
+    "room_type": "룸있음"
   },
   {
     "id": 1343,
@@ -5173,7 +5565,8 @@
     "note": "잠실역 7번 출구에서 11m, 캐슬플라자 2층",
     "emoji": "🐟",
     "district": "신천",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1344,
@@ -5186,7 +5579,8 @@
     "note": "남영역 1번 출구에서 190m",
     "emoji": "🐟",
     "district": "남영",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1345,
@@ -5199,7 +5593,8 @@
     "note": "공덕역 10번 출구에서 38m, 효성해링턴 스퀘어 2층",
     "emoji": "🐟",
     "district": "도화",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1346,
@@ -5212,7 +5607,8 @@
     "note": "을지로입구역 4번 출구에서 262m, 미래에셋 센터원빌딩 지하2층",
     "emoji": "🐟",
     "district": "수하",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1347,
@@ -5225,7 +5621,8 @@
     "note": "종각역 3번 출구에서 97m, YMCA빌딩 1층",
     "emoji": "🐟",
     "room": "✅ 확인",
-    "district": "종로"
+    "district": "종로",
+    "room_type": "룸있음"
   },
   {
     "id": 1350,
@@ -5238,7 +5635,8 @@
     "note": "발산역 4번 출구에서 80m",
     "emoji": "🐟",
     "district": "발산",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1352,
@@ -5252,7 +5650,8 @@
     "emoji": "🥩",
     "room": "✅ 확인",
     "district": "공덕",
-    "mapQuery": "우수 마포 고기구이"
+    "mapQuery": "우수 마포 고기구이",
+    "room_type": "룸있음"
   },
   {
     "id": 1354,
@@ -5265,7 +5664,8 @@
     "note": "삼성중앙역 5번 출구에서 275m, 전 좌석 프라이빗 룸",
     "emoji": "🥩",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "전석룸"
   },
   {
     "id": 1355,
@@ -5278,7 +5678,8 @@
     "note": "몬드리안호텔 2층",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "이태원"
+    "district": "이태원",
+    "room_type": "룸있음"
   },
   {
     "id": 1356,
@@ -5291,7 +5692,8 @@
     "note": "가락시장역 6번 출구에서 190m",
     "emoji": "🐟",
     "district": "가락",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1357,
@@ -5304,7 +5706,8 @@
     "note": "압구정로데오역 4번 출구에서 401m",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1358,
@@ -5317,7 +5720,8 @@
     "note": "강남역 11번 출구에서 112m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1359,
@@ -5330,7 +5734,8 @@
     "note": "을지로입구역 1-1번 출구에서 191m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "다동"
+    "district": "다동",
+    "room_type": "룸있음"
   },
   {
     "id": 1360,
@@ -5343,7 +5748,8 @@
     "note": "수색역 1번 출구에서 694m, 누리꿈스퀘어 공동제작센타 2층",
     "emoji": "🥩",
     "district": "상암",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1361,
@@ -5356,7 +5762,8 @@
     "note": "잠실역 10번 출구에서 519m",
     "emoji": "🥩",
     "district": "방이",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1362,
@@ -5369,7 +5776,8 @@
     "note": "국회의사당역 1번 출구에서 358m",
     "emoji": "🥩",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1364,
@@ -5382,7 +5790,8 @@
     "note": "발산역 8번 출구에서 265m, 열린M타워2차 3층",
     "emoji": "🥩",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1366,
@@ -5395,7 +5804,8 @@
     "note": "가락시장역 1번 출구에서 59m",
     "emoji": "🥩",
     "district": "가락",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1367,
@@ -5409,7 +5819,8 @@
     "emoji": "🥩",
     "room": "✅ 확인",
     "district": "여의도",
-    "mapQuery": "우부 여의도"
+    "mapQuery": "우부 여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1368,
@@ -5423,7 +5834,8 @@
     "emoji": "🥩",
     "room": "✅ 확인",
     "district": "도화",
-    "mapQuery": "궁전갈비 마포"
+    "mapQuery": "궁전갈비 마포",
+    "room_type": "룸있음"
   },
   {
     "id": 1369,
@@ -5437,7 +5849,8 @@
     "emoji": "🍽️",
     "district": "한강로",
     "room": "✅ 확인",
-    "mapQuery": "아치서울 용산점 양식"
+    "mapQuery": "아치서울 용산점 양식",
+    "room_type": "룸있음"
   },
   {
     "id": 1370,
@@ -5450,7 +5863,8 @@
     "note": "정동빌딩 신관 1층",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "정동"
+    "district": "정동",
+    "room_type": "룸있음"
   },
   {
     "id": 1372,
@@ -5463,7 +5877,8 @@
     "note": "시청역 7번 출구에서 284m",
     "emoji": "🦐",
     "room": "✅ 확인",
-    "district": "북창"
+    "district": "북창",
+    "room_type": "룸있음"
   },
   {
     "id": 1373,
@@ -5476,7 +5891,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "역삼",
-    "note": "역삼역 1번 출구에서 370m, 센터필드"
+    "note": "역삼역 1번 출구에서 370m, 센터필드",
+    "room_type": "룸있음"
   },
   {
     "id": 1374,
@@ -5489,7 +5905,8 @@
     "note": "영등포구 여의도동 44-25",
     "emoji": "🍽️",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1375,
@@ -5502,7 +5919,8 @@
     "note": "충정로역 4번 출구에서 365m",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "중림"
+    "district": "중림",
+    "room_type": "룸있음"
   },
   {
     "id": 1383,
@@ -5516,7 +5934,8 @@
     "emoji": "🏮",
     "room": "✅ 확인",
     "mapQuery": "남도한식 정든님 북창",
-    "district": "북창"
+    "district": "북창",
+    "room_type": "룸있음"
   },
   {
     "id": 1384,
@@ -5528,7 +5947,8 @@
     "score": 75,
     "district": "논현",
     "room": "✅ 확인",
-    "note": "언주역 1번 출구에서 57m"
+    "note": "언주역 1번 출구에서 57m",
+    "room_type": "룸있음"
   },
   {
     "id": 1385,
@@ -5540,7 +5960,8 @@
     "score": 75,
     "district": "도곡",
     "room": "✅ 확인",
-    "note": "재능교육빌딩 1층"
+    "note": "재능교육빌딩 1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1386,
@@ -5551,7 +5972,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1387,
@@ -5563,7 +5985,8 @@
     "score": 75,
     "district": "신사",
     "room": "✅ 확인",
-    "note": "압구정역 3번 출구에서 389m"
+    "note": "압구정역 3번 출구에서 389m",
+    "room_type": "룸있음"
   },
   {
     "id": 1388,
@@ -5575,7 +5998,8 @@
     "score": 75,
     "district": "한강로",
     "room": "✅ 확인",
-    "note": "신용산역 1번 출구에서 195m"
+    "note": "신용산역 1번 출구에서 195m",
+    "room_type": "룸있음"
   },
   {
     "id": 1389,
@@ -5587,7 +6011,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "송파",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1390,
@@ -5599,7 +6024,8 @@
     "score": 75,
     "room": "✅ 확인",
     "district": "하왕십리",
-    "note": "상왕십리역 4번 출구에서 179m"
+    "note": "상왕십리역 4번 출구에서 179m",
+    "room_type": "룸있음"
   },
   {
     "id": 1391,
@@ -5611,7 +6037,8 @@
     "score": 75,
     "district": "하왕십리",
     "room": "✅ 확인",
-    "note": "상왕십리역 4번 출구에서 179m"
+    "note": "상왕십리역 4번 출구에서 179m",
+    "room_type": "룸있음"
   },
   {
     "id": 1392,
@@ -5623,7 +6050,8 @@
     "score": 75,
     "district": "도화",
     "room": "✅ 확인",
-    "note": "공덕역 8번출구 여의도 방향 200m"
+    "note": "공덕역 8번출구 여의도 방향 200m",
+    "room_type": "룸있음"
   },
   {
     "id": 1393,
@@ -5635,7 +6063,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "다동",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1394,
@@ -5647,7 +6076,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "당주",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1395,
@@ -5659,7 +6089,8 @@
     "score": 75,
     "district": "여의도",
     "room": "✅ 확인",
-    "note": "여의도역 3번 출구에서 88m, 오투타워 2층"
+    "note": "여의도역 3번 출구에서 88m, 오투타워 2층",
+    "room_type": "룸있음"
   },
   {
     "id": 1399,
@@ -5671,7 +6102,8 @@
     "score": 75,
     "district": "신천",
     "room": "✅ 확인",
-    "note": "잠실역 10번 출구에서 13m, 롯데월드몰 5층"
+    "note": "잠실역 10번 출구에서 13m, 롯데월드몰 5층",
+    "room_type": "룸있음"
   },
   {
     "id": 1400,
@@ -5683,7 +6115,8 @@
     "score": 75,
     "district": "신천",
     "room": "✅ 확인",
-    "note": "잠실역 7번 출구에서 11m, 캐슬플라자 2층"
+    "note": "잠실역 7번 출구에서 11m, 캐슬플라자 2층",
+    "room_type": "룸있음"
   },
   {
     "id": 1401,
@@ -5695,7 +6128,8 @@
     "score": 75,
     "district": "태평로",
     "room": "✅ 확인",
-    "note": "광화문역 5번 출구에서 170m, 서울파이낸스센터 B2층"
+    "note": "광화문역 5번 출구에서 170m, 서울파이낸스센터 B2층",
+    "room_type": "룸있음"
   },
   {
     "id": 1402,
@@ -5708,7 +6142,8 @@
     "room": "✅ 확인",
     "district": "수하",
     "mapQuery": "차이797 청계천점 수하",
-    "note": "미래에셋센터원빌딩 지하2층"
+    "note": "미래에셋센터원빌딩 지하2층",
+    "room_type": "룸있음"
   },
   {
     "id": 1403,
@@ -5720,7 +6155,8 @@
     "score": 75,
     "room": "✅ 확인",
     "district": "방배",
-    "note": "서초구 방배동 810-2"
+    "note": "서초구 방배동 810-2",
+    "room_type": "룸있음"
   },
   {
     "id": 1405,
@@ -5732,7 +6168,8 @@
     "score": 75,
     "district": "여의도",
     "room": "✅ 확인",
-    "note": "여의도역 5번 출구에서 101m, 한국교직원공제회관 지하1층"
+    "note": "여의도역 5번 출구에서 101m, 한국교직원공제회관 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1409,
@@ -5744,7 +6181,8 @@
     "emoji": "🥢",
     "score": 75,
     "room": "✅ 확인",
-    "district": "서소문"
+    "district": "서소문",
+    "room_type": "룸있음"
   },
   {
     "id": 1410,
@@ -5757,7 +6195,8 @@
     "score": 82,
     "room": "✅ 확인",
     "district": "남대문로",
-    "mapQuery": "아리연 남대문"
+    "mapQuery": "아리연 남대문",
+    "room_type": "룸있음"
   },
   {
     "id": 1411,
@@ -5769,7 +6208,8 @@
     "emoji": "🐮",
     "score": 82,
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1412,
@@ -5782,7 +6222,8 @@
     "emoji": "🥢",
     "score": 75,
     "room": "✅ 확인",
-    "district": "잠원"
+    "district": "잠원",
+    "room_type": "룸있음"
   },
   {
     "id": 1413,
@@ -5794,7 +6235,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "신천",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1414,
@@ -5806,7 +6248,8 @@
     "emoji": "🥢",
     "score": 75,
     "room": "✅ 확인",
-    "district": "반포"
+    "district": "반포",
+    "room_type": "룸있음"
   },
   {
     "id": 1415,
@@ -5818,7 +6261,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1416,
@@ -5830,7 +6274,8 @@
     "emoji": "🐮",
     "score": 82,
     "district": "대치",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "전석룸"
   },
   {
     "id": 1417,
@@ -5842,7 +6287,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "대치",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1418,
@@ -5854,7 +6300,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "청담",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1419,
@@ -5866,7 +6313,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "잠원",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1420,
@@ -5878,7 +6326,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "방배",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1421,
@@ -5890,7 +6339,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "잠실",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1422,
@@ -5902,7 +6352,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "행당"
+    "district": "행당",
+    "room_type": "룸있음"
   },
   {
     "id": 1423,
@@ -5914,7 +6365,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "을지로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1424,
@@ -5926,7 +6378,8 @@
     "score": 78,
     "district": "한강로",
     "room": "✅ 확인",
-    "note": "신용산역 2번 출구에서 406m"
+    "note": "신용산역 2번 출구에서 406m",
+    "room_type": "룸있음"
   },
   {
     "id": 1427,
@@ -5938,7 +6391,8 @@
     "score": 78,
     "district": "마곡",
     "room": "✅ 확인",
-    "note": "발산역 9번 출구에서 370m"
+    "note": "발산역 9번 출구에서 370m",
+    "room_type": "룸있음"
   },
   {
     "id": 1428,
@@ -5950,7 +6404,8 @@
     "score": 78,
     "room": "✅ 확인",
     "district": "황학",
-    "note": "신당역 2번 출구에서 228m"
+    "note": "신당역 2번 출구에서 228m",
+    "room_type": "룸있음"
   },
   {
     "id": 1429,
@@ -5962,7 +6417,8 @@
     "score": 78,
     "room": "✅ 확인",
     "district": "서초",
-    "note": "교대역 14번 출구에서 248m"
+    "note": "교대역 14번 출구에서 248m",
+    "room_type": "룸있음"
   },
   {
     "id": 1430,
@@ -5974,7 +6430,8 @@
     "score": 78,
     "district": "신사",
     "room": "✅ 확인",
-    "note": "강남구 신사동 506"
+    "note": "강남구 신사동 506",
+    "room_type": "룸있음"
   },
   {
     "id": 1431,
@@ -5986,7 +6443,8 @@
     "emoji": "🍝",
     "score": 75,
     "room": "✅ 확인",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1432,
@@ -5999,7 +6457,8 @@
     "score": 75,
     "room": "✅ 확인",
     "district": "역삼",
-    "mapQuery": "도이 역삼"
+    "mapQuery": "도이 역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1434,
@@ -6011,7 +6470,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "오금"
+    "district": "오금",
+    "room_type": "룸있음"
   },
   {
     "id": 1435,
@@ -6023,7 +6483,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "서초",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1436,
@@ -6036,7 +6497,8 @@
     "room": "✅ 확인",
     "district": "서초",
     "mapQuery": "한우온 서초 고기구이",
-    "note": "서초구 서초동 1340-2"
+    "note": "서초구 서초동 1340-2",
+    "room_type": "룸있음"
   },
   {
     "id": 1437,
@@ -6049,7 +6511,8 @@
     "room": "✅ 확인",
     "district": "서초",
     "mapQuery": "하오차이 서초",
-    "note": "남부터미널역 5번 출구에서 307m"
+    "note": "남부터미널역 5번 출구에서 307m",
+    "room_type": "룸있음"
   },
   {
     "id": 1439,
@@ -6062,7 +6525,8 @@
     "score": 70,
     "room": "✅ 확인",
     "district": "대치",
-    "mapQuery": "돌산등대집 대치"
+    "mapQuery": "돌산등대집 대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1441,
@@ -6074,7 +6538,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "방배",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1442,
@@ -6086,7 +6551,8 @@
     "emoji": "🏮",
     "score": 70,
     "room": "✅ 확인",
-    "district": "염리"
+    "district": "염리",
+    "room_type": "룸있음"
   },
   {
     "id": 1443,
@@ -6098,7 +6564,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "청진",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1444,
@@ -6111,7 +6578,8 @@
     "score": 78,
     "room": "✅ 확인",
     "district": "신수",
-    "mapQuery": "신수로 마포 고기구이"
+    "mapQuery": "신수로 마포 고기구이",
+    "room_type": "룸있음"
   },
   {
     "id": 1445,
@@ -6123,7 +6591,8 @@
     "emoji": "🍱",
     "score": 78,
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1446,
@@ -6135,7 +6604,8 @@
     "emoji": "🏮",
     "score": 70,
     "room": "✅ 확인",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1447,
@@ -6147,7 +6617,8 @@
     "emoji": "🍱",
     "score": 78,
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1448,
@@ -6159,7 +6630,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "북창"
+    "district": "북창",
+    "room_type": "룸있음"
   },
   {
     "id": 1449,
@@ -6171,7 +6643,8 @@
     "score": 82,
     "room": "✅ 확인",
     "district": "대치",
-    "note": "노벨빌딩 지하 1층, 전석 프라이빗 룸"
+    "note": "노벨빌딩 지하 1층, 전석 프라이빗 룸",
+    "room_type": "전석룸"
   },
   {
     "id": 1451,
@@ -6183,7 +6656,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1452,
@@ -6196,7 +6670,8 @@
     "score": 78,
     "room": "✅ 확인",
     "district": "서초",
-    "mapQuery": "스시고 서초"
+    "mapQuery": "스시고 서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1453,
@@ -6208,7 +6683,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1454,
@@ -6220,7 +6696,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "논현",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1455,
@@ -6232,7 +6709,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "염리",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1456,
@@ -6244,7 +6722,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1457,
@@ -6256,7 +6735,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1459,
@@ -6268,7 +6748,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "한강로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1460,
@@ -6280,7 +6761,8 @@
     "emoji": "🍱",
     "score": 78,
     "district": "청담",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1461,
@@ -6292,7 +6774,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "도화",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1462,
@@ -6304,7 +6787,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "한강로"
+    "district": "한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 1463,
@@ -6316,7 +6800,8 @@
     "emoji": "🐟",
     "score": 78,
     "district": "도곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1464,
@@ -6328,7 +6813,8 @@
     "emoji": "🐟",
     "score": 78,
     "district": "방배",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1465,
@@ -6340,7 +6826,8 @@
     "emoji": "🐟",
     "score": 75,
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1466,
@@ -6352,7 +6839,8 @@
     "emoji": "🏮",
     "score": 82,
     "district": "발산",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1467,
@@ -6364,7 +6852,8 @@
     "score": 82,
     "district": "역삼",
     "room": "✅ 확인",
-    "note": "역삼 센터필드 East동 1층 해우리"
+    "note": "역삼 센터필드 East동 1층 해우리",
+    "room_type": "룸있음"
   },
   {
     "id": 1468,
@@ -6376,7 +6865,8 @@
     "score": 82,
     "room": "✅ 확인",
     "district": "삼성",
-    "note": "선릉역 10번 출구에서 220m, L7 HOTELS 강남타워 지하1층"
+    "note": "선릉역 10번 출구에서 220m, L7 HOTELS 강남타워 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1470,
@@ -6388,7 +6878,8 @@
     "score": 82,
     "district": "회현",
     "room": "✅ 확인",
-    "note": "회현 1번 출구에서 30m, 리더스뷰남산 지하1층"
+    "note": "회현 1번 출구에서 30m, 리더스뷰남산 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1471,
@@ -6400,7 +6891,8 @@
     "score": 82,
     "room": "✅ 확인",
     "district": "서소문",
-    "note": "시청역 10번 출구에서 195m, 정안빌딩 지하1층"
+    "note": "시청역 10번 출구에서 195m, 정안빌딩 지하1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1473,
@@ -6412,7 +6904,8 @@
     "score": 82,
     "district": "여의도",
     "room": "✅ 확인",
-    "note": "여의도역 3번 출구에서 244m, 여의도 파이낸스센터 지하 1층"
+    "note": "여의도역 3번 출구에서 244m, 여의도 파이낸스센터 지하 1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1476,
@@ -6424,7 +6917,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "역삼",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1478,
@@ -6436,7 +6930,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "정동"
+    "district": "정동",
+    "room_type": "룸있음"
   },
   {
     "id": 1479,
@@ -6448,7 +6943,8 @@
     "emoji": "🍱",
     "score": 78,
     "room": "✅ 확인",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "전석룸"
   },
   {
     "id": 1480,
@@ -6460,7 +6956,8 @@
     "emoji": "🍱",
     "score": 78,
     "district": "방이",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1481,
@@ -6473,7 +6970,8 @@
     "mapQuery": "외백 여의도 중식당",
     "score": 75,
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1482,
@@ -6485,7 +6983,8 @@
     "emoji": "🐟",
     "score": 78,
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1483,
@@ -6497,7 +6996,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1484,
@@ -6509,7 +7009,8 @@
     "emoji": "🏮",
     "score": 70,
     "district": "서초",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1485,
@@ -6522,7 +7023,8 @@
     "mapQuery": "루위 중식당 신사",
     "score": 75,
     "room": "✅ 확인",
-    "district": "신사"
+    "district": "신사",
+    "room_type": "룸있음"
   },
   {
     "id": 1487,
@@ -6534,7 +7036,8 @@
     "emoji": "🏮",
     "score": 70,
     "room": "✅ 확인",
-    "district": "을지로"
+    "district": "을지로",
+    "room_type": "룸있음"
   },
   {
     "id": 1488,
@@ -6546,7 +7049,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "상암",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1489,
@@ -6558,7 +7062,8 @@
     "emoji": "🍱",
     "score": 78,
     "room": "✅ 확인",
-    "district": "마곡"
+    "district": "마곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1490,
@@ -6570,7 +7075,8 @@
     "emoji": "🏮",
     "score": 82,
     "district": "충무로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1491,
@@ -6582,7 +7088,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "남영",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1492,
@@ -6595,7 +7102,8 @@
     "mapQuery": "타와 일식당",
     "score": 78,
     "room": "✅ 확인",
-    "district": "서소문"
+    "district": "서소문",
+    "room_type": "룸있음"
   },
   {
     "id": 1493,
@@ -6607,7 +7115,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1495,
@@ -6620,7 +7129,8 @@
     "mapQuery": "도원 중식당 평동",
     "score": 75,
     "room": "✅ 확인",
-    "district": "평동"
+    "district": "평동",
+    "room_type": "룸있음"
   },
   {
     "id": 1496,
@@ -6633,7 +7143,8 @@
     "mapQuery": "노운 마곡",
     "score": 70,
     "room": "✅ 확인",
-    "district": "마곡"
+    "district": "마곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1498,
@@ -6645,7 +7156,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "잠원",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1499,
@@ -6657,7 +7169,8 @@
     "emoji": "🐟",
     "score": 75,
     "district": "등촌",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1500,
@@ -6668,7 +7181,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "발산",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1501,
@@ -6680,7 +7194,8 @@
     "emoji": "🐟",
     "score": 75,
     "district": "역삼",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1502,
@@ -6692,7 +7207,8 @@
     "emoji": "🏮",
     "score": 82,
     "room": "✅ 확인",
-    "district": "남대문로"
+    "district": "남대문로",
+    "room_type": "룸있음"
   },
   {
     "id": 1503,
@@ -6704,7 +7220,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1504,
@@ -6716,7 +7233,8 @@
     "emoji": "🍱",
     "score": 78,
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1505,
@@ -6729,7 +7247,8 @@
     "score": 78,
     "room": "✅ 확인",
     "district": "신사",
-    "mapQuery": "소양탐정 신사"
+    "mapQuery": "소양탐정 신사",
+    "room_type": "룸있음"
   },
   {
     "id": 1506,
@@ -6742,7 +7261,8 @@
     "mapQuery": "아방궁 역삼",
     "score": 75,
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "전석룸"
   },
   {
     "id": 1507,
@@ -6755,7 +7275,8 @@
     "room": "✅ 확인",
     "district": "여의도",
     "mapQuery": "동해도 일식 여의도",
-    "note": "국회의사당역 3번 출구에서 354m"
+    "note": "국회의사당역 3번 출구에서 354m",
+    "room_type": "룸있음"
   },
   {
     "id": 1509,
@@ -6768,7 +7289,8 @@
     "score": 75,
     "room": "✅ 확인",
     "district": "한강로",
-    "mapQuery": "기꾸참치 한강로"
+    "mapQuery": "기꾸참치 한강로",
+    "room_type": "룸있음"
   },
   {
     "id": 1510,
@@ -6781,7 +7303,8 @@
     "mapQuery": "한티옥 방이역",
     "score": 70,
     "room": "✅ 확인",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 1511,
@@ -6794,7 +7317,8 @@
     "mapQuery": "회빈 역삼중식당",
     "score": 75,
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1512,
@@ -6806,7 +7330,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "서교"
+    "district": "서교",
+    "room_type": "룸있음"
   },
   {
     "id": 1513,
@@ -6818,7 +7343,8 @@
     "emoji": "🏮",
     "score": 70,
     "district": "공덕",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1514,
@@ -6831,7 +7357,8 @@
     "score": 75,
     "room": "✅ 확인",
     "district": "여의도",
-    "mapQuery": "여의도63빌딩 터치더스카이"
+    "mapQuery": "여의도63빌딩 터치더스카이",
+    "room_type": "룸있음"
   },
   {
     "id": 1516,
@@ -6843,7 +7370,8 @@
     "emoji": "🍱",
     "score": 78,
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1517,
@@ -6855,7 +7383,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1518,
@@ -6867,7 +7396,8 @@
     "emoji": "🐟",
     "score": 78,
     "room": "✅ 확인",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1519,
@@ -6879,7 +7409,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1520,
@@ -6892,7 +7423,8 @@
     "score": 78,
     "room": "✅ 확인",
     "district": "역삼",
-    "mapQuery": "유다까 역삼"
+    "mapQuery": "유다까 역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1521,
@@ -6904,7 +7436,8 @@
     "emoji": "🍱",
     "score": 78,
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1522,
@@ -6916,7 +7449,8 @@
     "emoji": "🐟",
     "score": 75,
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1523,
@@ -6928,7 +7462,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "서초",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1524,
@@ -6940,7 +7475,8 @@
     "emoji": "🏮",
     "score": 82,
     "district": "발산",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1525,
@@ -6952,7 +7488,8 @@
     "emoji": "🍝",
     "score": 75,
     "room": "✅ 확인",
-    "district": "통의"
+    "district": "통의",
+    "room_type": "룸있음"
   },
   {
     "id": 1526,
@@ -6964,7 +7501,8 @@
     "emoji": "🥩",
     "score": 78,
     "room": "✅ 확인",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1527,
@@ -6977,7 +7515,8 @@
     "score": 78,
     "room": "✅ 확인",
     "district": "역삼",
-    "mapQuery": "바우한우 역삼"
+    "mapQuery": "바우한우 역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1528,
@@ -6989,7 +7528,8 @@
     "emoji": "🐟",
     "score": 75,
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1529,
@@ -7001,7 +7541,8 @@
     "emoji": "🥢",
     "score": 75,
     "room": "✅ 확인",
-    "district": "청진"
+    "district": "청진",
+    "room_type": "룸있음"
   },
   {
     "id": 1530,
@@ -7013,7 +7554,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "강남역 4번 출구에서 27m",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1531,
@@ -7025,7 +7567,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "카이트타워 1층",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1532,
@@ -7037,7 +7580,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "교대역 7번 출구에서 25m",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1533,
@@ -7049,7 +7593,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "삼성역 4번 출구에서 27m",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1534,
@@ -7061,7 +7606,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "압구정로데오역 4번 출구에서 485m, JS빌딩 1,2층",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1535,
@@ -7073,7 +7619,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "석촌역 8번 출구에서 439m",
-    "district": "석촌"
+    "district": "석촌",
+    "room_type": "룸있음"
   },
   {
     "id": 1536,
@@ -7085,7 +7632,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "을지로3가역 12번 출구에서 63m, 파인애비뉴 A동 지하1층",
-    "district": "을지로"
+    "district": "을지로",
+    "room_type": "룸있음"
   },
   {
     "id": 1537,
@@ -7097,7 +7645,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "시청역 9번 출구에서 31m",
-    "district": "서소문"
+    "district": "서소문",
+    "room_type": "룸있음"
   },
   {
     "id": 1538,
@@ -7109,7 +7658,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "시청역 4번 출구에서 186m, 더익스체인지서울 2층",
-    "district": "무교"
+    "district": "무교",
+    "room_type": "룸있음"
   },
   {
     "id": 1539,
@@ -7121,7 +7671,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "여의도역 5번 출구에서 295m, 여의도백화점 m1층",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1540,
@@ -7133,7 +7684,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "샛강역 3번 출구에서 202m, 나라키움여의도 2층",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1541,
@@ -7145,7 +7697,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "영등포구 여의도동 11-11, 한서리버파크 3층복사",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1542,
@@ -7157,7 +7710,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "국회의사당역 1번 출구에서 364m, 여의도파라곤 1층",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1544,
@@ -7169,7 +7723,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "디지털미디어시티역 9번 출구에서 488m, DDMC 타워 2층",
-    "district": "상암"
+    "district": "상암",
+    "room_type": "룸있음"
   },
   {
     "id": 1545,
@@ -7181,7 +7736,8 @@
     "score": 80,
     "emoji": "🥩",
     "note": "발산역 8번 출구에서 325m, 쿠쿠마곡빌딩 2층",
-    "district": "마곡"
+    "district": "마곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1547,
@@ -7193,7 +7749,8 @@
     "note": "마곡역 3번 출구에서 419m, 장어구이와 한우",
     "emoji": "🐟",
     "district": "마곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1548,
@@ -7205,7 +7762,8 @@
     "note": "신용산역 2번 출구에서 84m, 아모레퍼시픽 본사 지하 1층",
     "emoji": "🥢",
     "district": "한강로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1549,
@@ -7217,7 +7775,8 @@
     "note": "서초구 방배동 797-8",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "방배"
+    "district": "방배",
+    "room_type": "룸있음"
   },
   {
     "id": 1550,
@@ -7229,7 +7788,8 @@
     "note": "여의도역 1번 출구에서 51m",
     "emoji": "🥩",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1551,
@@ -7241,7 +7801,8 @@
     "note": "광화문역 1번 출구에서 193m, 세종빌딩 1층",
     "emoji": "🏮",
     "district": "당주",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1553,
@@ -7253,7 +7814,8 @@
     "note": "고속터미널역 5번 출구에서 582m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "반포"
+    "district": "반포",
+    "room_type": "룸있음"
   },
   {
     "id": 1554,
@@ -7266,7 +7828,8 @@
     "room": "✅ 확인",
     "district": "도화",
     "mapQuery": "색동저고리 마포 한정식",
-    "note": "마포역 3번 출구에서 299m"
+    "note": "마포역 3번 출구에서 299m",
+    "room_type": "룸있음"
   },
   {
     "id": 1555,
@@ -7278,7 +7841,8 @@
     "emoji": "🥩",
     "mapQuery": "우노 선릉",
     "room": "✅ 확인",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1558,
@@ -7290,7 +7854,8 @@
     "note": "뚝섬역 5번 출구에서 157m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "성수"
+    "district": "성수",
+    "room_type": "룸있음"
   },
   {
     "id": 1559,
@@ -7302,7 +7867,8 @@
     "note": "역삼역 1번 출구에서 189m",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1560,
@@ -7314,7 +7880,8 @@
     "note": "광화문 정원 속 프라이빗룸과 세미나 가능",
     "emoji": "🍝",
     "room": "✅ 확인",
-    "district": "정동"
+    "district": "정동",
+    "room_type": "룸있음"
   },
   {
     "id": 1561,
@@ -7326,7 +7893,8 @@
     "note": "서초역 7번 출구에서 369m",
     "emoji": "🏮",
     "district": "서초",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1562,
@@ -7338,7 +7906,8 @@
     "note": "종각역 4번 출구에서 285m",
     "emoji": "🐟",
     "district": "관철",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1563,
@@ -7351,7 +7920,8 @@
     "emoji": "🍝",
     "mapQuery": "베네티 강남",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1564,
@@ -7363,7 +7933,8 @@
     "note": "삼성중앙역 3번 출구에서 18m",
     "emoji": "🥩",
     "district": "삼성",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1565,
@@ -7375,7 +7946,8 @@
     "note": "뉴질랜드,호주산 베이비램 양갈비 참숯 화로구이 할랄전문점",
     "emoji": "🥩",
     "district": "태평로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1566,
@@ -7387,7 +7959,8 @@
     "note": "청담역 10번 출구에서 122m",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1567,
@@ -7399,7 +7972,8 @@
     "note": "삼성역 3번 출구에서 131m",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1569,
@@ -7411,7 +7985,8 @@
     "note": "역삼역 3번 출구에서 102m",
     "emoji": "🥢",
     "district": "역삼",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1570,
@@ -7423,7 +7998,8 @@
     "note": "역삼역 7번 출구에서 231m",
     "emoji": "🥩",
     "district": "역삼",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1573,
@@ -7435,7 +8011,8 @@
     "note": "농협재단빌딩 지하, 이승준 셰프",
     "emoji": "🏮",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1574,
@@ -7447,7 +8024,8 @@
     "note": "교대역 12번 출구에서 101m, 활어막회 대방어회 전문",
     "emoji": "🐟",
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1575,
@@ -7459,7 +8037,8 @@
     "note": "디팰리스 지하 1층",
     "emoji": "🏮",
     "district": "신문로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1576,
@@ -7472,7 +8051,8 @@
     "emoji": "🍱",
     "mapQuery": "이코이 역삼",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1577,
@@ -7484,7 +8064,8 @@
     "note": "군인공제회관 지하",
     "emoji": "🏮",
     "district": "도곡",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1578,
@@ -7496,7 +8077,8 @@
     "note": "서울역 7번 출구에서 108m, 에너지플러스 서울로 13층",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "남대문로"
+    "district": "남대문로",
+    "room_type": "룸있음"
   },
   {
     "id": 1579,
@@ -7508,7 +8090,8 @@
     "note": "선정릉역 2번 출구에서 132m, 야나가와식 세이로무시 & 히츠마부시 전문점",
     "emoji": "🍱",
     "room": "✅ 확인",
-    "district": "삼성"
+    "district": "삼성",
+    "room_type": "룸있음"
   },
   {
     "id": 1581,
@@ -7520,7 +8103,8 @@
     "note": "여의도역 6번 출구에서 67m, 아일렉스빌딩 5층",
     "emoji": "🍱",
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1582,
@@ -7532,7 +8116,8 @@
     "note": "강남구 논현동 96-14",
     "emoji": "🥩",
     "district": "논현",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1583,
@@ -7544,7 +8129,8 @@
     "note": "광화문역 5번 출구에서 319m, 시그너스빌딩 지하1층",
     "emoji": "🍱",
     "district": "무교",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1584,
@@ -7556,7 +8142,8 @@
     "note": "캐주얼 다이닝/한식비스트로",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1585,
@@ -7568,7 +8155,8 @@
     "note": "종각역 1번 출구에서 177m, 그랑서울 타워1 4층",
     "emoji": "🍱",
     "room": "✅ 확인",
-    "district": "청진"
+    "district": "청진",
+    "room_type": "룸있음"
   },
   {
     "id": 1586,
@@ -7580,7 +8168,8 @@
     "note": "강남구 청담동 23",
     "emoji": "🏮",
     "district": "청담",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1587,
@@ -7592,7 +8181,8 @@
     "note": "잠실역 10번 출구에서 319m, 소피텔 지하 1층",
     "emoji": "🍱",
     "district": "신천",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1588,
@@ -7604,7 +8194,8 @@
     "note": "오마카세 일식 기반의(카이세키) 코스요리 전문",
     "emoji": "🍱",
     "room": "✅ 확인",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1589,
@@ -7616,7 +8207,8 @@
     "note": "교대역 9번 출구에서 144m",
     "emoji": "🐟",
     "district": "서초",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1590,
@@ -7628,7 +8220,8 @@
     "note": "여의나루역 4번 출구에서 455m, 글루텐 프리, 비건",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1591,
@@ -7641,7 +8234,8 @@
     "district": "마곡",
     "room": "✅ 확인",
     "mapQuery": "라움 마곡 중식당",
-    "note": "발산역 8번 출구에서 375m"
+    "note": "발산역 8번 출구에서 375m",
+    "room_type": "룸있음"
   },
   {
     "id": 1592,
@@ -7653,7 +8247,8 @@
     "note": "포스코센터 지하1층",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "대치"
+    "district": "대치",
+    "room_type": "룸있음"
   },
   {
     "id": 1593,
@@ -7666,7 +8261,8 @@
     "emoji": "🍱",
     "mapQuery": "해담 일식당 방이",
     "room": "✅ 확인",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 1594,
@@ -7678,7 +8274,8 @@
     "note": "센터필드강남 조선팰리스호텔 뒤편",
     "emoji": "🍱",
     "room": "✅ 확인",
-    "district": "역삼"
+    "district": "역삼",
+    "room_type": "룸있음"
   },
   {
     "id": 1595,
@@ -7690,7 +8287,8 @@
     "note": "양재역 1번 출구에서 223m",
     "emoji": "🥢",
     "district": "양재",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1596,
@@ -7702,7 +8300,8 @@
     "note": "잠실역 4번 출구에서 436m, 갤러리아팰리스 지하 1층",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "잠실"
+    "district": "잠실",
+    "room_type": "룸있음"
   },
   {
     "id": 1597,
@@ -7714,7 +8313,8 @@
     "note": "사당역 12번 출구에서 33m, 파스텔시티 3층",
     "emoji": "🍱",
     "room": "✅ 확인",
-    "district": "방배"
+    "district": "방배",
+    "room_type": "룸있음"
   },
   {
     "id": 1598,
@@ -7726,7 +8326,8 @@
     "note": "송파나루역 2번 출구에서 489m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "방이"
+    "district": "방이",
+    "room_type": "룸있음"
   },
   {
     "id": 1599,
@@ -7738,7 +8339,8 @@
     "note": "서초구 반포동 96-6, 몽마르뜨빌딩 3층",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "반포"
+    "district": "반포",
+    "room_type": "룸있음"
   },
   {
     "id": 1600,
@@ -7751,7 +8353,8 @@
     "emoji": "🥩",
     "mapQuery": "너와집 여의도",
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1601,
@@ -7764,7 +8367,8 @@
     "emoji": "🍱",
     "mapQuery": "기후 일식당 성수",
     "room": "✅ 확인",
-    "district": "성수"
+    "district": "성수",
+    "room_type": "룸있음"
   },
   {
     "id": 1602,
@@ -7776,7 +8380,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "삼성",
-    "note": "특제 짬뽕, 전가복, 팔보채, 커플새우"
+    "note": "특제 짬뽕, 전가복, 팔보채, 커플새우",
+    "room_type": "룸있음"
   },
   {
     "id": 1603,
@@ -7789,7 +8394,8 @@
     "emoji": "🥩",
     "mapQuery": "설담 마곡",
     "room": "✅ 확인",
-    "district": "마곡"
+    "district": "마곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1605,
@@ -7802,7 +8408,8 @@
     "emoji": "🐟",
     "room": "✅ 확인",
     "district": "방배",
-    "mapQuery": "속초바다야 방배"
+    "mapQuery": "속초바다야 방배",
+    "room_type": "룸있음"
   },
   {
     "id": 1606,
@@ -7814,7 +8421,8 @@
     "note": "압구정로데오역 5번 출구에서 272m",
     "emoji": "🏮",
     "district": "신사",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1607,
@@ -7826,7 +8434,8 @@
     "note": "사당역 13번 출구에서 163m",
     "emoji": "🥩",
     "room": "✅ 확인",
-    "district": "방배"
+    "district": "방배",
+    "room_type": "룸있음"
   },
   {
     "id": 1608,
@@ -7838,7 +8447,8 @@
     "note": "미래에셋 센터원 지하 1층",
     "emoji": "🏮",
     "district": "수하",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1609,
@@ -7851,7 +8461,8 @@
     "emoji": "🥩",
     "mapQuery": "우담 고기구이 논현",
     "room": "✅ 확인",
-    "district": "논현"
+    "district": "논현",
+    "room_type": "룸있음"
   },
   {
     "id": 1610,
@@ -7863,7 +8474,8 @@
     "note": "종각역 1번 출구에서 155m, 타워8빌딩 지하 1층",
     "emoji": "🥩",
     "district": "청진",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1611,
@@ -7875,7 +8487,8 @@
     "note": "국회의사당역 4번 출구에서 97m, 사케다이닝 컨셉의 한우오마카세",
     "emoji": "🥩",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1612,
@@ -7888,7 +8501,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "방배",
-    "mapQuery": "매일향 방배"
+    "mapQuery": "매일향 방배",
+    "room_type": "룸있음"
   },
   {
     "id": 1613,
@@ -7900,7 +8514,8 @@
     "note": "영등포시장역 1번 출구에서 221m",
     "emoji": "🐟",
     "district": "영등포",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1616,
@@ -7912,7 +8527,8 @@
     "note": "국회의사당역 3번 출구에서 299m",
     "emoji": "🥩",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1617,
@@ -7925,7 +8541,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "상수",
-    "mapQuery": "맛이차이나 마포"
+    "mapQuery": "맛이차이나 마포",
+    "room_type": "룸있음"
   },
   {
     "id": 1618,
@@ -7938,7 +8555,8 @@
     "emoji": "🥢",
     "room": "✅ 확인",
     "district": "서초",
-    "mapQuery": "초선과여포 서초"
+    "mapQuery": "초선과여포 서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1619,
@@ -7951,7 +8569,8 @@
     "emoji": "🐟",
     "room": "✅ 확인",
     "district": "상암",
-    "mapQuery": "봉참치 상암"
+    "mapQuery": "봉참치 상암",
+    "room_type": "룸있음"
   },
   {
     "id": 1620,
@@ -7963,7 +8582,8 @@
     "note": "여의도역 5번 출구에서 345m, 맨하탄빌딩",
     "emoji": "🐟",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1621,
@@ -7975,7 +8595,8 @@
     "note": "샛강역 2번 출구에서 422m",
     "emoji": "🥩",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1622,
@@ -7987,7 +8608,8 @@
     "note": "광화문역 2번 출구에서 9m, KT타워 지하1층",
     "emoji": "🐟",
     "district": "세종로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1623,
@@ -7999,7 +8621,8 @@
     "note": "회현역 1번 출구에서 53m, 리더스뷰남산 2층",
     "emoji": "🥩",
     "district": "회현",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1624,
@@ -8012,7 +8635,8 @@
     "emoji": "🍱",
     "district": "청담",
     "room": "✅ 확인",
-    "mapQuery": "청담13 일식당 도산대로 70길"
+    "mapQuery": "청담13 일식당 도산대로 70길",
+    "room_type": "룸있음"
   },
   {
     "id": 1625,
@@ -8024,7 +8648,8 @@
     "note": "삼성역 1번 출구에서 184m",
     "emoji": "🐟",
     "district": "대치",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1626,
@@ -8037,7 +8662,8 @@
     "emoji": "🥢",
     "mapQuery": "신승관 종로",
     "room": "✅ 확인",
-    "district": "종로"
+    "district": "종로",
+    "room_type": "룸있음"
   },
   {
     "id": 1627,
@@ -8050,7 +8676,8 @@
     "emoji": "🥩",
     "mapQuery": "뜨락 청담 고기구이",
     "room": "✅ 확인",
-    "district": "청담"
+    "district": "청담",
+    "room_type": "룸있음"
   },
   {
     "id": 1628,
@@ -8063,7 +8690,8 @@
     "room": "✅ 확인",
     "district": "서초",
     "mapQuery": "진스시 서초",
-    "note": "양재역 2번 출구에서 439m"
+    "note": "양재역 2번 출구에서 439m",
+    "room_type": "룸있음"
   },
   {
     "id": 1629,
@@ -8076,7 +8704,8 @@
     "emoji": "🥢",
     "mapQuery": "초류향 을지로",
     "room": "✅ 확인",
-    "district": "다동"
+    "district": "다동",
+    "room_type": "룸있음"
   },
   {
     "id": 1630,
@@ -8089,7 +8718,8 @@
     "emoji": "🍱",
     "room": "✅ 확인",
     "district": "마곡",
-    "mapQuery": "일식비 마곡"
+    "mapQuery": "일식비 마곡",
+    "room_type": "룸있음"
   },
   {
     "id": 1632,
@@ -8101,7 +8731,8 @@
     "note": "국회의사당역 3번 출구에서 489m, 기계회관 본점 1층",
     "emoji": "🏮",
     "district": "여의도",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1633,
@@ -8113,7 +8744,8 @@
     "note": "을지로4가역 3번 출구에서 71m",
     "emoji": "🥩",
     "district": "주교",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1634,
@@ -8126,7 +8758,8 @@
     "emoji": "🐟",
     "room": "✅ 확인",
     "district": "신사",
-    "mapQuery": "더일 장어구이"
+    "mapQuery": "더일 장어구이",
+    "room_type": "룸있음"
   },
   {
     "id": 1635,
@@ -8138,7 +8771,8 @@
     "note": "샛강역 2번 출구에서 364m",
     "emoji": "🐟",
     "room": "✅ 확인",
-    "district": "여의도"
+    "district": "여의도",
+    "room_type": "룸있음"
   },
   {
     "id": 1636,
@@ -8150,7 +8784,8 @@
     "note": "양재역 8번 출구에서 80m",
     "emoji": "🥩",
     "district": "양재",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1637,
@@ -8162,7 +8797,8 @@
     "note": "종각역 4번 출구에서 188m, 호주산/미국산 와규, 할랄 인증 양고기",
     "emoji": "🥩",
     "district": "관철",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1638,
@@ -8174,7 +8810,8 @@
     "note": "서울역 1번 출구에서 21m",
     "emoji": "🥢",
     "room": "✅ 확인",
-    "district": "동자"
+    "district": "동자",
+    "room_type": "룸있음"
   },
   {
     "id": 1640,
@@ -8187,7 +8824,8 @@
     "emoji": "🏮",
     "mapQuery": "수빈 한정식 연희동",
     "room": "✅ 확인",
-    "district": "연희"
+    "district": "연희",
+    "room_type": "룸있음"
   },
   {
     "id": 1641,
@@ -8199,7 +8837,8 @@
     "note": "삼청동 문화거리 근처 북촌마을",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "팔판"
+    "district": "팔판",
+    "room_type": "룸있음"
   },
   {
     "id": 1642,
@@ -8211,7 +8850,8 @@
     "note": "강남역 6번 출구에서 150m, 서초타운트라팰리스 지하1층",
     "emoji": "🏮",
     "room": "✅ 확인",
-    "district": "서초"
+    "district": "서초",
+    "room_type": "룸있음"
   },
   {
     "id": 1643,
@@ -8223,7 +8863,8 @@
     "note": "용산역 1번 출구에서 435m",
     "emoji": "🏮",
     "district": "한강로",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1644,
@@ -8236,7 +8877,8 @@
     "emoji": "🥩",
     "mapQuery": "사랑채 고기구이 잠실",
     "room": "✅ 확인",
-    "district": "석촌"
+    "district": "석촌",
+    "room_type": "룸있음"
   },
   {
     "id": 1645,
@@ -8250,7 +8892,8 @@
     "district": "역삼",
     "score": 84,
     "rating": 4.4,
-    "note": "강남역 4번 출구에서 133m, 와인,위스키 병수 제한 없이 콜키지 무료"
+    "note": "강남역 4번 출구에서 133m, 와인,위스키 병수 제한 없이 콜키지 무료",
+    "room_type": "룸있음"
   },
   {
     "id": 1646,
@@ -8264,7 +8907,8 @@
     "district": "역삼",
     "score": 84,
     "rating": 4.4,
-    "note": "역삼역 3번 출구에서 179m, 콜키지 무료 (잔, 얼음, 아이스 제공)"
+    "note": "역삼역 3번 출구에서 179m, 콜키지 무료 (잔, 얼음, 아이스 제공)",
+    "room_type": "룸있음"
   },
   {
     "id": 1647,
@@ -8278,7 +8922,8 @@
     "district": "선릉",
     "score": 84,
     "rating": 4.4,
-    "note": "선릉역 1번 출구에서 260m,"
+    "note": "선릉역 1번 출구에서 260m,",
+    "room_type": "룸있음"
   },
   {
     "id": 1648,
@@ -8292,7 +8937,8 @@
     "district": "교대",
     "score": 84,
     "rating": 4.3,
-    "note": "교대역 14번 출구에서 244m"
+    "note": "교대역 14번 출구에서 244m",
+    "room_type": "룸있음"
   },
   {
     "id": 1650,
@@ -8306,7 +8952,8 @@
     "district": "잠실",
     "score": 83,
     "rating": 4.2,
-    "note": "종합운동장역 9번 출구에서 324m"
+    "note": "종합운동장역 9번 출구에서 324m",
+    "room_type": "룸있음"
   },
   {
     "id": 1651,
@@ -8320,7 +8967,8 @@
     "district": "방배",
     "score": 83,
     "rating": 4.2,
-    "note": "사당역 11번 출구에서 302m"
+    "note": "사당역 11번 출구에서 302m",
+    "room_type": "룸있음"
   },
   {
     "id": 1652,
@@ -8334,7 +8982,8 @@
     "district": "가락",
     "score": 83,
     "rating": 4.2,
-    "note": "가락시장역 3번 출구에서 378m"
+    "note": "가락시장역 3번 출구에서 378m",
+    "room_type": "룸있음"
   },
   {
     "id": 1653,
@@ -8348,7 +8997,8 @@
     "district": "남영",
     "score": 83,
     "rating": 4.2,
-    "note": "숙대입구역 6번 출구에서 44m"
+    "note": "숙대입구역 6번 출구에서 44m",
+    "room_type": "룸있음"
   },
   {
     "id": 1654,
@@ -8362,7 +9012,8 @@
     "district": "인현",
     "score": 84,
     "rating": 4.3,
-    "note": "충무로역 7번 출구에서 201m"
+    "note": "충무로역 7번 출구에서 201m",
+    "room_type": "룸있음"
   },
   {
     "id": 1655,
@@ -8376,7 +9027,8 @@
     "district": "을지로",
     "score": 85,
     "rating": 4.5,
-    "note": "을지로입구역 5번 출구에서 54m"
+    "note": "을지로입구역 5번 출구에서 54m",
+    "room_type": "룸있음"
   },
   {
     "id": 1656,
@@ -8390,7 +9042,8 @@
     "district": "관철",
     "score": 84,
     "rating": 4.4,
-    "note": "종각역 4번 출구에서 315m"
+    "note": "종각역 4번 출구에서 315m",
+    "room_type": "룸있음"
   },
   {
     "id": 1657,
@@ -8404,7 +9057,8 @@
     "district": "옹강",
     "score": 85,
     "rating": 4.51,
-    "note": "마포역 1번 출구에서 407m"
+    "note": "마포역 1번 출구에서 407m",
+    "room_type": "룸있음"
   },
   {
     "id": 1658,
@@ -8418,7 +9072,8 @@
     "district": "순화",
     "score": 83,
     "rating": 4.2,
-    "note": "서대문역 6번 출구에서 288m"
+    "note": "서대문역 6번 출구에서 288m",
+    "room_type": "룸있음"
   },
   {
     "id": 1659,
@@ -8432,7 +9087,8 @@
     "district": "여의도",
     "score": 83,
     "rating": 4.2,
-    "note": "국회의사당역 1번 출구에서 417m"
+    "note": "국회의사당역 1번 출구에서 417m",
+    "room_type": "룸있음"
   },
   {
     "id": 1661,
@@ -8446,7 +9102,8 @@
     "district": "서교",
     "score": 83,
     "rating": 4.2,
-    "note": "홍대입구역 9번 출구에서 269m"
+    "note": "홍대입구역 9번 출구에서 269m",
+    "room_type": "룸있음"
   },
   {
     "id": 1662,
@@ -8460,7 +9117,8 @@
     "district": "등촌",
     "score": 83,
     "rating": 4.2,
-    "note": "발산역 4번 출구에서 131m"
+    "note": "발산역 4번 출구에서 131m",
+    "room_type": "룸있음"
   },
   {
     "id": 1241,
@@ -8473,7 +9131,8 @@
     "emoji": "🥩",
     "district": "둔촌",
     "room": "✅ 확인",
-    "note": "둔촌동역 2번 출구에서 79m, 프레온스테이션5 지하 1층"
+    "note": "둔촌동역 2번 출구에서 79m, 프레온스테이션5 지하 1층",
+    "room_type": "룸있음"
   },
   {
     "id": 1274,
@@ -8486,7 +9145,8 @@
     "emoji": "🥢",
     "district": "천호",
     "room": "✅ 확인",
-    "note": "천호역 4번 출구에서 38m, 현대백화점 천호점 12층"
+    "note": "천호역 4번 출구에서 38m, 현대백화점 천호점 12층",
+    "room_type": "룸있음"
   },
   {
     "id": 1438,
@@ -8498,7 +9158,8 @@
     "score": 78,
     "district": "성내",
     "room": "✅ 확인",
-    "note": "강동구 성내동 448-21"
+    "note": "강동구 성내동 448-21",
+    "room_type": "룸있음"
   },
   {
     "id": 1469,
@@ -8510,7 +9171,8 @@
     "score": 82,
     "district": "성내",
     "room": "✅ 확인",
-    "note": "천호역 6번 출구에서 466m"
+    "note": "천호역 6번 출구에서 466m",
+    "room_type": "룸있음"
   },
   {
     "id": 1477,
@@ -8522,7 +9184,8 @@
     "emoji": "🥩",
     "score": 78,
     "district": "강일",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1494,
@@ -8534,7 +9197,8 @@
     "emoji": "🥢",
     "score": 75,
     "district": "길동",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1580,
@@ -8546,7 +9210,8 @@
     "note": "둔촌동역 4번 출구에서 257m",
     "emoji": "🥩",
     "district": "성내",
-    "room": "✅ 확인"
+    "room": "✅ 확인",
+    "room_type": "룸있음"
   },
   {
     "id": 1663,
@@ -8560,7 +9225,8 @@
     "name": "청기와타운 왕십리역사점",
     "region": "성동",
     "district": "행당",
-    "area": "잠실·성수"
+    "area": "잠실·성수",
+    "room_type": "룸있음"
   },
   {
     "id": 1664,
@@ -8574,6 +9240,7 @@
     "name": "청기와타운 길동사거리점",
     "region": "강동",
     "district": "둔촌",
-    "area": "잠실·성수"
+    "area": "잠실·성수",
+    "room_type": "룸있음"
   }
 ]
