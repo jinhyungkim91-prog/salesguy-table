@@ -709,7 +709,7 @@ export default function App() {
       if (!tokens.every(t => fullText.includes(t))) return false;
     }
     return true;
-  });
+  }).sort((a, b) => (b.score || 0) - (a.score || 0));
 
   const lunchFiltered = nearbyMode ? [] : lunchDB.filter(r => {
     if (lunchFavOnly && !getLunchFavorites().includes(r.id)) return false;
