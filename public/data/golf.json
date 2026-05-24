@@ -1258,46 +1258,6 @@
       "tip": "레이크우드 CC 근처 950m · 게장"
     },
     {
-      "id": 365,
-      "golf": "블랙스톤 CC",
-      "name": "남도예담인벨포레",
-      "genre": "한정식",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "블랙스톤 CC 근처 246m · 한정식"
-    },
-    {
-      "id": 367,
-      "golf": "블랙스톤 CC",
-      "name": "미암골",
-      "genre": "오리구이",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "블랙스톤 CC 근처 3.8km · 오리구이"
-    },
-    {
-      "id": 368,
-      "golf": "블랙스톤 CC",
-      "name": "산천마가든",
-      "genre": "닭요리",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "블랙스톤 CC 근처 4.0km · 닭요리"
-    },
-    {
-      "id": 369,
-      "golf": "블랙스톤 CC",
-      "name": "브리스킷346",
-      "genre": "스테이크",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "블랙스톤 CC 근처 435m · 스테이크"
-    },
-    {
       "id": 370,
       "golf": "사우스스프링스 CC",
       "name": "설악막국수 춘천닭갈비 이천점",
@@ -5750,6 +5710,74 @@
       "rating": "4.3",
       "emoji": "🍗",
       "tip": "닭갈비"
+    },
+    {
+      "id": 1022,
+      "golf": "블랙스톤 CC",
+      "name": "하얀집",
+      "genre": "오리구이",
+      "distance": "3분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍖",
+      "tip": "오리구이",
+      "mapQuery": "하얀집 장호원"
+    },
+    {
+      "id": 1023,
+      "golf": "블랙스톤 CC",
+      "name": "어우랑나물촌",
+      "genre": "한식",
+      "distance": "4분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "한식"
+    },
+    {
+      "id": 1024,
+      "golf": "블랙스톤 CC",
+      "name": "청미식당",
+      "genre": "백반",
+      "distance": "4분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "백반"
+    },
+    {
+      "id": 1025,
+      "golf": "블랙스톤 CC",
+      "name": "수타면명가",
+      "genre": "중식",
+      "distance": "4분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🥡",
+      "tip": "중식"
+    },
+    {
+      "id": 1026,
+      "golf": "블랙스톤 CC",
+      "name": "서해궁",
+      "genre": "중식",
+      "distance": "13분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🥡",
+      "tip": "중식"
+    },
+    {
+      "id": 1027,
+      "golf": "블랙스톤 CC",
+      "name": "미식가",
+      "genre": "한식",
+      "distance": "6분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "보쌈, 제육",
+      "mapQuery": "미식가 여주"
     }
   ]
 }
