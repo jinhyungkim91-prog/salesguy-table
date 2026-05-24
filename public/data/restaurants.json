@@ -25,7 +25,7 @@
     "note": "압구정로데오역 3번 출구에서 488m",
     "emoji": "🥩",
     "district": "청담",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 6,
@@ -40,7 +40,7 @@
     "emoji": "🥩",
     "mapQuery": "본앤브레드 오리지널 마장동",
     "district": "마장",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 7,
@@ -69,7 +69,7 @@
     "note": "강남역 5번 출구에서 148m",
     "emoji": "🥩",
     "district": "서초",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 13,
@@ -97,7 +97,7 @@
     "note": "압구정로데오역 3번 출구에서 558m",
     "emoji": "🍣",
     "district": "청담",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 19,
@@ -169,7 +169,7 @@
     "emoji": "🥩",
     "district": "신사",
     "mapQuery": "조우 고기구이 압구정",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 46,
@@ -184,7 +184,7 @@
     "emoji": "🥂",
     "district": "신사",
     "mapQuery": "다이닝마 신사",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 47,
@@ -198,7 +198,7 @@
     "note": "역삼역 4번 출구에서 262m, 빗썸금융타워 지하 2층",
     "emoji": "🍣",
     "district": "역삼",
-    "room_type": "전석룸"
+    "room_type": "룸있음"
   },
   {
     "id": 48,
@@ -226,7 +226,7 @@
     "note": "청담스퀘어 B동 3층",
     "emoji": "🍣",
     "district": "청담",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 51,
@@ -893,7 +893,7 @@
     "note": "강남구 삼성동 154-8, 금강타워3 지하1층",
     "emoji": "🥩",
     "district": "삼성",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 211,
@@ -1136,7 +1136,7 @@
     "note": "종각역 1번 출구에서 169m, 타워8빌딩 지하 2층",
     "emoji": "🏮",
     "district": "청진",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 327,
@@ -1150,7 +1150,7 @@
     "note": "역삼역 7번 출구에서 342m",
     "emoji": "🍣",
     "district": "역삼",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 330,
@@ -1336,7 +1336,7 @@
     "note": "콘래드호텔 L1층",
     "emoji": "🏮",
     "district": "여의도",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 393,
@@ -1707,7 +1707,7 @@
     "note": "여의도역 3번 출구에서 163m, 여의도파이낸스타워 4층",
     "emoji": "🥩",
     "district": "여의도",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 552,
@@ -1891,7 +1891,7 @@
     "note": "트윈트리타워 B동 M층",
     "emoji": "🥩",
     "district": "중학",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 659,
@@ -1919,7 +1919,7 @@
     "note": "여의나루역 4번 출구에서 392m, 브라이튼 2층",
     "emoji": "🎌",
     "district": "여의도",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 683,
@@ -3184,7 +3184,7 @@
     "note": "반포역 5번 출구에서 289m, 파스텔프라자 1층",
     "emoji": "🏮",
     "district": "잠원",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1123,
@@ -3198,7 +3198,7 @@
     "note": "오크우드프리미어 호텔 1층",
     "emoji": "🏮",
     "district": "삼성",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1128,
@@ -3892,7 +3892,7 @@
     "rating": 4.4,
     "room": "✅ 확인",
     "district": "수하",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1185,
@@ -4049,7 +4049,7 @@
     "room": "✅ 확인",
     "district": "청담",
     "mapQuery": "소꿉 청담",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1206,
@@ -4794,7 +4794,7 @@
     "emoji": "🥩",
     "district": "여의도",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1288,
@@ -5906,7 +5906,7 @@
     "emoji": "🍽️",
     "district": "여의도",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1375,
@@ -6209,7 +6209,7 @@
     "score": 82,
     "room": "✅ 확인",
     "district": "서초",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1412,
@@ -6539,7 +6539,7 @@
     "score": 78,
     "district": "방배",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1442,
@@ -6618,7 +6618,7 @@
     "score": 78,
     "district": "마곡",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1448,
@@ -6684,7 +6684,7 @@
     "score": 78,
     "district": "마곡",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1454,
@@ -6775,7 +6775,7 @@
     "score": 78,
     "district": "도화",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1462,
@@ -6957,7 +6957,7 @@
     "score": 78,
     "district": "방이",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1481,
@@ -7437,7 +7437,7 @@
     "score": 78,
     "district": "삼성",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1522,
@@ -7815,7 +7815,7 @@
     "emoji": "🥩",
     "room": "✅ 확인",
     "district": "반포",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1554,
@@ -8052,7 +8052,7 @@
     "mapQuery": "이코이 역삼",
     "room": "✅ 확인",
     "district": "역삼",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1577,
@@ -8117,7 +8117,7 @@
     "emoji": "🥩",
     "district": "논현",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1583,
@@ -8448,7 +8448,7 @@
     "emoji": "🏮",
     "district": "수하",
     "room": "✅ 확인",
-    "room_type": "룸있음"
+    "room_type": "전석룸"
   },
   {
     "id": 1609,
