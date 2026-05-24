@@ -710,7 +710,11 @@ export default function App() {
   }
 
   const bizFiltered = restaurants.filter(r => {
-    if (bizArea !== "전체" && r.area !== bizArea) return false;
+    if (bizArea !== "전체") {
+      const inArea = r.area === bizArea ||
+        (bizArea === "마곡·발산" && ["마곡","발산","외발산","등촌"].includes(r.district));
+      if (!inArea) return false;
+    }
     if (bizGenre !== "전체" && getGenreCategory(r.genre) !== bizGenre) return false;
     if (bizRoomOnly && r.room_type !== '전석룸') return false;
     if (bizSearch) {
