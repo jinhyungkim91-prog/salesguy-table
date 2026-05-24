@@ -1038,12 +1038,13 @@
     {
       "id": 335,
       "golf": "레이크사이드 CC",
-      "name": "허연우의해누리 용인점",
+      "name": "해누리 용인점",
       "genre": "한정식",
       "distance": "5분",
       "room": "단체가능",
       "emoji": "🏮",
-      "tip": "레이크사이드 CC 근처 1.9km · 한정식"
+      "tip": "레이크사이드 CC 근처 1.9km · 한정식",
+      "visited": true
     },
     {
       "id": 336,
@@ -1068,22 +1069,12 @@
     {
       "id": 338,
       "golf": "레이크사이드 CC",
-      "name": "풍미정식당",
+      "name": "풍미정",
       "genre": "오리구이",
       "distance": "5분",
       "room": "단체가능",
       "emoji": "🍗",
       "tip": "레이크사이드 CC 근처 1.7km · 오리구이"
-    },
-    {
-      "id": 339,
-      "golf": "레이크사이드 CC",
-      "name": "한우꼬리곰탕",
-      "genre": "곰탕",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🏮",
-      "tip": "레이크사이드 CC 근처 1.5km · 곰탕"
     },
     {
       "id": 340,
@@ -5486,6 +5477,52 @@
       "rating": "4.3",
       "emoji": "🍚",
       "tip": "국밥, 냉면, 수육"
+    },
+    {
+      "id": 986,
+      "golf": "레이크사이드 CC",
+      "name": "천서리막국수 레이크CC점",
+      "genre": "막국수",
+      "distance": "9분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍜",
+      "tip": "막국수",
+      "visited": true
+    },
+    {
+      "id": 987,
+      "golf": "레이크사이드 CC",
+      "name": "청보보리밥 능원점",
+      "genre": "보리밥",
+      "distance": "9분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "보리밥",
+      "visited": true
+    },
+    {
+      "id": 988,
+      "golf": "레이크사이드 CC",
+      "name": "황소고집 본점",
+      "genre": "고기구이",
+      "distance": "9분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍖",
+      "tip": "고기구이"
+    },
+    {
+      "id": 989,
+      "golf": "레이크사이드 CC",
+      "name": "양평해장국 레이크사이드점",
+      "genre": "해장국",
+      "distance": "4분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "해장국"
     }
   ]
 }
