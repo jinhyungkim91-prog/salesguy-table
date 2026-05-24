@@ -562,6 +562,8 @@ export default function App() {
   const [bizSearch, setBizSearch] = useState("");
   const [bizRoomOnly, setBizRoomOnly] = useState(false);
   const [bizSearchFocus, setBizSearchFocus] = useState(false);
+  const [bizShowCount, setBizShowCount] = useState(20);
+  const BIZ_PAGE = 20;
   const [recentSearches, setRecentSearches] = useState(() => {
     try { return JSON.parse(localStorage.getItem("sgRecentSearches") || "[]"); }
     catch { return []; }
@@ -850,7 +852,7 @@ export default function App() {
             <span className="search-icon">🔍</span>
             <input className="search-input" placeholder="식당명, 지역, 빌딩명 (예: 대치동 한정식)"
               value={bizSearch}
-              onChange={e => setBizSearch(e.target.value)}
+              onChange={e => { setBizSearch(e.target.value); setBizShowCount(BIZ_PAGE); }}
               onFocus={() => setBizSearchFocus(true)}
               onBlur={() => setTimeout(() => setBizSearchFocus(false), 150)}
               onKeyDown={e => {
@@ -880,17 +882,17 @@ export default function App() {
           </div>
           <div className="filter-wrap">
             {BIZ_AREAS.map(a=>(
-              <button key={a} className={`filter-chip ${bizArea===a?"on":""}`} onClick={()=>setBizArea(a)}>{a}</button>
+              <button key={a} className={`filter-chip ${bizArea===a?"on":""}`} onClick={()=>{setBizArea(a);setBizShowCount(BIZ_PAGE);}}>{a}</button>
             ))}
           </div>
           <div className="filter-scroll">
             {BIZ_GENRES.map(g=>(
-              <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>setBizGenre(g)}>{g}</button>
+              <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>{setBizGenre(g);setBizShowCount(BIZ_PAGE);}}>{g}</button>
             ))}
           </div>
           <div style={{padding:"4px 16px 2px"}}>
             <button
-              onClick={()=>setBizRoomOnly(v=>!v)}
+              onClick={()=>{setBizRoomOnly(v=>!v);setBizShowCount(BIZ_PAGE);}}
               style={{fontSize:12,fontWeight:700,padding:"5px 14px",borderRadius:20,border:"1.5px solid",cursor:"pointer",
                 background: bizRoomOnly ? "#7A5C1E" : "transparent",
                 color: bizRoomOnly ? "#fff" : "#7A5C1E",
@@ -912,10 +914,23 @@ export default function App() {
                     </div>
                   )}
                 </div>
-              : bizFiltered.map(r=><RestaurantCard key={r.id} r={r} onClick={r=>{
-                  if (bizSearch.trim()) setRecentSearches(prev => saveRecentSearch(bizSearch.trim(), prev));
-                  openModal(r,"biz");
-                }} highlight={bizSearch}/>)
+              : <>
+                  {bizFiltered.slice(0, bizShowCount).map(r=><RestaurantCard key={r.id} r={r} onClick={r=>{
+                    if (bizSearch.trim()) setRecentSearches(prev => saveRecentSearch(bizSearch.trim(), prev));
+                    openModal(r,"biz");
+                  }} highlight={bizSearch}/>)}
+                  {bizFiltered.length > bizShowCount && (
+                    <button onClick={()=>setBizShowCount(c=>c+BIZ_PAGE)}
+                      style={{width:"100%",padding:"14px",margin:"8px 0",background:"#F5EDD8",border:"1px solid #C8A96E",borderRadius:10,color:"#7A5C1E",fontWeight:700,fontSize:13,cursor:"pointer"}}>
+                      더보기 ({bizShowCount}/{bizFiltered.length}개)
+                    </button>
+                  )}
+                  {bizFiltered.length > 0 && bizFiltered.length <= bizShowCount && bizFiltered.length > BIZ_PAGE && (
+                    <div style={{textAlign:"center",padding:"12px 0",fontSize:12,color:"#B0A090"}}>
+                      전체 {bizFiltered.length}개를 모두 불러왔어요
+                    </div>
+                  )}
+                </>
             }
           </div>
         </div>
