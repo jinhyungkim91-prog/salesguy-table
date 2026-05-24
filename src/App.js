@@ -562,8 +562,8 @@ export default function App() {
   const [bizSearch, setBizSearch] = useState("");
   const [bizRoomOnly, setBizRoomOnly] = useState(false);
   const [bizSearchFocus, setBizSearchFocus] = useState(false);
-  const [bizShowCount, setBizShowCount] = useState(20);
-  const BIZ_PAGE = 20;
+  const [bizShowCount, setBizShowCount] = useState(15);
+  const BIZ_PAGE = 15;
   const [recentSearches, setRecentSearches] = useState(() => {
     try { return JSON.parse(localStorage.getItem("sgRecentSearches") || "[]"); }
     catch { return []; }
