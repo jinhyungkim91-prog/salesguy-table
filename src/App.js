@@ -202,6 +202,33 @@ const COFFEE_CHAIN_BLOCK = ['할리스','커피빈','아티제','바나프레소
 // 공공DB에서 제외할 푸드코트·비식당 키워드
 const FOODCOURT_BLOCK = ['푸드코트','식당가','푸드홀','구내식당','학생식당','푸드빌리지','푸드스트리트'];
 
+// 빌딩 → 가장 가까운 지하철역 매핑 (건물 검색 시 근처 식당도 포함)
+const BUILDING_STATION_MAP = {
+  'gfc':'역삼역', '강남파이낸스':'역삼역',
+  '포스코타워':'역삼역', '포스코센터':'역삼역',
+  '센터필드':'역삼역',
+  '빗썸금융타워':'역삼역',
+  '코엑스':'봉은사역', 'coex':'봉은사역',
+  '오크우드':'봉은사역',
+  '파르나스':'삼성역', '파르나스몰':'삼성역',
+  'ifc':'여의도역', 'ifc몰':'여의도역',
+  '파크원':'여의나루역',
+  '더현대서울':'여의나루역',
+  'fki타워':'여의도역', '전경련':'여의도역',
+  '그랑서울':'종각역',
+  '센터포인트':'광화문역',
+  '더케이트윈타워':'광화문역', '케이트윈타워':'광화문역',
+  'd타워':'광화문역', '디타워':'광화문역',
+  '서울스퀘어':'서울역',
+  '미래에셋센터원':'을지로입구역',
+  '페럼타워':'을지로입구역',
+  '롯데월드타워':'잠실역', '롯데월드몰':'잠실역',
+  '아이파크몰':'용산역',
+  '린스퀘어':'강남역',
+  '릿타워':'선릉역', '에스타워':'선릉역',
+  '포포인츠':'강남역',
+};
+
 const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -718,22 +745,37 @@ export default function App() {
     if (bizGenre !== "전체" && getGenreCategory(r.genre) !== bizGenre) return false;
     if (bizRoomOnly && r.room_type !== '전석룸') return false;
     if (bizSearch) {
-      const tokens = bizSearch.trim().split(/\s+/);
+      const searchLower = bizSearch.trim().toLowerCase();
+      const tokens = searchLower.split(/\s+/);
       const fields = [r.name, r.area, r.genre, r.district||'', r.region||'', r.note||''];
-      const fullText = fields.join(' ');
-      if (!tokens.every(t => fullText.includes(t))) return false;
+      const fullText = fields.join(' ').toLowerCase();
+      const normalMatch = tokens.every(t => fullText.includes(t));
+      // 단일 토큰 빌딩 검색 → 매핑된 역 근처 식당도 포함
+      const mappedStation = tokens.length === 1 ? (BUILDING_STATION_MAP[searchLower] || '') : '';
+      const proximityMatch = !!mappedStation && fullText.includes(mappedStation);
+      if (!normalMatch && !proximityMatch) return false;
     }
     return true;
   }).sort((a, b) => {
     if (bizSearch) {
-      const term = bizSearch.trim();
-      const da = extractDist(a.note, term);
-      const db = extractDist(b.note, term);
-      if (da !== null && db !== null) return da - db;   // 둘 다 거리 있으면 가까운 순
-      if (da !== null) return -1;                        // a만 거리 있으면 a 앞
-      if (db !== null) return 1;                         // b만 거리 있으면 b 앞
+      const termLower = bizSearch.trim().toLowerCase();
+      const mappedStation = BUILDING_STATION_MAP[termLower] || '';
+      const aNoteL = (a.note||'').toLowerCase();
+      const bNoteL = (b.note||'').toLowerCase();
+      // 빌딩명 직접 언급 여부
+      const aBuilding = aNoteL.includes(termLower) || (a.name||'').toLowerCase().includes(termLower);
+      const bBuilding = bNoteL.includes(termLower) || (b.name||'').toLowerCase().includes(termLower);
+      if (aBuilding && !bBuilding) return -1;  // 빌딩 직접 언급 먼저
+      if (!aBuilding && bBuilding) return 1;
+      // 같은 그룹 내에서 거리순
+      const sortTerm = aBuilding ? bizSearch.trim() : mappedStation;
+      const da = extractDist(a.note, sortTerm);
+      const db = extractDist(b.note, sortTerm);
+      if (da !== null && db !== null) return da - db;
+      if (da !== null) return -1;
+      if (db !== null) return 1;
     }
-    return (b.score || 0) - (a.score || 0);              // 나머지는 스코어 순
+    return (b.score || 0) - (a.score || 0);
   });
 
   const lunchFiltered = nearbyMode ? [] : lunchDB.filter(r => {
