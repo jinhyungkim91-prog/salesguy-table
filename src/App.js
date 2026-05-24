@@ -555,7 +555,7 @@ function DetailModal({ r, type, onClose }) {
           <div style={{display:"flex",gap:8,width:"100%",marginBottom:8}}>
             <button className="btn-kakao" style={{flex:1}} onClick={()=>
               type==="golf"
-                ? (r.mapQuery ? openNaverSearch(r.name, null, r.mapQuery) : openNaverMap(r.name, r.searchCity||null))
+                ? openNaverSearch(r.name, null, r.mapQuery||null)
                 : openNaverSearch(r.name, r.area||null, r.mapQuery)
             }>
               {type==="golf" ? "🗺️ 네이버지도" : "🟢 네이버"}
