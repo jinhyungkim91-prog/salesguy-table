@@ -621,6 +621,7 @@ export default function App() {
   const [bizGenre, setBizGenre]   = useState("전체");
   const [bizSearch, setBizSearch] = useState("");
   const [bizRoomOnly, setBizRoomOnly] = useState(false);
+  const [bizCorkageFree, setBizCorkageFree] = useState(false);
   const [bizSearchFocus, setBizSearchFocus] = useState(false);
   const [bizShowCount, setBizShowCount] = useState(15);
   const BIZ_PAGE = 15;
@@ -807,6 +808,7 @@ export default function App() {
     }
     if (bizGenre !== "전체" && getGenreCategory(r.genre) !== bizGenre) return false;
     if (bizRoomOnly && r.room_type !== '전석룸') return false;
+    if (bizCorkageFree && !(r.note && r.note.includes('콜키지'))) return false;
     if (bizSearch) {
       const searchLower = bizSearch.trim().toLowerCase();
       const tokens = searchLower.split(/\s+/);
@@ -950,7 +952,7 @@ export default function App() {
               <button key={g} className={`filter-chip ${bizGenre===g?"on":""}`} onClick={()=>{setBizGenre(g);setBizShowCount(BIZ_PAGE);}}>{g}</button>
             ))}
           </div>
-          <div style={{padding:"4px 16px 2px"}}>
+          <div style={{padding:"4px 16px 2px",display:"flex",gap:8,flexWrap:"wrap"}}>
             <button
               onClick={()=>{setBizRoomOnly(v=>!v);setBizShowCount(BIZ_PAGE);}}
               style={{fontSize:12,fontWeight:700,padding:"5px 14px",borderRadius:20,border:"1.5px solid",cursor:"pointer",
@@ -958,9 +960,16 @@ export default function App() {
                 color: bizRoomOnly ? "#fff" : "#7A5C1E",
                 borderColor:"#7A5C1E"}}
             >🚪 전석 프라이빗 룸</button>
+            <button
+              onClick={()=>{setBizCorkageFree(v=>!v);setBizShowCount(BIZ_PAGE);}}
+              style={{fontSize:12,fontWeight:700,padding:"5px 14px",borderRadius:20,border:"1.5px solid",cursor:"pointer",
+                background: bizCorkageFree ? "#5C3D8F" : "transparent",
+                color: bizCorkageFree ? "#fff" : "#5C3D8F",
+                borderColor:"#5C3D8F"}}
+            >🍷 콜키지 프리</button>
           </div>
           <div className="info-banner">
-            🔍 {bizArea!=="전체"?bizArea:"전체"}{bizGenre!=="전체"?" · "+bizGenre:""}{bizRoomOnly?" · 전석룸":""} · <b>{bizFiltered.length}곳</b> (전체 {restaurants.length}개)
+            🔍 {bizArea!=="전체"?bizArea:"전체"}{bizGenre!=="전체"?" · "+bizGenre:""}{bizRoomOnly?" · 전석룸":""}{bizCorkageFree?" · 콜키지프리":""} · <b>{bizFiltered.length}곳</b> (전체 {restaurants.length}개)
           </div>
           <div className="rest-list">
             {bizFiltered.length===0
