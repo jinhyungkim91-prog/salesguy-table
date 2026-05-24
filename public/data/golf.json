@@ -5607,6 +5607,64 @@
       "rating": "4.3",
       "emoji": "🍜",
       "tip": "막국수, 파전"
+    },
+    {
+      "id": 1003,
+      "golf": "몽베르 CC",
+      "name": "산수유",
+      "genre": "생선구이",
+      "distance": "6분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🐟",
+      "tip": "생선구이",
+      "mapQuery": "산수유 산정호수"
+    },
+    {
+      "id": 1004,
+      "golf": "몽베르 CC",
+      "name": "명문이동갈비",
+      "genre": "고기구이",
+      "distance": "6분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍖",
+      "tip": "고기구이"
+    },
+    {
+      "id": 1005,
+      "golf": "몽베르 CC",
+      "name": "산비탈손두부",
+      "genre": "두부요리",
+      "distance": "6분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "두부요리"
+    },
+    {
+      "id": 1006,
+      "golf": "몽베르 CC",
+      "name": "소담",
+      "genre": "백반",
+      "distance": "6분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "백반",
+      "mapQuery": "소담 산정호수"
+    },
+    {
+      "id": 1007,
+      "golf": "몽베르 CC",
+      "name": "초가옥",
+      "genre": "고기구이",
+      "distance": "6분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍖",
+      "tip": "고기구이",
+      "mapQuery": "초가옥 산정호수"
     }
   ]
 }
