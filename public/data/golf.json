@@ -1234,7 +1234,8 @@
       "distance": "3분",
       "room": "단체가능",
       "emoji": "🥩",
-      "tip": "레이크우드 CC 근처 251m · 갈비"
+      "tip": "레이크우드 CC 근처 251m · 갈비",
+      "mapQuery": "담아 양주 만송"
     },
     {
       "id": 356,
@@ -5523,6 +5524,19 @@
       "rating": "4.3",
       "emoji": "🍚",
       "tip": "해장국"
+    },
+    {
+      "id": 990,
+      "golf": "레이크우드 CC",
+      "name": "낙원",
+      "genre": "쌈밥정식",
+      "distance": "3분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "쌈밥정식, 백숙",
+      "visited": true,
+      "mapQuery": "낙원 양주 만송"
     }
   ]
 }
