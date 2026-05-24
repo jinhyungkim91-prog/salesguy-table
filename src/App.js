@@ -149,26 +149,61 @@ function getGolfRegionGroup(region = '') {
   return '경기남부';
 }
 const BIZ_GENRES  = ["전체","고기구이","한식","중식","일식","해산물","양식"];
+// ── 커스텀 SVG 아이콘 ──────────────────────────────
+function HansikIcon() {
+  return (
+    <svg viewBox="0 0 40 36" width="28" height="28" xmlns="http://www.w3.org/2000/svg" style={{display:'block'}}>
+      <defs>
+        <clipPath id="hansik-clip">
+          <path d="M2,15 L12,9 L16,9 L20,16 L24,9 L28,9 L38,15 L36,25 L28,23 L28,31 L12,31 L12,23 L4,25 Z"/>
+        </clipPath>
+      </defs>
+      <g clipPath="url(#hansik-clip)">
+        <rect x="0"  y="0" width="7" height="36" fill="#E74C3C"/>
+        <rect x="7"  y="0" width="6" height="36" fill="#E67E22"/>
+        <rect x="13" y="0" width="6" height="36" fill="#F1C40F"/>
+        <rect x="19" y="0" width="6" height="36" fill="#27AE60"/>
+        <rect x="25" y="0" width="6" height="36" fill="#2980B9"/>
+        <rect x="31" y="0" width="9" height="36" fill="#9B59B6"/>
+      </g>
+      <path d="M16,9 L20,16 L24,9" fill="none" stroke="rgba(255,255,255,0.9)" strokeWidth="1.8" strokeLinejoin="round"/>
+      <path d="M2,15 L12,9 L16,9 L20,16 L24,9 L28,9 L38,15 L36,25 L28,23 L28,31 L12,31 L12,23 L4,25 Z" fill="none" stroke="rgba(0,0,0,0.18)" strokeWidth="0.8"/>
+    </svg>
+  );
+}
+function JungsikIcon() {
+  return (
+    <svg viewBox="0 0 36 36" width="28" height="28" xmlns="http://www.w3.org/2000/svg" style={{display:'block'}}>
+      <line x1="13" y1="2"  x2="11" y2="18" stroke="#8B5E3C" strokeWidth="2.2" strokeLinecap="round"/>
+      <line x1="23" y1="2"  x2="25" y2="18" stroke="#8B5E3C" strokeWidth="2.2" strokeLinecap="round"/>
+      <path d="M5,18 Q5,33 18,33 Q31,33 31,18 Z" fill="#C0392B"/>
+      <ellipse cx="18" cy="18" rx="13" ry="4" fill="#E74C3C"/>
+      <ellipse cx="18" cy="17.2" rx="9.5" ry="2.2" fill="none" stroke="#FF7675" strokeWidth="0.9"/>
+      <path d="M9,22 Q11,25 13,22 Q15,19 17,22 Q19,25 21,22 Q23,19 25,22"  fill="none" stroke="#FAEBD7" strokeWidth="1.8" strokeLinecap="round"/>
+      <path d="M10,27 Q12,30 14,27 Q16,24 18,27 Q20,30 22,27" fill="none" stroke="#FAEBD7" strokeWidth="1.8" strokeLinecap="round"/>
+    </svg>
+  );
+}
 // 카드에 표시할 장르별 아이콘
 const GENRE_CARD_ICON = {
   '고기구이':'🥩','소고기구이':'🥩','한우':'🥩','양갈비':'🥩','양고기':'🥩','양대창':'🥩',
-  '한식':'🍚','한정식':'🍚','냉면':'🍚','평양냉면':'🍚','샤브샤브':'🍚',
-  '중식':'🥡','중식당':'🥡',
   '일식':'🍣','일식당':'🍣','스시':'🍣','스키야키·가이세키':'🍣',
   '생선회':'🦞','생선구이':'🦞','장어구이':'🦞','해산물':'🦞',
   '양식':'🥂','이탈리아':'🥂','프랑스':'🥂',
 };
+const HANSIK_KW = ['한식','한정식','냉면','평양냉면','샤브샤브','국밥','설렁탕','해장국','칼국수','국수','비빔밥','김밥','떡볶이','분식','순대','삼계탕','닭한마리','닭볶음','제육','된장','김치','낙지','전골','빈대떡','비빔국수','막국수','도시락'];
+const JUNGS_KW  = ['중식','딤섬','훠궈','마라탕','마라샹궈','탕수육','짬뽕'];
 const GENRE_ICON_KEYWORDS = [
   ['🥩', ['갈비','고기구이','삼겹살','돼지구이','한우','와규','곱창','대창','양갈비','양고기','닭갈비','수육','보쌈','족발','닭발']],
-  ['🥡', ['중식','딤섬','훠궈','마라탕','마라샹궈','탕수육','짬뽕','볶음밥·중식','중동']],
   ['🍣', ['일식','스시','초밥','라멘','우동','소바','돈가츠','돈가스','돈부리','덮밥·일식','텐동','타코야끼','가이세키','오마카세']],
   ['🦞', ['생선회','참치회','회전초밥','해물','장어','참치','해산물']],
   ['🥂', ['이탈리아','프랑스','파스타','양식','스테이크','피자','브런치','샐러드','포케','케밥','타코','버거','카레','인도','베트남','태국','쌀국수']],
-  ['🍚', ['한식','냉면','국밥','설렁탕','해장국','칼국수','국수','비빔밥','김밥','떡볶이','분식','순대','삼계탕','닭한마리','닭볶음','제육','된장','김치','낙지','전골','빈대떡','전','한정식','비빔국수','막국수','도시락']],
 ];
 function getGenreIcon(genre) {
   if (!genre) return '🍽️';
   if (GENRE_CARD_ICON[genre]) return GENRE_CARD_ICON[genre];
+  if (HANSIK_KW.some(k => genre.includes(k))) return <HansikIcon/>;
+  if (JUNGS_KW.some(k => genre.includes(k))) return <JungsikIcon/>;
   for (const [icon, keywords] of GENRE_ICON_KEYWORDS) {
     if (keywords.some(k => genre.includes(k))) return icon;
   }
