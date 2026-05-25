@@ -1329,56 +1329,6 @@
       "tip": "화산 CC 근처 872m · 쌈밥"
     },
     {
-      "id": 385,
-      "golf": "수원 CC",
-      "name": "명륜진사갈비 수원호매실점",
-      "genre": "명륜진사갈비",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "수원 CC 근처 335m · 명륜진사갈비"
-    },
-    {
-      "id": 386,
-      "golf": "수원 CC",
-      "name": "숯닭무 호매실점",
-      "genre": "갈비",
-      "distance": "8분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "수원 CC 근처 670m · 갈비"
-    },
-    {
-      "id": 387,
-      "golf": "수원 CC",
-      "name": "훈장골 수원점",
-      "genre": "갈비",
-      "distance": "12분",
-      "room": "단체가능",
-      "emoji": "🥩",
-      "tip": "수원 CC 근처 1.2km · 갈비"
-    },
-    {
-      "id": 388,
-      "golf": "수원 CC",
-      "name": "금곡회관",
-      "genre": "해물",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "수원 CC 근처 297m · 해물"
-    },
-    {
-      "id": 389,
-      "golf": "수원 CC",
-      "name": "평상집 금곡점",
-      "genre": "닭요리",
-      "distance": "3분",
-      "room": "단체가능",
-      "emoji": "🍗",
-      "tip": "수원 CC 근처 337m · 닭요리"
-    },
-    {
       "id": 390,
       "golf": "한양 CC",
       "name": "더담",
@@ -5939,6 +5889,51 @@
       "tip": "오리, 돼지고기",
       "visited": true,
       "mapQuery": "해든터 광탄"
+    },
+    {
+      "id": 1076,
+      "golf": "수원 CC",
+      "name": "구미제비추리",
+      "genre": "고기구이",
+      "distance": "2분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍖",
+      "tip": "한우모듬, 오겹살",
+      "visited": true
+    },
+    {
+      "id": 1077,
+      "golf": "수원 CC",
+      "name": "소출구1번지",
+      "genre": "고기구이",
+      "distance": "2분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍖",
+      "tip": "소고기구이"
+    },
+    {
+      "id": 1078,
+      "golf": "수원 CC",
+      "name": "제주방목흑돼지",
+      "genre": "돼지구이",
+      "distance": "3분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍖",
+      "tip": "돼지구이"
+    },
+    {
+      "id": 1079,
+      "golf": "수원 CC",
+      "name": "한방순대국",
+      "genre": "한식",
+      "distance": "3분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "순대국, 곱창전골"
     }
   ]
 }
