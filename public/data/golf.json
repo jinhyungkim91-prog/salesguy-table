@@ -1839,16 +1839,6 @@
       "tip": "비전힐스 GC 근처 639m · 갈비"
     },
     {
-      "id": 443,
-      "golf": "비전힐스 GC",
-      "name": "산골송어",
-      "genre": "회",
-      "distance": "5분",
-      "room": "단체가능",
-      "emoji": "🐟",
-      "tip": "비전힐스 GC 근처 1.2km · 회"
-    },
-    {
       "id": 444,
       "golf": "비전힐스 GC",
       "name": "참능이오리닭백숙",
@@ -5763,6 +5753,29 @@
       "rating": "4.3",
       "emoji": "🍜",
       "tip": "막국수",
+      "visited": true
+    },
+    {
+      "id": 1038,
+      "golf": "비전힐스 CC",
+      "name": "상록회관 연탄구이 평내호평점",
+      "genre": "고기구이",
+      "distance": "9분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍖",
+      "tip": "고기구이"
+    },
+    {
+      "id": 1039,
+      "golf": "비전힐스 CC",
+      "name": "원조천마산곰탕",
+      "genre": "곰탕",
+      "distance": "6분",
+      "room": "단체가능",
+      "rating": "4.3",
+      "emoji": "🍚",
+      "tip": "곰탕",
       "visited": true
     }
   ]
