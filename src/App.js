@@ -184,19 +184,55 @@ function JungsikIcon() {
     </svg>
   );
 }
+function EelIcon() {
+  return (
+    <svg viewBox="0 0 36 36" width="28" height="28" xmlns="http://www.w3.org/2000/svg" style={{display:'block'}}>
+      {/* S자 몸통 */}
+      <path d="M24,5 C34,9 32,18 18,18 C4,18 2,27 12,33"
+            fill="none" stroke="#3D3D3D" strokeWidth="4.5" strokeLinecap="round"/>
+      {/* 머리 */}
+      <circle cx="24" cy="5" r="3.5" fill="#3D3D3D"/>
+      {/* 눈 */}
+      <circle cx="26" cy="3.5" r="1.5" fill="white"/>
+      <circle cx="26.3" cy="3.5" r="0.7" fill="#1A1A1A"/>
+    </svg>
+  );
+}
+function TunaIcon() {
+  return (
+    <svg viewBox="0 0 42 30" width="30" height="22" xmlns="http://www.w3.org/2000/svg" style={{display:'block'}}>
+      {/* 등지느러미 */}
+      <path d="M15,4 C17,0 23,0 25,4" fill="#1A5276"/>
+      {/* 몸통 */}
+      <path d="M4,15 C4,7 10,3 21,3 C32,3 37,8 37,15 C37,22 32,27 21,27 C10,27 4,23 4,15 Z"
+            fill="#2980B9"/>
+      {/* 배 (밝은 부분) */}
+      <path d="M5,17 C7,24 13,26 21,26 C29,26 35,22 37,17 C35,21 29,24 21,24 C13,24 7,21 5,17 Z"
+            fill="#AED6F1"/>
+      {/* 꼬리 */}
+      <path d="M36,15 L42,7 L39,15 L42,23 Z" fill="#1A5276"/>
+      {/* 가슴지느러미 */}
+      <path d="M13,15 C11,10 13,6 17,8 C15,11 14,13 13,15 Z" fill="#1A5276"/>
+      {/* 눈 */}
+      <circle cx="8" cy="13" r="2.2" fill="white"/>
+      <circle cx="8.5" cy="13" r="1.2" fill="#1A5276"/>
+      <circle cx="8.7" cy="13" r="0.5" fill="#0A2F4E"/>
+    </svg>
+  );
+}
 // 카드에 표시할 장르별 아이콘
 const GENRE_CARD_ICON = {
   '고기구이':'🥩','소고기구이':'🥩','한우':'🥩','양갈비':'🥩','양고기':'🥩','양대창':'🥩',
   '일식':'🍣','일식당':'🍣','스시':'🍣','스키야키·가이세키':'🍣',
-  '생선회':'🦞','생선구이':'🦞','장어구이':'🦞','해산물':'🦞',
   '양식':'🥂','이탈리아':'🥂','프랑스':'🥂',
 };
 const HANSIK_KW = ['한식','한정식','냉면','평양냉면','샤브샤브','국밥','설렁탕','해장국','칼국수','국수','비빔밥','김밥','떡볶이','분식','순대','삼계탕','닭한마리','닭볶음','제육','된장','김치','낙지','전골','빈대떡','비빔국수','막국수','도시락'];
 const JUNGS_KW  = ['중식','딤섬','훠궈','마라탕','마라샹궈','탕수육','짬뽕'];
+const EEL_KW   = ['장어'];
+const TUNA_KW  = ['생선회','참치','해산물','생선구이','해물'];
 const GENRE_ICON_KEYWORDS = [
   ['🥩', ['갈비','고기구이','삼겹살','돼지구이','한우','와규','곱창','대창','양갈비','양고기','닭갈비','수육','보쌈','족발','닭발']],
   ['🍣', ['일식','스시','초밥','라멘','우동','소바','돈가츠','돈가스','돈부리','덮밥·일식','텐동','타코야끼','가이세키','오마카세']],
-  ['🦞', ['생선회','참치회','회전초밥','해물','장어','참치','해산물']],
   ['🥂', ['이탈리아','프랑스','파스타','양식','스테이크','피자','브런치','샐러드','포케','케밥','타코','버거','카레','인도','베트남','태국','쌀국수']],
 ];
 function getGenreIcon(genre) {
@@ -204,6 +240,8 @@ function getGenreIcon(genre) {
   if (GENRE_CARD_ICON[genre]) return GENRE_CARD_ICON[genre];
   if (HANSIK_KW.some(k => genre.includes(k))) return <HansikIcon/>;
   if (JUNGS_KW.some(k => genre.includes(k))) return <JungsikIcon/>;
+  if (EEL_KW.some(k => genre.includes(k))) return <EelIcon/>;
+  if (TUNA_KW.some(k => genre.includes(k))) return <TunaIcon/>;
   for (const [icon, keywords] of GENRE_ICON_KEYWORDS) {
     if (keywords.some(k => genre.includes(k))) return icon;
   }
