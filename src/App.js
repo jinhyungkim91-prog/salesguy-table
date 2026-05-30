@@ -815,10 +815,14 @@ export default function App() {
       const fields = [r.name, r.area, r.genre, r.district||'', r.region||'', r.note||''];
       const fullText = fields.join(' ').toLowerCase();
       const normalMatch = tokens.every(t => fullText.includes(t));
+      // 공백 제거 후 비교 (예: "더라운드" → "더 라운드" 매칭)
+      const normQ = searchLower.replace(/\s/g, '');
+      const normText = fullText.replace(/\s/g, '');
+      const normMatch = normQ.length > 0 && normText.includes(normQ);
       // 단일 토큰 빌딩 검색 → 매핑된 역 근처 식당도 포함
       const mappedStation = tokens.length === 1 ? (BUILDING_STATION_MAP[searchLower] || '') : '';
       const proximityMatch = !!mappedStation && fullText.includes(mappedStation);
-      if (!normalMatch && !proximityMatch) return false;
+      if (!normalMatch && !normMatch && !proximityMatch) return false;
     }
     return true;
   }).sort((a, b) => {
