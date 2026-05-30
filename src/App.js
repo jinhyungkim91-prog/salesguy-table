@@ -370,9 +370,9 @@ function GolfRestCard({ r, onClick }) {
       <div className="golf-body">{r.tip}</div>
       <div className="golf-foot">
         <div className="rating"><span className="star">★</span> {r.rating}</div>
-        <div className={`room-badge-sm ${r.room.includes("✅")?"rb-room":"rb-group"}`}>
-          {r.room.includes("✅")?"룸 있음":"단체가능"}
-        </div>
+        {r.room && r.room.includes("✅") && (
+          <div className="room-badge-sm rb-room">룸 있음</div>
+        )}
       </div>
     </div>
   );
