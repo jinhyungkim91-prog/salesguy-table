@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
-import { supabase } from "./supabaseClient";
 
 function openYoutubeShorts(name) {
   const clean = name.replace(/\s*\(.*?\)/g, "").trim();
@@ -706,15 +705,8 @@ export default function App() {
     debounceRef.current = setTimeout(async () => {
       setPublicLoading(true);
       setPublicOffset(0);
-      const searchFilter = `name.ilike.%${lunchSearch}%,address.ilike.%${lunchSearch}%,district.ilike.%${lunchSearch}%`;
-      const applyBlock = q => {
-        FOODCOURT_BLOCK.forEach(kw => { q = q.not('name', 'ilike', `%${kw}%`); });
-        return q;
-      };
-      const [{ data }, { count }] = await Promise.all([
-        applyBlock(supabase.from('lunch_public').select('name, address, genre, phone, district').or(searchFilter)).range(0, PAGE - 1),
-        applyBlock(supabase.from('lunch_public').select('*', { count: 'exact', head: true }).or(searchFilter))
-      ]);
+      const res = await fetch(`/api/lunch?q=${encodeURIComponent(lunchSearch)}&offset=0&limit=${PAGE}`);
+      const { data, count } = await res.json();
       const results = data || [];
       setPublicResults(results);
       setPublicTotal(count || 0);
@@ -772,15 +764,12 @@ export default function App() {
       await fetchKakaoPlaces(userLocation.lat, userLocation.lng, nearbyRadius, true);
       return;
     }
-    // Supabase 더보기
+    // Neon 더보기
     setMoreLoading(true);
     const nextOffset = publicOffset + PAGE;
-    let q = supabase.from('lunch_public').select('name, address, genre, phone, district')
-      .or(`name.ilike.%${lunchSearch}%,address.ilike.%${lunchSearch}%,district.ilike.%${lunchSearch}%`);
-    FOODCOURT_BLOCK.forEach(kw => { q = q.not('name', 'ilike', `%${kw}%`); });
-    const { data, error } = await q.range(nextOffset, nextOffset + PAGE - 1);
-    if (error) console.error('[Supabase 오류]', error);
-    const more = data || [];
+    const moreRes = await fetch(`/api/lunch?q=${encodeURIComponent(lunchSearch)}&offset=${nextOffset}&limit=${PAGE}`);
+    const { data: moreData } = await moreRes.json();
+    const more = moreData || [];
     setPublicResults(prev => [...prev, ...more]);
     setPublicOffset(nextOffset);
     setPublicHasMore(more.length === PAGE);
