@@ -20,15 +20,17 @@ module.exports = async function handler(req, res) {
   // 공백으로 토큰 분리 (예: "역삼 순대국" → ["역삼", "순대국"])
   const tokens = q.trim().split(/\s+/).filter(t => t.length >= 1);
 
-  // name + address + district + genre 를 합친 텍스트에서 각 토큰 검색 (AND 조건)
-  // 토큰당 파라미터 1개로 단순화
-  const searchable = `CONCAT(name, ' ', COALESCE(address,''), ' ', COALESCE(district,''), ' ', COALESCE(genre,''))`;
-  const tokenConditions = tokens.map((_, i) => `${searchable} ILIKE $${i + 1}`).join(' AND ');
+  // 각 토큰: name OR address OR district (AND 조건, 3컬럼)
+  // 파라미터: 토큰1($1,$2,$3), 토큰2($4,$5,$6), ... 블록($N~)
+  const tokenConditions = tokens.map((_, i) => {
+    const p = i * 3 + 1;
+    return `(name ILIKE $${p} OR address ILIKE $${p + 1} OR district ILIKE $${p + 2})`;
+  }).join(' AND ');
 
-  const blockStart = tokens.length + 1;
+  const blockStart = tokens.length * 3 + 1;
   const blockConditions = FOODCOURT_BLOCK.map((_, i) => `name NOT ILIKE $${blockStart + i}`).join(' AND ');
 
-  const tokenParams = tokens.map(t => `%${t}%`);
+  const tokenParams = tokens.flatMap(t => [`%${t}%`, `%${t}%`, `%${t}%`]);
   const blockParams = FOODCOURT_BLOCK.map(kw => `%${kw}%`);
   const allParams = [...tokenParams, ...blockParams];
 
