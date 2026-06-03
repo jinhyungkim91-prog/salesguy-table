@@ -1,4 +1,4 @@
-// Vercel 서버리스 함수: Neon PostgreSQL 점심 검색
+// Vercel 서버리스 함수: Neon PostgreSQL 점심 검색 (다중 토큰 AND 검색 지원)
 const { Client } = require('pg');
 
 const FOODCOURT_BLOCK = ['푸드코트','식당가','푸드홀','구내식당','학생식당','푸드빌리지','푸드스트리트'];
@@ -10,19 +10,31 @@ module.exports = async function handler(req, res) {
 
   const { q = '', offset = '0', limit = '50' } = req.query;
 
-  if (!q || q.length < 2) {
+  if (!q || q.trim().length < 2) {
     return res.status(200).json({ data: [], count: 0 });
   }
 
   const pageOffset = parseInt(offset, 10) || 0;
   const pageLimit  = parseInt(limit,  10) || 50;
 
-  // FOODCOURT_BLOCK 제외 조건 (파라미터 인덱스 시작: $4~)
-  const blockConditions = FOODCOURT_BLOCK.map((_, i) => `name NOT ILIKE $${i + 4}`).join(' AND ');
-  const blockParams = FOODCOURT_BLOCK.map(kw => `%${kw}%`);
+  // 공백으로 토큰 분리 (예: "역삼 순대국" → ["역삼", "순대국"])
+  const tokens = q.trim().split(/\s+/).filter(t => t.length >= 1);
 
-  const searchParam = `%${q}%`;
-  const baseWhere = `(name ILIKE $1 OR address ILIKE $2 OR district ILIKE $3) AND ${blockConditions}`;
+  // 각 토큰: name OR address OR district 중 하나에 포함되어야 함 (AND 조건)
+  // 파라미터 순서: 토큰1×3, 토큰2×3, ..., 블록키워드×7
+  const tokenConditions = tokens.map((_, i) => {
+    const base = i * 3 + 1;
+    return `(name ILIKE $${base} OR address ILIKE $${base + 1} OR district ILIKE $${base + 2})`;
+  }).join(' AND ');
+
+  const blockStart = tokens.length * 3 + 1;
+  const blockConditions = FOODCOURT_BLOCK.map((_, i) => `name NOT ILIKE $${blockStart + i}`).join(' AND ');
+
+  const tokenParams = tokens.flatMap(t => [`%${t}%`, `%${t}%`, `%${t}%`]);
+  const blockParams = FOODCOURT_BLOCK.map(kw => `%${kw}%`);
+  const allParams = [...tokenParams, ...blockParams];
+
+  const baseWhere = `${tokenConditions} AND ${blockConditions}`;
 
   const client = new Client({ connectionString: process.env.DATABASE_URL });
 
@@ -35,11 +47,11 @@ module.exports = async function handler(req, res) {
          FROM lunch_public
          WHERE ${baseWhere}
          LIMIT ${pageLimit} OFFSET ${pageOffset}`,
-        [searchParam, searchParam, searchParam, ...blockParams]
+        allParams
       ),
       client.query(
         `SELECT COUNT(*) FROM lunch_public WHERE ${baseWhere}`,
-        [searchParam, searchParam, searchParam, ...blockParams]
+        allParams
       ),
     ]);
 
