@@ -1,4 +1,4 @@
-// Vercel 서버리스 함수: Neon PostgreSQL 점심 검색 (다중 토큰 AND 검색 지원)
+// Vercel 서버리스 함수: Neon PostgreSQL 점심 검색 (다중 토큰 AND 검색 + genre 포함)
 const { Client } = require('pg');
 
 const FOODCOURT_BLOCK = ['푸드코트','식당가','푸드홀','구내식당','학생식당','푸드빌리지','푸드스트리트'];
@@ -20,17 +20,17 @@ module.exports = async function handler(req, res) {
   // 공백으로 토큰 분리 (예: "역삼 순대국" → ["역삼", "순대국"])
   const tokens = q.trim().split(/\s+/).filter(t => t.length >= 1);
 
-  // 각 토큰: name OR address OR district 중 하나에 포함되어야 함 (AND 조건)
-  // 파라미터 순서: 토큰1×3, 토큰2×3, ..., 블록키워드×7
+  // 각 토큰: name / address / district / genre 중 하나에 포함되어야 함 (AND 조건)
+  // 파라미터: 토큰1×4, 토큰2×4, ..., 블록키워드×7
   const tokenConditions = tokens.map((_, i) => {
-    const base = i * 3 + 1;
-    return `(name ILIKE $${base} OR address ILIKE $${base + 1} OR district ILIKE $${base + 2})`;
+    const base = i * 4 + 1;
+    return `(name ILIKE $${base} OR address ILIKE $${base + 1} OR district ILIKE $${base + 2} OR genre ILIKE $${base + 3})`;
   }).join(' AND ');
 
-  const blockStart = tokens.length * 3 + 1;
+  const blockStart = tokens.length * 4 + 1;
   const blockConditions = FOODCOURT_BLOCK.map((_, i) => `name NOT ILIKE $${blockStart + i}`).join(' AND ');
 
-  const tokenParams = tokens.flatMap(t => [`%${t}%`, `%${t}%`, `%${t}%`]);
+  const tokenParams = tokens.flatMap(t => [`%${t}%`, `%${t}%`, `%${t}%`, `%${t}%`]);
   const blockParams = FOODCOURT_BLOCK.map(kw => `%${kw}%`);
   const allParams = [...tokenParams, ...blockParams];
 
