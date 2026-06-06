@@ -356,13 +356,6 @@
       "region": "경기남부(안성)"
     },
     {
-      "id": 106,
-      "name": "송도 CC",
-      "region": "인천(연수구)",
-      "address": "인천 연수구 송도동",
-      "grade": "회원제"
-    },
-    {
       "id": 107,
       "name": "태광 CC",
       "region": "경기남부(용인)",
@@ -696,6 +689,13 @@
       "region": "경기북부(가평)",
       "address": "",
       "grade": "회원제"
+    },
+    {
+      "id": 159,
+      "name": "양평TPC",
+      "region": "경기동부(양평)",
+      "address": "양평군",
+      "grade": "퍼블릭"
     }
   ],
   "restaurants": [
