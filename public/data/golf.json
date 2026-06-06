@@ -243,7 +243,8 @@
       "name": "88 CC",
       "region": "경기남부(용인)",
       "address": "용인시 처인구",
-      "grade": "회원제"
+      "grade": "회원제",
+      "alias": "팔팔"
     },
     {
       "id": 48,
@@ -464,7 +465,8 @@
       "name": "H1 Club",
       "region": "경기남부(이천)",
       "address": "이천시",
-      "grade": "회원제"
+      "grade": "회원제",
+      "alias": "에이치원"
     },
     {
       "id": 123,
@@ -632,7 +634,8 @@
       "name": "ROUTE52 CC",
       "region": "경기동부(여주)",
       "address": "여주시 북내면 중암1길 36",
-      "grade": "회원제"
+      "grade": "회원제",
+      "alias": "루트52"
     },
     {
       "id": 151,
