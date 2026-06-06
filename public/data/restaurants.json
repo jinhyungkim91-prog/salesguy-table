@@ -1304,7 +1304,7 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.3,
-    "note": "남도식 사계절 제철 음식",
+    "note": "대치동 894-5 우편취급소 2층, 남도식 사계절 제철 음식",
     "emoji": "🏮",
     "district": "대치",
     "mapQuery": "고운님 대치",
@@ -1333,7 +1333,7 @@
     "room": "✅ 확인",
     "score": 90,
     "rating": 4.3,
-    "note": "콘래드호텔 L1층",
+    "note": "여의도역 3번 출구에서 486m, 콘래드호텔 L1층",
     "emoji": "🏮",
     "district": "여의도",
     "room_type": "전석룸"
@@ -10399,5 +10399,34 @@
     "rating": 4,
     "note": "역삼역 8번 출구에서 577m, 전석 프라이빗 룸",
     "emoji": "🍣"
+  },
+  {
+    "id": 1761,
+    "name": "로즈힐 역삼점",
+    "region": "강남",
+    "area": "강남·삼성",
+    "genre": "고기구이",
+    "room": "",
+    "score": 80,
+    "rating": 0,
+    "note": "역삼역 2번 출구에서 27m, 강남파이낸스센터 지하 1층",
+    "emoji": "🥩",
+    "district": "역삼",
+    "room_type": ""
+  },
+  {
+    "id": 1762,
+    "name": "모울",
+    "region": "강남",
+    "area": "청담·신사",
+    "genre": "한식",
+    "room": "",
+    "score": 80,
+    "rating": 0,
+    "note": "신사역 8번 출구에서 418m",
+    "emoji": "🏮",
+    "district": "신사",
+    "room_type": "",
+    "mapQuery": "모울 가로수길"
   }
 ]
