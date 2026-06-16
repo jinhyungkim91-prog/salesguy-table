@@ -335,7 +335,7 @@ const PUBLIC_LUNCH_TOTAL = 120705; // 서울시 공공 음식점 DB 총 건수
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 공통 컴포넌트
 // ━━━━━━━━━━━━━━━━━━━━━━━━
-function RestaurantCard({ r, onClick, highlight }) {
+function RestaurantCard({ r, onClick, highlight, onScoreInfo }) {
   const hl = highlight || '';
   return (
     <div className="rest-card" onClick={() => onClick(r)}>
@@ -347,7 +347,14 @@ function RestaurantCard({ r, onClick, highlight }) {
         </div>
         <div className="rest-score-wrap">
           <div className="rest-score">{r.score}</div>
-          <div className="rest-score-label">비즈점수</div>
+          <div style={{display:'flex',alignItems:'center',gap:3}}>
+            <div className="rest-score-label">비즈점수</div>
+            <button
+              onClick={e => { e.stopPropagation(); onScoreInfo && onScoreInfo(); }}
+              style={{background:'none',border:'none',cursor:'pointer',fontSize:11,color:'#aaa',padding:0,lineHeight:1}}
+              title="평가 기준 보기"
+            >ℹ️</button>
+          </div>
         </div>
       </div>
       <div className="rest-note">{highlightText(r.note, hl)}</div>
@@ -451,6 +458,38 @@ function KakaoPlaceCard({ r, onClick }) {
         <div style={{textAlign:"right",flexShrink:0}}>
           <div style={{fontSize:15,fontWeight:900,color:"#00875A",fontFamily:"'DM Mono',monospace",lineHeight:1}}>{r.distance}m</div>
           <div style={{fontSize:9,color:"#8A7A6A",marginTop:3}}>🚶 {walkMin}분</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ScoreInfoModal({ onClose }) {
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-box" onClick={e => e.stopPropagation()} style={{maxWidth: 340}}>
+        <button className="modal-close" onClick={onClose}>✕</button>
+        <div className="modal-emoji">📊</div>
+        <div className="modal-name" style={{fontSize: 16}}>비즈점수 평가 기준</div>
+        <div style={{fontSize: 12, color: 'var(--text-sub)', marginBottom: 16, textAlign: 'center'}}>
+          비즈니스 접대에 최적화된 100점 만점 지표
+        </div>
+        <div style={{display: 'flex', flexDirection: 'column', gap: 12}}>
+          {[
+            { icon: '🔒', title: '프라이버시 (25점)', desc: '전석룸 25 · 개별룸 20', sub: '기밀 대화가 보장되는 룸 품질' },
+            { icon: '🏆', title: '공인 명성 (25점)', desc: '미슐랭 25 · 블루리본2026 20 · 블루리본 16 · 서울미식100 12', sub: '외부 공인 평가 기관 등재 여부' },
+            { icon: '✨', title: '특별경험 (25점)', desc: '스토리 태그 3개+ 25 · 2개 18 · 1개 10', sub: '한옥·뷰·역사공간·오너셰프 등 기억에 남는 요소' },
+            { icon: '🍽️', title: '격식·품격 (25점)', desc: '한정식·오마카세·파인다이닝 25 · 프렌치·이탈리안 21 · 한우·해산물 17 · 중식·일식 13', sub: '접대 자리에 어울리는 장르 격식도' },
+          ].map(({ icon, title, desc, sub }) => (
+            <div key={title} style={{background: 'var(--bg-card, #f8f8f8)', borderRadius: 10, padding: '10px 14px'}}>
+              <div style={{fontWeight: 700, fontSize: 13, marginBottom: 4}}>{icon} {title}</div>
+              <div style={{fontSize: 11, color: 'var(--text-main)', marginBottom: 3}}>{desc}</div>
+              <div style={{fontSize: 11, color: 'var(--text-sub)'}}>{sub}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{fontSize: 11, color: 'var(--text-sub)', textAlign: 'center', marginTop: 14}}>
+          미슐랭·블루리본 등재 정보는 전수조사 후 반영 예정
         </div>
       </div>
     </div>
@@ -655,6 +694,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState("biz");
   const [selected, setSelected]   = useState(null);
   const [selType, setSelType]     = useState("biz");
+  const [showScoreInfo, setShowScoreInfo] = useState(false);
 
   // 비즈니스 필터
   const [bizArea, setBizArea]     = useState("전체");
@@ -1021,7 +1061,7 @@ export default function App() {
                   {bizFiltered.slice(0, bizShowCount).map(r=><RestaurantCard key={r.id} r={r} onClick={r=>{
                     if (bizSearch.trim()) setRecentSearches(prev => saveRecentSearch(bizSearch.trim(), prev));
                     openModal(r,"biz");
-                  }} highlight={bizSearch}/>)}
+                  }} highlight={bizSearch} onScoreInfo={() => setShowScoreInfo(true)}/>)}
                   {bizFiltered.length > bizShowCount && (
                     <button onClick={()=>setBizShowCount(c=>c+BIZ_PAGE)}
                       style={{width:"100%",padding:"14px",margin:"8px 0",background:"#F5EDD8",border:"1px solid #C8A96E",borderRadius:10,color:"#7A5C1E",fontWeight:700,fontSize:13,cursor:"pointer"}}>
@@ -1265,6 +1305,7 @@ export default function App() {
       )}
 
       <DetailModal r={selected} type={selType} onClose={()=>setSelected(null)} />
+      {showScoreInfo && <ScoreInfoModal onClose={() => setShowScoreInfo(false)} />}
     </div>
   );
 }
