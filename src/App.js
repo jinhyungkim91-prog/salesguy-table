@@ -653,6 +653,7 @@ function DetailModal({ r, type, onClose }) {
 }
 
 const KAKAO_REST_KEY = process.env.REACT_APP_KAKAO_REST_KEY;
+const RING_MIN = { 100: 0, 300: 101, 500: 301, 700: 501 };
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 메인 앱
@@ -721,7 +722,7 @@ export default function App() {
   const [userLocation, setUserLocation] = useState(null); // {lat, lng, dong, gu}
   const [nearbyMode, setNearbyMode]     = useState(false);
   const [locating, setLocating]         = useState(false);
-  const [nearbyRadius, setNearbyRadius] = useState(300);
+  const [nearbyRadius, setNearbyRadius] = useState(100);
   const [kakaoPlaces, setKakaoPlaces]   = useState([]);
   const [kakaoLoading, setKakaoLoading] = useState(false);
   const [kakaoHasMore, setKakaoHasMore] = useState(false);
@@ -773,7 +774,8 @@ export default function App() {
         { headers: { Authorization: `KakaoAK ${KAKAO_REST_KEY}` } }
       );
       const data = await res.json();
-      const places = data.documents || [];
+      const minDist = RING_MIN[radius] ?? 0;
+      const places = (data.documents || []).filter(p => Number(p.distance) >= minDist);
       if (append) {
         setKakaoPlaces(prev => [...prev, ...places]);
       } else {
@@ -1165,7 +1167,7 @@ export default function App() {
               </div>
               {/* 반경 선택 버튼 */}
               <div style={{display:"flex",gap:6}}>
-                {[100,200,300,500].map(r=>(
+                {[100,300,500,700].map(r=>(
                   <button key={r} onClick={()=>setNearbyRadius(r)} style={{
                     flex:1, padding:"5px 0", borderRadius:8,
                     border:`1.5px solid ${nearbyRadius===r?"#00875A":"#A8D5B8"}`,
@@ -1193,8 +1195,8 @@ export default function App() {
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
             {nearbyMode
               ? kakaoLoading
-                ? <>📍 {nearbyRadius}m 반경 검색 중...</>
-                : <>📍 반경 {nearbyRadius}m · <b>{filteredKakao.length}곳</b> 발견 (카카오맵)</>
+                ? <>📍 {RING_MIN[nearbyRadius] > 0 ? `${RING_MIN[nearbyRadius]}-${nearbyRadius}m` : `${nearbyRadius}m 이내`} 검색 중...</>
+                : <>📍 {RING_MIN[nearbyRadius] > 0 ? `${RING_MIN[nearbyRadius]}-${nearbyRadius}m` : `${nearbyRadius}m 이내`} · <b>{filteredKakao.length}곳</b> 발견 (카카오맵)</>
               : publicLoading
                 ? <>🔍 공공DB 검색 중...</>
                 : <>🥢 <b>{lunchSearch.length>=2?(lunchFiltered.length+publicTotal).toLocaleString():(lunchDB.length+PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
@@ -1207,7 +1209,7 @@ export default function App() {
               kakaoLoading
                 ? <div className="empty" style={{paddingTop:30}}>📍 주변 음식점 찾는 중...</div>
                 : filteredKakao.length === 0
-                  ? <div className="empty">반경 {nearbyRadius}m 내 음식점이 없어요 😢<br/><span style={{fontSize:12}}>반경을 늘려보세요</span></div>
+                  ? <div className="empty">{RING_MIN[nearbyRadius] > 0 ? `${RING_MIN[nearbyRadius]}-${nearbyRadius}m` : `${nearbyRadius}m 이내`} 음식점이 없어요 😢<br/><span style={{fontSize:12}}>다른 반경을 선택해보세요</span></div>
                   : <>
                       {filteredKakao.map((r,i)=><KakaoPlaceCard key={r.id||i} r={r} onClick={r=>openModal(r,"kakao")}/>)}
                       {kakaoHasMore && (
