@@ -653,7 +653,7 @@ function DetailModal({ r, type, onClose }) {
 }
 
 const KAKAO_REST_KEY = process.env.REACT_APP_KAKAO_REST_KEY;
-const LUNCH_EXCLUDE_KW = ["카페","베이커리","제과","도넛","아이스크림","스무디","주스바","디저트"];
+const LUNCH_EXCLUDE_KW = ["카페","베이커리","제과","도넛","아이스크림","스무디","주스바","디저트","간식"];
 const isLunchPlace = p => !LUNCH_EXCLUDE_KW.some(kw => p.category_name.toLowerCase().includes(kw));
 const NEARBY_DISPLAY_LIMIT = 15;
 
