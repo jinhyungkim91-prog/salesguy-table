@@ -653,7 +653,7 @@ function DetailModal({ r, type, onClose }) {
 }
 
 const KAKAO_REST_KEY = process.env.REACT_APP_KAKAO_REST_KEY;
-const LUNCH_EXCLUDE_KW = ["카페","베이커리","제과","도넛","아이스크림","스무디","주스바","디저트","간식"];
+const LUNCH_EXCLUDE_KW = ["카페","베이커리","제과","도넛","아이스크림","스무디","주스바","디저트"];
 const isLunchPlace = p => !LUNCH_EXCLUDE_KW.some(kw => p.category_name.toLowerCase().includes(kw));
 const NEARBY_DISPLAY_LIMIT = 15;
 
@@ -1008,6 +1008,18 @@ export default function App() {
   if (dataLoading) return <div className="loading">🍽️ 데이터 불러오는 중...</div>;
 
 
+  const [tossBannerDismissed, setTossBannerDismissed] = useState(() => localStorage.getItem('tossBannerDismissed') === '1');
+  const handleTossOpen = () => {
+    window.location.href = 'intoss://salesguys-table';
+    setTimeout(() => {
+      window.location.href = 'https://toss.im/download';
+    }, 1500);
+  };
+  const handleTossBannerDismiss = () => {
+    localStorage.setItem('tossBannerDismissed', '1');
+    setTossBannerDismissed(true);
+  };
+
   return (
     <div className="app">
       <header className="header">
@@ -1015,6 +1027,29 @@ export default function App() {
         <div className="header-sub">비즈니스 식사 · 직장인 점심 · 골프장 맛집</div>
         <div className="db-badge">📦 총 {(restaurants.length + lunchDB.length + PUBLIC_LUNCH_TOTAL + golfRestaurants.length).toLocaleString()}개 DB</div>
       </header>
+
+      {!tossBannerDismissed && (
+        <div style={{
+          display: "flex", alignItems: "center", gap: 10,
+          padding: "10px 16px", background: "#EBF3FF",
+          borderBottom: "1px solid #C5DBF7",
+        }}>
+          <span style={{ fontSize: 20 }}>💙</span>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: "#1A5FBF" }}>토스앱에서 더 편하게</div>
+            <div style={{ fontSize: 11, color: "#4A7EC7", marginTop: 1 }}>위치 기반 점심 추천 · 더 빠른 실행</div>
+          </div>
+          <button onClick={handleTossOpen} style={{
+            padding: "7px 14px", borderRadius: 8, border: "none",
+            background: "#1A5FBF", color: "white",
+            fontSize: 12, fontWeight: 700, cursor: "pointer", whiteSpace: "nowrap",
+          }}>앱에서 열기</button>
+          <button onClick={handleTossBannerDismiss} style={{
+            background: "none", border: "none", color: "#4A7EC7",
+            fontSize: 18, cursor: "pointer", padding: "0 2px", lineHeight: 1,
+          }}>✕</button>
+        </div>
+      )}
 
       <nav className="tab-nav">
         <button className={`tab-btn ${activeTab==="biz"?"active":""}`} onClick={()=>setActiveTab("biz")}>🍽️ 비즈니스</button>
