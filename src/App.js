@@ -655,22 +655,25 @@ function DetailModal({ r, type, onClose }) {
 const KAKAO_REST_KEY = process.env.REACT_APP_KAKAO_REST_KEY;
 const LUNCH_EXCLUDE_KW = ["카페","베이커리","제과","도넛","아이스크림","스무디","주스바","디저트","간식"];
 const isLunchPlace = p => !LUNCH_EXCLUDE_KW.some(kw => p.category_name.toLowerCase().includes(kw));
+const NEARBY_DISPLAY_LIMIT = 15;
 
-function distributePlaces(places, radius) {
+function distributePlaces(places, radius, limit = places.length) {
   if (places.length === 0) return places;
   const bandSize = 100;
   const numBands = Math.ceil(radius / bandSize);
-  const perBand = Math.floor(places.length / numBands);
-  const extra = places.length - perBand * numBands;
   const bands = Array.from({ length: numBands }, () => []);
   for (const p of places) {
     const idx = Math.min(Math.floor(Number(p.distance) / bandSize), numBands - 1);
     bands[idx].push(p);
   }
+  const activeBands = bands.filter(b => b.length > 0);
+  if (activeBands.length === 0) return [];
+  const perBand = Math.floor(limit / activeBands.length);
+  const extra = limit - perBand * activeBands.length;
   const result = [];
-  for (let i = 0; i < numBands; i++) {
+  for (let i = 0; i < activeBands.length; i++) {
     const quota = perBand + (i < extra ? 1 : 0);
-    const band = bands[i];
+    const band = activeBands[i];
     const picked = band.length <= quota ? band : [...band].sort(() => Math.random() - 0.5).slice(0, quota);
     result.push(...picked);
   }
@@ -745,6 +748,7 @@ export default function App() {
   const [nearbyMode, setNearbyMode]     = useState(false);
   const [locating, setLocating]         = useState(false);
   const [nearbyRadius, setNearbyRadius] = useState(100);
+  const [kakaoAllPlaces, setKakaoAllPlaces] = useState([]);
   const [kakaoPlaces, setKakaoPlaces]   = useState([]);
   const [kakaoLoading, setKakaoLoading] = useState(false);
   const [kakaoHasMore, setKakaoHasMore] = useState(false);
@@ -804,8 +808,8 @@ export default function App() {
       const pageResults = await Promise.all([1, 2, 3].map(fetchPage));
       const all = pageResults.flat();
       const unique = Array.from(new Map(all.map(p => [p.id, p])).values()).filter(isLunchPlace);
-      const displayed = distributePlaces(unique, radius);
-      setKakaoPlaces(displayed);
+      setKakaoAllPlaces(unique);
+      setKakaoPlaces(distributePlaces(unique, radius, NEARBY_DISPLAY_LIMIT));
       const hasMore = (pageResults[2]?.length ?? 0) === 15;
       setKakaoHasMore(hasMore);
       kakaoNextPageRef.current = 4;
@@ -856,10 +860,15 @@ export default function App() {
   const [golfDropOpen, setGolfDropOpen] = useState(false);
   const golfDropRef = useRef(null);
 
+  const handleReshuffle = () => {
+    if (kakaoAllPlaces.length === 0) return;
+    setKakaoPlaces(distributePlaces(kakaoAllPlaces, nearbyRadius, NEARBY_DISPLAY_LIMIT));
+  };
+
   const handleNearby = () => {
     if (nearbyMode) {
       setNearbyMode(false); setUserLocation(null);
-      setKakaoPlaces([]); setKakaoHasMore(false);
+      setKakaoPlaces([]); setKakaoAllPlaces([]); setKakaoHasMore(false);
       setPublicResults([]); setPublicTotal(0); setRandomPick(null);
       return;
     }
@@ -1207,6 +1216,11 @@ export default function App() {
                     fontFamily:"'Noto Sans KR',sans-serif"
                   }}>{r}m</button>
                 ))}
+                <button onClick={handleReshuffle} style={{
+                  flexShrink:0, padding:"5px 10px", borderRadius:8,
+                  border:"1.5px solid #A8D5B8", background:"white",
+                  color:"#00875A", fontSize:14, cursor:"pointer",
+                }}>🔀</button>
               </div>
             </div>
           )}
