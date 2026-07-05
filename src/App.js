@@ -691,6 +691,7 @@ export default function App() {
   const [golfCourses, setGolfCourses]       = useState([]);
   const [golfRestaurants, setGolfRestaurants] = useState([]);
   const [dataLoading, setDataLoading]       = useState(true);
+  const [tossBannerDismissed, setTossBannerDismissed] = useState(() => localStorage.getItem('tossBannerDismissed') === '1');
 
   useEffect(() => {
     Promise.all([
@@ -1008,7 +1009,6 @@ export default function App() {
   if (dataLoading) return <div className="loading">🍽️ 데이터 불러오는 중...</div>;
 
 
-  const [tossBannerDismissed, setTossBannerDismissed] = useState(() => localStorage.getItem('tossBannerDismissed') === '1');
   const handleTossOpen = () => {
     window.location.href = 'intoss://salesguys-table';
     setTimeout(() => {
