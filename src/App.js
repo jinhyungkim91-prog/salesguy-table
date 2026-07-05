@@ -653,7 +653,27 @@ function DetailModal({ r, type, onClose }) {
 }
 
 const KAKAO_REST_KEY = process.env.REACT_APP_KAKAO_REST_KEY;
-const RING_MIN = { 100: 0, 300: 101, 500: 301, 700: 501 };
+
+function distributePlaces(places, radius) {
+  if (places.length === 0) return places;
+  const bandSize = 100;
+  const numBands = Math.ceil(radius / bandSize);
+  const perBand = Math.floor(places.length / numBands);
+  const extra = places.length - perBand * numBands;
+  const bands = Array.from({ length: numBands }, () => []);
+  for (const p of places) {
+    const idx = Math.min(Math.floor(Number(p.distance) / bandSize), numBands - 1);
+    bands[idx].push(p);
+  }
+  const result = [];
+  for (let i = 0; i < numBands; i++) {
+    const quota = perBand + (i < extra ? 1 : 0);
+    const band = bands[i];
+    const picked = band.length <= quota ? band : [...band].sort(() => Math.random() - 0.5).slice(0, quota);
+    result.push(...picked);
+  }
+  return result.sort((a, b) => Number(a.distance) - Number(b.distance));
+}
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━
 // 메인 앱
@@ -759,37 +779,45 @@ export default function App() {
 
   // 주변 모드 → 카카오 REST API 장소검색 (반경 기반)
   const fetchKakaoPlaces = async (lat, lng, radius, append = false) => {
-    setKakaoLoading(true);
-    if (!append) { setKakaoPlaces([]); kakaoNextPageRef.current = 1; }
-    const page = append ? kakaoNextPageRef.current : 1;
-    try {
-      const params = new URLSearchParams({
-        category_group_code: 'FD6',
-        x: String(lng), y: String(lat),
-        radius: String(radius),
-        sort: 'distance', size: '15', page: String(page),
-      });
-      const res = await fetch(
-        `https://dapi.kakao.com/v2/local/search/category.json?${params}`,
-        { headers: { Authorization: `KakaoAK ${KAKAO_REST_KEY}` } }
-      );
-      const data = await res.json();
-      const minDist = RING_MIN[radius] ?? 0;
-      const places = (data.documents || []).filter(p => Number(p.distance) >= minDist);
-      if (append) {
-        setKakaoPlaces(prev => [...prev, ...places]);
-      } else {
-        setKakaoPlaces(places);
-      }
-      const hasMore = !data.meta?.is_end && places.length > 0;
+    const fetchPage = async (page) => {
+      try {
+        const params = new URLSearchParams({
+          category_group_code: 'FD6',
+          x: String(lng), y: String(lat),
+          radius: String(radius),
+          sort: 'distance', size: '15', page: String(page),
+        });
+        const res = await fetch(
+          `https://dapi.kakao.com/v2/local/search/category.json?${params}`,
+          { headers: { Authorization: `KakaoAK ${KAKAO_REST_KEY}` } }
+        );
+        const data = await res.json();
+        return data.documents || [];
+      } catch { return []; }
+    };
+
+    if (!append) {
+      setKakaoLoading(true);
+      setKakaoPlaces([]);
+      const pageResults = await Promise.all([1, 2, 3].map(fetchPage));
+      const all = pageResults.flat();
+      const unique = Array.from(new Map(all.map(p => [p.id, p])).values());
+      const displayed = distributePlaces(unique, radius);
+      setKakaoPlaces(displayed);
+      const hasMore = (pageResults[2]?.length ?? 0) === 15;
       setKakaoHasMore(hasMore);
-      if (hasMore) kakaoNextPageRef.current = page + 1;
-    } catch (err) {
-      console.error('[Kakao REST]', err);
-      if (!append) setKakaoPlaces([]);
-      setKakaoHasMore(false);
+      kakaoNextPageRef.current = 4;
+      setKakaoLoading(false);
+      return;
     }
-    setKakaoLoading(false);
+
+    setMoreLoading(true);
+    const page = kakaoNextPageRef.current;
+    const places = await fetchPage(page);
+    setKakaoPlaces(prev => [...prev, ...places]);
+    const hasMore = places.length === 15;
+    setKakaoHasMore(hasMore);
+    if (hasMore) kakaoNextPageRef.current = page + 1;
     setMoreLoading(false);
   };
 
@@ -1195,8 +1223,8 @@ export default function App() {
           <div className="info-banner" style={{background:"#F5EDD8",borderColor:"#C8A96E",color:"#7A5C1E"}}>
             {nearbyMode
               ? kakaoLoading
-                ? <>📍 {RING_MIN[nearbyRadius] > 0 ? `${RING_MIN[nearbyRadius]}-${nearbyRadius}m` : `${nearbyRadius}m 이내`} 검색 중...</>
-                : <>📍 {RING_MIN[nearbyRadius] > 0 ? `${RING_MIN[nearbyRadius]}-${nearbyRadius}m` : `${nearbyRadius}m 이내`} · <b>{filteredKakao.length}곳</b> 발견 (카카오맵)</>
+                ? <>📍 {nearbyRadius}m 이내 검색 중...</>
+                : <>📍 {nearbyRadius}m 이내 · <b>{filteredKakao.length}곳</b> 발견 (카카오맵)</>
               : publicLoading
                 ? <>🔍 공공DB 검색 중...</>
                 : <>🥢 <b>{lunchSearch.length>=2?(lunchFiltered.length+publicTotal).toLocaleString():(lunchDB.length+PUBLIC_LUNCH_TOTAL).toLocaleString()}곳</b></>
@@ -1209,7 +1237,7 @@ export default function App() {
               kakaoLoading
                 ? <div className="empty" style={{paddingTop:30}}>📍 주변 음식점 찾는 중...</div>
                 : filteredKakao.length === 0
-                  ? <div className="empty">{RING_MIN[nearbyRadius] > 0 ? `${RING_MIN[nearbyRadius]}-${nearbyRadius}m` : `${nearbyRadius}m 이내`} 음식점이 없어요 😢<br/><span style={{fontSize:12}}>다른 반경을 선택해보세요</span></div>
+                  ? <div className="empty">{nearbyRadius}m 이내 음식점이 없어요 😢<br/><span style={{fontSize:12}}>다른 반경을 선택해보세요</span></div>
                   : <>
                       {filteredKakao.map((r,i)=><KakaoPlaceCard key={r.id||i} r={r} onClick={r=>openModal(r,"kakao")}/>)}
                       {kakaoHasMore && (
