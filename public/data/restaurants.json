@@ -6,14 +6,17 @@
     "area": "광화문·도심",
     "genre": "한식",
     "room": "✅ 확인",
-    "score": 82,
+    "score": 91,
     "rating": 5,
     "note": "동대입구역 6번 출구에서 333m, 신라호텔23층, 남산뷰",
     "emoji": "🏮",
     "district": "장충",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "미슐랭",
+    "story": [
+      "호텔",
+      "뷰맛집"
+    ]
   },
   {
     "id": 4,
@@ -38,15 +41,17 @@
     "area": "잠실·성수",
     "genre": "고기구이",
     "room": "✅ 확인",
-    "score": 81,
+    "score": 87,
     "rating": 4.9,
     "note": "신답역 2번 출구에서 476m, 성동구 마장동 761-4",
     "emoji": "🥩",
     "mapQuery": "본앤브레드 오리지널 마장동",
     "district": "마장",
     "room_type": "전석룸",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "오너셰프"
+    ]
   },
   {
     "id": 7,
@@ -55,14 +60,14 @@
     "area": "청담·신사",
     "genre": "퓨전한식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 80,
     "rating": 4.9,
     "note": "신사역 6번 출구에서 340m, 신사스퀘어 2층",
     "emoji": "🥂",
     "district": "신사",
     "mapQuery": "스와니예 신사",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -169,14 +174,18 @@
     "area": "광화문·도심",
     "genre": "한정식",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 92,
     "rating": 4.7,
     "note": "다양한 별실, 한옥 별채, 잔디마당, 야외 테라스",
     "emoji": "🏮",
     "district": "성북",
     "room_type": "룸있음",
     "award": null,
-    "story": []
+    "story": [
+      "한옥",
+      "역사공간",
+      "뷰맛집"
+    ]
   },
   {
     "id": 42,
@@ -202,14 +211,14 @@
     "area": "청담·신사",
     "genre": "중식",
     "room": "✅ 확인",
-    "score": 78,
+    "score": 82,
     "rating": 5,
     "note": "강남구 신사동 630-12",
     "emoji": "🥂",
     "district": "신사",
     "mapQuery": "다이닝마 신사",
     "room_type": "전석룸",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -299,15 +308,17 @@
     "area": "청담·신사",
     "genre": "한식",
     "room": "✅ 확인",
-    "score": 82,
+    "score": 89,
     "rating": 4.9,
     "note": "압구정로데오역 3번 출구에서 455m",
     "emoji": "🥂",
     "district": "청담",
     "mapQuery": "밍글스 한식 청담",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "미슐랭",
+    "story": [
+      "오너셰프"
+    ]
   },
   {
     "id": 54,
@@ -316,14 +327,17 @@
     "area": "강남·삼성",
     "genre": "한식",
     "room": "✅ 확인",
-    "score": 82,
+    "score": 91,
     "rating": 4.9,
     "note": "역삼역 8번 출구에서 399m, 조선 팰리스 36층",
     "emoji": "🥂",
     "district": "역삼",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "미슐랭",
+    "story": [
+      "호텔",
+      "뷰맛집"
+    ]
   },
   {
     "id": 55,
@@ -348,13 +362,13 @@
     "area": "용산·이태원",
     "genre": "양식",
     "room": "✅ 확인",
-    "score": 83,
+    "score": 87,
     "rating": 4.9,
     "note": "용산구 한남동 657-138",
     "emoji": "🥂",
     "district": "한남",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -364,13 +378,13 @@
     "area": "청담·신사",
     "genre": "이탈리아",
     "room": "✅ 확인",
-    "score": 83,
+    "score": 87,
     "rating": 4.9,
     "note": "강남구 청담동 98-7, 최현석 쉐프",
     "emoji": "🥢",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -380,14 +394,14 @@
     "area": "청담·신사",
     "genre": "한식",
     "room": "✅ 확인",
-    "score": 82,
+    "score": 87,
     "rating": 5,
     "note": "학동역 10번 출구에서 202m, 백영논현센터 2층, 엄태준셰프",
     "emoji": "🏮",
     "district": "논현",
     "mapQuery": "솔밤 논현",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -397,14 +411,14 @@
     "area": "광화문·도심",
     "genre": "프랑스",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 89,
     "rating": 4.9,
     "note": "안국역 3번 출구에서 218m, 아라리오 뮤지엄 신관 5층",
     "emoji": "🥂",
     "mapQuery": "더그린테이블 종로",
     "district": "원서",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -414,14 +428,16 @@
     "area": "광화문·도심",
     "genre": "스시",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 92,
     "rating": 5,
     "note": "서울역 공항철도 1번 출구에서 823m, 서울역 공항철도 1번 출구에서 823m,박경재 셰프, 도심 속 조용하고 우아한 분위기",
     "emoji": "🍣",
     "district": "만리",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "미슐랭",
+    "story": [
+      "오너셰프"
+    ]
   },
   {
     "id": 63,
@@ -430,13 +446,13 @@
     "area": "청담·신사",
     "genre": "한식",
     "room": "✅ 확인",
-    "score": 82,
+    "score": 87,
     "rating": 4.9,
     "note": "청담역 13번 출구에서 350m",
     "emoji": "🥂",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -446,14 +462,16 @@
     "area": "광화문·도심",
     "genre": "중식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 81,
     "rating": 4.9,
     "note": "을지로입구역 8번 출구에서 118m, 메인타워 37층",
     "emoji": "🥂",
     "district": "소공",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "호텔"
+    ]
   },
   {
     "id": 66,
@@ -462,13 +480,13 @@
     "area": "광화문·도심",
     "genre": "중식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 80,
     "rating": 5,
     "note": "동대입구역 1번 출구에서 264m, 앰배서더 서울 풀만 호텔 2층, 후덕죽 마스터셰프",
     "emoji": "🥂",
     "district": "장충",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -494,7 +512,7 @@
     "area": "광화문·도심",
     "genre": "한정식",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 92,
     "rating": 5,
     "note": "충무로역 3번 출구에서 118m, 신선한 재료로 만든 궁중 한정식",
     "emoji": "🥂",
@@ -502,7 +520,11 @@
     "district": "필동",
     "room_type": "룸있음",
     "award": null,
-    "story": []
+    "story": [
+      "한옥",
+      "역사공간",
+      "전통공연"
+    ]
   },
   {
     "id": 73,
@@ -511,13 +533,13 @@
     "area": "청담·신사",
     "genre": "일식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 80,
     "rating": 5,
     "note": "강남구 청담동 17-24, 권영운 김보미 오너셰프",
     "emoji": "🍣",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -527,15 +549,17 @@
     "area": "용산·이태원",
     "genre": "양식",
     "room": "✅ 확인",
-    "score": 83,
+    "score": 90,
     "rating": 5,
     "note": "한강진역 1번 출구에서 493m, 용산구 이태원동 258-14",
     "emoji": "🥂",
     "district": "이태원",
     "mapQuery": "모수 서울 양식",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "미슐랭",
+    "story": [
+      "오너셰프"
+    ]
   },
   {
     "id": 77,
@@ -544,13 +568,13 @@
     "area": "청담·신사",
     "genre": "양식",
     "room": "✅ 확인",
-    "score": 83,
+    "score": 88,
     "rating": 5,
     "note": "학동역 6번 출구에서 406m, 박무현 셰프",
     "emoji": "🥂",
     "district": "논현",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -576,15 +600,17 @@
     "area": "광화문·도심",
     "genre": "스시",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 91,
     "rating": 4.9,
     "note": "을지로입구역 8번 출구에서 239m, 서울 웨스틴조선호텔 20층",
     "emoji": "🍣",
     "mapQuery": "웨스틴 조선 서울 일식당 스시조",
     "district": "소공",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "호텔"
+    ]
   },
   {
     "id": 90,
@@ -658,14 +684,16 @@
     "area": "강서",
     "genre": "한정식",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 91,
     "rating": 4.7,
     "note": "메이필드 호텔",
     "emoji": "🏮",
     "district": "외발산",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "호텔"
+    ]
   },
   {
     "id": 118,
@@ -706,14 +734,14 @@
     "area": "광화문·도심",
     "genre": "프랑스",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 90,
     "rating": 4.9,
     "note": "회현 7번 출구에서 63m, 레스케이프호텔 26층",
     "emoji": "🥂",
     "mapQuery": "레스케이프 라망 시크레 양식당",
     "district": "회현",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -756,13 +784,13 @@
     "area": "청담·신사",
     "genre": "프랑스",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 90,
     "rating": 4.9,
     "note": "강남구청역 4번 출구에서 195m",
     "emoji": "🥂",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -772,13 +800,13 @@
     "area": "청담·신사",
     "genre": "고기구이",
     "room": "✅ 확인",
-    "score": 78,
+    "score": 82,
     "rating": 5,
     "note": "압구정로데오역 3번 출구에서 527m, 강남구 청담동 118-4, 조은빌딩 1층",
     "emoji": "🥩",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -1077,14 +1105,14 @@
     "area": "잠실·성수",
     "genre": "한식",
     "room": "✅ 확인",
-    "score": 82,
+    "score": 87,
     "rating": 4.8,
     "note": "잠실역 2번 출구에서 432m, 롯데월드타워 81층",
     "emoji": "🏮",
     "district": "신천",
     "mapQuery": "비채나 롯데타워",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -1143,15 +1171,18 @@
     "area": "청담·신사",
     "genre": "고기구이",
     "room": "✅ 확인",
-    "score": 78,
+    "score": 86,
     "rating": 4.8,
     "note": "압구정역 3번 출구에서 351m, 강남구 신사동 623-5",
     "emoji": "🥩",
     "district": "신사",
     "mapQuery": "삼원가든 신사",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "역사공간",
+      "단독건물"
+    ]
   },
   {
     "id": 244,
@@ -1176,15 +1207,17 @@
     "area": "광화문·도심",
     "genre": "한식",
     "room": "✅ 확인",
-    "score": 82,
+    "score": 89,
     "rating": 4.9,
     "note": "조은희, 박성배 셰프",
     "emoji": "🏮",
     "mapQuery": "온지음 레스토랑",
     "district": "창성",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "미슐랭",
+    "story": [
+      "한옥"
+    ]
   },
   {
     "id": 268,
@@ -1241,14 +1274,16 @@
     "area": "광화문·도심",
     "genre": "프랑스",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 91,
     "rating": 4.8,
     "note": "동대입구역 6번 출구에서 318m, 서울신라호텔 23층",
     "emoji": "🥂",
     "district": "장충",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "호텔"
+    ]
   },
   {
     "id": 306,
@@ -1257,13 +1292,13 @@
     "area": "청담·신사",
     "genre": "양식",
     "room": "✅ 확인",
-    "score": 83,
+    "score": 88,
     "rating": 4.8,
     "note": "강남구 신사동 650-13",
     "emoji": "🥂",
     "district": "신사",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -1614,15 +1649,17 @@
     "area": "강남·삼성",
     "genre": "중식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 81,
     "rating": 4.7,
     "note": "신논현역 4번 출구에서 329m, 노보텔 앰배서더 강남 LL층",
     "emoji": "🥢",
     "mapQuery": "홍보각 역삼",
     "district": "역삼",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "역사공간"
+    ]
   },
   {
     "id": 422,
@@ -1631,13 +1668,13 @@
     "area": "청담·신사",
     "genre": "프랑스",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 89,
     "rating": 4.6,
     "note": "압구정로데오역 4번 출구에서 235m",
     "emoji": "🥂",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -1647,14 +1684,14 @@
     "area": "청담·신사",
     "genre": "프랑스",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 89,
     "rating": 4.5,
     "note": "압구정로데오역 5번 출구에서 522m",
     "emoji": "🥂",
     "district": "신사",
     "mapQuery": "파씨오네 신사",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -1892,13 +1929,13 @@
     "area": "청담·신사",
     "genre": "프랑스",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 89,
     "rating": 4.7,
     "note": "압구정로데오역 3번 출구에서 423m",
     "emoji": "🥂",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -2118,13 +2155,13 @@
     "area": "청담·신사",
     "genre": "일식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 79,
     "rating": 5,
     "note": "압구정로데오역 3번 출구에서 476m, 강남구 청담동 97-18",
     "emoji": "🍽️",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -2231,14 +2268,17 @@
     "area": "광화문·도심",
     "genre": "일식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 83,
     "rating": 4.9,
     "note": "동대입구역 6번 출구에서 342m, 서울신라호텔 2층",
     "emoji": "🎌",
     "district": "장충",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "호텔",
+      "뷰맛집"
+    ]
   },
   {
     "id": 726,
@@ -2295,14 +2335,16 @@
     "area": "광화문·도심",
     "genre": "중식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 81,
     "rating": 4.4,
     "note": "동대입구역 6번 출구에서 324m, 서울신라호텔 2층",
     "emoji": "🥢",
     "district": "장충",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "블루리본2026",
+    "story": [
+      "호텔"
+    ]
   },
   {
     "id": 758,
@@ -2571,13 +2613,13 @@
     "area": "청담·신사",
     "genre": "프랑스",
     "room": "✅ 확인",
-    "score": 85,
+    "score": 90,
     "rating": 4.5,
     "note": "압구정로데오역 3번 출구에서 398m",
     "emoji": "🥂",
     "district": "청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
@@ -2636,14 +2678,17 @@
     "area": "광화문·도심",
     "genre": "중식",
     "room": "✅ 확인",
-    "score": 75,
+    "score": 84,
     "rating": 4.6,
     "note": "광화문역 8번 출구에서 145m",
     "emoji": "🥢",
     "district": "당주",
     "room_type": "룸있음",
-    "award": null,
-    "story": []
+    "award": "미슐랭",
+    "story": [
+      "호텔",
+      "뷰맛집"
+    ]
   },
   {
     "id": 894,
@@ -3056,14 +3101,14 @@
     "area": "청담·신사",
     "genre": "이탈리아",
     "room": "✅ 확인",
-    "score": 83,
+    "score": 87,
     "rating": 4.2,
     "note": "강남구청역 8번 출구에서 506m, 강남구 청담동 17-29",
     "emoji": "🥂",
     "district": "청담",
     "mapQuery": "미 피아체 청담",
     "room_type": "룸있음",
-    "award": null,
+    "award": "블루리본2026",
     "story": []
   },
   {
@@ -3330,13 +3375,13 @@
     "area": "청담·신사",
     "genre": "양식",
     "room": "✅ 확인",
-    "score": 83,
+    "score": 88,
     "rating": 4.5,
     "note": "청담역 9번 출구에서 245m",
     "emoji": "🍽️",
     "district": "논현",
     "room_type": "룸있음",
-    "award": null,
+    "award": "미슐랭",
     "story": []
   },
   {
