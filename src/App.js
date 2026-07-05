@@ -653,6 +653,8 @@ function DetailModal({ r, type, onClose }) {
 }
 
 const KAKAO_REST_KEY = process.env.REACT_APP_KAKAO_REST_KEY;
+const LUNCH_EXCLUDE_KW = ["카페","베이커리","제과","도넛","아이스크림","스무디","주스바","디저트","간식"];
+const isLunchPlace = p => !LUNCH_EXCLUDE_KW.some(kw => p.category_name.toLowerCase().includes(kw));
 
 function distributePlaces(places, radius) {
   if (places.length === 0) return places;
@@ -801,7 +803,7 @@ export default function App() {
       setKakaoPlaces([]);
       const pageResults = await Promise.all([1, 2, 3].map(fetchPage));
       const all = pageResults.flat();
-      const unique = Array.from(new Map(all.map(p => [p.id, p])).values());
+      const unique = Array.from(new Map(all.map(p => [p.id, p])).values()).filter(isLunchPlace);
       const displayed = distributePlaces(unique, radius);
       setKakaoPlaces(displayed);
       const hasMore = (pageResults[2]?.length ?? 0) === 15;
