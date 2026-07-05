@@ -1,115 +1,103 @@
 /**
- * 비즈니스 다이닝 스코어 v2 계산기
+ * 비즈니스 다이닝 스코어 v2.1
  *
- * 4개 기둥 × 25점 = 100점 만점
- * ① 프라이버시 (룸 품질)
- * ② 공인 명성 (award)
- * ③ 특별경험·스토리 (story 태그)
- * ④ 격식·품격 (장르)
+ * 4개 기둥 합산 100점 만점
+ * 최저 75점 (룸있음 + 기타장르 + 미조사) 보장
+ * 동화고옥급(룸있음+한식+미조사) = 82점
+ *
+ * ① 프라이버시    전석룸=25 / 룸있음=22
+ * ② 공인 명성     미슐랭=25 / 블루리본2026=24 / 블루리본=23 / 서울미식100=22 / 없음=20
+ * ③ 특별경험      태그3개+=25 / 2개=22 / 1개=20 / 없음=18
+ * ④ 격식·품격     장르별 15~25점
  */
 
-const fs = require('fs');
+const fs   = require('fs');
 const path = require('path');
 
 const DATA_PATH = path.join(__dirname, '../public/data/restaurants.json');
 
-// ① 프라이버시 배점 (25점)
 function scorePrivacy(room_type) {
-  switch (room_type) {
-    case '전석룸': return 25;
-    case '룸있음': return 20;
-    default:        return 20; // 룸 확인 완료된 식당만 있으므로 기본 20
-  }
+  return room_type === '전석룸' ? 25 : 22;
 }
 
-// ② 공인 명성 배점 (25점)
 function scoreAward(award) {
   switch (award) {
-    case '미슐랭':      return 25;
-    case '블루리본2026': return 20;
-    case '블루리본':    return 16;
-    case '서울미식100': return 12;
-    default:            return 5;  // 전수조사 전 기본값
+    case '미슐랭':       return 25;
+    case '블루리본2026': return 24;
+    case '블루리본':     return 23;
+    case '서울미식100':  return 22;
+    default:             return 20;
   }
 }
 
-// ③ 특별경험·스토리 배점 (25점)
 function scoreStory(story) {
-  const count = Array.isArray(story) ? story.length : 0;
-  if (count >= 3) return 25;
-  if (count === 2) return 18;
-  if (count === 1) return 10;
-  return 0;
+  const n = Array.isArray(story) ? story.length : 0;
+  if (n >= 3) return 25;
+  if (n === 2) return 22;
+  if (n === 1) return 20;
+  return 18;
 }
 
-// ④ 격식·품격 배점 (25점)
 const GENRE_SCORE = {
-  // 파인다이닝·오마카세·한정식코스 — 25점
-  '한정식': 25,
-  '스시': 25,
+  // 파인다이닝 · 오마카세 · 한정식코스 — 25점
+  '한정식':          25,
+  '스시':            25,
   '스키야키·가이세키': 25,
-  '프랑스': 25,
+  '프랑스':          25,
 
-  // 프리미엄 코스·이탈리안 — 21점
-  '이탈리아': 21,
-  '양식': 21,
+  // 프리미엄 이탈리안·양식 — 23점
+  '이탈리아':        23,
+  '양식':            23,
 
-  // 프리미엄 고기·해산물 — 17점
-  '고기구이': 17,
-  '한우': 17,
-  '해산물': 17,
-  '생선회': 17,
-  '대게': 17,
-  '스테이크': 17,
-  '양갈비': 17,
-  '장어구이': 17,
+  // 전통 한식 (동화고옥급) — 22점
+  '한식':            22,
 
-  // 중식코스·일식 — 13점
-  '중식': 13,
-  '중식당': 13,
-  '일식': 13,
-  '일식당': 13,
-  '이자카야': 13,
-  '샤브샤브': 13,
+  // 프리미엄 고기·해산물 — 18점
+  '고기구이':        18,
+  '한우':            18,
+  '해산물':          18,
+  '생선회':          18,
+  '대게':            18,
+  '스테이크':        18,
+  '양갈비':          18,
+  '소고기구이':      18,
+  '장어구이':        18,
 
-  // 한식·기타 — 9점
-  '한식': 9,
-  '양대창': 9,
-  '양고기': 9,
-  '생선구이': 9,
-  '소고기구이': 9,
-  '냉면': 9,
-  '평양냉면': 9,
-  '안동국시': 9,
-  '요리주점': 9,
+  // 중식·일식 — 15점
+  '중식':            15,
+  '중식당':          15,
+  '일식':            15,
+  '일식당':          15,
+  '이자카야':        15,
+  '샤브샤브':        15,
+
+  // 기타 — 15점 (최저선)
+  '양대창':          15,
+  '양고기':          15,
+  '생선구이':        15,
+  '냉면':            15,
+  '평양냉면':        15,
+  '안동국시':        15,
+  '요리주점':        15,
 };
 
 function scoreGenre(genre) {
-  return GENRE_SCORE[genre] ?? 9;
+  return GENRE_SCORE[genre] ?? 15;
 }
 
-// 메인 실행
 const data = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
-
 let changed = 0;
 
 const updated = data.map(r => {
-  // room_type 미설정 → 룸있음으로 정규화
-  if (!r.room_type || r.room_type === '없음') {
-    r.room_type = '룸있음';
-  }
-
-  // 신규 필드 초기화 (없는 경우만)
-  if (!r.award) r.award = null;
+  if (!r.room_type || r.room_type === '없음') r.room_type = '룸있음';
+  if (r.award === undefined) r.award = null;
   if (!r.story) r.story = [];
 
   const oldScore = r.score;
-  const privacy  = scorePrivacy(r.room_type);
-  const award    = scoreAward(r.award);
-  const story    = scoreStory(r.story);
-  const genre    = scoreGenre(r.genre);
-
-  r.score = privacy + award + story + genre;
+  r.score = scorePrivacy(r.room_type)
+          + scoreAward(r.award)
+          + scoreStory(r.story)
+          + scoreGenre(r.genre);
 
   if (r.score !== oldScore) changed++;
   return r;
@@ -120,7 +108,6 @@ fs.writeFileSync(DATA_PATH, JSON.stringify(updated, null, 2), 'utf8');
 console.log(`✅ 완료: ${updated.length}개 식당 점수 재계산`);
 console.log(`📝 변경된 점수: ${changed}개`);
 
-// 점수 분포 출력
 const dist = {};
 updated.forEach(r => {
   const k = Math.floor(r.score / 10) * 10;
@@ -130,7 +117,11 @@ updated.forEach(r => {
 console.log('\n📊 점수 분포:');
 Object.keys(dist).sort().forEach(k => console.log(`  ${k}: ${dist[k]}개`));
 
-// 상위 10개 출력
 const top10 = [...updated].sort((a, b) => b.score - a.score).slice(0, 10);
 console.log('\n🏆 상위 10개:');
 top10.forEach(r => console.log(`  ${r.score}점 | ${r.name} (${r.genre}, ${r.room_type})`));
+
+const dongwha = updated.find(r => r.name.includes('동화고옥'));
+if (dongwha) console.log(`\n🔍 동화고옥: ${dongwha.score}점 (프라이버시${scorePrivacy(dongwha.room_type)}+격식${scoreGenre(dongwha.genre)}+명성${scoreAward(dongwha.award)}+스토리${scoreStory(dongwha.story)})`);
+
+console.log(`\n📉 최저점: ${Math.min(...updated.map(r=>r.score))}점 / 최고점: ${Math.max(...updated.map(r=>r.score))}점`);
