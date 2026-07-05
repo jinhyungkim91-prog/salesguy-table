@@ -1206,7 +1206,7 @@ export default function App() {
               </div>
               {/* 반경 선택 버튼 */}
               <div style={{display:"flex",gap:6}}>
-                {[100,300,500,700].map(r=>(
+                {[100,150,200,300].map(r=>(
                   <button key={r} onClick={()=>setNearbyRadius(r)} style={{
                     flex:1, padding:"5px 0", borderRadius:8,
                     border:`1.5px solid ${nearbyRadius===r?"#00875A":"#A8D5B8"}`,
