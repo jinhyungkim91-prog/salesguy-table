@@ -1710,22 +1710,6 @@
     "story": []
   },
   {
-    "id": 454,
-    "name": "스시이찌 국회의사당점",
-    "region": "영등포",
-    "area": "여의도",
-    "genre": "스시",
-    "room": "✅ 확인",
-    "score": 93,
-    "rating": 4.7,
-    "note": "국회의사당역 1번 출구에서 299m",
-    "emoji": "🍣",
-    "district": "여의도",
-    "room_type": "룸있음",
-    "award": null,
-    "story": []
-  },
-  {
     "id": 458,
     "name": "영의정 한정식",
     "region": "영등포",
@@ -6982,22 +6966,6 @@
     "district": "서초",
     "mapQuery": "하오차이 서초",
     "note": "남부터미널역 5번 출구에서 307m",
-    "room_type": "룸있음",
-    "award": null,
-    "story": []
-  },
-  {
-    "id": 1439,
-    "name": "돌산등대집",
-    "region": "강남",
-    "area": "강남·삼성",
-    "genre": "한식",
-    "note": "선릉역 1번 출구에서 298m, 갓김치등갈비찜, 돌산 불 쭈꾸미, 빠삭오징어튀김전",
-    "emoji": "🏮",
-    "score": 90,
-    "room": "✅ 확인",
-    "district": "대치",
-    "mapQuery": "돌산등대집 대치",
     "room_type": "룸있음",
     "award": null,
     "story": []
