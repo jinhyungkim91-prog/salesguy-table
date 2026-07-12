@@ -20,14 +20,22 @@ function scorePrivacy(room_type) {
   return room_type === '전석룸' ? 25 : 22;
 }
 
-function scoreAward(award) {
-  switch (award) {
-    case '미슐랭':       return 25;
-    case '블루리본2026': return 24;
-    case '블루리본':     return 23;
-    case '서울미식100':  return 22;
-    default:             return 20;
-  }
+function isHotelRestaurant(story) {
+  return Array.isArray(story) && story.includes('호텔');
+}
+
+function scoreAward(award, story) {
+  const base = (() => {
+    switch (award) {
+      case '미슐랭':       return 25;
+      case '블루리본2026': return 24;
+      case '블루리본':     return 23;
+      case '서울미식100':  return 22;
+      default:             return 20;
+    }
+  })();
+  // 호텔 레스토랑: award 없어도 최소 블루리본2026 수준(24점) 보장
+  return isHotelRestaurant(story) ? Math.max(base, 24) : base;
 }
 
 function scoreStory(story) {
@@ -81,8 +89,10 @@ const GENRE_SCORE = {
   '요리주점':        15,
 };
 
-function scoreGenre(genre) {
-  return GENRE_SCORE[genre] ?? 15;
+function scoreGenre(genre, story) {
+  const base = GENRE_SCORE[genre] ?? 15;
+  // 호텔 레스토랑: 장르와 무관하게 최소 이탈리안 수준(22점) 보장
+  return isHotelRestaurant(story) ? Math.max(base, 22) : base;
 }
 
 const data = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
@@ -95,9 +105,9 @@ const updated = data.map(r => {
 
   const oldScore = r.score;
   r.score = scorePrivacy(r.room_type)
-          + scoreAward(r.award)
+          + scoreAward(r.award, r.story)
           + scoreStory(r.story)
-          + scoreGenre(r.genre);
+          + scoreGenre(r.genre, r.story);
 
   if (r.score !== oldScore) changed++;
   return r;
